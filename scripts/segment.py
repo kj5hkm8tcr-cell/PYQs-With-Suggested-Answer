@@ -285,7 +285,7 @@ def text_of(path, spans_by_part, max_chars=600):
 # segment_mcq() returns {"m1": {"question": spans, "answer": [], "mcq_answer": "(B)",
 #                               "context": spans, "context_id": "cs1"}, ...}
 
-RE_SCENARIO = re.compile(r"^(?:Integrated\s+)?Case\s*(?:Scenario|Study)\b", re.I)
+RE_SCENARIO = re.compile(r"^(?:Integrated\s+)?(?:Case\s*(?:Scenario|Study)\b|Scenario\s*[-–:]?\s*[IVX\d]+\b)", re.I)
 RE_SHARED = re.compile(r"^(Use|Based on|Read|Refer|Consider|Study|On the basis of|From the|With the help of|Answer)\b"
                        r".*\b(following|given|below|above)\b", re.I)
 RE_MCQ = re.compile(r"^(\d{1,3})\s*(?:\.+|\s(?=[A-Z]))\s*\S")  # "18 Calculate": ICAI sometimes drops the dot
@@ -296,7 +296,8 @@ RE_KEY_CELL = re.compile(r"(\d{1,3})\s*\.{0,2}\s+((?:\(\s*[A-Da-d]?\s*\)|No corr
 
 
 def _range_in(text):
-    m = re.search(r"Q(?:uestion)?s?\.?\s*(?:No\.?|Nos\.?)?\s*(\d{1,3})\s*(?:to|and|-|–|&)\s*(\d{1,3})", text, re.I)
+    m = re.search(r"Q(?:uestion)?s?\.?\s*(?:No\.?|Nos\.?)?\s*(\d{1,3})\s*(?:to|and|-|–|&)\s*"
+                  r"(?:Q(?:uestion)?\.?\s*(?:No\.?|Nos\.?)?\s*)?(\d{1,3})", text, re.I)
     return (int(m.group(1)), int(m.group(2))) if m else None
 
 

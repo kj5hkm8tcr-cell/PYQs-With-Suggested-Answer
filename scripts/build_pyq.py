@@ -81,6 +81,9 @@ def chapter_info(key, value):
     # keys like "A-3" keep ICAI's own numbering when it restarts per part (e.g. Income-tax / GST)
     if key == "CS":
         return value, None
+    # file names must work on Windows/Drive: no : " / \\ ? * < > |
+    name = re.sub(r"\s*:\s*", " - ", name)
+    name = re.sub(r'["/\\?*<>|]', "", name)
     num = re.search(r"(\d+)$", key)
     title = f"Chapter {int(num.group(1)):02d} - {name}" if num else name
     return title, folder
