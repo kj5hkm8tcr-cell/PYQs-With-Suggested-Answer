@@ -1,14 +1,59 @@
 {
   "level": "CA Intermediate",
   "paper": "Paper 1 - Advanced Accounting",
-  "chapters": {},
+  "chapters": {
+    "1": "Introduction to Accounting Standards",
+    "2": "Framework for Preparation and Presentation of Financial Statements",
+    "3": "Applicability of Accounting Standards",
+    "4": "Presentation & Disclosures Based Accounting Standards",
+    "5": "Assets Based Accounting Standards",
+    "6": "Liabilities Based Accounting Standards",
+    "7": "Accounting Standards Based on Items Impacting Financial Statement",
+    "8": "Revenue Based Accounting Standards",
+    "9": "Other Accounting Standards",
+    "10": "Accounting Standards for Consolidated Financial Statement",
+    "11": "Financial Statements of Companies",
+    "12": "Buyback of Securities",
+    "13": "Amalgamation of Companies",
+    "14": "Internal Reconstruction",
+    "15": "Accounting for Branches including Foreign Branches"
+  },
   "attempts": [
     {
       "attempt": "2026-05",
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/92872bos-sa-int-may2026-p1.pdf",
-          "map": {}
+          "map": {
+            "1a": 6,
+            "1b": 5,
+            "1c": 4,
+            "2": 11,
+            "3a": 11,
+            "3b": 14,
+            "4": 13,
+            "5a": 10,
+            "5b": 4,
+            "6a": 1,
+            "6a-or": 7,
+            "6b": 7,
+            "6c": 15,
+            "m1": "CS",
+            "m2": "CS",
+            "m3": "CS",
+            "m4": "CS",
+            "m5": "CS",
+            "m6": "CS",
+            "m7": "CS",
+            "m8": "CS",
+            "m9": "CS",
+            "m10": "CS",
+            "m11": "CS",
+            "m12": "CS",
+            "m13": "CS",
+            "m14": "CS",
+            "m15": "CS"
+          }
         }
       ]
     },
@@ -17,7 +62,36 @@
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/91199bos-aps4356-sa-int-p1.pdf",
-          "map": {}
+          "map": {
+            "1a": 5,
+            "1b": 6,
+            "1c": 4,
+            "2a": 14,
+            "2b": 14,
+            "3a": 12,
+            "3b": 5,
+            "4": 13,
+            "5": 10,
+            "6a": 4,
+            "6a-or": 5,
+            "6b": 11,
+            "6c": 15,
+            "m1": "CS",
+            "m2": "CS",
+            "m3": "CS",
+            "m4": "CS",
+            "m5": "CS",
+            "m6": "CS",
+            "m7": "CS",
+            "m8": "CS",
+            "m9": "CS",
+            "m10": 4,
+            "m11": 11,
+            "m12": 11,
+            "m13": 11,
+            "m14": 11,
+            "m15": 13
+          }
         }
       ]
     },
@@ -26,7 +100,35 @@
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/89270bos-aps3012-int-p1.pdf",
-          "map": {}
+          "map": {
+            "1a": 7,
+            "1b": 5,
+            "1c": 8,
+            "2": 11,
+            "3a": 11,
+            "3b": 5,
+            "4": 13,
+            "5": 10,
+            "6a": 7,
+            "6a-or": 2,
+            "6b": 14,
+            "6c": 15,
+            "m1": 4,
+            "m2": 4,
+            "m3": 4,
+            "m4": 4,
+            "m5": "CS",
+            "m6": "CS",
+            "m7": "CS",
+            "m8": "CS",
+            "m9": 5,
+            "m10": 6,
+            "m11": 12,
+            "m12": 12,
+            "m13": 12,
+            "m14": 12,
+            "m15": 11
+          }
         }
       ]
     },
@@ -35,7 +137,35 @@
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/86851bos-sa-int-may2025-g1-p1.pdf",
-          "map": {}
+          "map": {
+            "1a": 5,
+            "1b": 5,
+            "2": 11,
+            "3a": 11,
+            "3b": 4,
+            "4": 13,
+            "5a": 10,
+            "5b": 10,
+            "6a": 1,
+            "6a-or": 5,
+            "6b": 11,
+            "6c": 15,
+            "m1": 8,
+            "m2": 8,
+            "m3": 8,
+            "m4": 6,
+            "m5": 5,
+            "m6": "CS",
+            "m7": "CS",
+            "m8": "CS",
+            "m9": "CS",
+            "m10": 5,
+            "m11": 12,
+            "m12": 12,
+            "m13": 12,
+            "m14": 11,
+            "m15": 14
+          }
         }
       ]
     },
@@ -44,7 +174,36 @@
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/84875bos68360-p1.pdf",
-          "map": {}
+          "map": {
+            "1a": 4,
+            "1b": 5,
+            "1c": 6,
+            "2": 14,
+            "3a": 6,
+            "3b": 11,
+            "4a": 13,
+            "4b": 13,
+            "4c": 13,
+            "5": 10,
+            "6a": 4,
+            "6b": 12,
+            "6c": 15,
+            "m1": "CS",
+            "m2": "CS",
+            "m3": "CS",
+            "m4": "CS",
+            "m5": "CS",
+            "m6": "CS",
+            "m7": "CS",
+            "m8": "CS",
+            "m9": "CS",
+            "m10": "CS",
+            "m11": 11,
+            "m12": 11,
+            "m13": 11,
+            "m14": 11,
+            "m15": 11
+          }
         }
       ]
     },
@@ -53,7 +212,34 @@
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/83078bos67152-1.pdf",
-          "map": {}
+          "map": {
+            "1a": 5,
+            "1b": 6,
+            "1c": 7,
+            "2": 11,
+            "3a": 11,
+            "3b": 12,
+            "4": 13,
+            "5": 10,
+            "6a": 5,
+            "6b": 14,
+            "6c": 15,
+            "m1": 5,
+            "m2": 5,
+            "m3": 5,
+            "m4": 5,
+            "m5": "CS",
+            "m6": "CS",
+            "m7": "CS",
+            "m8": 4,
+            "m9": 5,
+            "m10": 4,
+            "m11": "CS",
+            "m12": "CS",
+            "m13": "CS",
+            "m14": "CS",
+            "m15": 11
+          }
         }
       ]
     },
@@ -62,7 +248,19 @@
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/81496bos65715-p1.pdf",
-          "map": {}
+          "map": {
+            "1a": 5,
+            "1b": 5,
+            "2": 14,
+            "3a": 8,
+            "3b": 11,
+            "4": 13,
+            "5": 10,
+            "6a": 5,
+            "6a-or": 4,
+            "6b": 11,
+            "6c": 15
+          }
         }
       ]
     },
@@ -72,12 +270,47 @@
         {
           "url": "https://resource.cdn.icai.org/79235bos63377-p1.pdf",
           "note": "Old Paper 1: Accounting",
-          "map": {}
+          "map": {
+            "1a": 5,
+            "1b": 7,
+            "1c": 5,
+            "1d": 9,
+            "2a": "X",
+            "2b": "X",
+            "3a": 5,
+            "3b": 15,
+            "4": 11,
+            "5a": "X",
+            "5b": 4,
+            "6a": "X",
+            "6b": [
+              5,
+              3
+            ],
+            "6c": "X"
+          }
         },
         {
           "url": "https://resource.cdn.icai.org/79239bos63377-p5.pdf",
           "note": "Old Paper 5: Advanced Accounting",
-          "map": {}
+          "map": {
+            "1a": 4,
+            "1b": 7,
+            "1c": 7,
+            "1d": 4,
+            "2": 14,
+            "3a": 10,
+            "3b": "X",
+            "4a": "X",
+            "4b": "X",
+            "5a": "X",
+            "5b": "X",
+            "6a": 13,
+            "6b": 12,
+            "6c": "X",
+            "6d": 4,
+            "6e": 5
+          }
         }
       ]
     },
@@ -87,12 +320,48 @@
         {
           "url": "https://resource.cdn.icai.org/75790bos61309-p1.pdf",
           "note": "Old Paper 1: Accounting",
-          "map": {}
+          "map": {
+            "1a": 5,
+            "1b": 7,
+            "1c": 9,
+            "1d": 5,
+            "2a": "X",
+            "2b": 5,
+            "3a": "X",
+            "3b": "X",
+            "4a": 11,
+            "4b": 11,
+            "5a": "X",
+            "5b": "X",
+            "5c": 15,
+            "6a": 4,
+            "6b": "X",
+            "6c": "X",
+            "6d": 2,
+            "6e": "X"
+          }
         },
         {
           "url": "https://resource.cdn.icai.org/75791bos61309-p5.pdf",
           "note": "Old Paper 5: Advanced Accounting",
-          "map": {}
+          "map": {
+            "1a": 8,
+            "1b": 8,
+            "1c": 4,
+            "1d": 4,
+            "2": 13,
+            "3a": 10,
+            "3b": "X",
+            "4a": 10,
+            "4b": "X",
+            "5a": 12,
+            "5b": "X",
+            "6a": 12,
+            "6b": "X",
+            "6c": "X",
+            "6d": "X",
+            "6e": 14
+          }
         }
       ]
     },
@@ -102,12 +371,46 @@
         {
           "url": "https://resource.cdn.icai.org/73254bos559103-inter-p1.pdf",
           "note": "Old Paper 1: Accounting",
-          "map": {}
+          "map": {
+            "1a": 5,
+            "1b": 4,
+            "1c": 7,
+            "1d": 5,
+            "2a": "X",
+            "2b": 5,
+            "3a": 15,
+            "3b": "X",
+            "4": 11,
+            "5a": "X",
+            "5b": "X",
+            "6a": "X",
+            "6b": 2,
+            "6c": "X",
+            "6d": "X",
+            "6e": 1
+          }
         },
         {
           "url": "https://resource.cdn.icai.org/73258bos559103-inter-p5.pdf",
           "note": "Old Paper 5: Advanced Accounting",
-          "map": {}
+          "map": {
+            "1a": 7,
+            "1b": 7,
+            "1c": 4,
+            "1d": 7,
+            "2": 14,
+            "3a": 10,
+            "3b": "X",
+            "4a": "X",
+            "4b": "X",
+            "5a": "X",
+            "5b": "X",
+            "6a": 8,
+            "6b": 12,
+            "6c": "X",
+            "6d": 6,
+            "6e": 13
+          }
         }
       ]
     }

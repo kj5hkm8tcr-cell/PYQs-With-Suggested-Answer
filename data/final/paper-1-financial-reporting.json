@@ -1,14 +1,65 @@
 {
   "level": "CA Final",
   "paper": "Paper 1 - Financial Reporting",
-  "chapters": {},
+  "chapters": {
+    "1": "Introduction to Indian Accounting Standards",
+    "2": "Conceptual Framework for Financial Reporting under Indian Accounting Standards (Ind AS)",
+    "3": "Ind AS on Presentation of General Purpose Financial Statements",
+    "4": "Ind AS on Measurement based on Accounting Policies",
+    "5": "Ind AS on Assets of the Financial Statements",
+    "6": "Ind AS on Liabilities of the Financial Statements",
+    "7": "Ind AS on Items impacting the Financial Statements",
+    "8": "Ind AS on Disclosures in the Financial Statements",
+    "9": "Ind AS 115 \"Revenue from Contracts with Customers\"",
+    "10": "Other Indian Accounting Standards",
+    "11": "Accounting and Reporting of Financial Instruments",
+    "12": "Ind AS 103 \"Business Combinations\"",
+    "13": "Consolidated and Separate Financial Statements of Group Entities",
+    "14": "Ind AS 101 \"First-time Adoption of Ind AS\"",
+    "15": "Analysis of Financial Statements",
+    "16": "Professional and Ethical Duty of a Chartered Accountant",
+    "17": "Accounting and Technology"
+  },
   "attempts": [
     {
       "attempt": "2026-05",
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/92765bos-sa-final-may2026-p1.pdf",
-          "map": {}
+          "map": {
+            "1": [
+              "12",
+              "13"
+            ],
+            "2a": "11",
+            "2b": "3",
+            "3a": "5",
+            "3b": "8",
+            "4a": "6",
+            "4b": "10",
+            "5a": "9",
+            "5b": "11",
+            "5c": "2",
+            "5c-or": "2",
+            "6a": "17",
+            "6b": "5",
+            "6c": "4",
+            "m1": "CS",
+            "m2": "CS",
+            "m3": "CS",
+            "m4": "CS",
+            "m5": "CS",
+            "m6": "CS",
+            "m7": "CS",
+            "m8": "CS",
+            "m9": "CS",
+            "m10": "CS",
+            "m11": "CS",
+            "m12": "CS",
+            "m13": "8",
+            "m14": "14",
+            "m15": "16"
+          }
         }
       ]
     },

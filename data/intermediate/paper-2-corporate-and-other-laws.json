@@ -1,14 +1,110 @@
 {
   "level": "CA Intermediate",
   "paper": "Paper 2 - Corporate and Other Laws",
-  "chapters": {},
+  "chapters": {
+    "A-1": {
+      "name": "Preliminary",
+      "folder": "Part I - Company Law and LLP"
+    },
+    "A-2": {
+      "name": "Incorporation of Company and Matters Incidental Thereto",
+      "folder": "Part I - Company Law and LLP"
+    },
+    "A-3": {
+      "name": "Prospectus and Allotment of Securities",
+      "folder": "Part I - Company Law and LLP"
+    },
+    "A-4": {
+      "name": "Share Capital and Debentures",
+      "folder": "Part I - Company Law and LLP"
+    },
+    "A-5": {
+      "name": "Acceptance of Deposits by Companies",
+      "folder": "Part I - Company Law and LLP"
+    },
+    "A-6": {
+      "name": "Registration of Charges",
+      "folder": "Part I - Company Law and LLP"
+    },
+    "A-7": {
+      "name": "Management and Administration",
+      "folder": "Part I - Company Law and LLP"
+    },
+    "A-8": {
+      "name": "Declaration and Payment of Dividend",
+      "folder": "Part I - Company Law and LLP"
+    },
+    "A-9": {
+      "name": "Accounts of Companies",
+      "folder": "Part I - Company Law and LLP"
+    },
+    "A-10": {
+      "name": "Audit and Auditors",
+      "folder": "Part I - Company Law and LLP"
+    },
+    "A-11": {
+      "name": "Companies Incorporated Outside India",
+      "folder": "Part I - Company Law and LLP"
+    },
+    "A-12": {
+      "name": "The Limited Liability Partnership Act, 2008",
+      "folder": "Part I - Company Law and LLP"
+    },
+    "B-1": {
+      "name": "The General Clauses Act, 1897",
+      "folder": "Part II - Other Laws"
+    },
+    "B-2": {
+      "name": "Interpretation of Statutes",
+      "folder": "Part II - Other Laws"
+    },
+    "B-3": {
+      "name": "The Foreign Exchange Management Act, 1999",
+      "folder": "Part II - Other Laws"
+    }
+  },
   "attempts": [
     {
       "attempt": "2026-05",
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/92873bos-sa-int-may2026-p2.pdf",
-          "map": {}
+          "map": {
+            "1a": "A-2",
+            "1b": "A-9",
+            "1c": "B-3",
+            "2a": "A-4",
+            "2a-or": "A-4",
+            "2b": "A-6",
+            "2c": "B-1",
+            "3a": "A-3",
+            "3b": "A-7",
+            "3c": "B-2",
+            "4a": "A-10",
+            "4b": "A-12",
+            "4c": "B-2",
+            "5a": "A-8",
+            "5b": "A-12",
+            "5c": "B-1",
+            "6a": "A-5",
+            "6b": "A-11",
+            "6c": "B-3",
+            "m1": "A-9",
+            "m2": "A-9",
+            "m3": "A-9",
+            "m4": "A-7",
+            "m5": "A-7",
+            "m6": "CS",
+            "m7": "CS",
+            "m8": "CS",
+            "m9": "B-3",
+            "m10": "B-3",
+            "m11": "B-3",
+            "m12": "A-12",
+            "m13": "A-12",
+            "m14": "B-1",
+            "m15": "B-1"
+          }
         }
       ]
     },
@@ -17,7 +113,42 @@
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/91200bos-aps4356-sa-int-p2.pdf",
-          "map": {}
+          "map": {
+            "1a": "A-8",
+            "1b": "A-4",
+            "1c": "B-3",
+            "2a": "A-3",
+            "2b": "A-5",
+            "2c": "B-1",
+            "3a": "A-2",
+            "3b": "A-6",
+            "3c": "B-2",
+            "4a": "A-9",
+            "4b": "A-12",
+            "4c": "B-2",
+            "5a": "A-11",
+            "5b": "A-12",
+            "5c": "B-1",
+            "6a": "A-7",
+            "6a-or": "A-7",
+            "6b": "A-9",
+            "6c": "B-3",
+            "m1": "CS",
+            "m2": "CS",
+            "m3": "CS",
+            "m4": "CS",
+            "m5": "CS",
+            "m6": "A-10",
+            "m7": "A-10",
+            "m8": "A-10",
+            "m9": "B-3",
+            "m10": "B-3",
+            "m11": "B-3",
+            "m12": "B-1",
+            "m13": "B-1",
+            "m14": "A-12",
+            "m15": "A-12"
+          }
         }
       ]
     },

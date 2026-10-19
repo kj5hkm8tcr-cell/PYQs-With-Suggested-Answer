@@ -1,14 +1,41 @@
 {
   "level": "CA Foundation",
   "paper": "Paper 2 - Business Laws",
-  "chapters": {},
+  "chapters": {
+    "1": "Indian Regulatory Framework",
+    "2": "The Indian Contract Act, 1872",
+    "3": "The Sale of Goods Act, 1930",
+    "4": "The Indian Partnership Act, 1932",
+    "5": "The Limited Liability Partnership Act, 2008",
+    "6": "The Companies Act, 2013",
+    "7": "The Negotiable Instruments Act, 1881"
+  },
+  "_note": "Map: question part -> chapter number (or list). 'X' = Business Correspondence & Reporting questions from the old-scheme paper (Q7-Q11), not in the current syllabus.",
   "attempts": [
     {
       "attempt": "2026-05",
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/93070bos-aps5734-fnd-may2026-p2.pdf",
-          "map": {}
+          "map": {
+            "1a": "2",
+            "1b": "6",
+            "1c": "4",
+            "2a.i": "3",
+            "2a.ii": "3",
+            "2a.iii": "2",
+            "2b": "6",
+            "2c": "5",
+            "3a": "4",
+            "3b": "6",
+            "3c": "2",
+            "4a": "2",
+            "4b": "7",
+            "4c": "1",
+            "5a": "3",
+            "5b": "4",
+            "5c": "2"
+          }
         }
       ]
     },
@@ -17,7 +44,27 @@
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/91196bos-aps4356-sa-fnd-p2.pdf",
-          "map": {}
+          "map": {
+            "1a": "2",
+            "1b": "6",
+            "1c": "4",
+            "2a": "3",
+            "2b": "6",
+            "2c": "5",
+            "3a": "4",
+            "3b": "6",
+            "3c": "3",
+            "4a": "2",
+            "4b": "7",
+            "4c": "1",
+            "5a": "3",
+            "5b": "4",
+            "5c": "2",
+            "6a": "7",
+            "6b": "2",
+            "6b-or": "2",
+            "6c": "3"
+          }
         }
       ]
     },
@@ -26,7 +73,27 @@
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/89267bos-aps3012-fnd-p2.pdf",
-          "map": {}
+          "map": {
+            "1a": "2",
+            "1b": "6",
+            "1c": "4",
+            "2a": "3",
+            "2b": "6",
+            "2c": "5",
+            "3a": "4",
+            "3b": "6",
+            "3c": "2",
+            "4a": "2",
+            "4b": "7",
+            "4c": "1",
+            "5a": "3",
+            "5b": "4",
+            "5c": "2",
+            "6a": "7",
+            "6b": "2",
+            "6b-or": "2",
+            "6c": "3"
+          }
         }
       ]
     },
@@ -35,7 +102,27 @@
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/86850bos-acc-sugg-ans-may2025-p2.pdf",
-          "map": {}
+          "map": {
+            "1a": "2",
+            "1b": "6",
+            "1c": "4",
+            "2a": "3",
+            "2b": "6",
+            "2c": "5",
+            "3a": "4",
+            "3b": "6",
+            "3c": "2",
+            "4a": "2",
+            "4b": "7",
+            "4c": "1",
+            "5a": "3",
+            "5b": "4",
+            "5c": "2",
+            "6a": "7",
+            "6b": "2",
+            "6b-or": "2",
+            "6c": "3"
+          }
         }
       ]
     },
@@ -44,7 +131,27 @@
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/84882bos68361-p2.pdf",
-          "map": {}
+          "map": {
+            "1a": "2",
+            "1b": "6",
+            "1c": "4",
+            "2a": "3",
+            "2b": "6",
+            "2c": "5",
+            "3a": "4",
+            "3b": "6",
+            "3c": "2",
+            "4a": "2",
+            "4b": "7",
+            "4c": "1",
+            "5a": "3",
+            "5b": "4",
+            "5c": "2",
+            "6a": "7",
+            "6b": "2",
+            "6b-or": "2",
+            "6c": "3"
+          }
         }
       ]
     },
@@ -53,7 +160,26 @@
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/83378bos67402-cp2.pdf",
-          "map": {}
+          "map": {
+            "1a": "2",
+            "1b": "6",
+            "1c": "4",
+            "2a": "3",
+            "2b": "6",
+            "2c": "5",
+            "3a": "4",
+            "3b": "6",
+            "3c": "2",
+            "4a": "2",
+            "4b": "7",
+            "4c": "1",
+            "5a": "3",
+            "5b": "4",
+            "5c": "2",
+            "6a": "7",
+            "6b": "2",
+            "6c": "3"
+          }
         }
       ]
     },
@@ -62,7 +188,27 @@
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/81785bos65969-p2.pdf",
-          "map": {}
+          "map": {
+            "1a": "2",
+            "1b": "6",
+            "1c": "4",
+            "2a": "3",
+            "2b": "6",
+            "2c": "5",
+            "3a": "4",
+            "3b": "6",
+            "3c": "2",
+            "4a": "2",
+            "4b": "7",
+            "4c": "1",
+            "5a": "3",
+            "5b": "4",
+            "5c": "2",
+            "6a": "7",
+            "6b": "2",
+            "6b-or": "2",
+            "6c": "3"
+          }
         }
       ]
     },
@@ -72,7 +218,36 @@
         {
           "url": "https://resource.cdn.icai.org/79519bos63499.pdf",
           "note": "Old Paper 2: Business Laws and Business Correspondence & Reporting",
-          "map": {}
+          "map": {
+            "1a": "2",
+            "1b": "6",
+            "1c": "3",
+            "2a": "2",
+            "2b": "5",
+            "3a": "4",
+            "3b": "2",
+            "4a": "3",
+            "4b": "4",
+            "5a": "3",
+            "5b": "6",
+            "6a": "2",
+            "6b": "4",
+            "6c": "6",
+            "7a": "X",
+            "7b": "X",
+            "8a": "X",
+            "8b": "X",
+            "8c": "X",
+            "9a": "X",
+            "9b": "X",
+            "9c": "X",
+            "10a": "X",
+            "10b": "X",
+            "10c": "X",
+            "11a": "X",
+            "11b": "X",
+            "11c": "X"
+          }
         }
       ]
     },
@@ -82,7 +257,36 @@
         {
           "url": "https://resource.cdn.icai.org/76142bos61530-p2.pdf",
           "note": "Old Paper 2: Business Laws and Business Correspondence & Reporting",
-          "map": {}
+          "map": {
+            "1a": "2",
+            "1b": "6",
+            "1c": "3",
+            "2a": "2",
+            "2b": "5",
+            "3a": "4",
+            "3b": "2",
+            "4a": "3",
+            "4b": "4",
+            "5a": "3",
+            "5b": "6",
+            "6a": "2",
+            "6b": "4",
+            "6c": "6",
+            "7a": "X",
+            "7b": "X",
+            "8a": "X",
+            "8b": "X",
+            "8c": "X",
+            "9a": "X",
+            "9b": "X",
+            "9c": "X",
+            "10a": "X",
+            "10b": "X",
+            "10c": "X",
+            "11a": "X",
+            "11b": "X",
+            "11c": "X"
+          }
         }
       ]
     },
@@ -92,7 +296,36 @@
         {
           "url": "https://resource.cdn.icai.org/73385bos59172-p2.pdf",
           "note": "Old Paper 2: Business Laws and Business Correspondence & Reporting",
-          "map": {}
+          "map": {
+            "1a": "2",
+            "1b": "6",
+            "1c": "3",
+            "2a": "2",
+            "2b": "5",
+            "3a": "4",
+            "3b": "2",
+            "4a": "3",
+            "4b": "4",
+            "5a": "3",
+            "5b": "6",
+            "6a": "2",
+            "6b": "4",
+            "6c": "6",
+            "7a": "X",
+            "7b": "X",
+            "8a": "X",
+            "8b": "X",
+            "8c": "X",
+            "9a": "X",
+            "9b": "X",
+            "9c": "X",
+            "10a": "X",
+            "10b": "X",
+            "10c": "X",
+            "11a": "X",
+            "11b": "X",
+            "11c": "X"
+          }
         }
       ]
     }
