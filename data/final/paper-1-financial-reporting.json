@@ -1,0 +1,101 @@
+{
+  "level": "CA Final",
+  "paper": "Paper 1 - Financial Reporting",
+  "chapters": {},
+  "attempts": [
+    {
+      "attempt": "2026-05",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/92765bos-sa-final-may2026-p1.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2026-01",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/91141bos-aps4314-sa-jan2026-p1.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2025-09",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/89276bos-aps3012-final-p1.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2025-05",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/86857bos-sa-final-may2025-g1-p1.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2024-11",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/84423bos68027-p1.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2024-05",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/81680bos65858-p1.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2023-11",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/79222bos63373-p1.pdf",
+          "note": "Old Paper 1: Financial Reporting",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2023-05",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/75765bos61307-p1.pdf",
+          "note": "Old Paper 1: Financial Reporting",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2022-11",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/73241bos59102-final-p1.pdf",
+          "note": "Old Paper 1: Financial Reporting",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2022-05",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/71465exam57501-p1.pdf",
+          "note": "Old Paper 1: Financial Reporting",
+          "map": {}
+        }
+      ]
+    }
+  ]
+}

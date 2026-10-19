@@ -1,0 +1,101 @@
+{
+  "level": "CA Final",
+  "paper": "Paper 3 - Advanced Auditing, Assurance and Professional Ethics",
+  "chapters": {},
+  "attempts": [
+    {
+      "attempt": "2026-05",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/92767bos-sa-final-may2026-p3.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2026-01",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/91143bos-aps4314-sa-jan2026-p3.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2025-09",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/89278bos-aps3012-final-p3.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2025-05",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/86859bos-sa-final-may2025-g1-p3.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2024-11",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/84425bos68027-p3.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2024-05",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/81682bos65858-p3.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2023-11",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/79224bos63373-p3.pdf",
+          "note": "Old Paper 3: Advanced Auditing and Professional Ethics",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2023-05",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/75767bos61307-p3.pdf",
+          "note": "Old Paper 3: Advanced Auditing and Professional Ethics",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2022-11",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/73243bos59102-final-p3.pdf",
+          "note": "Old Paper 3: Advanced Auditing and Professional Ethics",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2022-05",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/71467exam57501-p3.pdf",
+          "note": "Old Paper 3: Advanced Auditing and Professional Ethics",
+          "map": {}
+        }
+      ]
+    }
+  ]
+}

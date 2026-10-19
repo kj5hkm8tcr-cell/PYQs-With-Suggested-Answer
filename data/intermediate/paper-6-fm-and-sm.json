@@ -1,0 +1,121 @@
+{
+  "level": "CA Intermediate",
+  "paper": "Paper 6 - Financial Management and Strategic Management",
+  "chapters": {},
+  "attempts": [
+    {
+      "attempt": "2026-05",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/92877bos-sa-int-may2026-p6.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2026-01",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/91204bos-aps4356-sa-int-p6.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2025-09",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/89275bos-aps3012-int-p6.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2025-05",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/87257bos-sa-int-may2025-g2-p6a.pdf",
+          "map": {},
+          "note": "Paper 6A: Financial Management"
+        },
+        {
+          "url": "https://resource.cdn.icai.org/87258bos-sa-int-may2025-g2-p6b.pdf",
+          "map": {},
+          "note": "Paper 6B: Strategic Management"
+        }
+      ]
+    },
+    {
+      "attempt": "2025-01",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/84880bos68360-p6.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2024-09",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/83077bos67152-6.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2024-05",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/81501bos65715-p6.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2023-11",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/79242bos63377-p8.pdf",
+          "note": "Old Paper 8A: Financial Management (8B Economics for Finance not in syllabus)",
+          "map": {}
+        },
+        {
+          "url": "https://resource.cdn.icai.org/79241bos63377-p7.pdf",
+          "note": "Old Paper 7B: Strategic Management (7A EIS not in syllabus)",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2023-05",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/75783bos61308-p8.pdf",
+          "note": "Old Paper 8A: Financial Management (8B Economics for Finance not in syllabus)",
+          "map": {}
+        },
+        {
+          "url": "https://resource.cdn.icai.org/75782bos61308-p7.pdf",
+          "note": "Old Paper 7B: Strategic Management (7A EIS not in syllabus)",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2022-11",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/73260bos559103-inter-p8.pdf",
+          "note": "Old Paper 8A: Financial Management (8B Economics for Finance not in syllabus)",
+          "map": {}
+        },
+        {
+          "url": "https://resource.cdn.icai.org/73266bos59109.pdf",
+          "note": "Old Paper 7B: Strategic Management (7A EIS not in syllabus)",
+          "map": {}
+        }
+      ]
+    }
+  ]
+}

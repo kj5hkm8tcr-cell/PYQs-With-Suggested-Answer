@@ -1,0 +1,100 @@
+{
+  "level": "CA Intermediate",
+  "paper": "Paper 4 - Cost and Management Accounting",
+  "chapters": {},
+  "attempts": [
+    {
+      "attempt": "2026-05",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/92875bos-sa-int-may2026-p4.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2026-01",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/91202bos-aps4356-sa-int-p4.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2025-09",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/89273bos-aps3012-int-p4.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2025-05",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/86854bos-sa-int-may2025-g2-p4.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2025-01",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/84878bos68360-p4.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2024-09",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/83075bos67152-4.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2024-05",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/81499bos65715-p4.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2023-11",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/79237bos63377-p3.pdf",
+          "note": "Old Paper 3: Cost and Management Accounting",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2023-05",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/75779bos61308-p3.pdf",
+          "note": "Old Paper 3: Cost and Management Accounting",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2022-11",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/73256bos559103-inter-p3.pdf",
+          "note": "Old Paper 3: Cost and Management Accounting",
+          "map": {}
+        }
+      ]
+    }
+  ]
+}

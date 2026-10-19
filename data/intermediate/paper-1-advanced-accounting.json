@@ -1,0 +1,115 @@
+{
+  "level": "CA Intermediate",
+  "paper": "Paper 1 - Advanced Accounting",
+  "chapters": {},
+  "attempts": [
+    {
+      "attempt": "2026-05",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/92872bos-sa-int-may2026-p1.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2026-01",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/91199bos-aps4356-sa-int-p1.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2025-09",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/89270bos-aps3012-int-p1.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2025-05",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/86851bos-sa-int-may2025-g1-p1.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2025-01",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/84875bos68360-p1.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2024-09",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/83078bos67152-1.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2024-05",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/81496bos65715-p1.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2023-11",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/79235bos63377-p1.pdf",
+          "note": "Old Paper 1: Accounting",
+          "map": {}
+        },
+        {
+          "url": "https://resource.cdn.icai.org/79239bos63377-p5.pdf",
+          "note": "Old Paper 5: Advanced Accounting",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2023-05",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/75790bos61309-p1.pdf",
+          "note": "Old Paper 1: Accounting",
+          "map": {}
+        },
+        {
+          "url": "https://resource.cdn.icai.org/75791bos61309-p5.pdf",
+          "note": "Old Paper 5: Advanced Accounting",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2022-11",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/73254bos559103-inter-p1.pdf",
+          "note": "Old Paper 1: Accounting",
+          "map": {}
+        },
+        {
+          "url": "https://resource.cdn.icai.org/73258bos559103-inter-p5.pdf",
+          "note": "Old Paper 5: Advanced Accounting",
+          "map": {}
+        }
+      ]
+    }
+  ]
+}

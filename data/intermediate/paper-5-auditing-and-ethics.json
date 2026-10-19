@@ -1,0 +1,100 @@
+{
+  "level": "CA Intermediate",
+  "paper": "Paper 5 - Auditing and Ethics",
+  "chapters": {},
+  "attempts": [
+    {
+      "attempt": "2026-05",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/92876bos-sa-int-may2026-p5.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2026-01",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/91203bos-aps4356-sa-int-p5.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2025-09",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/89274bos-aps3012-int-p5.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2025-05",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/86855bos-sa-int-may2025-g2-p5.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2025-01",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/84879bos68360-p5.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2024-09",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/83076bos67152-5.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2024-05",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/81500bos65715-p5.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2023-11",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/79240bos63377-p6.pdf",
+          "note": "Old Paper 6: Auditing and Assurance",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2023-05",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/75781bos61308-p6.pdf",
+          "note": "Old Paper 6: Auditing and Assurance",
+          "map": {}
+        }
+      ]
+    },
+    {
+      "attempt": "2022-11",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/73259bos559103-inter-p6.pdf",
+          "note": "Old Paper 6: Auditing and Assurance",
+          "map": {}
+        }
+      ]
+    }
+  ]
+}
