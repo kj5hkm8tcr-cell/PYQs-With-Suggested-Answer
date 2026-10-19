@@ -1,70 +1,64 @@
 # CA PYQs with Suggested Answers: chapter-wise
 
-Past year question papers (PYQs) from the last 10 attempts, with suggested answers,
-arranged **Level → Subject → Chapter**, ready to upload to Google Drive.
-
-The **`Google Drive Upload/`** folder in this repo is the finished product:
+Last 10 attempts' past year questions with ICAI's suggested answers, split
+**question by question** and arranged **Level → Paper → Chapter**:
 
 ```
 Google Drive Upload/
   CA Foundation/
     Paper 1 - Accounting/
-      Chapter 01 - Theoretical Framework.pdf   ← last 10 attempts, newest first
-      Chapter 02 - ....pdf
-    Paper 2 - Business Laws/
-    ...
-  CA Intermediate/
-  CA Final/
+      Chapter 01 - Theoretical Framework.pdf
+      Chapter 02 - Accounting Process.pdf
+      ...
 ```
 
-Each chapter PDF has a divider page and a clickable bookmark for every attempt
-(May 2026, January 2026, September 2025, ...).
+Each chapter PDF contains every question from that chapter in the last 10 attempts,
+newest attempt first, each followed by ICAI's suggested answer. Bookmarks let students
+jump to an attempt or a question. Pages are cut directly from ICAI's PDFs, so tables
+and formatting are exactly as ICAI published them.
 
-## Adding papers
+## Status
 
-Put each attempt's questions plus suggested answers for one chapter in a separate PDF:
+| Level | Paper | Attempts | Status |
+| --- | --- | --- | --- |
+| Foundation | Paper 1 - Accounting | May 2026 – Nov 2022 | Done (199 questions) |
+| Foundation | Papers 2–4 | | To do |
+| Intermediate | Papers 1–6 | | To do |
+| Final | Papers 1–6 | | To do |
 
-```
-source/<Level>/<Subject>/<Chapter folder>/<Attempt>.pdf
-```
+## Copyright
 
-Example:
+ICAI's copyright policy (<https://www.icai.org/post/16585>) allows its material to be
+reproduced **only with prior written permission from ICAI**, with the source acknowledged.
+So the built PDFs are **not committed** to this repo (see `.gitignore`), and should not be
+shared publicly until permission is granted. Every page carries a "Source: ICAI Suggested
+Answers" line.
 
-```
-source/CA Foundation/Paper 1 - Accounting/Chapter 01 - Theoretical Framework/May 2026.pdf
-source/CA Foundation/Paper 1 - Accounting/Chapter 01 - Theoretical Framework/Jan 2026.pdf
-source/CA Foundation/Paper 1 - Accounting/Chapter 01 - Theoretical Framework/Sept 2025.pdf
-```
+What is committed is only: the build code, ICAI's download links, and the
+question → chapter mapping.
 
-- **Attempt file names** must contain the month and year. These all work: `May 2026`, `Jan-26`,
-  `Sept 2025`, `2026-05`. Files without a date are skipped with a warning.
-- **Chapter folders**: start the name with a two-digit number (`Chapter 01 - ...`) so they sort correctly.
-- You don't need to track which attempts are the "last 10". Keep adding new attempts and
-  older ones drop out of the chapter PDF on their own. To change 10, set a repository
-  variable `MAX_ATTEMPTS` (Settings → Secrets and variables → Actions → Variables).
-- **Already have a merged chapter PDF?** Put it directly in the subject folder
-  (`source/CA Foundation/Paper 1 - Accounting/Chapter 03 - Something.pdf`) and it's copied as-is.
+## How it works
 
-Upload from the GitHub website (open a folder → **Add file → Upload files**) or with git.
-A GitHub Action then rebuilds the chapter PDFs and commits them to `Google Drive Upload/`
-within a minute or two (see the **Actions** tab).
+- `data/<level>/<paper>.json`: ICAI's chapter list, the PDF link for each attempt, and a
+  `map` that assigns every question part to a chapter, e.g.
+  `"1a.ii": 10` (Q1(a)(ii) → Chapter 10). True/False bundles and "either (i) or (ii)" choices
+  are split so each item goes to its own chapter. `"X"` marks a topic that is no longer in
+  the current syllabus (left out). A list (`[6, 4]`) puts the part in several chapters.
+- `scripts/segment.py`: finds every question part and its answer inside an ICAI PDF.
+- `scripts/compose.py`: lays the cut-out regions onto new A4 pages.
+- `scripts/build_pyq.py`: downloads the PDFs, checks that every part is mapped and has
+  both question and answer, and writes the chapter PDFs.
 
-> GitHub rejects single files over 100 MB. Compress large scanned papers first.
-
-## Uploading to Google Drive
-
-1. On GitHub, click **Code → Download ZIP** and unzip it.
-2. In Google Drive, drag the three level folders from `Google Drive Upload/`
-   (`CA Foundation`, `CA Intermediate`, `CA Final`) into your Drive folder.
-3. Share the Drive folder: **Share → General access → Anyone with the link → Viewer**.
-
-When new attempts are added later, download again and upload the changed chapter PDFs.
-To keep existing student links working, replace a file in Drive with
-**right-click → File information → Manage versions → Upload new version** instead of deleting and re-uploading.
-
-## Building on your own computer (optional)
+## Building
 
 ```bash
 pip install -r requirements.txt
-python scripts/build_chapters.py
+python scripts/build_pyq.py
 ```
+
+The output appears in `Google Drive Upload/`. Drag its level folders into Google Drive.
+
+### Adding a new attempt
+
+Add an entry to the paper's JSON file with ICAI's suggested-answer link and the chapter
+of each question, then rebuild. To keep it to the last 10 attempts, remove the oldest entry.

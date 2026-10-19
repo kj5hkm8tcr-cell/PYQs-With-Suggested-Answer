@@ -1,3 +1,11 @@
 __pycache__/
 *.pyc
 .venv/
+
+# ICAI PDFs downloaded by the build
+cache/
+
+# Built chapter PDFs contain ICAI's copyrighted text. Keep them out of the
+# repo until ICAI has given written permission to reproduce them; then
+# delete this line to commit them.
+Google Drive Upload/

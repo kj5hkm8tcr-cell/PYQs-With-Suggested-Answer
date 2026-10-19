@@ -1,0 +1,62 @@
+{
+  "level": "CA Foundation",
+  "paper": "Paper 1 - Accounting",
+  "chapters": {
+    "1": "Theoretical Framework",
+    "2": "Accounting Process",
+    "3": "Bank Reconciliation Statement",
+    "4": "Inventories",
+    "5": "Depreciation and Amortisation",
+    "6": "Bills of Exchange and Promissory Notes",
+    "7": "Preparation of Final Accounts of Sole Proprietors",
+    "8": "Financial Statements of Not-for-Profit Organisations",
+    "9": "Accounts from Incomplete Records",
+    "10": "Partnership and LLP Accounts",
+    "11": "Company Accounts"
+  },
+  "_note": "Map: question part -> chapter number (or list). 'X' = topic no longer in the current syllabus (Consignment, Joint Venture, Average Due Date, Account Current, Sale or Return); these are left out.",
+  "attempts": [
+    {"attempt": "2026-05", "url": "https://resource.cdn.icai.org/93069bos-aps5734-fnd-may2026-p1.pdf", "map": {
+      "1a.i": 4, "1a.ii": 10, "1a.iii": 1, "1a.iv": 11, "1a.v": 8, "1a.vi": 2, "1b": 1, "1c": 2,
+      "2a": 5, "2b": 2, "3a": 10, "3b": 9, "4a": 10, "4b": 7,
+      "5a.i": 4, "5a.ii": 3, "5b": 8, "5c": 11, "6a": 11, "6b": 2}},
+    {"attempt": "2026-01", "url": "https://resource.cdn.icai.org/91195bos-aps4356-sa-fnd-p1.pdf", "map": {
+      "1a.i": 1, "1a.ii": 2, "1a.iii": 1, "1a.iv": 9, "1a.v": 10, "1a.vi": 11, "1b": 1, "1c": 2,
+      "2a": 2, "2c": 5, "3a": 8, "3b": 10, "4a": 10, "4b": 7,
+      "5a.i": 3, "5a.ii": 6, "5b": 9, "5c": 11, "6a": 11, "6b": 2}},
+    {"attempt": "2025-09", "url": "https://resource.cdn.icai.org/89266bos-aps3012-fnd-p1.pdf", "map": {
+      "1a.i": 1, "1a.ii": 8, "1a.iii": 10, "1a.iv": 5, "1a.v": 1, "1a.vi": 11, "1b": 1, "1c": 2,
+      "2a": 5, "2b": 2, "3a": 9, "3b": 10, "4a": 10, "4b": 8,
+      "5a.i": 3, "5a.ii": 6, "5b": 7, "5c": 11, "6a": 11, "6b": 4}},
+    {"attempt": "2025-05", "url": "https://resource.cdn.icai.org/86849bos-acc-sugg-ans-may2025-p1.pdf", "map": {
+      "1a.i": 2, "1a.ii": 1, "1a.iii": 8, "1a.iv": 10, "1a.v": 10, "1a.vi": 8, "1b": 1, "1c": 4,
+      "2a": 2, "2b": 3, "3a": 8, "3b": 10, "4a": 10, "4b": 9,
+      "5a": 5, "5b.i": 6, "5b.ii": 2, "5c": 11, "6a": 11, "6b": 1}},
+    {"attempt": "2025-01", "url": "https://resource.cdn.icai.org/84881bos68361-p1.pdf", "map": {
+      "1a.i": 1, "1a.ii": 1, "1a.iii": 4, "1a.iv": 11, "1a.v": 1, "1a.vi": 2, "1b": 1, "1c": 2,
+      "2a": 5, "2b": 3, "3a": 7, "3b": 10, "4a": 10, "4b": 9,
+      "5a": 8, "5b": [6, 4], "5c": 11, "6a": 11, "6b": 2}},
+    {"attempt": "2024-09", "url": "https://resource.cdn.icai.org/83377bos67402-cp1.pdf", "map": {
+      "1a.i": 2, "1a.ii": 1, "1a.iii": 1, "1a.iv": 6, "1a.v": 8, "1a.vi": 10, "1b": 1, "1c": 2,
+      "2a": 3, "2b": 6, "3a": 7, "3b": 10, "4a": 10, "4b": 8,
+      "5a": 4, "5b.i": 5, "5b.ii": 9, "5c": 11, "6a": 11, "6b": 4}},
+    {"attempt": "2024-06", "url": "https://resource.cdn.icai.org/81784bos65969-p1.pdf", "map": {
+      "1a.i": 7, "1a.ii": 2, "1a.iii": 1, "1a.iv": 6, "1a.v": 2, "1a.vi": 10, "1b": 1, "1c": 2,
+      "2a": 2, "2b": 5, "3a": 8, "3b": 10, "4a": 10, "4b": 9,
+      "5a": 4, "5b.i": 7, "5b.ii": 3, "5c": 11, "6a": 11, "6b": 2}},
+    {"attempt": "2023-12", "url": "https://resource.cdn.icai.org/79518bos63498.pdf", "map": {
+      "1a.i": 1, "1a.ii": 1, "1a.iii": 5, "1a.iv": 5, "1a.v": 1, "1a.vi": 2,
+      "1b.i": 4, "1b.ii": 5, "1b.iii": 1, "1b.iv": 1, "1c": 4,
+      "2a": 3, "2b": 8, "3a": 6, "3b": "X", "3c": "X", "4a": 7, "4b": 10,
+      "5a": 10, "5b": 5, "5c": 2, "6a": 11, "6b": 1}},
+    {"attempt": "2023-06", "url": "https://resource.cdn.icai.org/76141bos61530-p1.pdf", "map": {
+      "1a.i": 1, "1a.ii": 1, "1a.iii": 2, "1a.iv": "X", "1a.v": 11, "1a.vi": 7,
+      "1b.i": 1, "1b.ii": 1, "1b.iii": 1, "1b.iv": 11, "1c": 2,
+      "2a": 5, "2b": 3, "2c": 4, "3a": "X", "3b": 6, "3c.i": 10, "3c.ii": "X",
+      "4a": 8, "4b": 10, "5": 10, "6a": 11, "6b": 2}},
+    {"attempt": "2022-11", "url": "https://resource.cdn.icai.org/73384bos59172-p1.pdf", "map": {
+      "1a.i": 1, "1a.ii": 4, "1a.iii": 1, "1a.iv": 2, "1a.v": 8, "1a.vi": 11, "1b": 1, "1c": 5,
+      "2a": 3, "2b": 2, "3a": 6, "3b": "X", "4a": 10, "4b": 8,
+      "5a": 2, "5b": 10, "5c": 9, "6a": 11, "6b": 5}}
+  ]
+}
