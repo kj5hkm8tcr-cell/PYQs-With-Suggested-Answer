@@ -1,7 +1,19 @@
 {
   "level": "CA Intermediate",
   "paper": "Paper 5 - Auditing and Ethics",
-  "chapters": {},
+  "chapters": {
+    "1": "Nature, Objective and Scope of Audit",
+    "2": "Audit Strategy, Audit Planning and Audit Programme",
+    "3": "Risk Assessment and Internal Control",
+    "4": "Audit Evidence",
+    "5": "Audit of Items of Financial Statements",
+    "6": "Audit Documentation",
+    "7": "Completion and Review",
+    "8": "Audit Report",
+    "9": "Special Features of Audit of Different Type of Entities",
+    "10": "Audit of Banks",
+    "11": "Ethics and Terms of Audit Engagements"
+  },
   "attempts": [
     {
       "attempt": "2026-05",

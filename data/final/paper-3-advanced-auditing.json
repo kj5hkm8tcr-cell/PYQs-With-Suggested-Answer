@@ -1,7 +1,27 @@
 {
   "level": "CA Final",
   "paper": "Paper 3 - Advanced Auditing, Assurance and Professional Ethics",
-  "chapters": {},
+  "chapters": {
+    "1": "Quality Control",
+    "2": "General Auditing Principles and Auditors Responsibilities",
+    "3": "Audit Planning, Strategy and Execution",
+    "4": "Materiality, Risk Assessment and Internal Control",
+    "5": "Audit Evidence",
+    "6": "Completion and Review",
+    "7": "Reporting",
+    "8": "Specialised Areas",
+    "9": "Related Services",
+    "10": "Review of Financial Information",
+    "11": "Prospective Financial Information and Other Assurance Services",
+    "12": "Digital Auditing & Assurance",
+    "13": "Group Audits",
+    "14": "Special Features of Audit of Banks & Non-Banking Financial Companies",
+    "15": "Overview of Audit of Public Sector Undertakings",
+    "16": "Internal Audit",
+    "17": "Due Diligence, Investigation & Forensic Accounting",
+    "18": "Sustainable Development Goals (SDG) & Environment, Social and Governance (ESG) Assurance",
+    "19": "Professional Ethics & Liabilities of Auditors"
+  },
   "attempts": [
     {
       "attempt": "2026-05",

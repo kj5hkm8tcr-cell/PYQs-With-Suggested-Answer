@@ -1,7 +1,23 @@
 {
   "level": "CA Intermediate",
   "paper": "Paper 4 - Cost and Management Accounting",
-  "chapters": {},
+  "chapters": {
+    "1": "Introduction to Cost and Management Accounting",
+    "2": "Material Cost",
+    "3": "Employee Cost and Direct Expenses",
+    "4": "Overheads – Absorption Costing Method",
+    "5": "Activity Based Costing",
+    "6": "Cost Sheet",
+    "7": "Cost Accounting Systems",
+    "8": "Unit & Batch Costing",
+    "9": "Job Costing",
+    "10": "Process & Operation Costing",
+    "11": "Joint Products and By Products",
+    "12": "Service Costing",
+    "13": "Standard Costing",
+    "14": "Marginal Costing",
+    "15": "Budgets and Budgetary Control"
+  },
   "attempts": [
     {
       "attempt": "2026-05",
