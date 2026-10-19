@@ -286,6 +286,8 @@ def text_of(path, spans_by_part, max_chars=600):
 #                               "context": spans, "context_id": "cs1"}, ...}
 
 RE_SCENARIO = re.compile(r"^(?:Integrated\s+)?Case\s*(?:Scenario|Study)\b", re.I)
+RE_SHARED = re.compile(r"^(Use|Based on|Read|Refer|Consider|Study|On the basis of|From the|With the help of|Answer)\b"
+                       r".*\b(following|given|below|above)\b", re.I)
 RE_MCQ = re.compile(r"^(\d{1,3})\s*(?:\.+|\s(?=[A-Z]))\s*\S")  # "18 Calculate": ICAI sometimes drops the dot
 RE_KEY_HEAD = re.compile(r"^(?:Answers?\s*Key|ANSWERS?|Answers? to (?:MCQs?|Part).*|ANSWER TO PART.*MCQS?"
                          r"|MCQ\.?\s*No\.?\s*(?:Correct|Answer).*)\s*:?\s*$", re.I)
@@ -379,15 +381,24 @@ def segment_mcq(path):
         if key < lo:
             continue  # a second heading line of the same key ("Answer Key" + "MCQ No. ...")
         block = []
+        last_was_mcq = True  # whether the latest marker seen is an MCQ (not a scenario)
         for i in range(lo, key):
             l = lines[i][1]
             if near(l) and RE_SCENARIO.match(l["text"]):
                 scen.append(i)
+                last_was_mcq = False
                 continue
             m = RE_MCQ.match(l["text"])
             if m and near(l) and int(m.group(1)) == expect:
                 block.append((expect, i))
                 expect += 1
+                last_was_mcq = True
+            elif last_was_mcq and RE_SHARED.match(l["text"]) and l["x0"] < margin + 30 and _range_in(
+                    " ".join(lines[j][1]["text"] for j in range(i, min(i + 2, key)))):
+                # "Use the following data to answer questions 26 and 27": data shared by
+                # several MCQs, treated like a small case scenario
+                scen.append(i)
+                last_was_mcq = False
         # the key runs until the next block starts
         key_end = next((i for i in range(key + 1, end)
                         if (near(lines[i][1]) and RE_SCENARIO.match(lines[i][1]["text"]))
