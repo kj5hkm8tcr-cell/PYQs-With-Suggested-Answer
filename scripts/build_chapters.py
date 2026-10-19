@@ -6,15 +6,15 @@ Input layout (what you upload to the repo):
     source/<Level>/<Subject>/<Chapter>/<Attempt>.pdf
     e.g. source/CA Foundation/Paper 1 - Accounting/Chapter 01 - Theoretical Framework/May 2026.pdf
 
-Output layout (what gets uploaded to Google Drive):
+Output layout (download this folder and upload it to Google Drive):
 
-    dist/<Level>/<Subject>/<Chapter>.pdf
+    Google Drive Upload/<Level>/<Subject>/<Chapter>.pdf
 
 Each chapter PDF contains the latest N attempts (default 10), newest first,
 with a divider page and a bookmark for every attempt.
 
 A ready-made chapter PDF placed directly inside a subject folder
-(source/<Level>/<Subject>/<Chapter>.pdf) is copied to dist/ unchanged.
+(source/<Level>/<Subject>/<Chapter>.pdf) is copied to the output unchanged.
 """
 
 import argparse
@@ -99,7 +99,7 @@ def build_chapter(chapter_dir, out_file, max_attempts):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--source", default="source")
-    ap.add_argument("--out", default="dist")
+    ap.add_argument("--out", default="Google Drive Upload")
     ap.add_argument("--max-attempts", type=int, default=10)
     args = ap.parse_args()
 

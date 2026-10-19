@@ -1,0 +1,44 @@
+name: Build chapter-wise PDFs
+
+# Whenever papers are added under source/, rebuild the chapter PDFs and commit
+# them to the "Google Drive Upload" folder, ready to download and upload to Drive.
+on:
+  push:
+    paths:
+      - "source/**"
+      - "scripts/build_chapters.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-chapters-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - run: python scripts/build_chapters.py --max-attempts "${{ vars.MAX_ATTEMPTS || 10 }}"
+
+      - name: Commit the built PDFs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A "Google Drive Upload"
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Rebuild chapter-wise PDFs"
+            git push
+          fi
