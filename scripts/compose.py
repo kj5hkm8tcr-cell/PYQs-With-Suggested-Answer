@@ -94,6 +94,35 @@ class Composer:
         self._text(DEST_X, self.y, text, size=9, bold=True, gray=0.35)
         self.y -= GAP
 
+    def note(self, text, size=10, bold_prefix=None):
+        """Wrapped plain text, e.g. an MCQ's correct option read from ICAI's answer key."""
+        text = text.replace("`", "Rs.")
+        words, lines, cur = text.split(), [], ""
+        for w in words:
+            limit = 72 - (len(bold_prefix or "") if not lines else 0)
+            if len(cur) + len(w) + 1 > limit:
+                lines.append(cur)
+                cur = w
+            else:
+                cur = f"{cur} {w}".strip()
+        lines.append(cur)
+        self._need(len(lines) * (size + 4) + 6)
+        for k, line in enumerate(lines):
+            self.y -= size + 2
+            if k == 0 and bold_prefix:
+                self._text(DEST_X + 18, self.y, bold_prefix, size=size, bold=True)
+                self._text(DEST_X + 18 + len(bold_prefix) * size * 0.56, self.y, line, size=size)
+            else:
+                self._text(DEST_X + 18, self.y, line, size=size)
+            self.y -= 2
+        self.y -= GAP
+
+    def keep_together(self, spans, extra=0):
+        """Start a new page now unless spans (+ extra points) fit on this one."""
+        h = sum(b - t + 2 for _, t, b in spans) + extra
+        if h < A4_H - TOP - BOTTOM:
+            self._need(h)
+
     def region(self, src_path, page_index, top, bottom):
         """Copy part of a source page (pdfplumber coordinates) into the output."""
         src = self.sources.get(src_path)

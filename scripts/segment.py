@@ -11,8 +11,9 @@ ICAI suggested answers repeat each question and then give the answer:
     (b) ...
 
 segment() returns a dict {part_id: {"question": spans, "answer": spans}} where
-part_id is "1", "1a", "1a.ii" or "4c-or" (the alternative after an "OR"), and
-spans are (page_index, top, bottom) in pdfplumber coordinates (y grows down).
+part_id is "1", "1a", "1a.ii" or "4c-or" (the alternative after an "OR"), or "m5"
+for MCQ 5 (see segment_mcq), and spans are (page_index, top, bottom) in pdfplumber
+coordinates (y grows down).
 """
 
 import re
@@ -20,12 +21,14 @@ import re
 import pdfplumber
 
 LETTERS = "abcdefgh"
-ROMANS = ["i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x", "xi", "xii"]
+ROMANS = ["i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x", "xi", "xii", "xiii", "xiv", "xv",
+          "xvi", "xvii", "xviii", "xix", "xx", "xxi", "xxii", "xxiii", "xxiv", "xxv"]
 
-RE_QUESTION = re.compile(r"^Questions?\s*(?:No\.?\s*)?(\d{1,2})\b\.?\s*$", re.I)
-RE_ANSWER = re.compile(r"^Answers?\b\s*:?\s*$", re.I)
+# ICAI PDFs sometimes split words ("Answ er"), so allow stray spaces inside the keywords
+RE_QUESTION = re.compile(r"^Q\s?u\s?e\s?s\s?t\s?i\s?o\s?n\s?s?\s*(?:No\.?\s*)?(\d{1,2})\b\.?\s*$", re.I)
+RE_ANSWER = re.compile(r"^A\s?n\s?s\s?w\s?e\s?r\s?s?\s*:?\s*$", re.I)
 RE_LETTER = re.compile(r"^\(([a-h])\)")
-RE_ROMAN = re.compile(r"^(?:\([a-h]\)\s*)?(?:\((?P<r>x|ix|iv|v?i{0,3})\)|(?P<d>x|ix|iv|v?i{1,3}|v)\.\s)")
+RE_ROMAN = re.compile(r"^(?:\([a-h]\)\s*)?(?:\((?P<r>x{0,2}(?:ix|iv|v?i{0,3}))\)|(?P<d>x{0,2}(?:ix|iv|v?i{1,3}|v))\.\s)")
 RE_NUMBERED = re.compile(r"^(?:\([a-h]\)\s*)?(\d{1,2})\.\s")
 RE_OR = re.compile(r"^OR$", re.I)
 RE_PAGE_NO = re.compile(r"^(\d{1,3}|©.*)$")
@@ -73,7 +76,7 @@ def segment(path):
     with pdfplumber.open(path) as pdf:
         lines, bounds = _lines(pdf)
     margin = _margin(lines)
-    at_margin = lambda l: abs(l["x0"] - margin) < 6
+    at_margin = lambda l: abs(l["x0"] - margin) < 4
     end_pos = (len(bounds) - 1, bounds[-1][1])
 
     # 1. "Question N" and "Answer" lines split the paper into regions.
@@ -86,7 +89,7 @@ def segment(path):
     pos_of = lambda i: (lines[i][0], lines[i][1]["top"] - 3) if i < len(lines) else end_pos
 
     # 2. Inside each region, pick the (a), (b), (c) ... lines that start parts.
-    def letters_in(lo, hi, allowed_indented=()):
+    def letters_in(lo, hi, allowed_indented=(), dup_is_next=False):
         found, cur, pending_or = [], "", False
         for i in range(lo, hi):
             l = lines[i][1]
@@ -102,6 +105,8 @@ def segment(path):
             if indented and (val not in allowed_indented or l["x0"] > margin + 30):
                 continue
             nxt = LETTERS.index(cur) + 1 if cur else 0
+            if dup_is_next and val == cur and not pending_or and nxt < len(LETTERS):
+                val = LETTERS[nxt]  # ICAI typo: the same letter printed twice
             if pending_or and val == cur:
                 found.append((val, True, i))
             elif val in LETTERS[nxt:nxt + 2]:  # allow one skipped letter (ICAI typos)
@@ -121,21 +126,43 @@ def segment(path):
         if a is None:
             continue
         q_l, a_l = letters_in(i, a), letters_in(a, nxt)
-        qs, as_ = {v for v, _, _ in q_l}, {v for v, _, _ in a_l}
-        if qs != as_:  # a part indented on one side only: accept it if the other side has it
-            q_l = letters_in(i, a, as_ - qs) if as_ - qs else q_l
-            a_l = letters_in(a, nxt, qs - as_) if qs - as_ else a_l
-        if not q_l or not a_l:  # "(a), (b)" on one side only are clauses, not parts
+        if not q_l or not a_l:  # "(a), (b)" on one side only are clauses or table rows, not parts
             q_l = a_l = []
-        # an "OR" alternative on one side only belongs to the part before it
-        q_alts = {v for v, alt, _ in q_l if alt}
-        a_alts = {v for v, alt, _ in a_l if alt}
-        q_l = [x for x in q_l if not x[1] or x[0] in a_alts]
-        a_l = [x for x in a_l if not x[1] or x[0] in q_alts]
-        # different letters but same count (e.g. question says (c), answer says (b)): pair by order
-        if [v for v, _, _ in q_l] != [v for v, _, _ in a_l] and len(q_l) == len(a_l):
-            a_l = [(qv, qalt, ai) for (qv, qalt, _), (_, _, ai) in zip(q_l, a_l)]
-        # lo skips the "Question N" / "Answer" line itself
+        key = lambda found: [(v, alt) for v, alt, _ in found]
+        if key(q_l) != key(a_l):
+            # part (a) answered straight after "Answer" with no "(a)" label
+            if key(q_l)[1:] == key(a_l) and key(q_l)[0] == ("a", False):
+                a_l = [("a", False, a + 1)] + a_l
+            elif key(a_l)[1:] == key(q_l) and key(a_l)[0] == ("a", False):
+                q_l = [("a", False, i + 1)] + q_l
+        if key(q_l) != key(a_l):
+            qs, as_ = {v for v, _, _ in q_l}, {v for v, _, _ in a_l}
+            # a part indented on one side only: accept it if the other side has it
+            if as_ - qs:
+                q_l = letters_in(i, a, as_ - qs)
+            if qs - as_:
+                a_l = letters_in(a, nxt, qs - as_)
+            # the same letter printed twice on one side
+            if len(q_l) < len(a_l):
+                q_l = letters_in(i, a, dup_is_next=True)
+            elif len(a_l) < len(q_l):
+                a_l = letters_in(a, nxt, dup_is_next=True)
+        if key(q_l) != key(a_l):
+            if len(q_l) == len(a_l):
+                # same number of parts, labelled differently (e.g. question "(d)" = answer "(c) OR"):
+                # pair by order and use the question's labels
+                a_l = [(qv, qalt, ai) for (qv, qalt, _), (_, _, ai) in zip(q_l, a_l)]
+            else:
+                # an "OR" alternative on one side only belongs to the part before it
+                q_alts = {v for v, alt, _ in q_l if alt}
+                a_alts = {v for v, alt, _ in a_l if alt}
+                q_l = [x for x in q_l if not x[1] or x[0] in a_alts]
+                a_l = [x for x in a_l if not x[1] or x[0] in q_alts]
+                if len(q_l) == len(a_l):
+                    a_l = [(qv, qalt, ai) for (qv, qalt, _), (_, _, ai) in zip(q_l, a_l)]
+                else:
+                    # can't pair the parts reliably: keep the whole question as one unit
+                    q_l = a_l = []
         for side, lo, hi, found in (("question", i + 1, a, q_l), ("answer", a + 1, nxt, a_l)):
             cuts = [(lo, "", False)] + [(idx, v, alt) for v, alt, idx in found] + [(hi, None, None)]
             for (s_i, let, alt), (e_i, _, _) in zip(cuts, cuts[1:]):
@@ -199,7 +226,7 @@ def segment(path):
             if len(seq) < 2:
                 seq = []
                 for rom, pos in items:
-                    if rom.startswith("n") and int(rom[1:]) == len(seq) + 1:
+                    if rom.startswith("n") and int(rom[1:]) == len(seq) + 1 and len(seq) < len(ROMANS):
                         seq.append((ROMANS[len(seq)], pos))
             ors = [pos for rom, pos in items if rom == "OR"]
             if len(seq) < 2 and side == "answer" and len(ors) == 1 and f"{pid}.ii" in parts \
@@ -213,13 +240,22 @@ def segment(path):
             for k, (rom, pos) in enumerate(seq):
                 nxt = seq[k + 1][1] if k + 1 < len(seq) else end
                 spans = _spans(pos, nxt, bounds)
-                if side == "question" and stem_end > start:
-                    spans = _spans(start, stem_end, bounds) + spans
-                parts.setdefault(f"{pid}.{rom}", {"question": [], "answer": []})[side] = spans
+                item = parts.setdefault(f"{pid}.{rom}", {"question": [], "answer": [], "own": []})
+                if side == "question":
+                    item["own"] = spans  # the item without the shared stem
+                    if stem_end > start:
+                        spans = _spans(start, stem_end, bounds) + spans
+                item[side] = spans
+        # items are only usable when question and answer have the same ones
+        items = [k for k in parts if k.startswith(pid + ".")]
+        if any(not parts[k]["question"] or not parts[k]["answer"] for k in items):
+            for k in items:
+                del parts[k]
 
     for p in parts.values():
         p.pop("_range", None)
         p.pop("_romans", None)
+    parts.update(segment_mcq(path))
     return parts
 
 
@@ -234,4 +270,162 @@ def text_of(path, spans_by_part, max_chars=600):
                 crop = page.crop((0, max(top, 0), float(page.width), min(bot, float(page.height))))
                 chunks.append(crop.extract_text() or "")
             out[pid] = re.sub(r"\s+", " ", " ".join(chunks)).strip()[:max_chars]
+    return out
+
+
+# ---------------------------------------------------------------------------
+# MCQs (Part I of Inter/Final papers; all of Foundation Papers 3 and 4)
+#
+#   Case Scenario - I            <- shared context for the MCQs it introduces
+#   ... answer Question Nos. 1 to 3
+#   1. ...  (A) ... (D) ...
+#   2. ...
+#   Answer Key                   <- table "1. (B)  2. (C) ..." after the MCQs
+#
+# segment_mcq() returns {"m1": {"question": spans, "answer": [], "mcq_answer": "(B)",
+#                               "context": spans, "context_id": "cs1"}, ...}
+
+RE_SCENARIO = re.compile(r"^(?:Integrated\s+)?Case\s*(?:Scenario|Study)\b", re.I)
+RE_MCQ = re.compile(r"^(\d{1,3})\s*(?:\.+|\s(?=[A-Z]))\s*\S")  # "18 Calculate": ICAI sometimes drops the dot
+RE_KEY_HEAD = re.compile(r"^(?:Answers?\s*Key|ANSWERS?|Answers? to (?:MCQs?|Part).*|ANSWER TO PART.*MCQS?"
+                         r"|MCQ\.?\s*No\.?\s*(?:Correct|Answer).*)\s*:?\s*$", re.I)
+RE_DESCRIPTIVE = re.compile(r"PART\s*[–-]?\s*(?:II|2)\b|Descriptive\s+Questions", re.I)
+RE_KEY_CELL = re.compile(r"(\d{1,3})\s*\.{0,2}\s+((?:\(\s*[A-Da-d]?\s*\)|No correct option|None of the)[^()\d]*?(?:\(\s*[A-Da-d]\s*\))?\s*[*∗]?)(?=\s+\d{1,3}\s*\.|\s*$)")
+
+
+def _range_in(text):
+    m = re.search(r"Q(?:uestion)?s?\.?\s*(?:No\.?|Nos\.?)?\s*(\d{1,3})\s*(?:to|and|-|–|&)\s*(\d{1,3})", text, re.I)
+    return (int(m.group(1)), int(m.group(2))) if m else None
+
+
+RE_KEY_NUM = re.compile(r"^(\d{1,3})\.{0,2}$")
+RE_CELL_START = re.compile(r"^(\(|[A-Da-d]$|[A-Da-d][.,):]|No$|None|Either|Option|All|Both)")
+
+
+def _read_key(path, lines, bounds, key, end, expected=()):
+    """Parse the answer key between line indexes key..end into {mcq no: answer text}.
+
+    Handles "1. (B)", "1. B", "1. Option (D): text", grids with several answers per
+    row, and answers that wrap onto the next line (matched to their column by x).
+    """
+    p0, y0 = lines[key][0], lines[key][1]["bottom"]
+    p1, y1 = (lines[end][0], lines[end][1]["top"]) if end < len(lines) else (len(bounds) - 1, bounds[-1][1])
+    rows = []
+    with pdfplumber.open(path) as pdf:
+        for pi in range(p0, p1 + 1):
+            lo = y0 if pi == p0 else bounds[pi][0]
+            hi = y1 if pi == p1 else bounds[pi][1]
+            words = [w for w in pdf.pages[pi].extract_words() if lo < w["top"] < hi]
+            for w in sorted(words, key=lambda w: w["top"]):
+                if rows and rows[-1][0] == pi and w["top"] - rows[-1][1] < 4:
+                    rows[-1][2].append(w)
+                else:
+                    rows.append((pi, w["top"], [w]))
+    answers, notes, last = {}, [], []  # last: [(x, n)] cells of the previous numbered row
+    prev = None
+    for pi, top, words in rows:
+        words.sort(key=lambda w: w["x0"])
+        text = " ".join(w["text"] for w in words)
+        # the key is over once every MCQ has an answer and the layout breaks off
+        if expected and all(n in answers for n in expected) and prev and \
+                (pi != prev[0] or top - prev[1] > 30) and not text.lstrip().startswith(("*", "∗")):
+            break
+        prev = (pi, top)
+        if text.lstrip().startswith(("*", "∗")):
+            notes.append(text.strip())
+            continue
+        cells = []
+        for k, w in enumerate(words):
+            m = RE_KEY_NUM.match(w["text"])
+            nxt = words[k + 1]["text"] if k + 1 < len(words) else ""
+            if m and (w["text"].endswith(".") or RE_CELL_START.match(nxt)) and 0 < int(m.group(1)) <= 200:
+                cells.append([w["x0"], int(m.group(1)), []])
+            elif cells:
+                cells[-1][2].append(w["text"])
+            elif last:  # continuation line: belongs to the column it sits under
+                x, n = max(((x, n) for x, n in last if x <= w["x0"] + 5), default=last[0])
+                answers[n] = answers.get(n, "") + " " + w["text"]
+        for x, n, ws in cells:
+            answers[n] = " ".join(ws)
+        if cells:
+            last = [(x, n) for x, n, _ in cells]
+    answers = {n: re.sub(r"\s+", " ", a).strip() for n, a in answers.items() if a.strip()}
+    return answers, notes
+
+
+def segment_mcq(path):
+    with pdfplumber.open(path) as pdf:
+        lines, bounds = _lines(pdf)
+    if not lines:
+        return {}
+    margin = _margin(lines) if any(RE_QUESTION.match(l["text"]) for _, l in lines) else \
+        min((round(l["x0"]) for _, l in lines if RE_MCQ.match(l["text"])), default=108)
+    near = lambda l: abs(l["x0"] - margin) < 8
+
+    # MCQ section ends at the descriptive part ("Question 1" / "PART II").
+    end = next((i for i, (_, l) in enumerate(lines)
+                if RE_QUESTION.match(l["text"]) and near(l) or RE_DESCRIPTIVE.search(l["text"])), len(lines))
+    keys = [i for i in range(end) if RE_KEY_HEAD.match(lines[i][1]["text"])]
+    if not keys:
+        return {}
+    pos = lambda i: (lines[i][0], lines[i][1]["top"] - 3) if i < len(lines) else (len(bounds) - 1, bounds[-1][1])
+    RE_SECTION = re.compile(r"^(SECTION|PART)\b", re.I)
+
+    # A paper can have several MCQ blocks (e.g. Income Tax and GST), each ending in
+    # its own answer key; numbering continues across blocks.
+    starts, scen, answers, notes = [], [], {}, []
+    expect, lo, block_ends = 1, 0, []
+    for key in keys:
+        if key < lo:
+            continue  # a second heading line of the same key ("Answer Key" + "MCQ No. ...")
+        block = []
+        for i in range(lo, key):
+            l = lines[i][1]
+            if near(l) and RE_SCENARIO.match(l["text"]):
+                scen.append(i)
+                continue
+            m = RE_MCQ.match(l["text"])
+            if m and near(l) and int(m.group(1)) == expect:
+                block.append((expect, i))
+                expect += 1
+        # the key runs until the next block starts
+        key_end = next((i for i in range(key + 1, end)
+                        if (near(lines[i][1]) and RE_SCENARIO.match(lines[i][1]["text"]))
+                        or RE_SECTION.match(lines[i][1]["text"])
+                        or (RE_MCQ.match(lines[i][1]["text"]) and near(lines[i][1])
+                            and int(RE_MCQ.match(lines[i][1]["text"]).group(1)) == expect
+                            and not RE_KEY_CELL.search(lines[i][1]["text"]))), end)
+        a, nt = _read_key(path, lines, bounds, key, key_end, expected=[n for n, _ in block])
+        answers.update({n: v for n, v in a.items() if any(n == b for b, _ in block)})
+        notes += nt
+        starts += block
+        block_ends.append(key)
+        lo = key_end
+    if not starts:
+        return {}
+    key = block_ends[-1]
+
+    # Each scenario covers its heading up to its first MCQ; the MCQs it applies to
+    # are those named in "Question Nos. x to y", else all until the next scenario.
+    contexts = []
+    for k, si in enumerate(scen):
+        first = next((n for n, i in starts if i > si), None)
+        if first is None:
+            continue
+        first_i = dict(starts)[first]
+        text = " ".join(lines[j][1]["text"] for j in range(si, first_i))
+        nxt = min([j for j in scen[k + 1:]] + [b for b in block_ends if b > si] + [len(lines)])
+        rng = _range_in(text) or (first, max([n for n, i in starts if i < nxt], default=first))
+        contexts.append((f"cs{k + 1}", _spans(pos(si), pos(first_i), bounds), rng))
+
+    stops = sorted([i for _, i in starts] + scen + block_ends)
+    out = {}
+    for n, i in starts:
+        nxt = next(s for s in stops if s > i)
+        ctx = next(((cid, sp) for cid, sp, (a, b) in contexts if a <= n <= b), (None, []))
+        ans = answers.get(n, "")
+        note = " ".join(notes) if "*" in ans or "∗" in ans or "()" in ans.replace(" ", "") else ""
+        out[f"m{n}"] = {"question": _spans(pos(i), pos(nxt), bounds), "answer": [],
+                        "mcq_answer": (ans + (" " + note if note else "")).strip(),
+                        "context": ctx[1], "context_id": ctx[0]}
     return out
