@@ -1,14 +1,186 @@
 {
   "level": "CA Final",
   "paper": "Paper 5 - Indirect Tax Laws",
-  "chapters": {},
+  "chapters": {
+    "A-1": {
+      "name": "Supply under GST",
+      "folder": "Part I - Goods and Services Tax"
+    },
+    "A-2": {
+      "name": "Charge of GST",
+      "folder": "Part I - Goods and Services Tax"
+    },
+    "A-3": {
+      "name": "Place of Supply",
+      "folder": "Part I - Goods and Services Tax"
+    },
+    "A-4": {
+      "name": "Exemptions from GST",
+      "folder": "Part I - Goods and Services Tax"
+    },
+    "A-5": {
+      "name": "Time of Supply",
+      "folder": "Part I - Goods and Services Tax"
+    },
+    "A-6": {
+      "name": "Value of Supply",
+      "folder": "Part I - Goods and Services Tax"
+    },
+    "A-7": {
+      "name": "Input Tax Credit",
+      "folder": "Part I - Goods and Services Tax"
+    },
+    "A-8": {
+      "name": "Registration",
+      "folder": "Part I - Goods and Services Tax"
+    },
+    "A-9": {
+      "name": "Tax Invoice, Credit and Debit Notes",
+      "folder": "Part I - Goods and Services Tax"
+    },
+    "A-10": {
+      "name": "Accounts and Records; E-way Bill",
+      "folder": "Part I - Goods and Services Tax"
+    },
+    "A-11": {
+      "name": "Payment of Tax",
+      "folder": "Part I - Goods and Services Tax"
+    },
+    "A-12": {
+      "name": "Electronic Commerce Transactions",
+      "folder": "Part I - Goods and Services Tax"
+    },
+    "A-13": {
+      "name": "Returns",
+      "folder": "Part I - Goods and Services Tax"
+    },
+    "A-14": {
+      "name": "Import and Export under GST",
+      "folder": "Part I - Goods and Services Tax"
+    },
+    "A-15": {
+      "name": "Refunds",
+      "folder": "Part I - Goods and Services Tax"
+    },
+    "A-16": {
+      "name": "Job Work",
+      "folder": "Part I - Goods and Services Tax"
+    },
+    "A-17": {
+      "name": "Assessment and Audit",
+      "folder": "Part I - Goods and Services Tax"
+    },
+    "A-18": {
+      "name": "Inspection, Search, Seizure and Arrest",
+      "folder": "Part I - Goods and Services Tax"
+    },
+    "A-19": {
+      "name": "Demands and Recovery",
+      "folder": "Part I - Goods and Services Tax"
+    },
+    "A-20": {
+      "name": "Liability to Pay in Certain Cases",
+      "folder": "Part I - Goods and Services Tax"
+    },
+    "A-21": {
+      "name": "Offences and Penalties and Ethical Aspects under GST",
+      "folder": "Part I - Goods and Services Tax"
+    },
+    "A-22": {
+      "name": "Appeals and Revision",
+      "folder": "Part I - Goods and Services Tax"
+    },
+    "A-23": {
+      "name": "Advance Ruling",
+      "folder": "Part I - Goods and Services Tax"
+    },
+    "A-24": {
+      "name": "Miscellaneous Provisions",
+      "folder": "Part I - Goods and Services Tax"
+    },
+    "B-1": {
+      "name": "Levy of and Exemptions from Customs Duty",
+      "folder": "Part II - Customs and FTP"
+    },
+    "B-2": {
+      "name": "Types of Duty",
+      "folder": "Part II - Customs and FTP"
+    },
+    "B-3": {
+      "name": "Classification of Imported and Export Goods",
+      "folder": "Part II - Customs and FTP"
+    },
+    "B-4": {
+      "name": "Valuation under the Customs Act, 1962",
+      "folder": "Part II - Customs and FTP"
+    },
+    "B-5": {
+      "name": "Importation and Exportation of Goods",
+      "folder": "Part II - Customs and FTP"
+    },
+    "B-6": {
+      "name": "Warehousing",
+      "folder": "Part II - Customs and FTP"
+    },
+    "B-7": {
+      "name": "Refund",
+      "folder": "Part II - Customs and FTP"
+    },
+    "B-8": {
+      "name": "Foreign Trade Policy",
+      "folder": "Part II - Customs and FTP"
+    }
+  },
   "attempts": [
     {
       "attempt": "2026-05",
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/92769bos-sa-final-may2026-p5.pdf",
-          "map": {}
+          "map": {
+            "1": [
+              "A-6",
+              "A-7",
+              "A-11"
+            ],
+            "2a": [
+              "A-2",
+              "A-3"
+            ],
+            "2b": "A-6",
+            "2c": "B-4",
+            "3a": "A-5",
+            "3b.i": "A-1",
+            "3b.ii": "A-12",
+            "3c": "B-6",
+            "4a": "A-15",
+            "4b": [
+              "A-10",
+              "A-16"
+            ],
+            "4c": "B-5",
+            "5a": "A-21",
+            "5b": "A-22",
+            "5c": "B-8",
+            "6a": "A-19",
+            "6b": "A-17",
+            "6c": "B-8",
+            "m1": "CS",
+            "m2": "CS",
+            "m3": "CS",
+            "m4": "CS",
+            "m5": "CS",
+            "m6": "CS",
+            "m7": "CS",
+            "m8": "CS",
+            "m9": "CS",
+            "m10": "CS",
+            "m11": "CS",
+            "m12": "CS",
+            "m13": "A-22",
+            "m14": "B-5",
+            "m15": "B-5"
+          }
         }
       ]
     },
@@ -17,7 +189,53 @@
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/91145bos-aps4314-sa-jan2026-p5.pdf",
-          "map": {}
+          "map": {
+            "1": [
+              "A-3",
+              "A-14",
+              "A-7",
+              "A-11"
+            ],
+            "2a": [
+              "A-2",
+              "A-7"
+            ],
+            "2b": [
+              "A-2",
+              "A-7"
+            ],
+            "2c": "B-4",
+            "3a": "A-4",
+            "3b": "A-14",
+            "3c": "B-1",
+            "4a": "A-15",
+            "4b": "A-16",
+            "4c": "B-5",
+            "5a": "A-21",
+            "5b": "A-22",
+            "5c": "B-5",
+            "6a": "A-23",
+            "6b": [
+              "A-24",
+              "A-21"
+            ],
+            "6c": "B-8",
+            "m1": "A-5",
+            "m2": "B-8",
+            "m3": "B-5",
+            "m4": "CS",
+            "m5": "CS",
+            "m6": "CS",
+            "m7": "CS",
+            "m8": "CS",
+            "m9": "CS",
+            "m10": "CS",
+            "m11": "CS",
+            "m12": "CS",
+            "m13": "CS",
+            "m14": "CS",
+            "m15": "CS"
+          }
         }
       ]
     },
@@ -97,5 +315,6 @@
         }
       ]
     }
-  ]
+  ],
+  "_note": "Map: question part -> chapter key (A-n = GST chapter n, B-n = Customs & FTP chapter n, per ICAI study material for May 2026/Sep 2026/Jan 2027). 'CS' = case scenario whose MCQs span several chapters. 'X' = topic not in current syllabus (e.g. duty drawback)."
 }
