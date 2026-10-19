@@ -1,14 +1,108 @@
 {
   "level": "CA Intermediate",
   "paper": "Paper 6 - Financial Management and Strategic Management",
-  "chapters": {},
+  "chapters": {
+    "A-1": {
+      "name": "Scope and Objectives of Financial Management",
+      "folder": "Section A - Financial Management"
+    },
+    "A-2": {
+      "name": "Types of Financing",
+      "folder": "Section A - Financial Management"
+    },
+    "A-3": {
+      "name": "Financial Analysis and Planning – Ratio Analysis",
+      "folder": "Section A - Financial Management"
+    },
+    "A-4": {
+      "name": "Cost of Capital",
+      "folder": "Section A - Financial Management"
+    },
+    "A-5": {
+      "name": "Financing Decisions – Capital Structure",
+      "folder": "Section A - Financial Management"
+    },
+    "A-6": {
+      "name": "Financing Decisions – Leverages",
+      "folder": "Section A - Financial Management"
+    },
+    "A-7": {
+      "name": "Investment Decisions",
+      "folder": "Section A - Financial Management"
+    },
+    "A-8": {
+      "name": "Dividend Decision",
+      "folder": "Section A - Financial Management"
+    },
+    "A-9": {
+      "name": "Management of Working Capital",
+      "folder": "Section A - Financial Management"
+    },
+    "B-1": {
+      "name": "Introduction to Strategic Management",
+      "folder": "Section B - Strategic Management"
+    },
+    "B-2": {
+      "name": "Strategic Analysis: External Environment",
+      "folder": "Section B - Strategic Management"
+    },
+    "B-3": {
+      "name": "Strategic Analysis: Internal Environment",
+      "folder": "Section B - Strategic Management"
+    },
+    "B-4": {
+      "name": "Strategic Choices",
+      "folder": "Section B - Strategic Management"
+    },
+    "B-5": {
+      "name": "Strategy Implementation and Evaluation",
+      "folder": "Section B - Strategic Management"
+    }
+  },
   "attempts": [
     {
       "attempt": "2026-05",
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/92877bos-sa-int-may2026-p6.pdf",
-          "map": {}
+          "map": {
+            "1a": "A-6",
+            "1b": "A-4",
+            "1c": "A-3",
+            "2a": "A-7",
+            "2b": "A-9",
+            "3a": "A-8",
+            "3b": "A-9",
+            "4a": "A-8",
+            "4b": "A-2",
+            "4c": "A-1",
+            "4c-or": "A-2",
+            "5a": "B-5",
+            "5b": "B-3",
+            "5c": "B-4",
+            "6a": "B-2",
+            "6b": "B-4",
+            "7a": "B-2",
+            "7b": "B-3",
+            "8a": "B-5",
+            "8b": "B-1",
+            "m1": "CS",
+            "m2": "CS",
+            "m3": "CS",
+            "m4": "CS",
+            "m5": "CS",
+            "m6": "A-9",
+            "m7": "A-4",
+            "m8": "A-7",
+            "m9": "CS",
+            "m10": "CS",
+            "m11": "CS",
+            "m12": "CS",
+            "m13": "CS",
+            "m14": "B-3",
+            "m15": "B-2",
+            "m16": "B-4"
+          }
         }
       ]
     },
@@ -17,7 +111,44 @@
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/91204bos-aps4356-sa-int-p6.pdf",
-          "map": {}
+          "map": {
+            "1a": "A-3",
+            "1b": "A-9",
+            "1c": "A-8",
+            "2a": "A-6",
+            "2b": "A-7",
+            "3a": "A-3",
+            "3b": "A-6",
+            "4a": "A-2",
+            "4b": "A-9",
+            "4c": "A-1",
+            "4c-or": "A-3",
+            "5a": "B-3",
+            "5b": "B-4",
+            "5c": "B-2",
+            "6a": "B-5",
+            "6b": "B-3",
+            "7a": "B-5",
+            "7b": "B-4",
+            "8a": "B-2",
+            "8b": "B-1",
+            "m1": "A-4",
+            "m2": "A-4",
+            "m3": "A-4",
+            "m4": "A-4",
+            "m5": "A-4",
+            "m6": "A-8",
+            "m7": "A-9",
+            "m8": "A-8",
+            "m9": "CS",
+            "m10": "CS",
+            "m11": "CS",
+            "m12": "CS",
+            "m13": "CS",
+            "m14": "B-1",
+            "m15": "B-5",
+            "m16": "B-3"
+          }
         }
       ]
     },
@@ -26,7 +157,44 @@
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/89275bos-aps3012-int-p6.pdf",
-          "map": {}
+          "map": {
+            "1a": "A-4",
+            "1b": "A-3",
+            "1c": "A-7",
+            "2a": "A-6",
+            "2b": "A-8",
+            "3a": "A-5",
+            "3b": "A-4",
+            "4a": "A-8",
+            "4b": "A-2",
+            "4c": "A-1",
+            "4c-or": "A-1",
+            "5a": "B-3",
+            "5b": "B-4",
+            "5c": "B-5",
+            "6a": "B-1",
+            "6b": "B-2",
+            "7a": "B-3",
+            "7b": "B-4",
+            "8a": "B-2",
+            "8b": "B-5",
+            "m1": "A-9",
+            "m2": "A-9",
+            "m3": "A-9",
+            "m4": "A-9",
+            "m5": "A-9",
+            "m6": "A-5",
+            "m7": "A-7",
+            "m8": "A-3",
+            "m9": "CS",
+            "m10": "CS",
+            "m11": "CS",
+            "m12": "CS",
+            "m13": "CS",
+            "m14": "B-4",
+            "m15": "B-5",
+            "m16": "B-4"
+          }
         }
       ]
     },
@@ -35,12 +203,55 @@
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/87257bos-sa-int-may2025-g2-p6a.pdf",
-          "map": {},
+          "map": {
+            "1a": "A-3",
+            "1b": "A-8",
+            "1c": "A-6",
+            "2a": "A-4",
+            "2b": "A-8",
+            "3a": "A-7",
+            "3b": "A-5",
+            "4a": "A-1",
+            "4b": "A-2",
+            "4c": [
+              "A-5",
+              "A-6"
+            ],
+            "m1": "A-9",
+            "m2": "A-9",
+            "m3": "A-9",
+            "m4": "A-9",
+            "m5": "A-9",
+            "m6": "A-6",
+            "m7": "A-7",
+            "m8": "A-4",
+            "m9": "CS",
+            "m10": "CS",
+            "m11": "CS",
+            "m12": "CS",
+            "m13": "CS",
+            "m14": "CS",
+            "m15": "CS",
+            "m16": "CS"
+          },
           "note": "Paper 6A: Financial Management"
         },
         {
           "url": "https://resource.cdn.icai.org/87258bos-sa-int-may2025-g2-p6b.pdf",
-          "map": {},
+          "map": {
+            "5a": "B-1",
+            "5b": "B-5",
+            "5c": "B-4",
+            "6a": "B-1",
+            "6b": "B-3",
+            "7a": "B-2",
+            "7b": "B-3",
+            "8a": "B-2",
+            "8b": [
+              "B-4",
+              "B-5"
+            ]
+          },
           "note": "Paper 6B: Strategic Management"
         }
       ]
@@ -50,7 +261,47 @@
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/84880bos68360-p6.pdf",
-          "map": {}
+          "map": {
+            "1a": "A-9",
+            "1b": "A-6",
+            "1c": "A-8",
+            "2a": "A-4",
+            "2b": "A-9",
+            "3a": "A-7",
+            "3b": "A-3",
+            "4a": "A-2",
+            "4b": "A-1",
+            "4c": "A-9",
+            "4c-or": "A-7",
+            "5a": "B-5",
+            "5b": "B-1",
+            "5c": "B-4",
+            "6a": "B-2",
+            "6b": "B-3",
+            "7a": "B-1",
+            "7b": "B-5",
+            "8a": "B-2",
+            "8b": [
+              "B-4",
+              "B-3"
+            ],
+            "m1": "A-5",
+            "m2": "A-5",
+            "m3": "A-5",
+            "m4": "A-5",
+            "m5": "A-5",
+            "m6": "A-3",
+            "m7": "A-3",
+            "m8": "A-9",
+            "m9": "CS",
+            "m10": "CS",
+            "m11": "CS",
+            "m12": "CS",
+            "m13": "CS",
+            "m14": "B-4",
+            "m15": "B-5",
+            "m16": "B-2"
+          }
         }
       ]
     },
@@ -59,7 +310,44 @@
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/83077bos67152-6.pdf",
-          "map": {}
+          "map": {
+            "1a": "A-6",
+            "1b": "A-9",
+            "1c": "A-3",
+            "2a": "A-4",
+            "2b": "A-2",
+            "3a": "A-9",
+            "3b": "A-5",
+            "4a": "A-2",
+            "4b": "A-8",
+            "4c": "A-2",
+            "4d": "A-5",
+            "5a": "B-5",
+            "5b": "B-4",
+            "5c": "B-3",
+            "6a": "B-1",
+            "6b": "B-2",
+            "7a": "B-3",
+            "7b": "B-4",
+            "8a": "B-2",
+            "8b": "B-5",
+            "m1": "A-7",
+            "m2": "A-7",
+            "m3": "A-7",
+            "m4": "A-7",
+            "m5": "A-7",
+            "m6": "A-6",
+            "m7": "A-4",
+            "m8": "A-3",
+            "m9": "CS",
+            "m10": "CS",
+            "m11": "CS",
+            "m12": "CS",
+            "m13": "CS",
+            "m14": "CS",
+            "m15": "CS",
+            "m16": "CS"
+          }
         }
       ]
     },
@@ -68,7 +356,34 @@
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/81501bos65715-p6.pdf",
-          "map": {}
+          "map": {
+            "1a": "A-3",
+            "1b": "A-6",
+            "1c": "A-9",
+            "2a": "A-4",
+            "2b": "A-5",
+            "3a": "A-7",
+            "3b": "A-8",
+            "4a": [
+              "A-1",
+              "A-2"
+            ],
+            "4b": "A-9",
+            "4c": "A-7",
+            "4c-or": "A-2",
+            "5a": "B-5",
+            "5b": "B-1",
+            "5c": "B-2",
+            "6a": "B-4",
+            "6b": "B-5",
+            "7a": "B-2",
+            "7b": "B-1",
+            "8a": "B-3",
+            "8b": [
+              "B-4",
+              "B-3"
+            ]
+          }
         }
       ]
     },
@@ -78,12 +393,65 @@
         {
           "url": "https://resource.cdn.icai.org/79242bos63377-p8.pdf",
           "note": "Old Paper 8A: Financial Management (8B Economics for Finance not in syllabus)",
-          "map": {}
+          "map": {
+            "1a": "A-3",
+            "1b.i": "A-6",
+            "1b.ii": "A-3",
+            "1b.iii": "A-6",
+            "1c": "A-8",
+            "1d": "A-9",
+            "2": "A-5",
+            "3": "A-7",
+            "4": "A-4",
+            "5a": "A-7",
+            "5b": "A-8",
+            "6a": "A-2",
+            "6b": "A-9",
+            "6c": [
+              "A-5",
+              "A-1"
+            ],
+            "7a": "X",
+            "7b": "X",
+            "7c": "X",
+            "7d": "X",
+            "8a": "X",
+            "8b": "X",
+            "9a": "X",
+            "9b": "X",
+            "10a": "X",
+            "10b": "X",
+            "11a": "X",
+            "11b": "X"
+          }
         },
         {
           "url": "https://resource.cdn.icai.org/79241bos63377-p7.pdf",
           "note": "Old Paper 7B: Strategic Management (7A EIS not in syllabus)",
-          "map": {}
+          "map": {
+            "1a": "X",
+            "1b": "X",
+            "2a": "X",
+            "2b": "X",
+            "3a": "X",
+            "3b": "X",
+            "4a": "X",
+            "4b": "X",
+            "5a": "X",
+            "5b": "X",
+            "6": "B-1",
+            "7a": "B-2",
+            "7b": "X",
+            "8a": "X",
+            "8b": "B-1",
+            "9a": "X",
+            "9b": "B-4",
+            "10a": "B-2",
+            "10b": [
+              "B-4",
+              "B-1"
+            ]
+          }
         }
       ]
     },
@@ -93,12 +461,59 @@
         {
           "url": "https://resource.cdn.icai.org/75783bos61308-p8.pdf",
           "note": "Old Paper 8A: Financial Management (8B Economics for Finance not in syllabus)",
-          "map": {}
+          "map": {
+            "1a": "A-8",
+            "1b": "A-9",
+            "1c": "A-7",
+            "1d": "A-6",
+            "2": "A-3",
+            "3": "A-5",
+            "4": "A-4",
+            "5": "A-7",
+            "6a": "A-8",
+            "6b": "A-9",
+            "6c": [
+              "A-6",
+              "A-2"
+            ],
+            "7a": "X",
+            "7b": "X",
+            "7c": "X",
+            "7d": "X",
+            "8a": "X",
+            "8b": "X",
+            "9a": "X",
+            "9b": "X",
+            "10a": "X",
+            "10b": "X",
+            "11a": "X",
+            "11b": "X"
+          }
         },
         {
           "url": "https://resource.cdn.icai.org/75782bos61308-p7.pdf",
           "note": "Old Paper 7B: Strategic Management (7A EIS not in syllabus)",
-          "map": {}
+          "map": {
+            "1a": "X",
+            "1b": "X",
+            "2a": "X",
+            "2b": "X",
+            "3a": "X",
+            "3b": "X",
+            "4a": "X",
+            "4b": "X",
+            "5a": "X",
+            "5b": "X",
+            "6": "B-5",
+            "7a": "B-1",
+            "7b": "B-3",
+            "8a": "B-4",
+            "8b": "B-2",
+            "9a": "B-5",
+            "9b": "B-5",
+            "10a": "B-5",
+            "10b": "B-5"
+          }
         }
       ]
     },
@@ -108,14 +523,63 @@
         {
           "url": "https://resource.cdn.icai.org/73260bos559103-inter-p8.pdf",
           "note": "Old Paper 8A: Financial Management (8B Economics for Finance not in syllabus)",
-          "map": {}
+          "map": {
+            "1a": "A-9",
+            "1b": "A-3",
+            "1c": "A-4",
+            "1d": "X",
+            "2": "A-6",
+            "3": "A-7",
+            "4": "A-7",
+            "5a": "A-5",
+            "5b": "A-4",
+            "6a": "A-2",
+            "6b": "A-9",
+            "6c": [
+              "A-5",
+              "A-2"
+            ],
+            "7a": "X",
+            "7b": "X",
+            "7c": "X",
+            "7d": "X",
+            "8a": "X",
+            "8b": "X",
+            "9a": "X",
+            "9b": "X",
+            "10a": "X",
+            "10b": "X",
+            "11a": "X",
+            "11b": "X"
+          }
         },
         {
           "url": "https://resource.cdn.icai.org/73266bos59109.pdf",
           "note": "Old Paper 7B: Strategic Management (7A EIS not in syllabus)",
-          "map": {}
+          "map": {
+            "1a": "X",
+            "1b": "X",
+            "2a": "X",
+            "2b": "X",
+            "3a": "X",
+            "3b": "X",
+            "4a": "X",
+            "4b": "X",
+            "5a": "X",
+            "5b": "X",
+            "6": "B-3",
+            "7a": "B-1",
+            "7b": "B-5",
+            "8a": "B-4",
+            "8b": "B-3",
+            "9a": "B-3",
+            "9b": "B-1",
+            "10a": "B-5",
+            "10b": "B-1"
+          }
         }
       ]
     }
-  ]
+  ],
+  "_note": "Map: question part -> chapter key (A-n = Paper 6A FM chapter n, B-n = Paper 6B SM chapter n; list if spanning). 'X' = not in current syllabus (old-scheme Economics for Finance and EIS; dropped old SM/FM topics). 'CS' = case-scenario MCQs spanning several chapters."
 }

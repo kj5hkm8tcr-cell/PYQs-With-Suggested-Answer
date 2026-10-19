@@ -382,11 +382,19 @@ def segment_mcq(path):
             continue  # a second heading line of the same key ("Answer Key" + "MCQ No. ...")
         block = []
         last_was_mcq = True  # whether the latest marker seen is an MCQ (not a scenario)
+        blocked_until = -1   # numbered notes inside a scenario are not MCQs
         for i in range(lo, key):
             l = lines[i][1]
             if near(l) and RE_SCENARIO.match(l["text"]):
                 scen.append(i)
                 last_was_mcq = False
+                # MCQs start after the line naming them ("answer Question Nos. 4 to 9")
+                nxt_s = next((j for j in range(i + 1, key) if near(lines[j][1])
+                              and RE_SCENARIO.match(lines[j][1]["text"])), key)
+                blocked_until = next((j for j in range(i + 1, nxt_s) if _range_in(
+                    " ".join(lines[k][1]["text"] for k in range(max(i + 1, j - 1), j + 1)))), -1)
+                continue
+            if i <= blocked_until:
                 continue
             m = RE_MCQ.match(l["text"])
             if m and near(l) and int(m.group(1)) == expect:

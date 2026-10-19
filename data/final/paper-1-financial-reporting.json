@@ -10,12 +10,12 @@
     "6": "Ind AS on Liabilities of the Financial Statements",
     "7": "Ind AS on Items impacting the Financial Statements",
     "8": "Ind AS on Disclosures in the Financial Statements",
-    "9": "Ind AS 115 \"Revenue from Contracts with Customers\"",
+    "9": "Ind AS 115 “Revenue from Contracts with Customers”",
     "10": "Other Indian Accounting Standards",
     "11": "Accounting and Reporting of Financial Instruments",
-    "12": "Ind AS 103 \"Business Combinations\"",
+    "12": "Ind AS 103 “Business Combinations”",
     "13": "Consolidated and Separate Financial Statements of Group Entities",
-    "14": "Ind AS 101 \"First-time Adoption of Ind AS\"",
+    "14": "Ind AS 101 “First-time Adoption of Ind AS”",
     "15": "Analysis of Financial Statements",
     "16": "Professional and Ethical Duty of a Chartered Accountant",
     "17": "Accounting and Technology"
@@ -68,7 +68,36 @@
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/91141bos-aps4314-sa-jan2026-p1.pdf",
-          "map": {}
+          "map": {
+            "1": "13",
+            "2a": "11",
+            "2b": "3",
+            "3a": "5",
+            "3b": "7",
+            "4a": "5",
+            "4b": "10",
+            "5a": "9",
+            "5b": "14",
+            "5c": "1",
+            "6a": "16",
+            "6b": "6",
+            "6c": "4",
+            "m1": "11",
+            "m2": "11",
+            "m3": "11",
+            "m4": "CS",
+            "m5": "CS",
+            "m6": "CS",
+            "m7": "CS",
+            "m8": "CS",
+            "m9": "CS",
+            "m10": "CS",
+            "m11": "CS",
+            "m12": "CS",
+            "m13": "9",
+            "m14": "7",
+            "m15": "16"
+          }
         }
       ]
     },
@@ -77,7 +106,36 @@
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/89276bos-aps3012-final-p1.pdf",
-          "map": {}
+          "map": {
+            "1": "13",
+            "2a": "11",
+            "2b": "7",
+            "3a": "6",
+            "3b": "8",
+            "4a": "5",
+            "4b": "7",
+            "5a": "9",
+            "5b": "14",
+            "5c": "3",
+            "6a": "17",
+            "6b": "5",
+            "6c": "4",
+            "m1": "CS",
+            "m2": "CS",
+            "m3": "CS",
+            "m4": "CS",
+            "m5": "CS",
+            "m6": "CS",
+            "m7": "CS",
+            "m8": "CS",
+            "m9": "CS",
+            "m10": "CS",
+            "m11": "CS",
+            "m12": "CS",
+            "m13": "16",
+            "m14": "14",
+            "m15": "13"
+          }
         }
       ]
     },
@@ -86,7 +144,41 @@
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/86857bos-sa-final-may2025-g1-p1.pdf",
-          "map": {}
+          "map": {
+            "1": "13",
+            "2a": "11",
+            "2b": "3",
+            "3a": "5",
+            "3b": "8",
+            "4a": "5",
+            "4b": "10",
+            "5a": "9",
+            "5b.i": "13",
+            "5b.ii": [
+              "5",
+              "6"
+            ],
+            "5c": "3",
+            "5c-or": "2",
+            "6a": "17",
+            "6b": "5",
+            "6c": "4",
+            "m1": "CS",
+            "m2": "CS",
+            "m3": "CS",
+            "m4": "CS",
+            "m5": "CS",
+            "m6": "CS",
+            "m7": "CS",
+            "m8": "CS",
+            "m9": "CS",
+            "m10": "CS",
+            "m11": "CS",
+            "m12": "CS",
+            "m13": "9",
+            "m14": "14",
+            "m15": "17"
+          }
         }
       ]
     },
@@ -95,7 +187,39 @@
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/84423bos68027-p1.pdf",
-          "map": {}
+          "map": {
+            "1": "13",
+            "2a": "11",
+            "2b": "3",
+            "3a": "5",
+            "3b": "7",
+            "4a": [
+              "5",
+              "6"
+            ],
+            "4b": "10",
+            "5a": "9",
+            "5b": "14",
+            "5c": "3",
+            "6a": "9",
+            "6b": "5",
+            "6c": "4",
+            "m1": "CS",
+            "m2": "CS",
+            "m3": "CS",
+            "m4": "CS",
+            "m5": "CS",
+            "m6": "10",
+            "m7": "16",
+            "m8": "14",
+            "m9": "CS",
+            "m10": "CS",
+            "m11": "CS",
+            "m12": "CS",
+            "m13": "12",
+            "m14": "12",
+            "m15": "12"
+          }
         }
       ]
     },
@@ -104,7 +228,24 @@
       "sources": [
         {
           "url": "https://resource.cdn.icai.org/81680bos65858-p1.pdf",
-          "map": {}
+          "map": {
+            "1": "13",
+            "2a": "11",
+            "2b": "3",
+            "3a": "5",
+            "3b": "11",
+            "4a": "6",
+            "4b": "10",
+            "5a": "9",
+            "5b": "14",
+            "5c": [
+              "2",
+              "1"
+            ],
+            "6a": "17",
+            "6b": "5",
+            "6c": "3"
+          }
         }
       ]
     },
@@ -114,7 +255,27 @@
         {
           "url": "https://resource.cdn.icai.org/79222bos63373-p1.pdf",
           "note": "Old Paper 1: Financial Reporting",
-          "map": {}
+          "map": {
+            "1": "13",
+            "2a": "X",
+            "2b": "9",
+            "2c": "9",
+            "3a": "5",
+            "3b": "5",
+            "3c": [
+              "7",
+              "13"
+            ],
+            "4a": "11",
+            "4b": "2",
+            "5a": "10",
+            "5b": "8",
+            "5c": "5",
+            "6a": "14",
+            "6b": "11",
+            "6c": "5",
+            "6d": "4"
+          }
         }
       ]
     },
@@ -124,7 +285,24 @@
         {
           "url": "https://resource.cdn.icai.org/75765bos61307-p1.pdf",
           "note": "Old Paper 1: Financial Reporting",
-          "map": {}
+          "map": {
+            "1a": "13",
+            "1b": "3",
+            "2a": "5",
+            "2b": "9",
+            "2c": "9",
+            "3a": "10",
+            "3b": "5",
+            "3c": "8",
+            "4a": "11",
+            "4b": "2",
+            "5a": "8",
+            "5b": "6",
+            "6a": "4",
+            "6b": "11",
+            "6c": "5",
+            "6d": "13"
+          }
         }
       ]
     },
@@ -134,7 +312,26 @@
         {
           "url": "https://resource.cdn.icai.org/73241bos59102-final-p1.pdf",
           "note": "Old Paper 1: Financial Reporting",
-          "map": {}
+          "map": {
+            "1a": "13",
+            "1b": "4",
+            "2a": "9",
+            "2b": "9",
+            "2c": "9",
+            "3a": "5",
+            "3b": "7",
+            "3c": "2",
+            "4a": "11",
+            "4b": "5",
+            "5a": "10",
+            "5b.i": "11",
+            "5b.ii": "8",
+            "5c": "10",
+            "6a": "4",
+            "6b": "11",
+            "6c": "8",
+            "6d": "13"
+          }
         }
       ]
     },
@@ -144,7 +341,28 @@
         {
           "url": "https://resource.cdn.icai.org/71465exam57501-p1.pdf",
           "note": "Old Paper 1: Financial Reporting",
-          "map": {}
+          "map": {
+            "1a": "13",
+            "1b": "3",
+            "2a": "X",
+            "2b": "9",
+            "2c": "9",
+            "3a": "6",
+            "3b": "5",
+            "3c": [
+              "7",
+              "13"
+            ],
+            "4a": "11",
+            "4b": "2",
+            "5a": "10",
+            "5b": "5",
+            "5c": "8",
+            "6a": "4",
+            "6b": "11",
+            "6c": "5",
+            "6d": "12"
+          }
         }
       ]
     }
