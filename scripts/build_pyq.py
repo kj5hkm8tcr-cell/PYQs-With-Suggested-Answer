@@ -79,6 +79,8 @@ def chapter_info(key, value):
     """Chapter spec is a name, or {"name": ..., "folder": ...} to group chapters in a subfolder."""
     name, folder = (value, None) if isinstance(value, str) else (value["name"], value.get("folder"))
     # keys like "A-3" keep ICAI's own numbering when it restarts per part (e.g. Income-tax / GST)
+    if key == "CS":
+        return value, None
     num = re.search(r"(\d+)$", key)
     title = f"Chapter {int(num.group(1)):02d} - {name}" if num else name
     return title, folder
@@ -121,6 +123,12 @@ def build(data_file):
                 print(f"  wrote {path.relative_to(ROOT)}")
         return
 
+    # "CS" collects case scenarios whose MCQs span several chapters; they get their own
+    # file after the last chapter so the scenario stays together with all its MCQs
+    numbers = [int(m.group(1)) for k in chapters for m in [re.search(r"(\d+)$", k)] if m]
+    flat = all(k.isdigit() for k in chapters)
+    chapters = dict(chapters, CS=f"Chapter {max(numbers, default=0) + 1:02d} - Case Scenario MCQs (Multiple Chapters)"
+                    if flat else "Case Scenario MCQs (Multiple Chapters)")
     by_chapter = {c: [] for c in chapters}  # chapter -> [(attempt, label, src, part)]
     attempts = sorted(spec["attempts"], key=lambda a: a["attempt"], reverse=True)
     ok = True
@@ -135,7 +143,12 @@ def build(data_file):
                 continue
             for pid, ch in s["map"].items():
                 for c in ch if isinstance(ch, list) else [ch]:
-                    if c != "X":
+                    if c == "X":
+                        continue
+                    if str(c) not in by_chapter:
+                        print(f"  ! {paper} {a['attempt']}: '{pid}' is mapped to unknown chapter '{c}'")
+                        ok = False
+                    else:
                         by_chapter[str(c)].append((a["attempt"], part_label(pid) + tag, str(src), parts[pid]))
     if not ok:
         sys.exit(1)
