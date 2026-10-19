@@ -1,7 +1,104 @@
 {
   "level": "CA Intermediate",
   "paper": "Paper 3 - Taxation",
-  "chapters": {},
+  "chapters": {
+    "A-1": {
+      "name": "Basic Concepts",
+      "folder": "Section A - Income-tax Law"
+    },
+    "A-2": {
+      "name": "Residence and Scope of Total Income",
+      "folder": "Section A - Income-tax Law"
+    },
+    "A-3": {
+      "name": "Heads of Income",
+      "folder": "Section A - Income-tax Law"
+    },
+    "A-4": {
+      "name": "Income of Other Persons included in Assessee's Total Income",
+      "folder": "Section A - Income-tax Law"
+    },
+    "A-5": {
+      "name": "Aggregation of Income, Set-Off and Carry Forward of Losses",
+      "folder": "Section A - Income-tax Law"
+    },
+    "A-6": {
+      "name": "Deductions from Gross Total Income",
+      "folder": "Section A - Income-tax Law"
+    },
+    "A-7": {
+      "name": "Advance Tax, Tax Deduction at Source and Tax Collection at Source",
+      "folder": "Section A - Income-tax Law"
+    },
+    "A-8": {
+      "name": "Provisions for filing Return of Income and Self Assessment",
+      "folder": "Section A - Income-tax Law"
+    },
+    "A-9": {
+      "name": "Income Tax Liability - Computation and Optimisation",
+      "folder": "Section A - Income-tax Law"
+    },
+    "B-1": {
+      "name": "GST in India - An Introduction",
+      "folder": "Section B - Goods and Services Tax"
+    },
+    "B-2": {
+      "name": "Supply under GST",
+      "folder": "Section B - Goods and Services Tax"
+    },
+    "B-3": {
+      "name": "Charge of GST",
+      "folder": "Section B - Goods and Services Tax"
+    },
+    "B-4": {
+      "name": "Place of Supply",
+      "folder": "Section B - Goods and Services Tax"
+    },
+    "B-5": {
+      "name": "Exemptions from GST",
+      "folder": "Section B - Goods and Services Tax"
+    },
+    "B-6": {
+      "name": "Time of Supply",
+      "folder": "Section B - Goods and Services Tax"
+    },
+    "B-7": {
+      "name": "Value of Supply",
+      "folder": "Section B - Goods and Services Tax"
+    },
+    "B-8": {
+      "name": "Input Tax Credit",
+      "folder": "Section B - Goods and Services Tax"
+    },
+    "B-9": {
+      "name": "Registration",
+      "folder": "Section B - Goods and Services Tax"
+    },
+    "B-10": {
+      "name": "Tax Invoice; Credit and Debit Notes",
+      "folder": "Section B - Goods and Services Tax"
+    },
+    "B-11": {
+      "name": "Accounts and Records",
+      "folder": "Section B - Goods and Services Tax"
+    },
+    "B-12": {
+      "name": "E-Way Bill",
+      "folder": "Section B - Goods and Services Tax"
+    },
+    "B-13": {
+      "name": "Payment of Tax",
+      "folder": "Section B - Goods and Services Tax"
+    },
+    "B-14": {
+      "name": "Tax Deduction at Source and Collection of Tax at Source",
+      "folder": "Section B - Goods and Services Tax"
+    },
+    "B-15": {
+      "name": "Returns",
+      "folder": "Section B - Goods and Services Tax"
+    }
+  },
   "attempts": [
     {
       "attempt": "2026-05",
