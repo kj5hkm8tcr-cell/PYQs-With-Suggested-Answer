@@ -179,6 +179,7 @@ def build(data_file):
             if part.get("context") and shown_context != (src, part["context_id"]):
                 # a case scenario is printed once, before the first of its MCQs in this chapter
                 shown_context = (src, part["context_id"])
+                doc.keep_together(part["context"][:1], extra=30)
                 doc.label("CASE SCENARIO")
                 for span in part["context"]:
                     doc.region(src, *span)
