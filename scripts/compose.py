@@ -4,6 +4,7 @@ Regions are copied as vector content (no re-typing, no image conversion), so
 tables, symbols and formatting look exactly like ICAI's original.
 """
 
+import pdfplumber
 import pikepdf
 from pikepdf import Array, Dictionary, Name
 
@@ -28,6 +29,7 @@ class Composer:
         )
         self.sources = {}
         self.forms = {}
+        self.gaps = {}
         self.page = None
         self.y = 0
         self.outline = []  # (title, page index, level)
@@ -157,8 +159,42 @@ class Composer:
         if h < A4_H - TOP - BOTTOM:
             self._need(h)
 
+    def _line_gaps(self, src_path, page_index):
+        """Safe places to split a source page: midpoints between consecutive text lines."""
+        key = (src_path, page_index)
+        if key not in self.gaps:
+            with pdfplumber.open(src_path) as pdf:
+                lines = sorted(pdf.pages[page_index].extract_text_lines(), key=lambda l: l["top"])
+            gaps = []
+            for upper, lower in zip(lines, lines[1:]):
+                if lower["top"] >= upper["bottom"]:  # no overlap: the space between them is blank
+                    gaps.append((upper["bottom"] + lower["top"]) / 2)
+            self.gaps[key] = gaps
+        return self.gaps[key]
+
     def region(self, src_path, page_index, top, bottom):
-        """Copy part of a source page (pdfplumber coordinates) into the output."""
+        """Copy part of a source page (pdfplumber coordinates) into the output.
+
+        A region that doesn't fit in the space left on the page is split between two
+        lines of text, so pages are filled instead of leaving a blank gap."""
+        while bottom - top > 1:
+            if self.page is None:
+                self._new_page()
+            room = self.y - BOTTOM
+            if bottom - top <= room:
+                self._place(src_path, page_index, top, bottom)
+                return
+            cuts = [g for g in self._line_gaps(src_path, page_index) if top + 20 < g <= top + room - 2]
+            if cuts and room > 60:
+                self._place(src_path, page_index, top, cuts[-1])
+                top = cuts[-1]
+            elif self.y >= A4_H - TOP - 1:
+                # already on a fresh page and no line gap fits: cut where the page ends
+                self._place(src_path, page_index, top, top + room)
+                top += room
+            self._new_page()
+
+    def _place(self, src_path, page_index, top, bottom):
         src = self.sources.get(src_path)
         if src is None:
             src = self.sources[src_path] = pikepdf.open(src_path)
@@ -168,7 +204,6 @@ class Composer:
         mb = [float(v) for v in src.pages[page_index].mediabox]
         y_top, y_bot = mb[3] - top, mb[3] - bottom
         h = y_top - y_bot
-        self._need(h)
         # A tiny wrapper form whose BBox clips the shared full-page form to the region.
         form = self.pdf.make_stream(b"/P Do", Dictionary(
             Type=Name.XObject, Subtype=Name.Form,

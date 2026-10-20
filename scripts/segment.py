@@ -32,6 +32,14 @@ RE_ROMAN = re.compile(r"^(?:\([a-h]\)\s*)?(?:\((?P<r>x{0,2}(?:ix|iv|v?i{0,3}))\)
 RE_NUMBERED = re.compile(r"^(?:\([a-h]\)\s*)?(\d{1,2})\.\s")
 RE_OR = re.compile(r"^OR$", re.I)
 RE_PAGE_NO = re.compile(r"^(\d{1,3}|©.*)$")
+# Headings and exam instructions between two questions, e.g. "SECTION B – BUSINESS
+# CORRESPONDENCE AND REPORTING" / "Attempt any four questions ...". Headings must be
+# centred so that answer lines like "Section 135 of the Companies Act" are never matched.
+RE_SECTION_HEAD = re.compile(r"^(SECTION|PART)\b|^(Section|Part)\s*[-–:]?\s*(?:[A-D]|I{1,3}|IV|V|VI)\b(?!\s*of\b)")
+RE_INSTRUCTION = re.compile(r"^Questions?\s*No\.?\s*1\s*is\s*compulsory|^(Answer|Attempt)\s+any\b"
+                            r"|^Working\s+notes?\s+should|^All\s+questions\b|^Candidates\s+are\b"
+                            r"|^In\s+case,?\s*any\s+candidate|^Wherever\s+necessary"
+                            r"|^\(i\)\s*Question\s+paper\s+comprises", re.I)
 RE_HEADER = re.compile(r"SUGGESTED\s*ANSW|EXAMINATION|^PAPER|^[A-Z ,&:\-]+$")
 
 
@@ -117,6 +125,16 @@ def segment(path):
             pending_or = False
         return found
 
+    def trim_end(s_i, e_i):
+        """Drop section headings and exam instructions that sit between this block and
+        the next question ("SECTION B – BUSINESS CORRESPONDENCE", "Attempt any four ...")."""
+        for k in range(max(s_i + 1, e_i - 12), e_i):
+            l = lines[k][1]
+            if (RE_SECTION_HEAD.match(l["text"]) and l["x0"] > margin + 30 or RE_INSTRUCTION.match(l["text"])) \
+                    and not any(at_margin(lines[j][1]) and RE_LETTER.match(lines[j][1]["text"]) for j in range(k, e_i)):
+                return k
+        return e_i
+
     blocks = []  # (qno, side, letter, alt, start index, end index)
     for k, (kind, qno, i) in enumerate(heads):
         if kind != "Q":
@@ -166,7 +184,7 @@ def segment(path):
         for side, lo, hi, found in (("question", i + 1, a, q_l), ("answer", a + 1, nxt, a_l)):
             cuts = [(lo, "", False)] + [(idx, v, alt) for v, alt, idx in found] + [(hi, None, None)]
             for (s_i, let, alt), (e_i, _, _) in zip(cuts, cuts[1:]):
-                blocks.append((qno, side, let, alt, pos_of(s_i), pos_of(e_i)))
+                blocks.append((qno, side, let, alt, pos_of(s_i), pos_of(trim_end(s_i, e_i))))
 
     # Roman items (i), (ii) ... for splitting True/False bundles into separate items.
     romans = []
