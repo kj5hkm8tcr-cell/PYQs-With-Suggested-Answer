@@ -190,17 +190,25 @@ def segment(path):
 
     # 3. Turn blocks into parts. A block before the first (a) of a question is
     # the shared stem ("Question 1" line / "Answer" line) and is folded into (a).
+    # Parts other than (a) get the stem separately as "stem", so a part filed in another
+    # chapter still shows the shared introduction of its question.
     parts = {}
     stems = {}
     for qno, side, let, alt, start, end in blocks:
         if not let:
-            stems[(qno, side)] = start
+            stems[(qno, side)] = (start, end)
             pid = str(qno)
         else:
             pid = f"{qno}{let}" + ("-or" if alt else "")
-        start = stems.get((qno, side), start) if let == "a" and not alt else start
+        stem = stems.get((qno, side))
+        if let == "a" and not alt and stem:
+            start = stem[0]
         parts.setdefault(pid, {"question": [], "answer": []})[side] = _spans(start, end, bounds)
         parts[pid].setdefault("_range", {})[side] = (start, end)
+        if let and side == "question" and not (let == "a" and not alt) and stem:
+            stem_spans = _spans(*stem, bounds)
+            if sum(b - t for _, t, b in stem_spans) > 12:  # at least one line of text
+                parts[pid]["stem"] = stem_spans
 
     # Drop the bare-number entry when the question has lettered parts.
     for pid in [p for p in parts if p.isdigit()]:

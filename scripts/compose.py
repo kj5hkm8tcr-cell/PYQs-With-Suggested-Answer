@@ -88,11 +88,45 @@ class Composer:
         self.ops.append(f"0.6 G 0.5 w {DEST_X:.2f} {self.y - 5:.2f} m {A4_W - DEST_X:.2f} {self.y - 5:.2f} l S")
         self.y -= 5 + GAP * 2
 
-    def label(self, text):
-        self._need(90)  # keep the label with the start of what follows
+    def label(self, text, highlight=False):
+        self._need(160 if highlight else 90)  # keep the label with the start of what follows
         self.y -= 10
-        self._text(DEST_X, self.y, text, size=9, bold=True, gray=0.35)
+        if highlight:  # green band so answers stand out from questions
+            self.ops.append(f"0.86 0.95 0.87 rg {DEST_X - 4:.2f} {self.y - 4:.2f} "
+                            f"{A4_W - 2 * DEST_X + 8:.2f} 15 re f")
+            self.ops.append(f"BT 0.05 0.40 0.15 rg /F2 9 Tf {DEST_X:.2f} {self.y:.2f} Td ({_esc(text)}) Tj ET")
+        else:
+            self._text(DEST_X, self.y, text, size=9, bold=True, gray=0.35)
         self.y -= GAP
+
+    def answer_box(self, text, size=10):
+        """An MCQ's correct option, in a green box right under the question."""
+        prefix = "Answer: "
+        text = text.replace("`", "Rs.")
+        words, lines, cur = text.split(), [], ""
+        for w in words:
+            limit = 70 - (len(prefix) if not lines else 0)
+            if cur and len(cur) + len(w) + 1 > limit:
+                lines.append(cur)
+                cur = w
+            else:
+                cur = f"{cur} {w}".strip()
+        lines.append(cur)
+        h = len(lines) * (size + 4) + 8
+        self._need(h + 10)
+        self.y -= 4
+        top = self.y
+        self.ops.append(f"0.86 0.95 0.87 rg 0.20 0.55 0.30 RG 0.8 w {DEST_X:.2f} {top - h:.2f} "
+                        f"{A4_W - 2 * DEST_X:.2f} {h:.2f} re B")
+        y = top - size - 3
+        for k, line in enumerate(lines):
+            x = DEST_X + 8
+            if k == 0:
+                self.ops.append(f"BT 0.05 0.40 0.15 rg /F2 {size} Tf {x:.2f} {y:.2f} Td ({_esc(prefix)}) Tj ET")
+                x += len(prefix) * size * 0.58
+            self.ops.append(f"BT 0 g /F2 {size} Tf {x:.2f} {y:.2f} Td ({_esc(line)}) Tj ET")
+            y -= size + 4
+        self.y = top - h - GAP * 2
 
     def note(self, text, size=10, bold_prefix=None):
         """Wrapped plain text, e.g. an MCQ's correct option read from ICAI's answer key."""

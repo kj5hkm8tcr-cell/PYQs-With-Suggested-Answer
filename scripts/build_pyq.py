@@ -48,6 +48,17 @@ def part_label(pid):
     return s + (" (OR)" if alt else "")
 
 
+def order_key(pid):
+    """Paper order: MCQs first by number, then Question 1(a), 1(a) OR, 1(a)(ii), 1(b) ..."""
+    if pid.startswith("m"):
+        return (0, int(pid[1:]), "", 0, 0)
+    m = re.match(r"(\d+)([a-h]?)(-or)?(?:\.([ivx]+))?$", pid)
+    q, letter, alt, rom = m.groups()
+    romans = ["i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x", "xi", "xii", "xiii", "xiv", "xv",
+              "xvi", "xvii", "xviii", "xix", "xx", "xxi", "xxii", "xxiii", "xxiv", "xxv"]
+    return (1, int(q), letter, 1 if alt else 0, romans.index(rom) + 1 if rom else 0)
+
+
 def fetch(url, dest):
     if not dest.exists():
         dest.parent.mkdir(parents=True, exist_ok=True)
@@ -137,7 +148,7 @@ def build(data_file):
     ok = True
     for a in attempts:
         srcs = sources(a)
-        for s in srcs:
+        for si, s in enumerate(srcs):
             src = fetch(s["url"], CACHE / level / paper / Path(s["url"]).name)
             parts = segment(str(src))
             tag = f" ({s['note'].split(':')[0]})" if s.get("note") else ""
@@ -152,7 +163,8 @@ def build(data_file):
                         print(f"  ! {paper} {a['attempt']}: '{pid}' is mapped to unknown chapter '{c}'")
                         ok = False
                     else:
-                        by_chapter[str(c)].append((a["attempt"], part_label(pid) + tag, str(src), parts[pid]))
+                        by_chapter[str(c)].append((a["attempt"], (si, order_key(pid)), part_label(pid) + tag,
+                                                   str(src), parts[pid]))
     if not ok:
         sys.exit(1)
 
@@ -164,36 +176,46 @@ def build(data_file):
             continue
         out_dir = OUT / level / paper / folder if folder else OUT / level / paper
         out_dir.mkdir(parents=True, exist_ok=True)
-        used = sorted({a for a, *_ in items}, reverse=True)
+        # paper order within each attempt: MCQs (Part I) first, then Question 1, 2, 3 ...
+        items.sort(key=lambda it: (-int(it[0].replace("-", "")), it[1]))
+        used = sorted({it[0] for it in items}, reverse=True)
         doc = Composer(f"{level} - {paper} - {title}")
         doc.cover([title, f"{level}  |  {paper}",
                    f"Past year questions with ICAI suggested answers",
                    f"{len(items)} questions from {len(used)} attempts: "
                    f"{attempt_name(used[0])} to {attempt_name(used[-1])}"])
         current, shown_context = None, None
-        for attempt, pid, src, part in items:
+        for k, (attempt, _, label, src, part) in enumerate(items):
+            name = attempt_name(attempt)
             if attempt != current:
-                current = attempt
-                doc.heading(f"{attempt_name(attempt)} Examination", outline_level=0, size=14)
-            doc.heading(f"{attempt_name(attempt)}  -  {pid}", outline_level=1, size=11)
-            if part.get("context") and shown_context != (src, part["context_id"]):
-                # a case scenario is printed once, before the first of its MCQs in this chapter
-                shown_context = (src, part["context_id"])
-                doc.keep_together(part["context"][:1], extra=30)
-                doc.label("CASE SCENARIO")
-                for span in part["context"]:
-                    doc.region(src, *span)
+                current, shown_context = attempt, None
+                doc.heading(f"{name} Examination", outline_level=0, size=14)
+            ctx = (src, part.get("context_id")) if part.get("context") else None
+            if ctx and ctx != shown_context:
+                # the complete case comes first, then each of its MCQs with its answer
+                shown_context = ctx
+                group = [it[2] for it in items[k:] if it[0] == attempt and it[3] == src
+                         and it[4].get("context_id") == part["context_id"]]
+                span = group[0] if len(group) == 1 else f"{group[0]} to {group[-1].replace('MCQ ', '')}"
+                doc.heading(f"{name}  -  Case Scenario: {span}", outline_level=1, size=12)
+                for region in part["context"]:
+                    doc.region(src, *region)
+            elif not ctx:
+                shown_context = None
             if "mcq_answer" in part:
-                doc.keep_together(part["question"], extra=60)
-            doc.label("QUESTION")
-            for span in part["question"]:
-                doc.region(src, *span)
-            if "mcq_answer" in part:
-                doc.note(part["mcq_answer"], bold_prefix="Correct answer: ")
+                doc.keep_together(part["question"], extra=70)
+                doc.heading(f"{name}  -  {label}", outline_level=1, size=11)
+                for region in part["question"]:
+                    doc.region(src, *region)
+                doc.answer_box(part["mcq_answer"])
                 continue
-            doc.label("SUGGESTED ANSWER")
-            for span in part["answer"]:
-                doc.region(src, *span)
+            doc.heading(f"{name}  -  {label}", outline_level=1, size=11)
+            doc.label("QUESTION")
+            for region in part.get("stem", []) + part["question"]:
+                doc.region(src, *region)
+            doc.label("SUGGESTED ANSWER", highlight=True)
+            for region in part["answer"]:
+                doc.region(src, *region)
         path = out_dir / f"{title}.pdf"
         doc.save(path)
         print(f"  wrote {path.relative_to(ROOT)} ({len(items)} questions)")

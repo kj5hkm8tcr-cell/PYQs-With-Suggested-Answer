@@ -21,7 +21,7 @@ LEVELS = ["CA Foundation", "CA Intermediate", "CA Final"]
 def count_questions(pdf_path):
     """Questions = second-level bookmarks (first level is the attempt)."""
     with pikepdf.open(pdf_path) as pdf, pdf.open_outline() as outline:
-        return sum(len(item.children) for item in outline.root)
+        return sum(1 for item in outline.root for q in item.children if "Case Scenario:" not in q.title)
 
 
 def main():
