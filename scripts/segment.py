@@ -62,6 +62,34 @@ def _lines(pdf):
     return out, bounds
 
 
+def _ink(pdf):
+    """Vertical extent (top, bottom) of everything printed on each page: characters and
+    drawn lines/curves such as fraction bars and square-root signs."""
+    ink = []
+    for page in pdf.pages:
+        objs = [(c["top"], c["bottom"]) for c in page.chars if c["text"].strip()]
+        objs += [(o["top"], o["bottom"]) for o in page.lines + page.curves + page.rects
+                 if o["bottom"] - o["top"] < 60]
+        ink.append(sorted(objs))
+    return ink
+
+
+def _cut_above(ink, bounds, pi, line):
+    """Where to cut so that a question starting at `line` keeps everything printed on its
+    first row: numerators of fractions and square-root signs rise above the text line."""
+    t, b = line["top"], line["bottom"]
+    top = t
+    while True:  # grow upwards over anything touching the row (root bars sit on the root sign)
+        new = min([o_t for o_t, o_b in ink[pi] if o_t < b - 1 and o_b >= top - 0.5 and o_t >= t - 25] + [top])
+        if new >= top:
+            break
+        top = new
+    above = [o_b for o_t, o_b in ink[pi] if o_b < top - 0.5 and o_b > top - 40]
+    prev = max(above, default=top - 6)
+    cut = (prev + top) / 2 if top - prev < 6 else top - 3
+    return (pi, max(cut, bounds[pi][0]))
+
+
 def _margin(lines):
     """Left margin = most common x0 of 'Question N' / '(a)' lines."""
     xs = [round(l["x0"]) for _, l in lines if RE_QUESTION.match(l["text"]) or RE_LETTER.match(l["text"])]
@@ -74,7 +102,7 @@ def _spans(start, end, bounds):
     spans = []
     for p in range(p0, p1 + 1):
         top = y0 if p == p0 else bounds[p][0]
-        bot = y1 - 2 if p == p1 else bounds[p][1]  # -2: brackets on the next line reach above its "top"
+        bot = y1 if p == p1 else bounds[p][1]  # y1 is already a cut in blank space (_cut_above)
         if bot - top > 4:
             spans.append((p, top, bot))
     return spans
@@ -83,6 +111,7 @@ def _spans(start, end, bounds):
 def segment(path):
     with pdfplumber.open(path) as pdf:
         lines, bounds = _lines(pdf)
+        ink = _ink(pdf)
     margin = _margin(lines)
     at_margin = lambda l: abs(l["x0"] - margin) < 4
     end_pos = (len(bounds) - 1, bounds[-1][1])
@@ -94,7 +123,7 @@ def segment(path):
             heads.append(("Q", int(RE_QUESTION.match(l["text"]).group(1)), i))
         elif at_margin(l) and RE_ANSWER.match(l["text"]) and heads and heads[-1][0] == "Q":
             heads.append(("A", heads[-1][1], i))
-    pos_of = lambda i: (lines[i][0], lines[i][1]["top"] - 3) if i < len(lines) else end_pos
+    pos_of = lambda i: _cut_above(ink, bounds, *lines[i]) if i < len(lines) else end_pos
 
     # 2. Inside each region, pick the (a), (b), (c) ... lines that start parts.
     def letters_in(lo, hi, allowed_indented=(), dup_is_next=False):
@@ -190,7 +219,7 @@ def segment(path):
     romans = []
     for b_qno, b_side, b_let, b_alt, b_start, b_end in blocks:
         for pi, l in lines:
-            pos = (pi, l["top"] - 3)
+            pos = _cut_above(ink, bounds, pi, l)
             if not (b_start <= pos < b_end):
                 continue
             if RE_OR.match(l["text"]) and l["x0"] > margin + 40:
@@ -385,6 +414,7 @@ def _read_key(path, lines, bounds, key, end, expected=()):
 def segment_mcq(path):
     with pdfplumber.open(path) as pdf:
         lines, bounds = _lines(pdf)
+        ink = _ink(pdf)
     if not lines:
         return {}
     margin = _margin(lines) if any(RE_QUESTION.match(l["text"]) for _, l in lines) else \
@@ -397,7 +427,7 @@ def segment_mcq(path):
     keys = [i for i in range(end) if RE_KEY_HEAD.match(lines[i][1]["text"])]
     if not keys:
         return {}
-    pos = lambda i: (lines[i][0], lines[i][1]["top"] - 3) if i < len(lines) else (len(bounds) - 1, bounds[-1][1])
+    pos = lambda i: _cut_above(ink, bounds, *lines[i]) if i < len(lines) else (len(bounds) - 1, bounds[-1][1])
     RE_SECTION = re.compile(r"^(SECTION|PART)\b", re.I)
 
     # A paper can have several MCQ blocks (e.g. Income Tax and GST), each ending in
