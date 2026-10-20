@@ -63,8 +63,10 @@ def _lines(pdf):
             # stop above decorations (e.g. ICAI's page-number badge) that start just
             # below the text and reach far down; thin rules right under the text stay in
             deco = [o["top"] for o in page.lines + page.curves + page.rects
-                    if last - 0.5 < o["top"] < last + 6 and o["bottom"] > last + 12]
-            bottom = min(bottom, last + 6, min(deco, default=bottom) - 0.5)
+                    if last - 15 < o["top"] < last + 6 and o["bottom"] > last + 12]
+            # a badge beside the last line can't be avoided by a straight cut: cut right
+            # under the text so at most a sliver of it shows
+            bottom = min(bottom, last + 6, max(last + 0.5, min(deco, default=bottom) - 0.5))
         bounds.append((top, bottom))
         out.extend((pi, l) for l in body)
     return out, bounds
@@ -88,7 +90,7 @@ def _cut_above(ink, bounds, pi, line):
     t, b = line["top"], line["bottom"]
     top = t
     while True:  # grow upwards over anything touching the row (root bars sit on the root sign)
-        new = min([o_t for o_t, o_b in ink[pi] if o_t < b - 1 and o_b >= top - 0.5 and o_t >= t - 25] + [top])
+        new = min([o_t for o_t, o_b in ink[pi] if o_t < b - 1 and o_b >= top - 0.5 and o_t >= t - 45] + [top])
         if new >= top:
             break
         top = new

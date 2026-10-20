@@ -159,42 +159,49 @@ class Composer:
         if h < A4_H - TOP - BOTTOM:
             self._need(h)
 
-    def _line_gaps(self, src_path, page_index):
-        """Safe places to split a source page: midpoints between consecutive text lines."""
+    def _page_info(self, src_path, page_index):
+        """Line gaps (safe split points) and printed characters of a source page."""
         key = (src_path, page_index)
         if key not in self.gaps:
             with pdfplumber.open(src_path) as pdf:
-                lines = sorted(pdf.pages[page_index].extract_text_lines(), key=lambda l: l["top"])
-            gaps = []
-            for upper, lower in zip(lines, lines[1:]):
-                if lower["top"] >= upper["bottom"]:  # no overlap: the space between them is blank
-                    gaps.append((upper["bottom"] + lower["top"]) / 2)
-            self.gaps[key] = gaps
+                page = pdf.pages[page_index]
+                lines = sorted(page.extract_text_lines(), key=lambda l: l["top"])
+                width = float(page.width)
+                chars = [(c["x0"], c["x1"], c["top"], c["bottom"]) for c in page.chars
+                         if c["text"].strip() and 5 < c["x0"] and c["x1"] < width - 5]
+            gaps = [(u["bottom"] + l["top"]) / 2 for u, l in zip(lines, lines[1:]) if l["top"] >= u["bottom"]]
+            self.gaps[key] = (gaps, chars)
         return self.gaps[key]
 
     def region(self, src_path, page_index, top, bottom):
         """Copy part of a source page (pdfplumber coordinates) into the output.
 
         A region that doesn't fit in the space left on the page is split between two
-        lines of text, so pages are filled instead of leaving a blank gap."""
+        lines of text, so pages are filled instead of leaving a blank gap. A region
+        wider than the usual text band (a wide table) is copied whole and scaled to fit."""
+        gaps, chars = self._page_info(src_path, page_index)
+        inside = [c for c in chars if c[2] >= top - 1 and c[3] <= bottom + 1]
+        x0 = min([CROP_X0] + [c[0] - 2 for c in inside])
+        x1 = max([CROP_X1] + [c[1] + 2 for c in inside])
+        scale = min(1.0, (A4_W - 2 * 30) / (x1 - x0))
         while bottom - top > 1:
             if self.page is None:
                 self._new_page()
-            room = self.y - BOTTOM
+            room = (self.y - BOTTOM) / scale  # in source units
             if bottom - top <= room:
-                self._place(src_path, page_index, top, bottom)
+                self._place(src_path, page_index, top, bottom, x0, x1, scale)
                 return
-            cuts = [g for g in self._line_gaps(src_path, page_index) if top + 20 < g <= top + room - 2]
-            if cuts and room > 60:
-                self._place(src_path, page_index, top, cuts[-1])
+            cuts = [g for g in gaps if top + 20 < g <= top + room - 2]
+            if cuts and room * scale > 60:
+                self._place(src_path, page_index, top, cuts[-1], x0, x1, scale)
                 top = cuts[-1]
             elif self.y >= A4_H - TOP - 1:
                 # already on a fresh page and no line gap fits: cut where the page ends
-                self._place(src_path, page_index, top, top + room)
+                self._place(src_path, page_index, top, top + room, x0, x1, scale)
                 top += room
             self._new_page()
 
-    def _place(self, src_path, page_index, top, bottom):
+    def _place(self, src_path, page_index, top, bottom, x0=CROP_X0, x1=CROP_X1, scale=1.0):
         src = self.sources.get(src_path)
         if src is None:
             src = self.sources[src_path] = pikepdf.open(src_path)
@@ -203,16 +210,19 @@ class Composer:
             self.forms[key] = self.pdf.copy_foreign(src.pages[page_index].as_form_xobject())
         mb = [float(v) for v in src.pages[page_index].mediabox]
         y_top, y_bot = mb[3] - top, mb[3] - bottom
-        h = y_top - y_bot
+        h = (y_top - y_bot) * scale
         # A tiny wrapper form whose BBox clips the shared full-page form to the region.
         form = self.pdf.make_stream(b"/P Do", Dictionary(
             Type=Name.XObject, Subtype=Name.Form,
-            BBox=Array([CROP_X0 + mb[0], y_bot, CROP_X1 + mb[0], y_top]),
+            BBox=Array([x0 + mb[0], y_bot, x1 + mb[0], y_top]),
             Resources=Dictionary(XObject=Dictionary(P=self.forms[key]))))
         name = f"/X{len(self.xobjs)}"
         self.xobjs[name] = form
-        tx, ty = DEST_X - CROP_X0 - mb[0], (self.y - h) - y_bot
-        self.ops.append(f"q 1 0 0 1 {tx:.2f} {ty:.2f} cm {name} Do Q")
+        # same left edge as normal text; wide regions are centred instead
+        left = DEST_X if x0 >= CROP_X0 and x1 <= CROP_X1 else (A4_W - (x1 - x0) * scale) / 2
+        tx = left - (x0 + mb[0]) * scale
+        ty = (self.y - h) - y_bot * scale
+        self.ops.append(f"q {scale:.4f} 0 0 {scale:.4f} {tx:.2f} {ty:.2f} cm {name} Do Q")
         self.y -= h + 2
 
     def save(self, path):
