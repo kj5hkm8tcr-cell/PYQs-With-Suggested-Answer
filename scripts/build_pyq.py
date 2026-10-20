@@ -224,14 +224,17 @@ def build(data_file):
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     files = args or sorted(str(p) for p in (ROOT / "data").rglob("*.json"))
-    for f in files:
-        if "--download-only" in sys.argv:
+    if "--download-only" in sys.argv:
+        for f in files:
             spec = json.loads(Path(f).read_text())
             for a in spec["attempts"]:
                 for s in sources(a):
                     fetch(s["url"], CACHE / spec["level"] / spec["paper"] / Path(s["url"]).name)
-        else:
-            build(f)
+        return
+    # papers are independent, so build them in parallel
+    from concurrent.futures import ProcessPoolExecutor
+    with ProcessPoolExecutor() as pool:
+        list(pool.map(build, files))
 
 
 if __name__ == "__main__":
