@@ -50,13 +50,21 @@ def _lines(pdf):
         h = float(page.height)
         lines = page.extract_text_lines(strip=True)
         head = [l for l in lines if l["top"] < 0.16 * h and RE_HEADER.search(l["text"].strip())]
-        foot = [l for l in lines if l["top"] > 0.80 * h and RE_PAGE_NO.match(l["text"].strip())]
+        # the page number is the lowest numeric line near the foot (a low "16" in a
+        # fraction near the bottom of the text is not the page number)
+        nums = [l for l in lines if l["top"] > 0.80 * h and RE_PAGE_NO.match(l["text"].strip())]
+        foot = [max(nums, key=lambda l: l["top"])] if nums else []
         top = max((l["bottom"] for l in head), default=0.11 * h) + 2
         bottom = min((l["top"] for l in foot), default=0.86 * h) - 2
         body = [l for l in lines if l["top"] >= top - 1 and l["bottom"] <= bottom + 1]
         if body:  # tighten to the text so header rules / page-number boxes stay out
             top = max(top, min(l["top"] for l in body) - 5)
-            bottom = min(bottom, max(l["bottom"] for l in body) + 6)
+            last = max(l["bottom"] for l in body)
+            # stop above decorations (e.g. ICAI's page-number badge) that start just
+            # below the text and reach far down; thin rules right under the text stay in
+            deco = [o["top"] for o in page.lines + page.curves + page.rects
+                    if last - 0.5 < o["top"] < last + 6 and o["bottom"] > last + 12]
+            bottom = min(bottom, last + 6, min(deco, default=bottom) - 0.5)
         bounds.append((top, bottom))
         out.extend((pi, l) for l in body)
     return out, bounds

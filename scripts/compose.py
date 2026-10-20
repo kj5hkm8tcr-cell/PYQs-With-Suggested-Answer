@@ -10,7 +10,7 @@ from pikepdf import Array, Dictionary, Name
 
 A4_W, A4_H = 595.28, 841.89
 TOP, BOTTOM = 56, 48
-CROP_X0, CROP_X1 = 92, 503  # horizontal band of ICAI pages that holds the text
+CROP_X0, CROP_X1 = 86, 514  # horizontal band of ICAI pages that holds the text (incl. long lines)
 DEST_X = (A4_W - (CROP_X1 - CROP_X0)) / 2
 GAP = 6
 
