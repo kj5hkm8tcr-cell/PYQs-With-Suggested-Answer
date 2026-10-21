@@ -1,0 +1,242 @@
+attempt,attempt_label,case_study,question,type,marks,subject,subject_label,topic
+2026-05,May 2026,1,1.1,MCQ,2.0,IDT,Indirect Tax (GST & Customs),Customs duty and IGST on import
+2026-05,May 2026,1,1.2,MCQ,2.0,AUDIT,Audit & Ethics,External confirmations and audit reporting
+2026-05,May 2026,1,1.3,MCQ,2.0,DT,Direct Tax,Tea Development Account and land sale
+2026-05,May 2026,1,1.4,MCQ,2.0,IDT,Indirect Tax (GST & Customs),GST ITC reversal computation
+2026-05,May 2026,1,1.5,MCQ,2.0,LAW,Corporate & Economic Laws,Minority share acquisition offer price
+2026-05,May 2026,1,1.6,Descriptive,5.0,SM,Strategic Mgmt & ESG,Business Model Canvas
+2026-05,May 2026,1,1.7,Descriptive,5.0,AFM,Advanced Financial Management,Forward vs money market hedge
+2026-05,May 2026,1,1.8,Descriptive,5.0,DT,Direct Tax,Depreciation and additional depreciation
+2026-05,May 2026,2,2.1,MCQ,2.0,AFM,Advanced Financial Management,Capitalisation of earnings valuation
+2026-05,May 2026,2,2.2,MCQ,2.0,DT,Direct Tax,Board for Advance Rulings
+2026-05,May 2026,2,2.3,MCQ,2.0,IDT,Indirect Tax (GST & Customs),GST on sponsorship services
+2026-05,May 2026,2,2.4,MCQ,2.0,COST,Costing & Performance Mgmt,Expected variable cost computation
+2026-05,May 2026,2,2.5,MCQ,2.0,COST,Costing & Performance Mgmt,Non-value-added activity classification
+2026-05,May 2026,2,2.6,Descriptive,5.0,COST,Costing & Performance Mgmt,Eliminating non-value-added activities
+2026-05,May 2026,2,2.7,Descriptive,4.0,DT,Direct Tax,Buy-back of shares tax consequences
+2026-05,May 2026,2,2.8,Descriptive,6.0,IDT,Indirect Tax (GST & Customs),"GST liability, ITC, interest, penalty"
+2026-05,May 2026,3,3.1,MCQ,2.0,LAW,Corporate & Economic Laws,Appointment of directors when none available
+2026-05,May 2026,3,3.2,MCQ,2.0,LAW,Corporate & Economic Laws,Managerial remuneration approvals
+2026-05,May 2026,3,3.3,MCQ,2.0,AUDIT,Audit & Ethics,UDIN requirements
+2026-05,May 2026,3,3.4,MCQ,2.0,IDT,Indirect Tax (GST & Customs),Customs import clearance procedure
+2026-05,May 2026,3,3.5,MCQ,2.0,FR,Financial Reporting (Accounts),Foreign exchange differences Ind AS 21
+2026-05,May 2026,3,3.6,Descriptive,4.0,FR,Financial Reporting (Accounts),Deferred tax and goodwill on acquisition
+2026-05,May 2026,3,3.7,Descriptive,6.0,AFM,Advanced Financial Management,Foreign investment CFAT and viability
+2026-05,May 2026,3,3.8,Descriptive,5.0,DT,Direct Tax,Income-tax appeals CIT(A) and ITAT
+2026-05,May 2026,4,4.1,MCQ,2.0,AFM,Advanced Financial Management,Forward Rate Agreement settlement
+2026-05,May 2026,4,4.2,MCQ,2.0,LAW,Corporate & Economic Laws,Scheme of amalgamation approval majority
+2026-05,May 2026,4,4.3,MCQ,2.0,AUDIT,Audit & Ethics,Single element audit opinion SA 805
+2026-05,May 2026,4,4.4,MCQ,2.0,LAW,Corporate & Economic Laws,Acquisition of minority dissenting shares
+2026-05,May 2026,4,4.5,MCQ,2.0,AUDIT,Audit & Ethics,Report on summary financial statements
+2026-05,May 2026,4,4.6,Descriptive,5.0,FR,Financial Reporting (Accounts),Inventory valuation Ind AS 2
+2026-05,May 2026,4,4.7,Descriptive,5.0,AUDIT,Audit & Ethics,Special purpose single element engagement
+2026-05,May 2026,4,4.8,Descriptive,5.0,COST,Costing & Performance Mgmt,Pricing strategy for new market
+2026-05,May 2026,5,5.1,MCQ,2.0,SM,Strategic Mgmt & ESG,Kano model attributes
+2026-05,May 2026,5,5.2,MCQ,2.0,AFM,Advanced Financial Management,NPV of bond refunding
+2026-05,May 2026,5,5.3,MCQ,2.0,DT,Direct Tax,TDS on salary default consequences
+2026-05,May 2026,5,5.4,MCQ,2.0,IDT,Indirect Tax (GST & Customs),GST on airline services and ITC
+2026-05,May 2026,5,5.5,MCQ,2.0,LAW,Corporate & Economic Laws,Directors sitting fees
+2026-05,May 2026,5,5.6,Descriptive,6.0,SM,Strategic Mgmt & ESG,McKinsey 7S framework
+2026-05,May 2026,5,5.7,Descriptive,5.0,FR,Financial Reporting (Accounts),Lease extension option Ind AS 116
+2026-05,May 2026,5,5.8,Descriptive,4.0,DT,Direct Tax,TDS on lease rent and charges
+2026-01,Jan 2026,1,1.1,MCQ,2.0,LAW,Corporate & Economic Laws,Director appointment compliance steps
+2026-01,Jan 2026,1,1.2,MCQ,2.0,AUDIT,Audit & Ethics,EQCR reviewer objectivity
+2026-01,Jan 2026,1,1.3,MCQ,2.0,AFM,Advanced Financial Management,Capital rationing limiting factors
+2026-01,Jan 2026,1,1.4,MCQ,2.0,FR,Financial Reporting (Accounts),Compound financial instrument equity component
+2026-01,Jan 2026,1,1.5,MCQ,2.0,IDT,Indirect Tax (GST & Customs),GST rate and place of supply
+2026-01,Jan 2026,1,1.6,Descriptive,6.0,IDT,Indirect Tax (GST & Customs),"GST SCN after voluntary payment, remedy"
+2026-01,Jan 2026,1,1.7,Descriptive,4.0,LAW,Corporate & Economic Laws,Auditor certificate in scheme Sec 230(7)
+2026-01,Jan 2026,1,1.8,Descriptive,5.0,AFM,Advanced Financial Management,Dividend growth and Walter model
+2026-01,Jan 2026,2,2.1,MCQ,2.0,COST,Costing & Performance Mgmt,Lean operational efficiency measures
+2026-01,Jan 2026,2,2.2,MCQ,2.0,FR,Financial Reporting (Accounts),Control assessment Ind AS 110
+2026-01,Jan 2026,2,2.3,MCQ,2.0,AFM,Advanced Financial Management,Forex contracts and interest swaps
+2026-01,Jan 2026,2,2.4,MCQ,2.0,LAW,Corporate & Economic Laws,Maximum directorships eligibility
+2026-01,Jan 2026,2,2.5,MCQ,2.0,AUDIT,Audit & Ethics,Review of interim financial information
+2026-01,Jan 2026,2,2.6,Descriptive,6.0,COST,Costing & Performance Mgmt,Quality cost report
+2026-01,Jan 2026,2,2.7,Descriptive,4.0,FR,Financial Reporting (Accounts),Group share-based payment Ind AS 102
+2026-01,Jan 2026,2,2.8,Descriptive,4.0,AUDIT,Audit & Ethics,Limited review inventory procedures
+2026-01,Jan 2026,3,3.1,MCQ,2.0,LAW,Corporate & Economic Laws,FCRA compliance requirements
+2026-01,Jan 2026,3,3.2,MCQ,2.0,AFM,Advanced Financial Management,Bond interest rate risk
+2026-01,Jan 2026,3,3.3,MCQ,2.0,LAW,Corporate & Economic Laws,ODI by trust under FEMA
+2026-01,Jan 2026,3,3.4,MCQ,2.0,IDT,Indirect Tax (GST & Customs),GST on charitable trust activities
+2026-01,Jan 2026,3,3.5,MCQ,2.0,DT,Direct Tax,Trust registration renewal and grants
+2026-01,Jan 2026,3,3.6,Descriptive,5.0,COST,Costing & Performance Mgmt,Value for Money framework
+2026-01,Jan 2026,3,3.7,Descriptive,6.0,DT,Direct Tax,Charitable trust total income computation
+2026-01,Jan 2026,3,3.8,Descriptive,4.0,AFM,Advanced Financial Management,Risks of importing equipment
+2026-01,Jan 2026,4,4.1,MCQ,2.0,LAW,Corporate & Economic Laws,Directors remuneration limits
+2026-01,Jan 2026,4,4.2,MCQ,2.0,DT,Direct Tax,Investment-linked deduction Sec 35AD
+2026-01,Jan 2026,4,4.3,MCQ,2.0,SM,Strategic Mgmt & ESG,Triple bottom line sustainability
+2026-01,Jan 2026,4,4.4,MCQ,2.0,FR,Financial Reporting (Accounts),Machine recognition and disclosure Ind AS
+2026-01,Jan 2026,4,4.5,MCQ,2.0,IDT,Indirect Tax (GST & Customs),GST ITC and RCM issues
+2026-01,Jan 2026,4,4.6,Descriptive,6.0,SM,Strategic Mgmt & ESG,Value chain primary activities
+2026-01,Jan 2026,4,4.7,Descriptive,6.0,IDT,Indirect Tax (GST & Customs),GST transaction value of machinery
+2026-01,Jan 2026,4,4.8,Descriptive,3.0,AUDIT,Audit & Ethics,Confidentiality of working papers
+2026-01,Jan 2026,5,5.1,MCQ,2.0,IDT,Indirect Tax (GST & Customs),Zero rated supply and SEZ
+2026-01,Jan 2026,5,5.2,MCQ,2.0,LAW,Corporate & Economic Laws,LODR related party governance
+2026-01,Jan 2026,5,5.3,MCQ,2.0,AFM,Advanced Financial Management,Exchange rate forecasting techniques
+2026-01,Jan 2026,5,5.4,MCQ,2.0,AUDIT,Audit & Ethics,Summary financial statements opinion
+2026-01,Jan 2026,5,5.5,MCQ,2.0,FR,Financial Reporting (Accounts),Revaluation surplus Ind AS 16
+2026-01,Jan 2026,5,5.6,Descriptive,5.0,FR,Financial Reporting (Accounts),Material accounting policy information
+2026-01,Jan 2026,5,5.7,Descriptive,5.0,AFM,Advanced Financial Management,Currency risk identification parameters
+2026-01,Jan 2026,5,5.8,Descriptive,5.0,DT,Direct Tax,ICDS VI and Section 43A
+2025-09,Sep 2025,1,1.1,MCQ,2.0,AUDIT,Audit & Ethics,NOCLAR responsibility of CA in service
+2025-09,Sep 2025,1,1.2,MCQ,2.0,AUDIT,Audit & Ethics,Register entry and CARO reporting
+2025-09,Sep 2025,1,1.3,MCQ,2.0,IDT,Indirect Tax (GST & Customs),Advance authorisation under FTP
+2025-09,Sep 2025,1,1.4,MCQ,2.0,FR,Financial Reporting (Accounts),Events after reporting period interim
+2025-09,Sep 2025,1,1.5,MCQ,2.0,DT,Direct Tax,Tax audit Form 3CD reporting
+2025-09,Sep 2025,1,1.6,Descriptive,5.0,AUDIT,Audit & Ethics,Opening balances audit procedures
+2025-09,Sep 2025,1,1.7,Descriptive,5.0,LAW,Corporate & Economic Laws,ECB for refinancing under FEMA
+2025-09,Sep 2025,1,1.8,Descriptive,5.0,IDT,Indirect Tax (GST & Customs),GST ITC reversal 180 days
+2025-09,Sep 2025,2,2.1,MCQ,2.0,LAW,Corporate & Economic Laws,Related party transaction approval
+2025-09,Sep 2025,2,2.2,MCQ,2.0,DT,Direct Tax,Deemed associated enterprises transfer pricing
+2025-09,Sep 2025,2,2.3,MCQ,2.0,SM,Strategic Mgmt & ESG,AI robotics as automation
+2025-09,Sep 2025,2,2.4,MCQ,2.0,SM,Strategic Mgmt & ESG,BRSR principle on inclusive growth
+2025-09,Sep 2025,2,2.5,MCQ,2.0,IDT,Indirect Tax (GST & Customs),Place of supply and ITC
+2025-09,Sep 2025,2,2.6,Descriptive,5.0,DT,Direct Tax,Most appropriate method transfer pricing
+2025-09,Sep 2025,2,2.7,Descriptive,5.0,AFM,Advanced Financial Management,Bond refunding decision
+2025-09,Sep 2025,2,2.8,Descriptive,5.0,FR,Financial Reporting (Accounts),Franchise investment accounting Ind AS
+2025-09,Sep 2025,3,3.1,MCQ,2.0,COST,Costing & Performance Mgmt,Operating income growth analysis
+2025-09,Sep 2025,3,3.2,MCQ,2.0,FR,Financial Reporting (Accounts),Related party disclosures Ind AS 24
+2025-09,Sep 2025,3,3.3,MCQ,2.0,FR,Financial Reporting (Accounts),PPE derecognition and IFC
+2025-09,Sep 2025,3,3.4,MCQ,2.0,LAW,Corporate & Economic Laws,FEMA commission remittance
+2025-09,Sep 2025,3,3.5,MCQ,2.0,IDT,Indirect Tax (GST & Customs),FTP status holder benefits
+2025-09,Sep 2025,3,3.6,Descriptive,4.0,COST,Costing & Performance Mgmt,Triple bottom line performance report
+2025-09,Sep 2025,3,3.7,Descriptive,6.0,AFM,Advanced Financial Management,Forex hedging strategies comparison
+2025-09,Sep 2025,3,3.8,Descriptive,5.0,FR,Financial Reporting (Accounts),Lease accounting Ind AS 116
+2025-09,Sep 2025,4,4.1,MCQ,2.0,LAW,Corporate & Economic Laws,Woman director appointment
+2025-09,Sep 2025,4,4.2,MCQ,2.0,AUDIT,Audit & Ethics,CAATs and fraud detection
+2025-09,Sep 2025,4,4.3,MCQ,2.0,COST,Costing & Performance Mgmt,Pricing policy identification
+2025-09,Sep 2025,4,4.4,MCQ,2.0,FR,Financial Reporting (Accounts),Acquisition date and contingent consideration
+2025-09,Sep 2025,4,4.5,MCQ,2.0,IDT,Indirect Tax (GST & Customs),GST ITC computation
+2025-09,Sep 2025,4,4.6,Descriptive,5.0,DT,Direct Tax,TDS on various expenses
+2025-09,Sep 2025,4,4.7,Descriptive,5.0,AFM,Advanced Financial Management,Forward cover vs unhedged
+2025-09,Sep 2025,4,4.8,Descriptive,5.0,SM,Strategic Mgmt & ESG,Porter's five forces
+2025-09,Sep 2025,5,5.1,MCQ,2.0,AUDIT,Audit & Ethics,Examination of prospective financial information
+2025-09,Sep 2025,5,5.2,MCQ,2.0,AFM,Advanced Financial Management,Post-merger EPS
+2025-09,Sep 2025,5,5.3,MCQ,2.0,COST,Costing & Performance Mgmt,Balanced scorecard objectives
+2025-09,Sep 2025,5,5.4,MCQ,2.0,LAW,Corporate & Economic Laws,IPO eligibility under ICDR
+2025-09,Sep 2025,5,5.5,MCQ,2.0,FR,Financial Reporting (Accounts),Customer loyalty scheme Ind AS 115
+2025-09,Sep 2025,5,5.6,Descriptive,5.0,COST,Costing & Performance Mgmt,Budget to actual profit reconciliation
+2025-09,Sep 2025,5,5.7,Descriptive,5.0,IDT,Indirect Tax (GST & Customs),Customs duty and interest on removal
+2025-09,Sep 2025,5,5.8,Descriptive,5.0,DT,Direct Tax,Book profit under Sec 115JB
+2025-05,May 2025,1,1.1,MCQ,2.0,SM,Strategic Mgmt & ESG,Freemium business model
+2025-05,May 2025,1,1.2,MCQ,2.0,AUDIT,Audit & Ethics,Revised audit report and disclosure
+2025-05,May 2025,1,1.3,MCQ,2.0,IDT,Indirect Tax (GST & Customs),GST special audit
+2025-05,May 2025,1,1.4,MCQ,2.0,DT,Direct Tax,TDS on ESOP for startup
+2025-05,May 2025,1,1.5,MCQ,2.0,FR,Financial Reporting (Accounts),Loss on transfer to joint venture
+2025-05,May 2025,1,1.6,Descriptive,5.0,LAW,Corporate & Economic Laws,Director disqualification and DIN
+2025-05,May 2025,1,1.7,Descriptive,5.0,AFM,Advanced Financial Management,EVA management efficiency
+2025-05,May 2025,1,1.8,Descriptive,5.0,FR,Financial Reporting (Accounts),Carrying value of building Ind AS
+2025-05,May 2025,2,2.1,MCQ,2.0,COST,Costing & Performance Mgmt,Supply chain JIT savings
+2025-05,May 2025,2,2.2,MCQ,2.0,FR,Financial Reporting (Accounts),Warranty provisions Ind AS 37
+2025-05,May 2025,2,2.3,MCQ,2.0,LAW,Corporate & Economic Laws,Additional and managing director appointment
+2025-05,May 2025,2,2.4,MCQ,2.0,IDT,Indirect Tax (GST & Customs),GST valuation of corporate guarantee
+2025-05,May 2025,2,2.5,MCQ,2.0,IDT,Indirect Tax (GST & Customs),GST on warranty replacements
+2025-05,May 2025,2,2.6,Descriptive,6.0,COST,Costing & Performance Mgmt,Supply chain management improvement
+2025-05,May 2025,2,2.7,Descriptive,5.0,AFM,Advanced Financial Management,Currency borrowing choice
+2025-05,May 2025,2,2.8,Descriptive,4.0,DT,Direct Tax,Repercussions of income addition
+2025-05,May 2025,3,3.1,MCQ,2.0,DT,Direct Tax,Depreciation under Sec 115BAA
+2025-05,May 2025,3,3.2,MCQ,2.0,FR,Financial Reporting (Accounts),Provident fund defined benefit plan
+2025-05,May 2025,3,3.3,MCQ,2.0,AUDIT,Audit & Ethics,IT controls testing
+2025-05,May 2025,3,3.4,MCQ,2.0,LAW,Corporate & Economic Laws,FCRA gift intimation
+2025-05,May 2025,3,3.5,MCQ,2.0,LAW,Corporate & Economic Laws,FEMA inherited agricultural land
+2025-05,May 2025,3,3.6,Descriptive,5.0,COST,Costing & Performance Mgmt,Make or buy decision
+2025-05,May 2025,3,3.7,Descriptive,7.0,IDT,Indirect Tax (GST & Customs),Customs assessable value and duty
+2025-05,May 2025,3,3.8,Descriptive,3.0,AUDIT,Audit & Ethics,Technology risks in IT environment
+2025-05,May 2025,4,4.1,MCQ,2.0,FR,Financial Reporting (Accounts),Segment reporting Ind AS 108
+2025-05,May 2025,4,4.2,MCQ,2.0,AFM,Advanced Financial Management,Dividend constant growth valuation
+2025-05,May 2025,4,4.3,MCQ,2.0,DT,Direct Tax,Capital gain on demerger
+2025-05,May 2025,4,4.4,MCQ,2.0,LAW,Corporate & Economic Laws,LRS remittance for relative
+2025-05,May 2025,4,4.5,MCQ,2.0,AUDIT,Audit & Ethics,Cyber-attack type and controls
+2025-05,May 2025,4,4.6,Descriptive,5.0,IDT,Indirect Tax (GST & Customs),GST ITC computation
+2025-05,May 2025,4,4.7,Descriptive,5.0,AUDIT,Audit & Ethics,Auditor report on consolidated statements
+2025-05,May 2025,4,4.8,Descriptive,5.0,DT,Direct Tax,Capital gains and buyback taxation
+2025-05,May 2025,5,5.1,MCQ,2.0,COST,Costing & Performance Mgmt,Product ranking limiting factor
+2025-05,May 2025,5,5.2,MCQ,2.0,AFM,Advanced Financial Management,Post-merger market capitalisation
+2025-05,May 2025,5,5.3,MCQ,2.0,DT,Direct Tax,Presumptive taxation Sec 44AD
+2025-05,May 2025,5,5.4,MCQ,2.0,FR,Financial Reporting (Accounts),Comparative information and loan classification
+2025-05,May 2025,5,5.5,MCQ,2.0,FR,Financial Reporting (Accounts),PPE gain and IFCoFR
+2025-05,May 2025,5,5.6 (LAW),Descriptive,3,LAW,Corporate & Economic Laws,ODI under FEMA and business model
+2025-05,May 2025,5,5.6 (SM),Descriptive,2,SM,Strategic Mgmt & ESG,ODI under FEMA and business model
+2025-05,May 2025,5,5.7,Descriptive,5.0,IDT,Indirect Tax (GST & Customs),E-way bill and records retention
+2025-05,May 2025,5,5.8,Descriptive,5.0,AFM,Advanced Financial Management,Defences against hostile takeover
+2024-11,Nov 2024,1,1.1,MCQ,2.0,FR,Financial Reporting (Accounts),Provision for lawsuit Ind AS 37
+2024-11,Nov 2024,1,1.2,MCQ,2.0,FR,Financial Reporting (Accounts),Government grant on concessional loan
+2024-11,Nov 2024,1,1.3,MCQ,2.0,IDT,Indirect Tax (GST & Customs),Invoice date for sale or return
+2024-11,Nov 2024,1,1.4,MCQ,2.0,LAW,Corporate & Economic Laws,FCRA registration suspension consequences
+2024-11,Nov 2024,1,1.5,MCQ,2.0,DT,Direct Tax,Income from other sources
+2024-11,Nov 2024,1,1.6,Descriptive,4.0,AUDIT,Audit & Ethics,Audit report issues
+2024-11,Nov 2024,1,1.7,Descriptive,5.0,DT,Direct Tax,Individual taxable income and tax
+2024-11,Nov 2024,1,1.8,Descriptive,6.0,IDT,Indirect Tax (GST & Customs),IGST on machines and exhibition goods
+2024-11,Nov 2024,2,2.1,MCQ,2.0,DT,Direct Tax,Speculation vs non-speculation income
+2024-11,Nov 2024,2,2.2,MCQ,2.0,LAW,Corporate & Economic Laws,ECB end-use and hedging
+2024-11,Nov 2024,2,2.3,MCQ,2.0,FR,Financial Reporting (Accounts),Interim financial reporting Ind AS 34
+2024-11,Nov 2024,2,2.4,MCQ,2.0,AFM,Advanced Financial Management,Portfolio manager performance fee
+2024-11,Nov 2024,2,2.5,MCQ,2.0,IDT,Indirect Tax (GST & Customs),TDS under GST and Income-tax
+2024-11,Nov 2024,2,2.6,Descriptive,5.0,FR,Financial Reporting (Accounts),Current asset and liability classification
+2024-11,Nov 2024,2,2.7,Descriptive,5.0,IDT,Indirect Tax (GST & Customs),GST on transaction with Mark Ltd
+2024-11,Nov 2024,2,2.8,Descriptive,5.0,COST,Costing & Performance Mgmt,Planning and operational variances
+2024-11,Nov 2024,3,3.1,MCQ,2.0,AFM,Advanced Financial Management,Number of GDRs to issue
+2024-11,Nov 2024,3,3.2,MCQ,2.0,DT,Direct Tax,TDS on GDR interest
+2024-11,Nov 2024,3,3.3,MCQ,2.0,DT,Direct Tax,MAT book profit losses
+2024-11,Nov 2024,3,3.4,MCQ,2.0,IDT,Indirect Tax (GST & Customs),Customs duty on machinery
+2024-11,Nov 2024,3,3.5,MCQ,2.0,IDT,Indirect Tax (GST & Customs),GST penalty quantum
+2024-11,Nov 2024,3,3.6,Descriptive,5.0,FR,Financial Reporting (Accounts),Prior period errors Ind AS 8
+2024-11,Nov 2024,3,3.7,Descriptive,5.0,COST,Costing & Performance Mgmt,TPM world class performance
+2024-11,Nov 2024,3,3.8,Descriptive,5.0,LAW,Corporate & Economic Laws,Oppression petition maintainability Sec 241
+2024-11,Nov 2024,4,4.1,MCQ,2.0,FR,Financial Reporting (Accounts),Software capitalisation Ind AS 38
+2024-11,Nov 2024,4,4.2,MCQ,2.0,DT,Direct Tax,Interest limitation Sec 94B
+2024-11,Nov 2024,4,4.3,MCQ,2.0,AFM,Advanced Financial Management,Capital structure arbitrage positions
+2024-11,Nov 2024,4,4.4,MCQ,2.0,IDT,Indirect Tax (GST & Customs),ITC transfer between registrations
+2024-11,Nov 2024,4,4.5,MCQ,2.0,AUDIT,Audit & Ethics,Key audit matters reporting
+2024-11,Nov 2024,4,4.6,Descriptive,4.0,AFM,Advanced Financial Management,Profit from debt-equity arbitrage
+2024-11,Nov 2024,4,4.7,Descriptive,5.0,IDT,Indirect Tax (GST & Customs),Electronic ledger utilisation and ITC documents
+2024-11,Nov 2024,4,4.8,Descriptive,6.0,FR,Financial Reporting (Accounts),"Intangible assets disclosure, derecognition"
+2024-11,Nov 2024,5,5.1,MCQ,2.0,IDT,Indirect Tax (GST & Customs),Customs refund unjust enrichment
+2024-11,Nov 2024,5,5.2,MCQ,2.0,AFM,Advanced Financial Management,Forward cover loss avoided
+2024-11,Nov 2024,5,5.3,MCQ,2.0,IDT,Indirect Tax (GST & Customs),Job work machinery deemed supply
+2024-11,Nov 2024,5,5.4,MCQ,2.0,LAW,Corporate & Economic Laws,Related party transaction Sec 188
+2024-11,Nov 2024,5,5.5,MCQ,2.0,DT,Direct Tax,Penalty under Income-tax Act
+2024-11,Nov 2024,5,5.6,Descriptive,5.0,LAW,Corporate & Economic Laws,Directors remuneration and sitting fee
+2024-11,Nov 2024,5,5.7,Descriptive,4.0,AFM,Advanced Financial Management,Forward vs money market hedge
+2024-11,Nov 2024,5,5.8,Descriptive,6.0,AUDIT,Audit & Ethics,Assurance report and UDIN
+2024-05,May 2024,1,1.1,MCQ,2.0,IDT,Indirect Tax (GST & Customs),GST penalty on consultant
+2024-05,May 2024,1,1.2,MCQ,2.0,AFM,Advanced Financial Management,Risk adjusted NPV
+2024-05,May 2024,1,1.3,MCQ,2.0,DT,Direct Tax,Depreciation on vehicles and truck
+2024-05,May 2024,1,1.4,MCQ,2.0,IDT,Indirect Tax (GST & Customs),ITC on vehicles and forklift
+2024-05,May 2024,1,1.5,MCQ,2.0,FR,Financial Reporting (Accounts),Change in inventory cost formula
+2024-05,May 2024,1,1.6,Descriptive,5.0,FR,Financial Reporting (Accounts),Investment property reclassification
+2024-05,May 2024,1,1.7,Descriptive,5.0,AUDIT,Audit & Ethics,Emphasis of matter paragraph
+2024-05,May 2024,1,1.8,Descriptive,5.0,COST,Costing & Performance Mgmt,Throughput accounting product ranking
+2024-05,May 2024,2,2.1,MCQ,2.0,LAW,Corporate & Economic Laws,FCRA gift exclusion
+2024-05,May 2024,2,2.2,MCQ,2.0,IDT,Indirect Tax (GST & Customs),GST on sponsorship RCM
+2024-05,May 2024,2,2.3,MCQ,2.0,IDT,Indirect Tax (GST & Customs),GST value of supply
+2024-05,May 2024,2,2.4,MCQ,2.0,FR,Financial Reporting (Accounts),Right-of-use asset measurement
+2024-05,May 2024,2,2.5,MCQ,2.0,FR,Financial Reporting (Accounts),Actuarial gains in OCI
+2024-05,May 2024,2,2.6,Descriptive,5.0,AFM,Advanced Financial Management,Merger share exchange and EPS
+2024-05,May 2024,2,2.7,Descriptive,5.0,AFM,Advanced Financial Management,Forex hedging decision procedure
+2024-05,May 2024,2,2.8,Descriptive,5.0,LAW,Corporate & Economic Laws,Internal auditor applicability
+2024-05,May 2024,3,3.1,MCQ,2.0,FR,Financial Reporting (Accounts),Inventory NRV valuation
+2024-05,May 2024,3,3.2,MCQ,2.0,AUDIT,Audit & Ethics,ICAI website guidelines
+2024-05,May 2024,3,3.3,MCQ,2.0,IDT,Indirect Tax (GST & Customs),ITC eligibility
+2024-05,May 2024,3,3.4,MCQ,2.0,IDT,Indirect Tax (GST & Customs),GST appellate tribunal pre-deposit
+2024-05,May 2024,3,3.5,MCQ,2.0,LAW,Corporate & Economic Laws,Liquidator appointment eligibility
+2024-05,May 2024,3,3.6,Descriptive,5.0,FR,Financial Reporting (Accounts),Variable consideration Ind AS 115
+2024-05,May 2024,3,3.7,Descriptive,5.0,AUDIT,Audit & Ethics,Using internal auditor findings
+2024-05,May 2024,3,3.8,Descriptive,5.0,DT,Direct Tax,ITAT rectification time limit
+2024-05,May 2024,4,4.1,MCQ,2.0,AUDIT,Audit & Ethics,Threats to independence
+2024-05,May 2024,4,4.2,MCQ,2.0,AUDIT,Audit & Ethics,Professional misconduct
+2024-05,May 2024,4,4.3,MCQ,2.0,LAW,Corporate & Economic Laws,IBC committee of creditors voting share
+2024-05,May 2024,4,4.4,MCQ,2.0,DT,Direct Tax,Glow-sign board expenditure nature
+2024-05,May 2024,4,4.5,MCQ,2.0,COST,Costing & Performance Mgmt,Material usage variance
+2024-05,May 2024,4,4.6,Descriptive,8.0,DT,Direct Tax,Company income computation
+2024-05,May 2024,4,4.7,Descriptive,4.0,AFM,Advanced Financial Management,Machine replacement evaluation
+2024-05,May 2024,4,4.8,Descriptive,3.0,DT,Direct Tax,Charitable institution receipt and application
+2024-05,May 2024,5,5.1,MCQ,2.0,DT,Direct Tax,Updated return remedy
+2024-05,May 2024,5,5.2,MCQ,2.0,DT,Direct Tax,TDS and deemed dividend on loan
+2024-05,May 2024,5,5.3,MCQ,2.0,COST,Costing & Performance Mgmt,Kaizen costing features
+2024-05,May 2024,5,5.4,MCQ,2.0,IDT,Indirect Tax (GST & Customs),Time limit for ITC claim
+2024-05,May 2024,5,5.5,MCQ,2.0,IDT,Indirect Tax (GST & Customs),Export of services value
+2024-05,May 2024,5,5.6,Descriptive,5.0,AFM,Advanced Financial Management,Exponential moving average Sensex
+2024-05,May 2024,5,5.7,Descriptive,6.0,IDT,Indirect Tax (GST & Customs),Non-resident taxable person and TDS
+2024-05,May 2024,5,5.8,Descriptive,4.0,LAW,Corporate & Economic Laws,Loan to director Sec 185
