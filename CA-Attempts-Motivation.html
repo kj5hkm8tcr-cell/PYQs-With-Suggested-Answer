@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Attempts Are Not Failure</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d1117;
+    --panel: #161b22;
+    --line: #30363d;
+    --text: #f0f3f6;
+    --muted: #9aa4b2;
+    --accent: #ffb703;
+    --red: #e63946;
+    --green: #2ec4b6;
+    --blue: #4ea8de;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; background: var(--bg); color: var(--text);
+    font-family: "Poppins", "Segoe UI", Roboto, Arial, sans-serif; overflow: hidden; }
+
+  /* 16:9 stage, scaled to fit the window */
+  #stage { position: absolute; width: 1600px; height: 900px; left: 50%; top: 50%;
+    transform-origin: center center; }
+  .slide { position: absolute; inset: 0; padding: 80px 110px; display: flex;
+    flex-direction: column; justify-content: center; opacity: 0;
+    pointer-events: none; transition: opacity .5s ease; }
+  .slide.active { opacity: 1; pointer-events: auto; }
+
+  .step { opacity: 0; transform: translateY(24px); transition: opacity .5s ease, transform .5s ease; }
+  .step.shown { opacity: 1; transform: none; }
+
+  .kicker { color: var(--accent); font-weight: 600; letter-spacing: .18em;
+    text-transform: uppercase; font-size: 22px; margin-bottom: 18px; }
+  h1 { font-size: 92px; line-height: 1.05; font-weight: 800; }
+  h2 { font-size: 60px; line-height: 1.1; font-weight: 800; margin-bottom: 40px; }
+  p.lead { font-size: 34px; color: var(--muted); margin-top: 30px; line-height: 1.4; }
+  .hl { color: var(--accent); }
+  .strike { text-decoration: line-through; text-decoration-color: var(--red);
+    text-decoration-thickness: 6px; color: var(--muted); }
+
+  /* Slide: society */
+  .vs { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+  .bubble { background: var(--panel); border: 2px solid var(--line); border-radius: 28px;
+    padding: 44px; font-size: 38px; line-height: 1.35; }
+  .bubble small { display: block; font-size: 20px; color: var(--muted); letter-spacing: .12em;
+    text-transform: uppercase; margin-bottom: 16px; }
+  .bubble.bad { border-color: var(--red); }
+  .bubble.good { border-color: var(--green); }
+
+  /* Slide: people */
+  .people { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
+  .person { background: var(--panel); border: 2px solid var(--line); border-radius: 24px;
+    padding: 24px; text-align: center; }
+  .photo { width: 100%; aspect-ratio: 1; border-radius: 18px; background: #1f2630 center/cover no-repeat;
+    border: 2px dashed var(--line); display: flex; align-items: center; justify-content: center;
+    color: var(--muted); font-size: 18px; cursor: pointer; margin-bottom: 18px; }
+  .photo.has-img { border: none; color: transparent; }
+  .person .name { font-size: 28px; font-weight: 600; outline: none; }
+  .person .role { font-size: 20px; color: var(--muted); margin-top: 4px; outline: none; }
+  .badge { display: inline-block; margin-top: 14px; background: var(--accent); color: #111;
+    font-weight: 800; font-size: 20px; padding: 6px 16px; border-radius: 999px; outline: none; }
+
+  /* Slide: RCB timeline */
+  .seasons { display: flex; flex-wrap: wrap; gap: 14px; margin: 10px 0 30px; }
+  .season { width: 70px; height: 70px; border-radius: 50%; background: #262d38;
+    border: 2px solid var(--line); display: flex; align-items: center; justify-content: center;
+    font-size: 17px; color: var(--muted); opacity: 0; transform: scale(.6);
+    transition: opacity .3s ease, transform .3s ease; }
+  .season.win { background: var(--accent); color: #111; font-weight: 800; border-color: var(--accent);
+    box-shadow: 0 0 40px rgba(255,183,3,.55); width: 92px; height: 92px; font-size: 20px; }
+  .step.shown .season { opacity: 1; transform: none; }
+  .bigline { font-size: 46px; font-weight: 800; margin-top: 10px; }
+
+  /* Slide: 12th Fail */
+  .attempts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; margin-top: 10px; }
+  .attempt { border-radius: 24px; padding: 34px 26px; background: var(--panel);
+    border: 2px solid var(--red); text-align: center; }
+  .attempt .n { font-size: 64px; font-weight: 800; }
+  .attempt .t { font-size: 24px; color: var(--muted); margin-top: 6px; }
+  .attempt.last { border-color: var(--green); background: #10261f; }
+  .attempt.last .n { color: var(--green); }
+
+  /* Quote slide */
+  .quote { font-size: 72px; font-weight: 800; line-height: 1.2; }
+  .quote .small { display: block; font-size: 36px; font-weight: 400; color: var(--muted); margin-top: 36px; }
+
+  /* Phases */
+  .phases { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  .phase { background: var(--panel); border: 2px solid var(--line); border-radius: 24px;
+    padding: 30px 26px; border-top: 8px solid var(--c); }
+  .phase .num { color: var(--c); font-weight: 800; font-size: 22px; letter-spacing: .1em; }
+  .phase h3 { font-size: 30px; line-height: 1.2; margin: 8px 0 6px; }
+  .phase .sub { font-size: 19px; color: var(--muted); }
+  .phase ul { margin-top: 22px; padding-left: 0; list-style: none; }
+  .phase li { font-size: 21px; line-height: 1.35; padding: 10px 0 10px 34px; position: relative;
+    border-top: 1px solid var(--line); }
+  .phase li::before { content: "✗"; position: absolute; left: 4px; color: var(--red); font-weight: 800; }
+
+  /* Audit */
+  table { width: 100%; border-collapse: collapse; font-size: 28px; }
+  th, td { text-align: left; padding: 22px 24px; border-bottom: 2px solid var(--line); }
+  th { color: var(--accent); font-size: 22px; letter-spacing: .1em; text-transform: uppercase; }
+  td { color: var(--text); }
+  td.dim { color: var(--muted); font-style: italic; }
+  .steps3 { display: flex; gap: 24px; margin-bottom: 44px; }
+  .chip { flex: 1; background: var(--panel); border: 2px solid var(--line); border-radius: 20px;
+    padding: 26px 30px; font-size: 30px; font-weight: 600; }
+  .chip span { color: var(--accent); margin-right: 10px; }
+
+  /* HUD */
+  #hud { position: fixed; bottom: 10px; right: 20px; color: #4b5563; font-size: 14px;
+    transition: opacity .3s; }
+  #progress { position: fixed; left: 0; bottom: 0; height: 4px; background: var(--accent);
+    transition: width .4s ease; }
+  body.clean #hud, body.clean #progress { opacity: 0; }
+  input[type=file] { display: none; }
+  #nav { position: fixed; top: 18px; right: 20px; display: flex; gap: 12px; opacity: .55;
+    transition: opacity .3s; z-index: 10; }
+  #nav button { width: 64px; height: 64px; border-radius: 50%; border: 2px solid var(--line);
+    background: rgba(22,27,34,.85); color: var(--text); font-size: 26px; cursor: pointer;
+    touch-action: manipulation; }
+  #nav button:active { background: var(--accent); color: #111; }
+  body.clean #nav { opacity: 0; }
+  body { touch-action: manipulation; user-select: none; -webkit-user-select: none; }
+  [contenteditable] { user-select: text; -webkit-user-select: text; }
+</style>
+</head>
+<body>
+<div id="stage">
+
+  <!-- 1. Title -->
+  <section class="slide">
+    <div class="kicker step">For every CA student</div>
+    <h1 class="step">Multiple attempts<br>are <span class="strike">failure</span> <span class="hl">part of the journey.</span></h1>
+    <p class="lead step">Your attempt count says how long it took you, not what you're worth.</p>
+  </section>
+
+  <!-- 2. Society -->
+  <section class="slide">
+    <div class="kicker">Where this fear comes from</div>
+    <h2>It's society's question, not yours.</h2>
+    <div class="vs">
+      <div class="bubble bad step"><small>What society asks</small>"Kitne attempts mein clear kiya?"</div>
+      <div class="bubble good step"><small>What actually matters</small>"Did you clear it, and what did you learn on the way?"</div>
+    </div>
+  </section>
+
+  <!-- 3. Real CAs -->
+  <section class="slide">
+    <div class="kicker">Living proof</div>
+    <h2 class="step">They took more than one attempt.<br><span class="hl">Look at them now.</span></h2>
+    <div class="people step" id="people"></div>
+  </section>
+
+  <!-- 4. RCB -->
+  <section class="slide">
+    <div class="kicker">Lesson 1 · RCB</div>
+    <h2 class="step">17 seasons. No trophy.</h2>
+    <div class="seasons step" id="seasons"></div>
+    <div class="step">
+      <div class="seasons" id="wins"></div>
+      <div class="bigline">Then they won, and won again. <span class="hl">That's momentum.</span></div>
+    </div>
+    <p class="lead step">Once you get the method right, the result keeps coming.</p>
+  </section>
+
+  <!-- 5. 12th Fail -->
+  <section class="slide">
+    <div class="kicker">Lesson 2 · 12th Fail</div>
+    <h2 class="step">Manoj Kumar Sharma: failed 12th, then cleared UPSC on his <span class="hl">last attempt</span>.</h2>
+    <div class="attempts">
+      <div class="attempt step"><div class="n">1</div><div class="t">Not cleared</div></div>
+      <div class="attempt step"><div class="n">2</div><div class="t">Not cleared</div></div>
+      <div class="attempt step"><div class="n">3</div><div class="t">Not cleared</div></div>
+      <div class="attempt last step"><div class="n">4</div><div class="t">Last chance.<br>Cleared, became IPS.</div></div>
+    </div>
+    <p class="lead step">He didn't treat a failed attempt as the end. He treated it as <span class="hl">learning</span>.</p>
+  </section>
+
+  <!-- 6. Quote -->
+  <section class="slide">
+    <div class="quote step">Exams are a part of life.<br><span class="hl">They are not the end of life.</span>
+      <span class="small step">Agar dil se lagta hai ki CA kar sakte ho, toh kar sakte ho.</span></div>
+  </section>
+
+  <!-- 7. Phases -->
+  <section class="slide">
+    <div class="kicker step">So how do you build that momentum?</div>
+    <h2 class="step">Find where it broke: the 4 phases of study</h2>
+    <div class="phases">
+      <div class="phase step" style="--c: var(--blue)">
+        <div class="num">PHASE 1</div><h3>Conceptual clarity</h3><div class="sub">Tuition + self-study</div>
+        <ul class="step"><li>Watched lectures, skipped self-study</li><li>Backlog piled up</li><li>Never read the ICAI study material</li></ul>
+      </div>
+      <div class="phase step" style="--c: var(--green)">
+        <div class="num">PHASE 2</div><h3>Revision</h3><div class="sub">Making it stick</div>
+        <ul class="step"><li>Only one revision done</li><li>Read, but didn't write</li><li>Avoided weak chapters</li></ul>
+      </div>
+      <div class="phase step" style="--c: var(--accent)">
+        <div class="num">PHASE 3</div><h3>Mock tests</h3><div class="sub">Exam simulation</div>
+        <ul class="step"><li>No full 3-hour papers</li><li>Didn't compare with ICAI suggested answers</li><li>Ignored presentation &amp; time</li></ul>
+      </div>
+      <div class="phase step" style="--c: var(--red)">
+        <div class="num">PHASE 4</div><h3>1.5-day revision</h3><div class="sub">Before each paper</div>
+        <ul class="step"><li>Started new topics</li><li>No plan for the hours</li><li>Skipped sleep, panicked</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Mistake audit -->
+  <section class="slide">
+    <div class="kicker">Do this today</div>
+    <h2 class="step">Your 3-step mistake audit</h2>
+    <div class="steps3">
+      <div class="chip step"><span>1</span>Take your last result</div>
+      <div class="chip step"><span>2</span>Find the phase that broke</div>
+      <div class="chip step"><span>3</span>Write one fix and stick to it</div>
+    </div>
+    <table class="step">
+      <tr><th>Subject</th><th>Phase that broke</th><th>My one fix</th></tr>
+      <tr><td>Example: Taxation</td><td>Phase 3: Mock tests</td><td>2 full papers a week, checked against suggested answers</td></tr>
+      <tr><td class="dim">Your subject</td><td class="dim">…</td><td class="dim">…</td></tr>
+    </table>
+  </section>
+
+  <!-- 9. Close -->
+  <section class="slide">
+    <div class="kicker step">Remember</div>
+    <h1 class="step">Find the mistake.<br>Fix the mistake.<br><span class="hl">Clear the exam.</span></h1>
+    <p class="lead step">Attempts don't define a CA. Persistence does. All the best 💪</p>
+  </section>
+</div>
+
+<div id="progress"></div>
+<div id="nav">
+  <button id="bPrev" title="Back">◀</button>
+  <button id="bFull" title="Fullscreen">⛶</button>
+  <button id="bHide" title="Hide controls">👁</button>
+  <button id="bNext" title="Next">▶</button>
+</div>
+<div id="hud">Tap / → : next · tap left edge / ← : back · F: fullscreen · H: hide controls</div>
+<input type="file" id="picker" accept="image/*">
+
+<script>
+  // ===== EDIT THIS: CAs who cleared in multiple attempts =====
+  // Put the image file in the same folder as this HTML and write its name in `photo`,
+  // or leave photo empty and click the box during the video to pick an image.
+  // Name, role and attempts can also be edited by clicking on them.
+  const PEOPLE = [
+    { name: "Name", role: "Current role / company", attempts: "Cleared in __ attempts", photo: "" },
+    { name: "Name", role: "Current role / company", attempts: "Cleared in __ attempts", photo: "" },
+    { name: "Name", role: "Current role / company", attempts: "Cleared in __ attempts", photo: "" },
+    { name: "Name", role: "Current role / company", attempts: "Cleared in __ attempts", photo: "" },
+  ];
+
+  // RCB seasons before the first title, then the title-winning seasons
+  const LOSING_SEASONS = Array.from({ length: 17 }, (_, i) => 2008 + i); // 2008–2024
+  const WIN_SEASONS = [2025, 2026];
+  // ===========================================================
+
+  const peopleEl = document.getElementById("people");
+  const picker = document.getElementById("picker");
+  let pickTarget = null;
+  PEOPLE.forEach(p => {
+    const card = document.createElement("div");
+    card.className = "person";
+    card.innerHTML = `
+      <div class="photo">Click to add photo</div>
+      <div class="name" contenteditable spellcheck="false"></div>
+      <div class="role" contenteditable spellcheck="false"></div>
+      <div class="badge" contenteditable spellcheck="false"></div>`;
+    card.querySelector(".name").textContent = p.name;
+    card.querySelector(".role").textContent = p.role;
+    card.querySelector(".badge").textContent = p.attempts;
+    const ph = card.querySelector(".photo");
+    if (p.photo) setPhoto(ph, p.photo);
+    ph.addEventListener("click", () => { pickTarget = ph; picker.click(); });
+    peopleEl.appendChild(card);
+  });
+  function setPhoto(el, src) {
+    el.style.backgroundImage = `url("${src}")`;
+    el.classList.add("has-img");
+  }
+  picker.addEventListener("change", () => {
+    const f = picker.files[0];
+    if (f && pickTarget) setPhoto(pickTarget, URL.createObjectURL(f));
+    picker.value = "";
+  });
+
+  const seasonsEl = document.getElementById("seasons");
+  LOSING_SEASONS.forEach((y, i) => {
+    const d = document.createElement("div");
+    d.className = "season"; d.textContent = y;
+    d.style.transitionDelay = (i * 0.08) + "s";
+    seasonsEl.appendChild(d);
+  });
+  const winsEl = document.getElementById("wins");
+  WIN_SEASONS.forEach((y, i) => {
+    const d = document.createElement("div");
+    d.className = "season win"; d.textContent = "🏆 " + String(y).slice(2);
+    d.title = y;
+    d.style.transitionDelay = (i * 0.3) + "s";
+    winsEl.appendChild(d);
+  });
+
+  // ===== Navigation =====
+  const slides = [...document.querySelectorAll(".slide")];
+  let cur = 0;
+  const steps = s => [...s.querySelectorAll(".step")];
+
+  function show(i, revealAll) {
+    slides.forEach((s, k) => s.classList.toggle("active", k === i));
+    steps(slides[i]).forEach(el => el.classList.toggle("shown", !!revealAll));
+    cur = i;
+    // auto-show the first step so a slide never opens blank
+    if (!revealAll) next(true);
+    updateProgress();
+  }
+  function next(firstOnly) {
+    const hidden = steps(slides[cur]).filter(el => !el.classList.contains("shown"));
+    if (hidden.length) { hidden[0].classList.add("shown"); updateProgress(); return; }
+    if (firstOnly) return;
+    if (cur < slides.length - 1) show(cur + 1, false);
+  }
+  function prev() {
+    const shown = steps(slides[cur]).filter(el => el.classList.contains("shown"));
+    if (shown.length > 1) { shown[shown.length - 1].classList.remove("shown"); updateProgress(); return; }
+    if (cur > 0) show(cur - 1, true);
+  }
+  function updateProgress() {
+    document.getElementById("progress").style.width = ((cur + 1) / slides.length * 100) + "%";
+  }
+
+  document.addEventListener("keydown", e => {
+    if (e.target.isContentEditable) { if (e.key === "Escape") e.target.blur(); return; }
+    if (["ArrowRight", "ArrowDown", " ", "PageDown", "Enter"].includes(e.key)) { e.preventDefault(); next(); }
+    else if (["ArrowLeft", "ArrowUp", "PageUp", "Backspace"].includes(e.key)) { e.preventDefault(); prev(); }
+    else if (e.key.toLowerCase() === "f") toggleFull();
+    else if (e.key.toLowerCase() === "h") document.body.classList.toggle("clean");
+  });
+  function toggleFull() {
+    const d = document.documentElement;
+    if (document.fullscreenElement || document.webkitFullscreenElement) {
+      (document.exitFullscreen || document.webkitExitFullscreen).call(document);
+    } else {
+      (d.requestFullscreen || d.webkitRequestFullscreen).call(d);
+    }
+  }
+  document.getElementById("bPrev").onclick = e => { e.stopPropagation(); prev(); };
+  document.getElementById("bNext").onclick = e => { e.stopPropagation(); next(); };
+  document.getElementById("bFull").onclick = e => { e.stopPropagation(); toggleFull(); };
+  document.getElementById("bHide").onclick = e => { e.stopPropagation(); document.body.classList.add("clean"); };
+
+  // Tap/click: left 25% of the screen goes back, anywhere else goes forward
+  document.addEventListener("click", e => {
+    if (e.target.closest(".photo, [contenteditable], #nav")) return;
+    // when controls are hidden, a tap in the top-right corner brings them back
+    if (document.body.classList.contains("clean") && e.clientY < 90 && e.clientX > innerWidth - 320) {
+      document.body.classList.remove("clean"); return;
+    }
+    e.clientX < innerWidth * 0.25 ? prev() : next();
+  });
+
+  // Swipe left/right on touch screens
+  let tx = null, ty = null;
+  document.addEventListener("touchstart", e => { tx = e.touches[0].clientX; ty = e.touches[0].clientY; }, { passive: true });
+  document.addEventListener("touchend", e => {
+    if (tx === null) return;
+    const dx = e.changedTouches[0].clientX - tx, dy = e.changedTouches[0].clientY - ty;
+    tx = null;
+    if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy)) {
+      e.preventDefault(); // stop the tap handler from also firing
+      dx < 0 ? next() : prev();
+    }
+  });
+
+  function fit() {
+    const s = Math.min(innerWidth / 1600, innerHeight / 900);
+    document.getElementById("stage").style.transform = `translate(-50%, -50%) scale(${s})`;
+  }
+  addEventListener("resize", fit);
+  fit();
+  show(0, false);
+</script>
+</body>
+</html>
