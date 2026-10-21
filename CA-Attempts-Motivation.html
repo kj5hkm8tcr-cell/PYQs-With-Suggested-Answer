@@ -77,6 +77,18 @@
   .node .label { font-size: 36px; font-weight: 800; }
   .node .desc { font-size: 25px; color: var(--muted); line-height: 1.4; margin: 10px auto 0; max-width: 400px; }
 
+  /* Slide: drill-down audit */
+  .drill { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+  .level { width: var(--w); display: grid; grid-template-columns: 200px 1fr auto; align-items: center; gap: 18px;
+    background: var(--panel); border: 2px solid var(--c); border-radius: 18px; padding: 16px 28px; }
+  .level .lv { color: var(--c); font-weight: 800; font-size: 22px; letter-spacing: .04em; }
+  .level .q { font-size: 26px; font-weight: 600; }
+  .level .ex { font-size: 21px; color: var(--muted); font-style: italic; white-space: nowrap; }
+  .level.root { background: #2a1417; grid-template-columns: 200px 1fr; }
+  .outcome { display: flex; gap: 20px; margin-top: 30px; }
+  .outcome .chip { font-size: 24px; padding: 20px 24px; }
+  .outcome .chip.pass { border-color: var(--green); background: #10261f; }
+
   /* Slide: RCB timeline */
   .seasons { display: flex; flex-wrap: wrap; gap: 14px; margin: 10px 0 30px; }
   .season { width: 70px; height: 70px; border-radius: 50%; background: #262d38;
@@ -241,20 +253,25 @@
     </div>
   </section>
 
-  <!-- 8. Mistake audit -->
+  <!-- 8. Mistake audit: drill down to the root cause -->
   <section class="slide">
-    <div class="kicker">Do this today</div>
-    <h2 class="step">Your 3-step mistake audit</h2>
-    <div class="steps3">
-      <div class="chip step"><span>1</span>Take your last result</div>
-      <div class="chip step"><span>2</span>Find the phase that broke</div>
-      <div class="chip step"><span>3</span>Write one fix and stick to it</div>
+    <div class="kicker">Why did I fail? Drill down</div>
+    <h2 class="step" style="margin-bottom:30px">Go to the <span class="hl">root cause</span>, not just the subject</h2>
+    <div class="drill">
+      <div class="level step" style="--w: 100%; --c: var(--blue)">
+        <div class="lv">1 · Subject level</div><div class="q">Which subject pulled me down?</div><div class="ex">e.g. Taxation</div></div>
+      <div class="level step" style="--w: 86%; --c: var(--green)">
+        <div class="lv">2 · Chapter level</div><div class="q">Which chapter is tricky or difficult?</div><div class="ex">e.g. Capital Gains</div></div>
+      <div class="level step" style="--w: 72%; --c: var(--accent)">
+        <div class="lv">3 · Topic level</div><div class="q">Where exactly am I stuck?</div><div class="ex">e.g. Sec 54 &amp; 54F</div></div>
+      <div class="level root step" style="--w: 58%; --c: var(--red)">
+        <div class="lv">🎯 Root cause</div><div class="q">Concept unclear + no practice</div></div>
     </div>
-    <table class="step">
-      <tr><th>Subject</th><th>Phase that broke</th><th>My one fix</th></tr>
-      <tr><td>Example: Taxation</td><td>Phase 3: Mock tests</td><td>2 full papers a week, checked against suggested answers</td></tr>
-      <tr><td class="dim">Your subject</td><td class="dim">…</td><td class="dim">…</td></tr>
-    </table>
+    <div class="outcome">
+      <div class="chip step"><span>✓</span>Work on that topic: concept + PYQs</div>
+      <div class="chip step"><span>✓</span>Check against ICAI suggested answers</div>
+      <div class="chip step pass"><span>🏆</span>Clear it in the next attempt</div>
+    </div>
   </section>
 
   <!-- 9. Close -->
