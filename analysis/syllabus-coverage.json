@@ -1,0 +1,5139 @@
+[
+ {
+  "level": "CA Final",
+  "paper": "Paper 1 - Financial Reporting",
+  "chapters_total": 17,
+  "attempts": [
+   "2026-05",
+   "2026-01",
+   "2025-09",
+   "2025-05",
+   "2024-11",
+   "2024-05",
+   "2023-11",
+   "2023-05",
+   "2022-11",
+   "2022-05"
+  ],
+  "cumulative_covered": [
+   15,
+   16,
+   16,
+   16,
+   16,
+   16,
+   16,
+   16,
+   16,
+   16
+  ],
+  "cumulative_with_depth": [
+   4,
+   10,
+   13,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15
+  ],
+  "depth": 3,
+  "per_attempt_covered": [
+   15,
+   13,
+   14,
+   14,
+   13,
+   11,
+   10,
+   10,
+   9,
+   12
+  ],
+  "attempts_for_full": null,
+  "attempts_for_depth": null,
+  "recommended_attempts": 4,
+  "chapters": [
+   {
+    "key": "1",
+    "name": "Introduction to Indian Accounting Standards",
+    "folder": null,
+    "asked_in": 2,
+    "questions": 2,
+    "first_attempt_needed": 2,
+    "attempts": [
+     "2026-01",
+     "2024-05"
+    ]
+   },
+   {
+    "key": "2",
+    "name": "Conceptual Framework for Financial Reporting under Indian Accounting Standards (Ind AS)",
+    "folder": null,
+    "asked_in": 7,
+    "questions": 8,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2025-05",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "3",
+    "name": "Ind AS on Presentation of General Purpose Financial Statements",
+    "folder": null,
+    "asked_in": 8,
+    "questions": 16,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-05",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "4",
+    "name": "Ind AS on Measurement based on Accounting Policies",
+    "folder": null,
+    "asked_in": 9,
+    "questions": 13,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "5",
+    "name": "Ind AS on Assets of the Financial Statements",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 40,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "6",
+    "name": "Ind AS on Liabilities of the Financial Statements",
+    "folder": null,
+    "asked_in": 8,
+    "questions": 11,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-05",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "7",
+    "name": "Ind AS on Items impacting the Financial Statements",
+    "folder": null,
+    "asked_in": 8,
+    "questions": 10,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2023-11",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "8",
+    "name": "Ind AS on Disclosures in the Financial Statements",
+    "folder": null,
+    "asked_in": 9,
+    "questions": 13,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "9",
+    "name": "Ind AS 115 \u201cRevenue from Contracts with Customers\u201d",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 21,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "10",
+    "name": "Other Indian Accounting Standards",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 14,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "11",
+    "name": "Accounting and Reporting of Financial Instruments",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 27,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "12",
+    "name": "Ind AS 103 \u201cBusiness Combinations\u201d",
+    "folder": null,
+    "asked_in": 5,
+    "questions": 9,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "13",
+    "name": "Consolidated and Separate Financial Statements of Group Entities",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 25,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "14",
+    "name": "Ind AS 101 \u201cFirst-time Adoption of Ind AS\u201d",
+    "folder": null,
+    "asked_in": 7,
+    "questions": 9,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11"
+    ]
+   },
+   {
+    "key": "15",
+    "name": "Analysis of Financial Statements",
+    "folder": null,
+    "asked_in": 0,
+    "questions": 0,
+    "first_attempt_needed": null,
+    "attempts": []
+   },
+   {
+    "key": "16",
+    "name": "Professional and Ethical Duty of a Chartered Accountant",
+    "folder": null,
+    "asked_in": 4,
+    "questions": 5,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2024-11"
+    ]
+   },
+   {
+    "key": "17",
+    "name": "Accounting and Technology",
+    "folder": null,
+    "asked_in": 4,
+    "questions": 5,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2025-09",
+     "2025-05",
+     "2024-05"
+    ]
+   }
+  ]
+ },
+ {
+  "level": "CA Final",
+  "paper": "Paper 2 - Advanced Financial Management",
+  "chapters_total": 15,
+  "attempts": [
+   "2026-05",
+   "2026-01",
+   "2025-09",
+   "2025-05",
+   "2024-11",
+   "2024-05",
+   "2023-11",
+   "2023-05",
+   "2022-11",
+   "2022-05"
+  ],
+  "cumulative_covered": [
+   13,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15
+  ],
+  "cumulative_with_depth": [
+   5,
+   10,
+   14,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15
+  ],
+  "depth": 3,
+  "per_attempt_covered": [
+   13,
+   15,
+   14,
+   15,
+   12,
+   12,
+   13,
+   11,
+   13,
+   13
+  ],
+  "attempts_for_full": 2,
+  "attempts_for_depth": 4,
+  "recommended_attempts": 3,
+  "chapters": [
+   {
+    "key": "1",
+    "name": "Financial Policy and Corporate Strategy",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 10,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "2",
+    "name": "Risk Management",
+    "folder": null,
+    "asked_in": 8,
+    "questions": 10,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "3",
+    "name": "Advanced Capital Budgeting Decisions",
+    "folder": null,
+    "asked_in": 5,
+    "questions": 9,
+    "first_attempt_needed": 2,
+    "attempts": [
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05"
+    ]
+   },
+   {
+    "key": "4",
+    "name": "Security Analysis",
+    "folder": null,
+    "asked_in": 7,
+    "questions": 7,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-05",
+     "2023-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "5",
+    "name": "Security Valuation",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 29,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "6",
+    "name": "Portfolio Management",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 26,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "7",
+    "name": "Securitization",
+    "folder": null,
+    "asked_in": 9,
+    "questions": 9,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "8",
+    "name": "Mutual Funds",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 24,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "9",
+    "name": "Derivatives Analysis and Valuation",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 31,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "10",
+    "name": "Foreign Exchange Exposure and Risk Management",
+    "folder": null,
+    "asked_in": 9,
+    "questions": 29,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "11",
+    "name": "International Financial Management",
+    "folder": null,
+    "asked_in": 8,
+    "questions": 11,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "12",
+    "name": "Interest Rate Risk Management",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 16,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "13",
+    "name": "Business Valuation",
+    "folder": null,
+    "asked_in": 5,
+    "questions": 6,
+    "first_attempt_needed": 2,
+    "attempts": [
+     "2026-01",
+     "2025-05",
+     "2024-11",
+     "2023-11",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "14",
+    "name": "Mergers, Acquisitions and Corporate Restructuring",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 23,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "15",
+    "name": "Startup Finance",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 13,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   }
+  ]
+ },
+ {
+  "level": "CA Final",
+  "paper": "Paper 3 - Advanced Auditing, Assurance and Professional Ethics",
+  "chapters_total": 19,
+  "attempts": [
+   "2026-05",
+   "2026-01",
+   "2025-09",
+   "2025-05",
+   "2024-11",
+   "2024-05",
+   "2023-11",
+   "2023-05",
+   "2022-11",
+   "2022-05"
+  ],
+  "cumulative_covered": [
+   17,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19
+  ],
+  "cumulative_with_depth": [
+   5,
+   10,
+   14,
+   16,
+   18,
+   19,
+   19,
+   19,
+   19,
+   19
+  ],
+  "depth": 3,
+  "per_attempt_covered": [
+   17,
+   16,
+   15,
+   17,
+   17,
+   14,
+   11,
+   9,
+   10,
+   11
+  ],
+  "attempts_for_full": 2,
+  "attempts_for_depth": 6,
+  "recommended_attempts": 5,
+  "chapters": [
+   {
+    "key": "1",
+    "name": "Quality Control",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 17,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "2",
+    "name": "General Auditing Principles and Auditors Responsibilities",
+    "folder": null,
+    "asked_in": 7,
+    "questions": 15,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "3",
+    "name": "Audit Planning, Strategy and Execution",
+    "folder": null,
+    "asked_in": 9,
+    "questions": 19,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "4",
+    "name": "Materiality, Risk Assessment and Internal Control",
+    "folder": null,
+    "asked_in": 4,
+    "questions": 6,
+    "first_attempt_needed": 2,
+    "attempts": [
+     "2026-01",
+     "2025-09",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "5",
+    "name": "Audit Evidence",
+    "folder": null,
+    "asked_in": 9,
+    "questions": 13,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "6",
+    "name": "Completion and Review",
+    "folder": null,
+    "asked_in": 5,
+    "questions": 8,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-05"
+    ]
+   },
+   {
+    "key": "7",
+    "name": "Reporting",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 28,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "8",
+    "name": "Specialised Areas",
+    "folder": null,
+    "asked_in": 4,
+    "questions": 4,
+    "first_attempt_needed": 2,
+    "attempts": [
+     "2026-01",
+     "2025-09",
+     "2024-11",
+     "2024-05"
+    ]
+   },
+   {
+    "key": "9",
+    "name": "Related Services",
+    "folder": null,
+    "asked_in": 4,
+    "questions": 4,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2025-05",
+     "2024-11",
+     "2024-05"
+    ]
+   },
+   {
+    "key": "10",
+    "name": "Review of Financial Information",
+    "folder": null,
+    "asked_in": 6,
+    "questions": 7,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05"
+    ]
+   },
+   {
+    "key": "11",
+    "name": "Prospective Financial Information and Other Assurance Services",
+    "folder": null,
+    "asked_in": 4,
+    "questions": 4,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-05",
+     "2024-11"
+    ]
+   },
+   {
+    "key": "12",
+    "name": "Digital Auditing & Assurance",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 14,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "13",
+    "name": "Group Audits",
+    "folder": null,
+    "asked_in": 9,
+    "questions": 12,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "14",
+    "name": "Special Features of Audit of Banks & Non-Banking Financial Companies",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 23,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "15",
+    "name": "Overview of Audit of Public Sector Undertakings",
+    "folder": null,
+    "asked_in": 6,
+    "questions": 10,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2023-11"
+    ]
+   },
+   {
+    "key": "16",
+    "name": "Internal Audit",
+    "folder": null,
+    "asked_in": 4,
+    "questions": 4,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2025-05",
+     "2024-05",
+     "2023-11"
+    ]
+   },
+   {
+    "key": "17",
+    "name": "Due Diligence, Investigation & Forensic Accounting",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 12,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "18",
+    "name": "Sustainable Development Goals (SDG) & Environment, Social and Governance (ESG) Assurance",
+    "folder": null,
+    "asked_in": 6,
+    "questions": 11,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05"
+    ]
+   },
+   {
+    "key": "19",
+    "name": "Professional Ethics & Liabilities of Auditors",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 45,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   }
+  ]
+ },
+ {
+  "level": "CA Final",
+  "paper": "Paper 4 - Direct Tax Laws and International Taxation",
+  "chapters_total": 28,
+  "attempts": [
+   "2026-05",
+   "2026-01",
+   "2025-09",
+   "2025-05",
+   "2024-11",
+   "2024-05",
+   "2023-11",
+   "2023-05",
+   "2022-11",
+   "2022-05"
+  ],
+  "cumulative_covered": [
+   17,
+   23,
+   24,
+   26,
+   26,
+   27,
+   27,
+   27,
+   28,
+   28
+  ],
+  "cumulative_with_depth": [
+   3,
+   7,
+   12,
+   15,
+   18,
+   19,
+   19,
+   19,
+   20,
+   20
+  ],
+  "depth": 3,
+  "per_attempt_covered": [
+   17,
+   18,
+   16,
+   19,
+   18,
+   14,
+   12,
+   15,
+   14,
+   10
+  ],
+  "attempts_for_full": 9,
+  "attempts_for_depth": null,
+  "recommended_attempts": 9,
+  "chapters": [
+   {
+    "key": "A-1",
+    "name": "Basic Concepts",
+    "folder": "Part I - Direct Tax Laws",
+    "asked_in": 2,
+    "questions": 2,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2025-09"
+    ]
+   },
+   {
+    "key": "A-2",
+    "name": "Incomes which do not form part of Total Income",
+    "folder": "Part I - Direct Tax Laws",
+    "asked_in": 1,
+    "questions": 1,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05"
+    ]
+   },
+   {
+    "key": "A-3",
+    "name": "Profits and Gains of Business or Profession",
+    "folder": "Part I - Direct Tax Laws",
+    "asked_in": 3,
+    "questions": 3,
+    "first_attempt_needed": 2,
+    "attempts": [
+     "2026-01",
+     "2024-11",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "A-4",
+    "name": "Capital Gains",
+    "folder": "Part I - Direct Tax Laws",
+    "asked_in": 7,
+    "questions": 9,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-05"
+    ]
+   },
+   {
+    "key": "A-5",
+    "name": "Income from Other Sources",
+    "folder": "Part I - Direct Tax Laws",
+    "asked_in": 4,
+    "questions": 4,
+    "first_attempt_needed": 4,
+    "attempts": [
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "A-6",
+    "name": "Income of Other Persons included in Assessee's Total Income",
+    "folder": "Part I - Direct Tax Laws",
+    "asked_in": 2,
+    "questions": 2,
+    "first_attempt_needed": 2,
+    "attempts": [
+     "2026-01",
+     "2025-09"
+    ]
+   },
+   {
+    "key": "A-7",
+    "name": "Aggregation of Income, Set Off or Carry Forward of Losses",
+    "folder": "Part I - Direct Tax Laws",
+    "asked_in": 2,
+    "questions": 2,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2023-05"
+    ]
+   },
+   {
+    "key": "A-8",
+    "name": "Deductions from Gross Total Income",
+    "folder": "Part I - Direct Tax Laws",
+    "asked_in": 2,
+    "questions": 2,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "A-9",
+    "name": "Assessment of Various Entities",
+    "folder": "Part I - Direct Tax Laws",
+    "asked_in": 10,
+    "questions": 15,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "A-10",
+    "name": "Assessment of Trusts and Institutions, Political Parties and Other Special Entities",
+    "folder": "Part I - Direct Tax Laws",
+    "asked_in": 10,
+    "questions": 32,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "A-11",
+    "name": "Tax Planning, Tax Avoidance and Tax Evasion",
+    "folder": "Part I - Direct Tax Laws",
+    "asked_in": 10,
+    "questions": 12,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "A-12",
+    "name": "Taxation of Digital Transactions",
+    "folder": "Part I - Direct Tax Laws",
+    "asked_in": 6,
+    "questions": 9,
+    "first_attempt_needed": 2,
+    "attempts": [
+     "2026-01",
+     "2025-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "A-13",
+    "name": "Deduction, Collection and Recovery of Tax",
+    "folder": "Part I - Direct Tax Laws",
+    "asked_in": 10,
+    "questions": 25,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "A-14",
+    "name": "Income Tax Authorities",
+    "folder": "Part I - Direct Tax Laws",
+    "asked_in": 1,
+    "questions": 1,
+    "first_attempt_needed": 9,
+    "attempts": [
+     "2022-11"
+    ]
+   },
+   {
+    "key": "A-15",
+    "name": "Assessment Procedure",
+    "folder": "Part I - Direct Tax Laws",
+    "asked_in": 8,
+    "questions": 14,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "A-16",
+    "name": "Appeals and Revision",
+    "folder": "Part I - Direct Tax Laws",
+    "asked_in": 7,
+    "questions": 8,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "A-17",
+    "name": "Dispute Resolution",
+    "folder": "Part I - Direct Tax Laws",
+    "asked_in": 1,
+    "questions": 2,
+    "first_attempt_needed": 2,
+    "attempts": [
+     "2026-01"
+    ]
+   },
+   {
+    "key": "A-18",
+    "name": "Miscellaneous Provisions",
+    "folder": "Part I - Direct Tax Laws",
+    "asked_in": 4,
+    "questions": 5,
+    "first_attempt_needed": 4,
+    "attempts": [
+     "2025-05",
+     "2024-11",
+     "2023-11",
+     "2023-05"
+    ]
+   },
+   {
+    "key": "A-19",
+    "name": "Provisions to Counteract Unethical Tax Practices",
+    "folder": "Part I - Direct Tax Laws",
+    "asked_in": 5,
+    "questions": 8,
+    "first_attempt_needed": 2,
+    "attempts": [
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2023-05"
+    ]
+   },
+   {
+    "key": "A-20",
+    "name": "Tax Audit and Ethical Compliances",
+    "folder": "Part I - Direct Tax Laws",
+    "asked_in": 5,
+    "questions": 5,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-05",
+     "2024-11",
+     "2024-05"
+    ]
+   },
+   {
+    "key": "B-21",
+    "name": "Non Resident Taxation",
+    "folder": "Part II - International Taxation",
+    "asked_in": 10,
+    "questions": 21,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "B-22",
+    "name": "Double Taxation Relief",
+    "folder": "Part II - International Taxation",
+    "asked_in": 10,
+    "questions": 10,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "B-23",
+    "name": "Advance Rulings",
+    "folder": "Part II - International Taxation",
+    "asked_in": 7,
+    "questions": 7,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "B-24",
+    "name": "Transfer Pricing",
+    "folder": "Part II - International Taxation",
+    "asked_in": 10,
+    "questions": 18,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "B-25",
+    "name": "Fundamentals of BEPS",
+    "folder": "Part II - International Taxation",
+    "asked_in": 5,
+    "questions": 5,
+    "first_attempt_needed": 3,
+    "attempts": [
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2023-11",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "B-26",
+    "name": "Application and Interpretation of Tax Treaties",
+    "folder": "Part II - International Taxation",
+    "asked_in": 5,
+    "questions": 6,
+    "first_attempt_needed": 2,
+    "attempts": [
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "B-27",
+    "name": "Overview of Model Tax Conventions",
+    "folder": "Part II - International Taxation",
+    "asked_in": 5,
+    "questions": 5,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2024-11",
+     "2024-05",
+     "2023-05"
+    ]
+   },
+   {
+    "key": "B-28",
+    "name": "Latest Developments in International Taxation",
+    "folder": "Part II - International Taxation",
+    "asked_in": 1,
+    "questions": 1,
+    "first_attempt_needed": 6,
+    "attempts": [
+     "2024-05"
+    ]
+   }
+  ]
+ },
+ {
+  "level": "CA Final",
+  "paper": "Paper 5 - Indirect Tax Laws",
+  "chapters_total": 32,
+  "attempts": [
+   "2026-05",
+   "2026-01",
+   "2025-09",
+   "2025-05",
+   "2024-11",
+   "2024-05",
+   "2023-11",
+   "2023-05",
+   "2022-11",
+   "2022-05"
+  ],
+  "cumulative_covered": [
+   21,
+   26,
+   29,
+   30,
+   31,
+   32,
+   32,
+   32,
+   32,
+   32
+  ],
+  "cumulative_with_depth": [
+   5,
+   12,
+   16,
+   20,
+   23,
+   26,
+   28,
+   29,
+   29,
+   30
+  ],
+  "depth": 3,
+  "per_attempt_covered": [
+   21,
+   19,
+   21,
+   22,
+   19,
+   16,
+   15,
+   17,
+   14,
+   18
+  ],
+  "attempts_for_full": 6,
+  "attempts_for_depth": null,
+  "recommended_attempts": 8,
+  "chapters": [
+   {
+    "key": "A-1",
+    "name": "Supply under GST",
+    "folder": "Part I - Goods and Services Tax",
+    "asked_in": 8,
+    "questions": 11,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "A-2",
+    "name": "Charge of GST",
+    "folder": "Part I - Goods and Services Tax",
+    "asked_in": 8,
+    "questions": 18,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2023-11",
+     "2023-05",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "A-3",
+    "name": "Place of Supply",
+    "folder": "Part I - Goods and Services Tax",
+    "asked_in": 9,
+    "questions": 14,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "A-4",
+    "name": "Exemptions from GST",
+    "folder": "Part I - Goods and Services Tax",
+    "asked_in": 9,
+    "questions": 16,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "A-5",
+    "name": "Time of Supply",
+    "folder": "Part I - Goods and Services Tax",
+    "asked_in": 7,
+    "questions": 9,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2023-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "A-6",
+    "name": "Value of Supply",
+    "folder": "Part I - Goods and Services Tax",
+    "asked_in": 7,
+    "questions": 17,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-05",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "A-7",
+    "name": "Input Tax Credit",
+    "folder": "Part I - Goods and Services Tax",
+    "asked_in": 10,
+    "questions": 24,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "A-8",
+    "name": "Registration",
+    "folder": "Part I - Goods and Services Tax",
+    "asked_in": 5,
+    "questions": 7,
+    "first_attempt_needed": 3,
+    "attempts": [
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "A-9",
+    "name": "Tax Invoice, Credit and Debit Notes",
+    "folder": "Part I - Goods and Services Tax",
+    "asked_in": 3,
+    "questions": 4,
+    "first_attempt_needed": 3,
+    "attempts": [
+     "2025-09",
+     "2025-05",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "A-10",
+    "name": "Accounts and Records; E-way Bill",
+    "folder": "Part I - Goods and Services Tax",
+    "asked_in": 3,
+    "questions": 4,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2023-11",
+     "2023-05"
+    ]
+   },
+   {
+    "key": "A-11",
+    "name": "Payment of Tax",
+    "folder": "Part I - Goods and Services Tax",
+    "asked_in": 10,
+    "questions": 24,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "A-12",
+    "name": "Electronic Commerce Transactions",
+    "folder": "Part I - Goods and Services Tax",
+    "asked_in": 3,
+    "questions": 7,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2024-05"
+    ]
+   },
+   {
+    "key": "A-13",
+    "name": "Returns",
+    "folder": "Part I - Goods and Services Tax",
+    "asked_in": 4,
+    "questions": 6,
+    "first_attempt_needed": 2,
+    "attempts": [
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "A-14",
+    "name": "Import and Export under GST",
+    "folder": "Part I - Goods and Services Tax",
+    "asked_in": 4,
+    "questions": 5,
+    "first_attempt_needed": 2,
+    "attempts": [
+     "2026-01",
+     "2024-11",
+     "2024-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "A-15",
+    "name": "Refunds",
+    "folder": "Part I - Goods and Services Tax",
+    "asked_in": 4,
+    "questions": 4,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2024-05",
+     "2023-05"
+    ]
+   },
+   {
+    "key": "A-16",
+    "name": "Job Work",
+    "folder": "Part I - Goods and Services Tax",
+    "asked_in": 4,
+    "questions": 4,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-05",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "A-17",
+    "name": "Assessment and Audit",
+    "folder": "Part I - Goods and Services Tax",
+    "asked_in": 6,
+    "questions": 7,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2025-09",
+     "2025-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "A-18",
+    "name": "Inspection, Search, Seizure and Arrest",
+    "folder": "Part I - Goods and Services Tax",
+    "asked_in": 3,
+    "questions": 4,
+    "first_attempt_needed": 5,
+    "attempts": [
+     "2024-11",
+     "2024-05",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "A-19",
+    "name": "Demands and Recovery",
+    "folder": "Part I - Goods and Services Tax",
+    "asked_in": 6,
+    "questions": 8,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2023-11",
+     "2023-05"
+    ]
+   },
+   {
+    "key": "A-20",
+    "name": "Liability to Pay in Certain Cases",
+    "folder": "Part I - Goods and Services Tax",
+    "asked_in": 3,
+    "questions": 3,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2023-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "A-21",
+    "name": "Offences and Penalties and Ethical Aspects under GST",
+    "folder": "Part I - Goods and Services Tax",
+    "asked_in": 9,
+    "questions": 12,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "A-22",
+    "name": "Appeals and Revision",
+    "folder": "Part I - Goods and Services Tax",
+    "asked_in": 8,
+    "questions": 12,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-05",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "A-23",
+    "name": "Advance Ruling",
+    "folder": "Part I - Goods and Services Tax",
+    "asked_in": 4,
+    "questions": 4,
+    "first_attempt_needed": 2,
+    "attempts": [
+     "2026-01",
+     "2025-05",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "A-24",
+    "name": "Miscellaneous Provisions",
+    "folder": "Part I - Goods and Services Tax",
+    "asked_in": 2,
+    "questions": 2,
+    "first_attempt_needed": 2,
+    "attempts": [
+     "2026-01",
+     "2025-09"
+    ]
+   },
+   {
+    "key": "B-1",
+    "name": "Levy of and Exemptions from Customs Duty",
+    "folder": "Part II - Customs and FTP",
+    "asked_in": 6,
+    "questions": 9,
+    "first_attempt_needed": 2,
+    "attempts": [
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "B-2",
+    "name": "Types of Duty",
+    "folder": "Part II - Customs and FTP",
+    "asked_in": 4,
+    "questions": 4,
+    "first_attempt_needed": 4,
+    "attempts": [
+     "2025-05",
+     "2024-11",
+     "2023-11",
+     "2023-05"
+    ]
+   },
+   {
+    "key": "B-3",
+    "name": "Classification of Imported and Export Goods",
+    "folder": "Part II - Customs and FTP",
+    "asked_in": 2,
+    "questions": 2,
+    "first_attempt_needed": 6,
+    "attempts": [
+     "2024-05",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "B-4",
+    "name": "Valuation under the Customs Act, 1962",
+    "folder": "Part II - Customs and FTP",
+    "asked_in": 10,
+    "questions": 15,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-11",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "B-5",
+    "name": "Importation and Exportation of Goods",
+    "folder": "Part II - Customs and FTP",
+    "asked_in": 8,
+    "questions": 15,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-05",
+     "2023-05",
+     "2022-11",
+     "2022-05"
+    ]
+   },
+   {
+    "key": "B-6",
+    "name": "Warehousing",
+    "folder": "Part II - Customs and FTP",
+    "asked_in": 4,
+    "questions": 4,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2025-05",
+     "2024-05",
+     "2023-11"
+    ]
+   },
+   {
+    "key": "B-7",
+    "name": "Refund",
+    "folder": "Part II - Customs and FTP",
+    "asked_in": 3,
+    "questions": 4,
+    "first_attempt_needed": 3,
+    "attempts": [
+     "2025-09",
+     "2024-11",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "B-8",
+    "name": "Foreign Trade Policy",
+    "folder": "Part II - Customs and FTP",
+    "asked_in": 6,
+    "questions": 8,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2024-11",
+     "2024-05",
+     "2022-05"
+    ]
+   }
+  ]
+ },
+ {
+  "level": "CA Foundation",
+  "paper": "Paper 1 - Accounting",
+  "chapters_total": 11,
+  "attempts": [
+   "2026-05",
+   "2026-01",
+   "2025-09",
+   "2025-05",
+   "2025-01",
+   "2024-09",
+   "2024-06",
+   "2023-12",
+   "2023-06",
+   "2022-11"
+  ],
+  "cumulative_covered": [
+   10,
+   11,
+   11,
+   11,
+   11,
+   11,
+   11,
+   11,
+   11,
+   11
+  ],
+  "cumulative_with_depth": [
+   3,
+   6,
+   10,
+   11,
+   11,
+   11,
+   11,
+   11,
+   11,
+   11
+  ],
+  "depth": 3,
+  "per_attempt_covered": [
+   10,
+   10,
+   11,
+   10,
+   11,
+   11,
+   11,
+   10,
+   10,
+   10
+  ],
+  "attempts_for_full": 2,
+  "attempts_for_depth": 4,
+  "recommended_attempts": 3,
+  "chapters": [
+   {
+    "key": "1",
+    "name": "Theoretical Framework",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 34,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2023-12",
+     "2023-06",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "2",
+    "name": "Accounting Process",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 31,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2023-12",
+     "2023-06",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "3",
+    "name": "Bank Reconciliation Statement",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 10,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2023-12",
+     "2023-06",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "4",
+    "name": "Inventories",
+    "folder": null,
+    "asked_in": 9,
+    "questions": 13,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2023-12",
+     "2023-06",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "5",
+    "name": "Depreciation and Amortisation",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 15,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2023-12",
+     "2023-06",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "6",
+    "name": "Bills of Exchange and Promissory Notes",
+    "folder": null,
+    "asked_in": 9,
+    "questions": 10,
+    "first_attempt_needed": 2,
+    "attempts": [
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2023-12",
+     "2023-06",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "7",
+    "name": "Preparation of Final Accounts of Sole Proprietors",
+    "folder": null,
+    "asked_in": 8,
+    "questions": 9,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2023-12",
+     "2023-06"
+    ]
+   },
+   {
+    "key": "8",
+    "name": "Financial Statements of Not-for-Profit Organisations",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 16,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2023-12",
+     "2023-06",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "9",
+    "name": "Accounts from Incomplete Records",
+    "folder": null,
+    "asked_in": 8,
+    "questions": 9,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "10",
+    "name": "Partnership and LLP Accounts",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 28,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2023-12",
+     "2023-06",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "11",
+    "name": "Company Accounts",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 24,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2023-12",
+     "2023-06",
+     "2022-11"
+    ]
+   }
+  ]
+ },
+ {
+  "level": "CA Foundation",
+  "paper": "Paper 2 - Business Laws",
+  "chapters_total": 7,
+  "attempts": [
+   "2026-05",
+   "2026-01",
+   "2025-09",
+   "2025-05",
+   "2025-01",
+   "2024-09",
+   "2024-06",
+   "2023-12",
+   "2023-06",
+   "2022-11"
+  ],
+  "cumulative_covered": [
+   7,
+   7,
+   7,
+   7,
+   7,
+   7,
+   7,
+   7,
+   7,
+   7
+  ],
+  "cumulative_with_depth": [
+   4,
+   5,
+   7,
+   7,
+   7,
+   7,
+   7,
+   7,
+   7,
+   7
+  ],
+  "depth": 3,
+  "per_attempt_covered": [
+   7,
+   7,
+   7,
+   7,
+   7,
+   7,
+   7,
+   5,
+   5,
+   5
+  ],
+  "attempts_for_full": 1,
+  "attempts_for_depth": 3,
+  "recommended_attempts": 3,
+  "chapters": [
+   {
+    "key": "1",
+    "name": "Indian Regulatory Framework",
+    "folder": null,
+    "asked_in": 7,
+    "questions": 7,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06"
+    ]
+   },
+   {
+    "key": "2",
+    "name": "The Indian Contract Act, 1872",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 51,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2023-12",
+     "2023-06",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "3",
+    "name": "The Sale of Goods Act, 1930",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 31,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2023-12",
+     "2023-06",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "4",
+    "name": "The Indian Partnership Act, 1932",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 30,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2023-12",
+     "2023-06",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "5",
+    "name": "The Limited Liability Partnership Act, 2008",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 10,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2023-12",
+     "2023-06",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "6",
+    "name": "The Companies Act, 2013",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 30,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2023-12",
+     "2023-06",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "7",
+    "name": "The Negotiable Instruments Act, 1881",
+    "folder": null,
+    "asked_in": 7,
+    "questions": 13,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06"
+    ]
+   }
+  ]
+ },
+ {
+  "level": "CA Foundation",
+  "paper": "Paper 3 - Quantitative Aptitude",
+  "chapters_total": 18,
+  "attempts": [
+   "2026-05",
+   "2026-01",
+   "2025-09",
+   "2025-05"
+  ],
+  "cumulative_covered": [
+   18,
+   18,
+   18,
+   18
+  ],
+  "cumulative_with_depth": [
+   17,
+   18,
+   18,
+   18
+  ],
+  "depth": 3,
+  "per_attempt_covered": [
+   18,
+   18,
+   18,
+   18
+  ],
+  "attempts_for_full": 1,
+  "attempts_for_depth": 2,
+  "recommended_attempts": 1,
+  "chapters": [
+   {
+    "key": "A-1",
+    "name": "Ratio and Proportion, Indices, Logarithms",
+    "folder": "Part A - Business Mathematics",
+    "asked_in": 4,
+    "questions": 17,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "A-2",
+    "name": "Equations",
+    "folder": "Part A - Business Mathematics",
+    "asked_in": 4,
+    "questions": 12,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "A-3",
+    "name": "Linear Inequalities",
+    "folder": "Part A - Business Mathematics",
+    "asked_in": 4,
+    "questions": 11,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "A-4",
+    "name": "Mathematics of Finance",
+    "folder": "Part A - Business Mathematics",
+    "asked_in": 4,
+    "questions": 56,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "A-5",
+    "name": "Basic Concepts of Permutations and Combinations",
+    "folder": "Part A - Business Mathematics",
+    "asked_in": 4,
+    "questions": 16,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "A-6",
+    "name": "Sequence and Series - Arithmetic and Geometric Progressions",
+    "folder": "Part A - Business Mathematics",
+    "asked_in": 4,
+    "questions": 16,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "A-7",
+    "name": "Sets, Relations and Functions, Basics of Limits and Continuity Functions",
+    "folder": "Part A - Business Mathematics",
+    "asked_in": 4,
+    "questions": 16,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "A-8",
+    "name": "Basic Applications of Differential and Integral Calculus in Business and Economics",
+    "folder": "Part A - Business Mathematics",
+    "asked_in": 4,
+    "questions": 16,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "B-9",
+    "name": "Number Series, Coding and Decoding and Odd Man Out",
+    "folder": "Part B - Logical Reasoning",
+    "asked_in": 4,
+    "questions": 20,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "B-10",
+    "name": "Direction Sense Tests",
+    "folder": "Part B - Logical Reasoning",
+    "asked_in": 4,
+    "questions": 20,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "B-11",
+    "name": "Seating Arrangements",
+    "folder": "Part B - Logical Reasoning",
+    "asked_in": 4,
+    "questions": 20,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "B-12",
+    "name": "Blood Relations",
+    "folder": "Part B - Logical Reasoning",
+    "asked_in": 4,
+    "questions": 20,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "C-13",
+    "name": "Statistical Description of Data and Sampling",
+    "folder": "Part C - Statistics",
+    "asked_in": 4,
+    "questions": 36,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "C-14",
+    "name": "Measures of Central Tendency and Dispersion",
+    "folder": "Part C - Statistics",
+    "asked_in": 4,
+    "questions": 40,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "C-15",
+    "name": "Probability",
+    "folder": "Part C - Statistics",
+    "asked_in": 4,
+    "questions": 26,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "C-16",
+    "name": "Theoretical Distributions",
+    "folder": "Part C - Statistics",
+    "asked_in": 4,
+    "questions": 18,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "C-17",
+    "name": "Correlation and Regression",
+    "folder": "Part C - Statistics",
+    "asked_in": 4,
+    "questions": 20,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "C-18",
+    "name": "Index Numbers",
+    "folder": "Part C - Statistics",
+    "asked_in": 4,
+    "questions": 20,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   }
+  ]
+ },
+ {
+  "level": "CA Foundation",
+  "paper": "Paper 4 - Business Economics",
+  "chapters_total": 10,
+  "attempts": [
+   "2026-05",
+   "2026-01",
+   "2025-09",
+   "2025-05"
+  ],
+  "cumulative_covered": [
+   10,
+   10,
+   10,
+   10
+  ],
+  "cumulative_with_depth": [
+   10,
+   10,
+   10,
+   10
+  ],
+  "depth": 3,
+  "per_attempt_covered": [
+   10,
+   10,
+   10,
+   10
+  ],
+  "attempts_for_full": 1,
+  "attempts_for_depth": 1,
+  "recommended_attempts": 1,
+  "chapters": [
+   {
+    "key": "1",
+    "name": "Nature & Scope of Business Economics",
+    "folder": null,
+    "asked_in": 4,
+    "questions": 20,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "2",
+    "name": "Theory of Demand and Supply",
+    "folder": null,
+    "asked_in": 4,
+    "questions": 43,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "3",
+    "name": "Theory of Production and Cost",
+    "folder": null,
+    "asked_in": 4,
+    "questions": 43,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "4",
+    "name": "Price Determination in Different Markets",
+    "folder": null,
+    "asked_in": 4,
+    "questions": 55,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "5",
+    "name": "Business Cycles",
+    "folder": null,
+    "asked_in": 4,
+    "questions": 19,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "6",
+    "name": "Determination of National Income",
+    "folder": null,
+    "asked_in": 4,
+    "questions": 60,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "7",
+    "name": "Public Finance",
+    "folder": null,
+    "asked_in": 4,
+    "questions": 41,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "8",
+    "name": "Money Market",
+    "folder": null,
+    "asked_in": 4,
+    "questions": 40,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "9",
+    "name": "International Trade",
+    "folder": null,
+    "asked_in": 4,
+    "questions": 39,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "10",
+    "name": "Indian Economy",
+    "folder": null,
+    "asked_in": 4,
+    "questions": 40,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   }
+  ]
+ },
+ {
+  "level": "CA Intermediate",
+  "paper": "Paper 1 - Advanced Accounting",
+  "chapters_total": 15,
+  "attempts": [
+   "2026-05",
+   "2026-01",
+   "2025-09",
+   "2025-05",
+   "2025-01",
+   "2024-09",
+   "2024-05",
+   "2023-11",
+   "2023-05",
+   "2022-11"
+  ],
+  "cumulative_covered": [
+   13,
+   13,
+   14,
+   14,
+   14,
+   14,
+   14,
+   15,
+   15,
+   15
+  ],
+  "cumulative_with_depth": [
+   4,
+   9,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   14
+  ],
+  "depth": 3,
+  "per_attempt_covered": [
+   13,
+   11,
+   13,
+   12,
+   12,
+   11,
+   8,
+   11,
+   12,
+   13
+  ],
+  "attempts_for_full": 8,
+  "attempts_for_depth": null,
+  "recommended_attempts": 10,
+  "chapters": [
+   {
+    "key": "1",
+    "name": "Introduction to Accounting Standards",
+    "folder": null,
+    "asked_in": 3,
+    "questions": 3,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2025-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "2",
+    "name": "Framework for Preparation and Presentation of Financial Statements",
+    "folder": null,
+    "asked_in": 3,
+    "questions": 3,
+    "first_attempt_needed": 3,
+    "attempts": [
+     "2025-09",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "3",
+    "name": "Applicability of Accounting Standards",
+    "folder": null,
+    "asked_in": 1,
+    "questions": 1,
+    "first_attempt_needed": 8,
+    "attempts": [
+     "2023-11"
+    ]
+   },
+   {
+    "key": "4",
+    "name": "Presentation & Disclosures Based Accounting Standards",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 28,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "5",
+    "name": "Assets Based Accounting Standards",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 46,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "6",
+    "name": "Liabilities Based Accounting Standards",
+    "folder": null,
+    "asked_in": 7,
+    "questions": 10,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "7",
+    "name": "Accounting Standards Based on Items Impacting Financial Statement",
+    "folder": null,
+    "asked_in": 9,
+    "questions": 22,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "8",
+    "name": "Revenue Based Accounting Standards",
+    "folder": null,
+    "asked_in": 9,
+    "questions": 13,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "9",
+    "name": "Other Accounting Standards",
+    "folder": null,
+    "asked_in": 5,
+    "questions": 7,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2025-09",
+     "2025-01",
+     "2023-11",
+     "2023-05"
+    ]
+   },
+   {
+    "key": "10",
+    "name": "Accounting Standards for Consolidated Financial Statement",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 15,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "11",
+    "name": "Financial Statements of Companies",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 33,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "12",
+    "name": "Buyback of Securities",
+    "folder": null,
+    "asked_in": 9,
+    "questions": 16,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "13",
+    "name": "Amalgamation of Companies",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 14,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "14",
+    "name": "Internal Reconstruction",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 13,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "15",
+    "name": "Accounting for Branches including Foreign Branches",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 10,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   }
+  ]
+ },
+ {
+  "level": "CA Intermediate",
+  "paper": "Paper 2 - Corporate and Other Laws",
+  "chapters_total": 15,
+  "attempts": [
+   "2026-05",
+   "2026-01",
+   "2025-09",
+   "2025-05",
+   "2025-01",
+   "2024-09",
+   "2024-05",
+   "2023-11",
+   "2023-05",
+   "2022-11"
+  ],
+  "cumulative_covered": [
+   14,
+   14,
+   14,
+   14,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15
+  ],
+  "cumulative_with_depth": [
+   6,
+   12,
+   14,
+   14,
+   14,
+   14,
+   14,
+   14,
+   15,
+   15
+  ],
+  "depth": 3,
+  "per_attempt_covered": [
+   14,
+   14,
+   12,
+   13,
+   14,
+   14,
+   12,
+   11,
+   11,
+   12
+  ],
+  "attempts_for_full": 5,
+  "attempts_for_depth": 9,
+  "recommended_attempts": 5,
+  "chapters": [
+   {
+    "key": "A-1",
+    "name": "Preliminary",
+    "folder": "Part I - Company Law and LLP",
+    "asked_in": 4,
+    "questions": 4,
+    "first_attempt_needed": 5,
+    "attempts": [
+     "2025-01",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "A-2",
+    "name": "Incorporation of Company and Matters Incidental Thereto",
+    "folder": "Part I - Company Law and LLP",
+    "asked_in": 8,
+    "questions": 10,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2023-11",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "A-3",
+    "name": "Prospectus and Allotment of Securities",
+    "folder": "Part I - Company Law and LLP",
+    "asked_in": 10,
+    "questions": 15,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "A-4",
+    "name": "Share Capital and Debentures",
+    "folder": "Part I - Company Law and LLP",
+    "asked_in": 10,
+    "questions": 20,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "A-5",
+    "name": "Acceptance of Deposits by Companies",
+    "folder": "Part I - Company Law and LLP",
+    "asked_in": 10,
+    "questions": 17,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "A-6",
+    "name": "Registration of Charges",
+    "folder": "Part I - Company Law and LLP",
+    "asked_in": 7,
+    "questions": 10,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-05",
+     "2024-09",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "A-7",
+    "name": "Management and Administration",
+    "folder": "Part I - Company Law and LLP",
+    "asked_in": 10,
+    "questions": 28,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "A-8",
+    "name": "Declaration and Payment of Dividend",
+    "folder": "Part I - Company Law and LLP",
+    "asked_in": 7,
+    "questions": 8,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "A-9",
+    "name": "Accounts of Companies",
+    "folder": "Part I - Company Law and LLP",
+    "asked_in": 10,
+    "questions": 21,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "A-10",
+    "name": "Audit and Auditors",
+    "folder": "Part I - Company Law and LLP",
+    "asked_in": 10,
+    "questions": 22,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "A-11",
+    "name": "Companies Incorporated Outside India",
+    "folder": "Part I - Company Law and LLP",
+    "asked_in": 7,
+    "questions": 14,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05"
+    ]
+   },
+   {
+    "key": "A-12",
+    "name": "The Limited Liability Partnership Act, 2008",
+    "folder": "Part I - Company Law and LLP",
+    "asked_in": 7,
+    "questions": 25,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05"
+    ]
+   },
+   {
+    "key": "B-1",
+    "name": "The General Clauses Act, 1897",
+    "folder": "Part II - Other Laws",
+    "asked_in": 10,
+    "questions": 31,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "B-2",
+    "name": "Interpretation of Statutes",
+    "folder": "Part II - Other Laws",
+    "asked_in": 10,
+    "questions": 21,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "B-3",
+    "name": "The Foreign Exchange Management Act, 1999",
+    "folder": "Part II - Other Laws",
+    "asked_in": 7,
+    "questions": 32,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05"
+    ]
+   }
+  ]
+ },
+ {
+  "level": "CA Intermediate",
+  "paper": "Paper 3 - Taxation",
+  "chapters_total": 24,
+  "attempts": [
+   "2026-05",
+   "2026-01",
+   "2025-09",
+   "2025-05",
+   "2025-01",
+   "2024-09",
+   "2024-05",
+   "2023-11",
+   "2023-05",
+   "2022-11"
+  ],
+  "cumulative_covered": [
+   18,
+   22,
+   22,
+   23,
+   24,
+   24,
+   24,
+   24,
+   24,
+   24
+  ],
+  "cumulative_with_depth": [
+   3,
+   11,
+   17,
+   20,
+   23,
+   24,
+   24,
+   24,
+   24,
+   24
+  ],
+  "depth": 3,
+  "per_attempt_covered": [
+   18,
+   19,
+   19,
+   18,
+   21,
+   21,
+   15,
+   16,
+   14,
+   14
+  ],
+  "attempts_for_full": 5,
+  "attempts_for_depth": 6,
+  "recommended_attempts": 5,
+  "chapters": [
+   {
+    "key": "A-1",
+    "name": "Basic Concepts",
+    "folder": "Section A - Income-tax Law",
+    "asked_in": 1,
+    "questions": 3,
+    "first_attempt_needed": 5,
+    "attempts": [
+     "2025-01"
+    ]
+   },
+   {
+    "key": "A-2",
+    "name": "Residence and Scope of Total Income",
+    "folder": "Section A - Income-tax Law",
+    "asked_in": 9,
+    "questions": 13,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "A-3",
+    "name": "Heads of Income",
+    "folder": "Section A - Income-tax Law",
+    "asked_in": 10,
+    "questions": 39,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "A-4",
+    "name": "Income of Other Persons included in Assessee's Total Income",
+    "folder": "Section A - Income-tax Law",
+    "asked_in": 6,
+    "questions": 10,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2025-09",
+     "2025-01",
+     "2024-09",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "A-5",
+    "name": "Aggregation of Income, Set-Off and Carry Forward of Losses",
+    "folder": "Section A - Income-tax Law",
+    "asked_in": 9,
+    "questions": 12,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "A-6",
+    "name": "Deductions from Gross Total Income",
+    "folder": "Section A - Income-tax Law",
+    "asked_in": 6,
+    "questions": 6,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2025-09",
+     "2025-05",
+     "2024-09",
+     "2023-11",
+     "2023-05"
+    ]
+   },
+   {
+    "key": "A-7",
+    "name": "Advance Tax, Tax Deduction at Source and Tax Collection at Source",
+    "folder": "Section A - Income-tax Law",
+    "asked_in": 10,
+    "questions": 20,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "A-8",
+    "name": "Provisions for filing Return of Income and Self Assessment",
+    "folder": "Section A - Income-tax Law",
+    "asked_in": 10,
+    "questions": 15,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "A-9",
+    "name": "Income Tax Liability - Computation and Optimisation",
+    "folder": "Section A - Income-tax Law",
+    "asked_in": 10,
+    "questions": 16,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "B-1",
+    "name": "GST in India - An Introduction",
+    "folder": "Section B - Goods and Services Tax",
+    "asked_in": 3,
+    "questions": 3,
+    "first_attempt_needed": 4,
+    "attempts": [
+     "2025-05",
+     "2025-01",
+     "2024-09"
+    ]
+   },
+   {
+    "key": "B-2",
+    "name": "Supply under GST",
+    "folder": "Section B - Goods and Services Tax",
+    "asked_in": 8,
+    "questions": 11,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05"
+    ]
+   },
+   {
+    "key": "B-3",
+    "name": "Charge of GST",
+    "folder": "Section B - Goods and Services Tax",
+    "asked_in": 10,
+    "questions": 22,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "B-4",
+    "name": "Place of Supply",
+    "folder": "Section B - Goods and Services Tax",
+    "asked_in": 6,
+    "questions": 8,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05"
+    ]
+   },
+   {
+    "key": "B-5",
+    "name": "Exemptions from GST",
+    "folder": "Section B - Goods and Services Tax",
+    "asked_in": 8,
+    "questions": 12,
+    "first_attempt_needed": 2,
+    "attempts": [
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05"
+    ]
+   },
+   {
+    "key": "B-6",
+    "name": "Time of Supply",
+    "folder": "Section B - Goods and Services Tax",
+    "asked_in": 3,
+    "questions": 3,
+    "first_attempt_needed": 2,
+    "attempts": [
+     "2026-01",
+     "2025-09",
+     "2025-01"
+    ]
+   },
+   {
+    "key": "B-7",
+    "name": "Value of Supply",
+    "folder": "Section B - Goods and Services Tax",
+    "asked_in": 4,
+    "questions": 5,
+    "first_attempt_needed": 2,
+    "attempts": [
+     "2026-01",
+     "2025-05",
+     "2024-09",
+     "2024-05"
+    ]
+   },
+   {
+    "key": "B-8",
+    "name": "Input Tax Credit",
+    "folder": "Section B - Goods and Services Tax",
+    "asked_in": 10,
+    "questions": 25,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "B-9",
+    "name": "Registration",
+    "folder": "Section B - Goods and Services Tax",
+    "asked_in": 8,
+    "questions": 11,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2023-11",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "B-10",
+    "name": "Tax Invoice; Credit and Debit Notes",
+    "folder": "Section B - Goods and Services Tax",
+    "asked_in": 9,
+    "questions": 15,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "B-11",
+    "name": "Accounts and Records",
+    "folder": "Section B - Goods and Services Tax",
+    "asked_in": 4,
+    "questions": 5,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-01",
+     "2024-09"
+    ]
+   },
+   {
+    "key": "B-12",
+    "name": "E-Way Bill",
+    "folder": "Section B - Goods and Services Tax",
+    "asked_in": 8,
+    "questions": 9,
+    "first_attempt_needed": 2,
+    "attempts": [
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "B-13",
+    "name": "Payment of Tax",
+    "folder": "Section B - Goods and Services Tax",
+    "asked_in": 9,
+    "questions": 14,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "B-14",
+    "name": "Tax Deduction at Source and Collection of Tax at Source",
+    "folder": "Section B - Goods and Services Tax",
+    "asked_in": 6,
+    "questions": 7,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-01",
+     "2024-09",
+     "2024-05"
+    ]
+   },
+   {
+    "key": "B-15",
+    "name": "Returns",
+    "folder": "Section B - Goods and Services Tax",
+    "asked_in": 8,
+    "questions": 8,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-01",
+     "2024-09",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   }
+  ]
+ },
+ {
+  "level": "CA Intermediate",
+  "paper": "Paper 4 - Cost and Management Accounting",
+  "chapters_total": 15,
+  "attempts": [
+   "2026-05",
+   "2026-01",
+   "2025-09",
+   "2025-05",
+   "2025-01",
+   "2024-09",
+   "2024-05",
+   "2023-11",
+   "2023-05",
+   "2022-11"
+  ],
+  "cumulative_covered": [
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15
+  ],
+  "cumulative_with_depth": [
+   4,
+   9,
+   14,
+   14,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15
+  ],
+  "depth": 3,
+  "per_attempt_covered": [
+   15,
+   14,
+   14,
+   13,
+   15,
+   14,
+   12,
+   14,
+   13,
+   14
+  ],
+  "attempts_for_full": 1,
+  "attempts_for_depth": 5,
+  "recommended_attempts": 3,
+  "chapters": [
+   {
+    "key": "1",
+    "name": "Introduction to Cost and Management Accounting",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 11,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "2",
+    "name": "Material Cost",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 32,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "3",
+    "name": "Employee Cost and Direct Expenses",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 22,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "4",
+    "name": "Overheads \u2013 Absorption Costing Method",
+    "folder": null,
+    "asked_in": 9,
+    "questions": 19,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "5",
+    "name": "Activity Based Costing",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 18,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "6",
+    "name": "Cost Sheet",
+    "folder": null,
+    "asked_in": 9,
+    "questions": 16,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "7",
+    "name": "Cost Accounting Systems",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 13,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "8",
+    "name": "Unit & Batch Costing",
+    "folder": null,
+    "asked_in": 6,
+    "questions": 6,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2025-05",
+     "2025-01",
+     "2024-05",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "9",
+    "name": "Job Costing",
+    "folder": null,
+    "asked_in": 6,
+    "questions": 7,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-01",
+     "2024-09",
+     "2023-11"
+    ]
+   },
+   {
+    "key": "10",
+    "name": "Process & Operation Costing",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 23,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "11",
+    "name": "Joint Products and By Products",
+    "folder": null,
+    "asked_in": 9,
+    "questions": 10,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "12",
+    "name": "Service Costing",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 14,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "13",
+    "name": "Standard Costing",
+    "folder": null,
+    "asked_in": 9,
+    "questions": 15,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "14",
+    "name": "Marginal Costing",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 28,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "15",
+    "name": "Budgets and Budgetary Control",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 23,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   }
+  ]
+ },
+ {
+  "level": "CA Intermediate",
+  "paper": "Paper 5 - Auditing and Ethics",
+  "chapters_total": 11,
+  "attempts": [
+   "2026-05",
+   "2026-01",
+   "2025-09",
+   "2025-05",
+   "2025-01",
+   "2024-09",
+   "2024-05",
+   "2023-11",
+   "2023-05",
+   "2022-11"
+  ],
+  "cumulative_covered": [
+   11,
+   11,
+   11,
+   11,
+   11,
+   11,
+   11,
+   11,
+   11,
+   11
+  ],
+  "cumulative_with_depth": [
+   8,
+   11,
+   11,
+   11,
+   11,
+   11,
+   11,
+   11,
+   11,
+   11
+  ],
+  "depth": 3,
+  "per_attempt_covered": [
+   11,
+   11,
+   11,
+   11,
+   10,
+   11,
+   11,
+   6,
+   8,
+   9
+  ],
+  "attempts_for_full": 1,
+  "attempts_for_depth": 2,
+  "recommended_attempts": 2,
+  "chapters": [
+   {
+    "key": "1",
+    "name": "Nature, Objective and Scope of Audit",
+    "folder": null,
+    "asked_in": 8,
+    "questions": 12,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "2",
+    "name": "Audit Strategy, Audit Planning and Audit Programme",
+    "folder": null,
+    "asked_in": 8,
+    "questions": 23,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-05"
+    ]
+   },
+   {
+    "key": "3",
+    "name": "Risk Assessment and Internal Control",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 36,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "4",
+    "name": "Audit Evidence",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 53,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "5",
+    "name": "Audit of Items of Financial Statements",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 43,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "6",
+    "name": "Audit Documentation",
+    "folder": null,
+    "asked_in": 7,
+    "questions": 10,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2024-09",
+     "2024-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "7",
+    "name": "Completion and Review",
+    "folder": null,
+    "asked_in": 8,
+    "questions": 26,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-05"
+    ]
+   },
+   {
+    "key": "8",
+    "name": "Audit Report",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 34,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "9",
+    "name": "Special Features of Audit of Different Type of Entities",
+    "folder": null,
+    "asked_in": 10,
+    "questions": 31,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "10",
+    "name": "Audit of Banks",
+    "folder": null,
+    "asked_in": 9,
+    "questions": 18,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "11",
+    "name": "Ethics and Terms of Audit Engagements",
+    "folder": null,
+    "asked_in": 9,
+    "questions": 27,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2022-11"
+    ]
+   }
+  ]
+ },
+ {
+  "level": "CA Intermediate",
+  "paper": "Paper 6 - Financial Management and Strategic Management",
+  "chapters_total": 14,
+  "attempts": [
+   "2026-05",
+   "2026-01",
+   "2025-09",
+   "2025-05",
+   "2025-01",
+   "2024-09",
+   "2024-05",
+   "2023-11",
+   "2023-05",
+   "2022-11"
+  ],
+  "cumulative_covered": [
+   14,
+   14,
+   14,
+   14,
+   14,
+   14,
+   14,
+   14,
+   14,
+   14
+  ],
+  "cumulative_with_depth": [
+   8,
+   13,
+   14,
+   14,
+   14,
+   14,
+   14,
+   14,
+   14,
+   14
+  ],
+  "depth": 3,
+  "per_attempt_covered": [
+   14,
+   13,
+   14,
+   14,
+   14,
+   13,
+   14,
+   12,
+   13,
+   11
+  ],
+  "attempts_for_full": 1,
+  "attempts_for_depth": 3,
+  "recommended_attempts": 2,
+  "chapters": [
+   {
+    "key": "A-1",
+    "name": "Scope and Objectives of Financial Management",
+    "folder": "Section A - Financial Management",
+    "asked_in": 7,
+    "questions": 8,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-05",
+     "2023-11"
+    ]
+   },
+   {
+    "key": "A-2",
+    "name": "Types of Financing",
+    "folder": "Section A - Financial Management",
+    "asked_in": 10,
+    "questions": 15,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "A-3",
+    "name": "Financial Analysis and Planning \u2013 Ratio Analysis",
+    "folder": "Section A - Financial Management",
+    "asked_in": 10,
+    "questions": 17,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "A-4",
+    "name": "Cost of Capital",
+    "folder": "Section A - Financial Management",
+    "asked_in": 10,
+    "questions": 20,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "A-5",
+    "name": "Financing Decisions \u2013 Capital Structure",
+    "folder": "Section A - Financial Management",
+    "asked_in": 9,
+    "questions": 21,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "A-6",
+    "name": "Financing Decisions \u2013 Leverages",
+    "folder": "Section A - Financial Management",
+    "asked_in": 10,
+    "questions": 16,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "A-7",
+    "name": "Investment Decisions",
+    "folder": "Section A - Financial Management",
+    "asked_in": 10,
+    "questions": 22,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "A-8",
+    "name": "Dividend Decision",
+    "folder": "Section A - Financial Management",
+    "asked_in": 9,
+    "questions": 16,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05"
+    ]
+   },
+   {
+    "key": "A-9",
+    "name": "Management of Working Capital",
+    "folder": "Section A - Financial Management",
+    "asked_in": 10,
+    "questions": 30,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "B-1",
+    "name": "Introduction to Strategic Management",
+    "folder": "Section B - Strategic Management",
+    "asked_in": 10,
+    "questions": 28,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "B-2",
+    "name": "Strategic Analysis: External Environment",
+    "folder": "Section B - Strategic Management",
+    "asked_in": 9,
+    "questions": 26,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05"
+    ]
+   },
+   {
+    "key": "B-3",
+    "name": "Strategic Analysis: Internal Environment",
+    "folder": "Section B - Strategic Management",
+    "asked_in": 9,
+    "questions": 27,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "B-4",
+    "name": "Strategic Choices",
+    "folder": "Section B - Strategic Management",
+    "asked_in": 10,
+    "questions": 29,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-11",
+     "2023-05",
+     "2022-11"
+    ]
+   },
+   {
+    "key": "B-5",
+    "name": "Strategy Implementation and Evaluation",
+    "folder": "Section B - Strategic Management",
+    "asked_in": 9,
+    "questions": 29,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-05",
+     "2023-05",
+     "2022-11"
+    ]
+   }
+  ]
+ }
+]

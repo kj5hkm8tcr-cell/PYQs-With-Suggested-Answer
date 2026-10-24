@@ -37,6 +37,14 @@ def chapters_asked(paper_file, spec):
     return asked
 
 
+def recommended(cumulative, depth, total):
+    """Fewest attempts that show every chapter ever asked and give 3+ questions on at
+    least 90% of the chapters (or as many as the attempts available ever do)."""
+    target = min(0.9 * total, depth[-1])
+    return next(i + 1 for i in range(len(cumulative))
+                if cumulative[i] == cumulative[-1] and depth[i] >= target)
+
+
 def main():
     papers, rows = [], []
     for paper_file in sorted((ROOT / "data").glob("*/*.json")):
@@ -73,6 +81,7 @@ def main():
             "per_attempt_covered": [len(asked[a]) for a in attempts],
             "attempts_for_full": next((i + 1 for i, n in enumerate(cumulative) if n == total), None),
             "attempts_for_depth": next((i + 1 for i, n in enumerate(depth) if n == len(seen)), None),
+            "recommended_attempts": recommended(cumulative, depth, total),
             "chapters": chapters,
         })
         print(f"{spec['level']:16} {spec['paper'][:40]:40} "
