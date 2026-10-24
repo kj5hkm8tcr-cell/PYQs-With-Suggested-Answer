@@ -9,3 +9,6 @@ cache/
 # repo until ICAI has given written permission to reproduce them; then
 # delete this line to commit them.
 Google Drive Upload/
+
+# MCQ practice data is cut from ICAI's PDFs (same reason as above); the page itself is committed
+mcq-practice/data/

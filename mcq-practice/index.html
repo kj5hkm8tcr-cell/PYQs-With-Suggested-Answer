@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CA MCQ Practice</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Layout: one centred column. Setup is a row of choice "steps"; practice mimics an
+   exam OMR sheet: question on top, answer bubbles A-D, a bubble grid as the palette. */
+:root {
+  --paper: #f3f5f9;      /* page */
+  --sheet: #ffffff;      /* cards */
+  --ink: #18233d;        /* text */
+  --muted: #5d6882;
+  --line: #d9deea;
+  --pen: #1f5fae;        /* ballpoint blue: accent */
+  --pen-soft: #e3ecf8;
+  --right: #1d7a46;
+  --right-soft: #e1f3e8;
+  --wrong: #b8322a;
+  --wrong-soft: #fbe6e4;
+  --flag: #a86a00;
+  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Source Sans 3", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  --scale: 1;
+  --img-filter: none;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #10141d; --sheet: #182030; --ink: #e6eaf3; --muted: #9aa5bd; --line: #2b3549;
+    --pen: #7fb0f0; --pen-soft: #1d2d47; --right: #5cc98a; --right-soft: #15301f;
+    --wrong: #f08a80; --wrong-soft: #3a1c1a; --flag: #e3b04b;
+    --img-filter: invert(0.9) hue-rotate(180deg); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #10141d; --sheet: #182030; --ink: #e6eaf3; --muted: #9aa5bd; --line: #2b3549;
+  --pen: #7fb0f0; --pen-soft: #1d2d47; --right: #5cc98a; --right-soft: #15301f;
+  --wrong: #f08a80; --wrong-soft: #3a1c1a; --flag: #e3b04b;
+  --img-filter: invert(0.9) hue-rotate(180deg); color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { font-size: calc(16px * var(--scale)); }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font: 400 1rem/1.5 var(--font-body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-bottom: 3rem;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--paper); }
+[hidden] { display: none !important; }
+button, select { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--pen); outline-offset: 2px; }
+.wrap { max-width: calc(860px * var(--scale)); margin: 0 auto; }
+
+/* top bar */
+.bar {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--paper);
+  display: flex; align-items: center; gap: 12px; padding-block: 14px; border-bottom: 1px solid var(--line);
+}
+.brand { font: 700 1.25rem/1.1 var(--font-display); letter-spacing: -0.01em; margin-right: auto; display: flex; align-items: center; gap: 10px; }
+.brand-mark { display: inline-grid; grid-template-columns: repeat(2, 8px); gap: 3px; }
+.brand-mark i { width: 8px; height: 8px; border-radius: 50%; border: 1.5px solid var(--pen); }
+.brand-mark i:nth-child(2) { background: var(--pen); }
+.tools { display: flex; gap: 6px; }
+.tool {
+  display: inline-grid; place-items: center;
+  min-width: 2.4rem; height: 2.4rem; padding: 0 .6rem; border-radius: 8px; border: 1px solid var(--line);
+  background: var(--sheet); cursor: pointer; font-weight: 700; font-size: .95rem;
+}
+.tool:hover { border-color: var(--pen); }
+
+/* setup */
+h1 { font: 700 clamp(1.6rem, 4vw, 2.2rem)/1.15 var(--font-display); letter-spacing: -0.02em; margin: 1.6rem 0 .3rem; text-wrap: balance; }
+.lede { color: var(--muted); margin: 0 0 1.4rem; max-width: 62ch; }
+.steps { display: grid; gap: 14px; }
+.step { background: var(--sheet); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; display: grid; gap: 10px; }
+.step-label { font: 700 .75rem/1 var(--font-body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip {
+  border: 1.5px solid var(--line); background: var(--sheet); border-radius: 999px; padding: .45rem 1rem;
+  cursor: pointer; font-weight: 600;
+}
+.chip:hover { border-color: var(--pen); }
+.chip[aria-pressed="true"] { background: var(--pen); border-color: var(--pen); color: var(--sheet); }
+.chip:disabled { opacity: .45; cursor: not-allowed; }
+.chip small { font-weight: 400; opacity: .8; }
+select.pick {
+  width: 100%; padding: .65rem .8rem; border-radius: 8px; border: 1.5px solid var(--line); background: var(--sheet);
+}
+.hint { color: var(--muted); font-size: .9rem; margin: 0; }
+.start-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; margin-top: 4px; }
+.btn {
+  border: 0; border-radius: 10px; padding: .75rem 1.4rem; font-weight: 700; cursor: pointer;
+  background: var(--pen); color: var(--sheet);
+}
+.btn:disabled { opacity: .45; cursor: not-allowed; }
+.btn.ghost { background: transparent; color: var(--ink); border: 1.5px solid var(--line); }
+.btn.ghost:hover { border-color: var(--pen); }
+.count { font-family: var(--font-mono); font-size: .9rem; color: var(--muted); }
+.setup-note { margin-top: 1.6rem; font-size: .85rem; color: var(--muted); max-width: 70ch; }
+.setup-note code { font-family: var(--font-mono); font-size: .85em; background: var(--pen-soft); padding: .1em .35em; border-radius: 4px; }
+
+/* practice */
+.p-head { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 1.2rem 0 .8rem; }
+.p-title { font: 700 1.15rem/1.25 var(--font-display); margin: 0; flex: 1 1 260px; min-width: 0; text-wrap: balance; }
+.p-sub { display: block; font: 400 .85rem/1.4 var(--font-body); color: var(--muted); }
+.score { display: flex; gap: 6px; font-family: var(--font-mono); font-size: .85rem; font-variant-numeric: tabular-nums; }
+.score span { padding: .25rem .55rem; border-radius: 6px; background: var(--sheet); border: 1px solid var(--line); }
+.score .ok { color: var(--right); }
+.score .no { color: var(--wrong); }
+.progress { height: 4px; background: var(--line); border-radius: 2px; overflow: hidden; margin-bottom: 14px; }
+.progress div { height: 100%; background: var(--pen); width: 0; transition: width .25s; }
+
+.card { background: var(--sheet); border: 1px solid var(--line); border-radius: 12px; padding: 16px; display: grid; gap: 14px; }
+.q-meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: .85rem; color: var(--muted); }
+.tag { font: 700 .72rem/1 var(--font-body); letter-spacing: .06em; text-transform: uppercase; padding: .35rem .55rem; border-radius: 5px; background: var(--pen-soft); color: var(--pen); }
+.q-no { font: 700 1rem/1 var(--font-mono); color: var(--ink); }
+details.ctx { border: 1px dashed var(--line); border-radius: 10px; padding: 10px 12px; }
+details.ctx summary { cursor: pointer; font-weight: 700; color: var(--pen); }
+details.ctx[open] summary { margin-bottom: 10px; }
+.scan { display: block; max-width: 100%; height: auto; filter: var(--img-filter); border-radius: 4px; }
+.scroll-img { max-height: 60vh; overflow: auto; }
+
+.bubbles { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.bubble {
+  width: 3.1rem; height: 3.1rem; border-radius: 50%; border: 2px solid var(--ink); background: var(--sheet);
+  font: 700 1.15rem/1 var(--font-mono); cursor: pointer; transition: background .15s, border-color .15s, color .15s;
+}
+.bubble:hover:not(:disabled) { border-color: var(--pen); color: var(--pen); }
+.bubble:disabled { cursor: default; }
+.bubble.pick-wrong { background: var(--wrong); border-color: var(--wrong); color: var(--sheet); }
+.bubble.is-right { background: var(--right); border-color: var(--right); color: var(--sheet); }
+.bubble.dim { opacity: .4; }
+.reveal { margin-left: auto; }
+
+.verdict { border-radius: 10px; padding: 12px 14px; font-weight: 600; display: grid; gap: 4px; }
+.verdict.ok { background: var(--right-soft); color: var(--right); }
+.verdict.no { background: var(--wrong-soft); color: var(--wrong); }
+.verdict.info { background: var(--pen-soft); color: var(--pen); }
+.verdict small { font-weight: 400; color: var(--ink); }
+
+.nav { display: flex; gap: 10px; justify-content: space-between; margin-top: 14px; }
+.palette-wrap { margin-top: 22px; }
+.palette-head { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: baseline; margin-bottom: 10px; }
+.palette-head h2 { font: 700 .75rem/1 var(--font-body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0; }
+.legend { display: flex; gap: 12px; font-size: .8rem; color: var(--muted); }
+.legend i { display: inline-block; width: .7rem; height: .7rem; border-radius: 50%; margin-right: 4px; vertical-align: -1px; border: 1.5px solid var(--line); }
+.legend .l-ok { background: var(--right); border-color: var(--right); }
+.legend .l-no { background: var(--wrong); border-color: var(--wrong); }
+.palette { display: grid; grid-template-columns: repeat(auto-fill, minmax(2.3rem, 1fr)); gap: 6px; }
+.cell {
+  aspect-ratio: 1; border-radius: 50%; border: 1.5px solid var(--line); background: var(--sheet);
+  font: 500 .75rem/1 var(--font-mono); cursor: pointer; padding: 0; max-width: 100%;
+}
+.cell.ok { background: var(--right); border-color: var(--right); color: var(--sheet); }
+.cell.no { background: var(--wrong); border-color: var(--wrong); color: var(--sheet); }
+.cell.seen { border-color: var(--muted); }
+.cell.here { outline: 2px solid var(--pen); outline-offset: 2px; }
+
+.result { text-align: left; }
+.result h2 { font: 700 1.6rem/1.2 var(--font-display); margin: 0; }
+.result .big { font: 700 2.6rem/1 var(--font-mono); color: var(--pen); }
+.result-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+
+.empty { background: var(--sheet); border: 1px solid var(--line); border-radius: 12px; padding: 20px; margin-top: 1.4rem; }
+.empty h2 { font: 700 1.2rem/1.2 var(--font-display); margin: 0 0 .5rem; }
+.empty pre { background: var(--pen-soft); padding: 12px; border-radius: 8px; overflow-x: auto; font: 500 .85rem/1.5 var(--font-mono); }
+
+@media (max-width: 520px) {
+  .bubble { width: 2.8rem; height: 2.8rem; }
+  .reveal { margin-left: 0; }
+  .brand-text small { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="bar">
+    <div class="brand"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="brand-text">CA MCQ Practice</span></div>
+    <div class="tools">
+      <button class="tool" id="font-down" type="button" title="Smaller text" aria-label="Smaller text">A−</button>
+      <button class="tool" id="font-up" type="button" title="Larger text" aria-label="Larger text">A+</button>
+      <button class="tool" id="theme" type="button" title="Switch light / dark" aria-label="Switch light or dark mode"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button>
+    </div>
+  </header>
+
+  <!-- 1. choose what to practise -->
+  <main id="setup">
+    <h1>Practise ICAI MCQs chapter by chapter or paper by paper</h1>
+    <p class="lede">Each question is shown exactly as ICAI printed it, with the correct option from ICAI's answer key. Tap A, B, C or D to answer.</p>
+
+    <div class="steps">
+      <section class="step">
+        <span class="step-label">Level</span>
+        <div class="chips" id="levels" role="group" aria-label="Level"></div>
+      </section>
+
+      <section class="step" id="paper-step" hidden>
+        <span class="step-label">Paper</span>
+        <select class="pick" id="paper" aria-label="Paper"></select>
+      </section>
+
+      <section class="step" id="mode-step" hidden>
+        <span class="step-label">Practise by</span>
+        <div class="chips" role="group" aria-label="Practise by">
+          <button class="chip" type="button" data-mode="chapter" aria-pressed="false">Chapter-wise</button>
+          <button class="chip" type="button" data-mode="paper" aria-pressed="false">Paper-wise</button>
+        </div>
+      </section>
+
+      <section class="step" id="chapter-step" hidden>
+        <span class="step-label">Chapter</span>
+        <select class="pick" id="chapter" aria-label="Chapter"></select>
+        <p class="hint" id="chapter-hint"></p>
+      </section>
+
+      <section class="step" id="type-step" hidden>
+        <span class="step-label">Question set</span>
+        <div class="chips" id="types" role="group" aria-label="Question set"></div>
+        <select class="pick" id="set" aria-label="Attempt or series"></select>
+      </section>
+
+      <div class="start-row" id="start-row" hidden>
+        <button class="btn" id="start" type="button">Start practice</button>
+        <span class="count" id="start-count"></span>
+      </div>
+    </div>
+
+    <p class="setup-note" id="setup-note">Your answers are saved in this browser, so you can stop and continue later.
+      Source: ICAI Suggested Answers. Chapter names follow ICAI's current study material.</p>
+
+    <section class="empty" id="no-data" hidden>
+      <h2>Question data not built yet</h2>
+      <p>The MCQs are cut from ICAI's PDFs on your computer. From the repository folder, run:</p>
+      <pre>pip install -r requirements.txt
+python scripts/build_mcq_practice.py</pre>
+      <p>Then reload this page. It creates <code>mcq-practice/data/</code> next to this file.</p>
+    </section>
+  </main>
+
+  <!-- 2. practice -->
+  <main id="practice" hidden>
+    <div class="p-head">
+      <h2 class="p-title" id="p-title"></h2>
+      <div class="score" aria-live="polite">
+        <span class="ok" id="s-ok" title="Correct">✓ 0</span>
+        <span class="no" id="s-no" title="Wrong">✗ 0</span>
+        <span id="s-left" title="Not answered">0 left</span>
+      </div>
+      <button class="btn ghost" id="back" type="button">Change</button>
+    </div>
+    <div class="progress"><div id="bar"></div></div>
+
+    <article class="card" id="q-card">
+      <div class="q-meta">
+        <span class="q-no" id="q-no"></span>
+        <span class="tag" id="q-src"></span>
+        <span id="q-ch"></span>
+      </div>
+      <details class="ctx" id="q-ctx" open>
+        <summary>Case scenario</summary>
+        <div class="scroll-img"><img class="scan" id="q-ctx-img" alt="Case scenario"></div>
+      </details>
+      <img class="scan" id="q-img" alt="">
+      <div class="bubbles" id="bubbles" role="group" aria-label="Your answer">
+        <button class="bubble" type="button" data-opt="A">A</button>
+        <button class="bubble" type="button" data-opt="B">B</button>
+        <button class="bubble" type="button" data-opt="C">C</button>
+        <button class="bubble" type="button" data-opt="D">D</button>
+        <button class="btn ghost reveal" id="reveal" type="button">Show answer</button>
+      </div>
+      <div class="verdict" id="verdict" hidden></div>
+    </article>
+
+    <article class="card result" id="result" hidden>
+      <h2>Set finished</h2>
+      <div><span class="big" id="r-score"></span></div>
+      <p id="r-detail"></p>
+      <div class="result-actions">
+        <button class="btn" id="r-wrong" type="button">Retry wrong ones</button>
+        <button class="btn ghost" id="r-reset" type="button">Start this set again</button>
+        <button class="btn ghost" id="r-back" type="button">Pick another set</button>
+      </div>
+    </article>
+
+    <div class="nav">
+      <button class="btn ghost" id="prev" type="button">← Previous</button>
+      <button class="btn" id="next" type="button">Next →</button>
+    </div>
+
+    <section class="palette-wrap">
+      <div class="palette-head">
+        <h2>All questions</h2>
+        <div class="legend"><span><i class="l-ok"></i>Correct</span><span><i class="l-no"></i>Wrong</span><span><i></i>Not answered</span></div>
+      </div>
+      <div class="palette" id="palette"></div>
+    </section>
+  </main>
+</div>
+
+<script>
+/* ---------- data loading (works from file:// too: data files are plain scripts) ---------- */
+const MCQ = {
+  papers: null, cache: {}, waiting: {},
+  index(papers) { this.papers = papers; },
+  loaded(data) { this.cache[data.key] = data; (this.waiting[data.key] || []).forEach(f => f(data)); },
+  load(key) {
+    if (this.cache[key]) return Promise.resolve(this.cache[key]);
+    return new Promise((resolve, reject) => {
+      (this.waiting[key] = this.waiting[key] || []).push(resolve);
+      const s = document.createElement("script");
+      s.src = "data/" + key + ".js";
+      s.onerror = () => reject(new Error("Could not load data/" + key + ".js"));
+      document.head.appendChild(s);
+    });
+  }
+};
+
+const store = {
+  get(k, d) { try { const v = localStorage.getItem("camcq:" + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
+  set(k, v) { try { localStorage.setItem("camcq:" + k, JSON.stringify(v)); } catch {} }
+};
+const $ = id => document.getElementById(id);
+const LEVELS = [["CA Foundation", "Foundation"], ["CA Intermediate", "Intermediate"], ["CA Final", "Final"]];
+const TYPES = [["PYQ", "Past papers (PYQ)"], ["RTP", "RTP"], ["MTP", "MTP"]];
+
+/* ---------- theme and font size ---------- */
+const root = document.documentElement;
+function applyPrefs() {
+  const t = store.get("theme", null);
+  if (t) root.setAttribute("data-theme", t); else root.removeAttribute("data-theme");
+  root.style.setProperty("--scale", store.get("scale", 1));
+}
+$("theme").onclick = () => {
+  const dark = root.getAttribute("data-theme") ? root.getAttribute("data-theme") === "dark"
+    : matchMedia("(prefers-color-scheme: dark)").matches;
+  store.set("theme", dark ? "light" : "dark"); applyPrefs();
+};
+function bump(d) {
+  const s = Math.min(1.6, Math.max(0.8, Math.round((store.get("scale", 1) + d) * 10) / 10));
+  store.set("scale", s); applyPrefs();
+}
+$("font-up").onclick = () => bump(0.1);
+$("font-down").onclick = () => bump(-0.1);
+applyPrefs();
+
+/* ICAI pages are rendered at 2x (144 dpi): show them a little above print size, scaled with A+ / A- */
+document.querySelectorAll(".scan").forEach(img => img.addEventListener("load", () => {
+  img.style.width = `calc(${img.naturalWidth * 0.625}px * var(--scale))`;
+}));
+
+/* ---------- setup ---------- */
+const sel = store.get("sel", {});   // {level, paper, mode, chapter, type, set}
+let paperData = null;
+
+function chip(label, pressed, onClick, disabled) {
+  const b = document.createElement("button");
+  b.type = "button"; b.className = "chip"; b.innerHTML = label;
+  b.setAttribute("aria-pressed", pressed ? "true" : "false");
+  b.disabled = !!disabled; b.onclick = onClick;
+  return b;
+}
+const paperInfo = () => MCQ.papers.find(p => p.key === sel.paper);
+
+function renderSetup() {
+  const papers = MCQ.papers;
+  $("levels").replaceChildren(...LEVELS.map(([lv, short]) => {
+    const n = papers.filter(p => p.level === lv).length;
+    return chip(`${short} <small>${n} paper${n === 1 ? "" : "s"}</small>`, sel.level === lv,
+      () => { sel.level = lv; sel.paper = null; renderSetup(); }, !n);
+  }));
+
+  $("paper-step").hidden = !sel.level;
+  if (!sel.level) return finishSetup();
+  const list = papers.filter(p => p.level === sel.level);
+  if (!list.some(p => p.key === sel.paper)) sel.paper = list[0].key;
+  $("paper").replaceChildren(...list.map(p => new Option(`${p.paper}  (${p.count} MCQs)`, p.key, false, p.key === sel.paper)));
+
+  const info = paperInfo();
+  $("mode-step").hidden = false;
+  document.querySelectorAll("[data-mode]").forEach(b => {
+    b.setAttribute("aria-pressed", b.dataset.mode === sel.mode ? "true" : "false");
+    b.disabled = b.dataset.mode === "chapter" && !info.chapters.length;
+  });
+  if (sel.mode === "chapter" && !info.chapters.length) sel.mode = "paper";
+
+  // chapter-wise
+  $("chapter-step").hidden = sel.mode !== "chapter";
+  if (sel.mode === "chapter") {
+    const sel_ = $("chapter"); sel_.replaceChildren();
+    const groups = {};
+    info.chapters.forEach(c => (groups[c.group || ""] = groups[c.group || ""] || []).push(c));
+    for (const [g, cs] of Object.entries(groups)) {
+      const parent = g ? Object.assign(document.createElement("optgroup"), { label: g }) : sel_;
+      cs.forEach(c => parent.appendChild(new Option(c.name, c.key)));
+      if (g) sel_.appendChild(parent);
+    }
+    if (info.hasCaseScenario) {
+      const og = Object.assign(document.createElement("optgroup"), { label: "Case scenarios" });
+      og.appendChild(new Option("Case Scenario MCQs (multiple chapters)", "CS"));
+      sel_.appendChild(og);
+    }
+    const keys = [...sel_.options].map(o => o.value);
+    if (!keys.includes(sel.chapter)) sel.chapter = keys[0];
+    sel_.value = sel.chapter;
+    $("chapter-hint").textContent = sel.chapter === "CS"
+      ? "Case scenarios whose MCQs cover several chapters, kept together with their facts."
+      : "All MCQs on this chapter from ICAI past papers, newest attempt first.";
+  }
+
+  // paper-wise
+  $("type-step").hidden = sel.mode !== "paper";
+  if (sel.mode === "paper") {
+    const have = t => info.sets.some(s => s.type === t);
+    if (!have(sel.type)) sel.type = "PYQ";
+    $("types").replaceChildren(...TYPES.map(([t, label]) =>
+      chip(have(t) ? label : `${label} <small>not added yet</small>`, sel.type === t,
+        () => { sel.type = t; renderSetup(); }, !have(t))));
+    const sets = info.sets.filter(s => s.type === sel.type);
+    if (!sets.some(s => s.id === sel.set)) sel.set = sets[0].id;
+    $("set").replaceChildren(...sets.map(s => {
+      const done = Object.keys(store.get("ans:" + info.key, {})).filter(id => id.startsWith(s.id + "-")).length;
+      return new Option(`${s.name}  -  ${s.count} MCQs${done ? `  (${done} done)` : ""}`, s.id, false, s.id === sel.set);
+    }));
+  }
+  finishSetup();
+}
+
+function finishSetup() {
+  store.set("sel", sel);
+  const ready = sel.paper && (sel.mode === "chapter" && sel.chapter || sel.mode === "paper" && sel.set);
+  $("start-row").hidden = !ready;
+  if (!ready) return;
+  MCQ.load(sel.paper).then(d => {
+    paperData = d;
+    const qs = pickQuestions();
+    const ans = store.get("ans:" + sel.paper, {});
+    const done = qs.filter(q => ans[q.id]).length;
+    $("start-count").textContent = `${qs.length} questions` + (done ? ` · ${done} answered` : "");
+    $("start").textContent = done && done < qs.length ? "Continue practice" : "Start practice";
+  }).catch(err => { $("start-count").textContent = err.message; });
+}
+
+$("paper").onchange = e => { sel.paper = e.target.value; renderSetup(); };
+$("chapter").onchange = e => { sel.chapter = e.target.value; renderSetup(); };
+$("set").onchange = e => { sel.set = e.target.value; renderSetup(); };
+document.querySelectorAll("[data-mode]").forEach(b => b.onclick = () => { sel.mode = b.dataset.mode; renderSetup(); });
+
+/* ---------- which questions ---------- */
+function pickQuestions() {
+  const out = [];
+  for (const s of paperData.sets) {
+    if (sel.mode === "paper" && s.id !== sel.set) continue;
+    for (const q of s.questions) {
+      if (sel.mode === "chapter" && !q.ch.includes(sel.chapter)) continue;
+      out.push(Object.assign({ set: s }, q));
+    }
+  }
+  return out;
+}
+
+/* ---------- practice ---------- */
+let qs = [], at = 0, answers = {}, only = null;
+
+function title() {
+  const info = paperInfo();
+  if (sel.mode === "chapter") {
+    const c = sel.chapter === "CS" ? "Case Scenario MCQs (multiple chapters)" : info.chapters.find(c => c.key === sel.chapter).name;
+    return [c, `${info.level} · ${info.paper} · past papers`];
+  }
+  const s = info.sets.find(s => s.id === sel.set);
+  return [`${s.type} ${s.name}`, `${info.level} · ${info.paper}`];
+}
+
+function startPractice(list) {
+  qs = list || pickQuestions();
+  only = list ? true : null;
+  answers = store.get("ans:" + sel.paper, {});
+  const firstOpen = qs.findIndex(q => !answers[q.id]);
+  at = firstOpen < 0 ? 0 : firstOpen;
+  const [t, sub] = title();
+  $("p-title").innerHTML = "";
+  $("p-title").append(t, Object.assign(document.createElement("span"), { className: "p-sub", textContent: sub + (only ? " · wrong answers only" : "") }));
+  $("setup").hidden = true; $("practice").hidden = false;
+  renderPalette(); show(at);
+  scrollTo(0, 0);
+}
+$("start").onclick = () => startPractice();
+$("back").onclick = $("r-back").onclick = () => { $("practice").hidden = true; $("setup").hidden = false; renderSetup(); };
+
+function chapterName(key) {
+  if (key === "CS") return "Case scenario (multiple chapters)";
+  const c = paperInfo().chapters.find(c => c.key === key);
+  return c ? c.name : "";
+}
+
+function show(i) {
+  at = i;
+  $("result").hidden = true; $("q-card").hidden = false;
+  const q = qs[i];
+  $("q-no").textContent = `Q ${i + 1} / ${qs.length}`;
+  $("q-src").textContent = `${q.set.type} ${q.set.name} · MCQ ${q.no}`;
+  $("q-ch").textContent = sel.mode === "paper" ? q.ch.map(chapterName).filter(Boolean).join(", ") : "";
+  const ctx = q.ctx && paperData.contexts[q.ctx];
+  $("q-ctx").hidden = !ctx;
+  if (ctx) {
+    // open the case when it changes; on the next MCQ of the same case keep it as the student left it
+    if ($("q-ctx").dataset.for !== q.ctx) $("q-ctx").open = true;
+    $("q-ctx").dataset.for = q.ctx;
+    $("q-ctx-img").src = "data/" + ctx;
+  }
+  $("q-img").src = "data/" + q.img;
+  $("q-img").alt = `MCQ ${q.no} from ${q.set.type} ${q.set.name}`;
+  paint(q);
+  $("prev").disabled = i === 0;
+  $("next").textContent = i === qs.length - 1 ? "Finish" : "Next →";
+  document.querySelectorAll(".cell").forEach((c, k) => c.classList.toggle("here", k === i));
+}
+
+function isRight(q, pick) { return !q.ans.length || q.ans.includes(pick); }
+
+function paint(q) {
+  const a = answers[q.id];  // "A".."D" or "?" (revealed without answering)
+  const done = !!a;
+  document.querySelectorAll(".bubble").forEach(b => {
+    const o = b.dataset.opt;
+    b.disabled = done;
+    b.classList.toggle("is-right", done && q.ans.includes(o));
+    b.classList.toggle("pick-wrong", done && o === a && !isRight(q, o));
+    b.classList.toggle("dim", done && !q.ans.includes(o) && o !== a);
+  });
+  $("reveal").hidden = done;
+  const v = $("verdict");
+  v.hidden = !done;
+  if (!done) return;
+  const key = q.ans.length ? `ICAI answer: (${q.ans.join(") or (")})` : "ICAI: none of the options is correct";
+  let cls, head;
+  if (a === "?") { cls = "info"; head = key; }
+  else if (!q.ans.length) { cls = "info"; head = key + ". Counted as correct."; }
+  else if (isRight(q, a)) { cls = "ok"; head = "Correct. " + key; }
+  else { cls = "no"; head = `You chose (${a}). ` + key; }
+  v.className = "verdict " + cls;
+  v.replaceChildren(document.createTextNode(head));
+  if (q.note) v.appendChild(Object.assign(document.createElement("small"), { textContent: q.note }));
+}
+
+function answer(opt) {
+  const q = qs[at];
+  if (answers[q.id]) return;
+  answers[q.id] = opt;
+  store.set("ans:" + sel.paper, answers);
+  paint(q); renderPalette();
+}
+document.querySelectorAll(".bubble").forEach(b => b.onclick = () => answer(b.dataset.opt));
+$("reveal").onclick = () => answer("?");
+$("prev").onclick = () => at > 0 && show(at - 1);
+$("next").onclick = () => at < qs.length - 1 ? show(at + 1) : finish();
+
+function status(q) {
+  const a = answers[q.id];
+  if (!a) return "";
+  if (a === "?") return "seen";
+  return isRight(q, a) ? "ok" : "no";
+}
+
+function renderPalette() {
+  let ok = 0, no = 0, left = 0;
+  $("palette").replaceChildren(...qs.map((q, k) => {
+    const s = status(q);
+    if (s === "ok") ok++; else if (s === "no") no++; else if (!s) left++;
+    const c = document.createElement("button");
+    c.type = "button"; c.className = "cell " + s + (k === at ? " here" : "");
+    c.textContent = k + 1; c.title = `${q.set.type} ${q.set.name} · MCQ ${q.no}`;
+    c.onclick = () => show(k);
+    return c;
+  }));
+  $("s-ok").textContent = "✓ " + ok;
+  $("s-no").textContent = "✗ " + no;
+  $("s-left").textContent = left + " left";
+  $("bar").style.width = (qs.length ? (qs.length - left) / qs.length * 100 : 0) + "%";
+}
+
+function finish() {
+  const ok = qs.filter(q => status(q) === "ok").length;
+  const no = qs.filter(q => status(q) === "no").length;
+  const left = qs.filter(q => !answers[q.id]).length;
+  $("q-card").hidden = true; $("result").hidden = false;
+  $("r-score").textContent = `${ok} / ${qs.length}`;
+  $("r-detail").textContent = `${ok} correct, ${no} wrong, ${left} not answered` +
+    (qs.length ? ` · ${Math.round(ok / qs.length * 100)}%` : "");
+  $("r-wrong").hidden = !no;
+  scrollTo(0, 0);
+}
+$("r-wrong").onclick = () => {
+  const wrong = qs.filter(q => status(q) === "no");
+  wrong.forEach(q => delete answers[q.id]);
+  store.set("ans:" + sel.paper, answers);
+  startPractice(wrong);
+};
+$("r-reset").onclick = () => {
+  qs.forEach(q => delete answers[q.id]);
+  store.set("ans:" + sel.paper, answers);
+  startPractice(only ? qs : null);
+};
+
+document.addEventListener("keydown", e => {
+  if ($("practice").hidden || e.target.tagName === "SELECT" || e.ctrlKey || e.metaKey || e.altKey) return;
+  const k = e.key.toUpperCase();
+  const map = { "1": "A", "2": "B", "3": "C", "4": "D", A: "A", B: "B", C: "C", D: "D" };
+  if (map[k] && !$("q-card").hidden) answer(map[k]);
+  else if (e.key === "ArrowRight") $("next").click();
+  else if (e.key === "ArrowLeft") $("prev").click();
+});
+
+/* ---------- boot ---------- */
+const idx = document.createElement("script");
+idx.src = "data/index.js";
+idx.onload = () => {
+  if (!MCQ.papers || !MCQ.papers.length) return idx.onerror();
+  if (!sel.level) sel.level = MCQ.papers[0].level;
+  if (!sel.mode) sel.mode = "chapter";
+  renderSetup();
+};
+idx.onerror = () => {
+  $("no-data").hidden = false;
+  document.querySelector(".steps").hidden = true;
+  $("setup-note").hidden = true;
+};
+document.head.appendChild(idx);
+</script>
+</body>
+</html>

@@ -46,6 +46,24 @@ Attempts with ICAI suggested answers published as of October 2026 (September 202
   questions only.
 - Chapter lists follow ICAI's current study material (May 2026 exams onwards).
 
+## MCQ practice site
+
+`mcq-practice/index.html` is a practice page for students: pick **Foundation / Intermediate / Final**,
+the paper, then practise **chapter-wise** (every past-paper MCQ on a chapter, plus
+"Case Scenario MCQs (multiple chapters)") or **paper-wise** (a whole PYQ attempt, RTP or MTP).
+Tap A-D to see if you were right and ICAI's answer; a bubble grid shows progress, answers are saved in
+the browser, and wrong ones can be retried. Light/dark switch and A-/A+ text size are in the top bar.
+
+Each MCQ is shown as an image cut from ICAI's PDF, so formulas, tables and the ₹ sign look as printed.
+Build the data, then open the page in a browser (works straight from disk, or host the folder):
+
+```bash
+python scripts/build_mcq_practice.py      # writes mcq-practice/data/ (git-ignored, ICAI copyright)
+```
+
+RTPs and MTPs: add them to the paper's JSON as a `"practice"` list (format in the script's docstring).
+They show up under paper-wise; until then those buttons read "not added yet".
+
 ## Copyright
 
 ICAI's copyright policy (<https://www.icai.org/post/16585>) allows its material to be reproduced
