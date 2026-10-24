@@ -20,6 +20,15 @@
   },
   "attempts": [
     {
+      "attempt": "2026-09",
+      "sources": [
+        {
+          "url": "https://resource.cdn.icai.org/94853bos-aps6590-sep2026-sa1.pdf",
+          "map": {}
+        }
+      ]
+    },
+    {
       "attempt": "2026-05",
       "sources": [
         {
