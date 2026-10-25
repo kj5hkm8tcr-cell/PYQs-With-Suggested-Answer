@@ -12,6 +12,7 @@ but whose suggested answers are not yet. Only the newest LAST attempts are count
 
 Writes analysis/syllabus-coverage.json, analysis/syllabus-coverage-by-attempt.csv
 (period-wise cumulative coverage) and analysis/syllabus-coverage-chapters.csv.
+Pass level names (e.g. `foundation`) to run only those levels; the files then get a suffix.
 """
 
 import csv
@@ -68,8 +69,12 @@ def recommended(cumulative, depth, total):
 
 
 def main():
+    levels = sys.argv[1:]  # e.g. "foundation": only those levels, written to *-foundation files
+    suffix = "".join(f"-{lv}" for lv in levels)
     papers, rows, period_rows = [], [], []
     for paper_file in sorted((ROOT / "data").glob("*/*.json")):
+        if levels and paper_file.parent.name not in levels:
+            continue
         spec = json.loads(paper_file.read_text())
         if not spec.get("chapters"):
             continue  # Final Paper 6 (IBS): case studies, no chapters
@@ -119,15 +124,15 @@ def main():
         print(f"{spec['level']:16} {spec['paper'][:40]:40} "
               + " ".join(f"{100 * n / total:4.0f}" for n in cumulative)
               + "  | depth " + " ".join(f"{100 * n / total:4.0f}" for n in depth))
-    (OUT / "syllabus-coverage.json").write_text(json.dumps(papers, indent=1))
-    with open(OUT / "syllabus-coverage-by-attempt.csv", "w", newline="") as f:
+    (OUT / f"syllabus-coverage{suffix}.json").write_text(json.dumps(papers, indent=1))
+    with open(OUT / f"syllabus-coverage-by-attempt{suffix}.csv", "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["level", "paper", "attempts_solved", "attempt", "source", "chapters_total",
                     "chapters_in_this_attempt", "pct_in_this_attempt", "cumulative_chapters_seen",
                     "cumulative_seen_pct", "cumulative_chapters_practised_3plus", "cumulative_practised_pct",
                     "new_chapters_this_attempt"])
         w.writerows(period_rows)
-    with open(OUT / "syllabus-coverage-chapters.csv", "w", newline="") as f:
+    with open(OUT / f"syllabus-coverage-chapters{suffix}.csv", "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["level", "paper", "chapter_key", "chapter", "attempts_asked", "attempts_checked",
                     "questions", "covered_from_attempt_n", "asked_in"])

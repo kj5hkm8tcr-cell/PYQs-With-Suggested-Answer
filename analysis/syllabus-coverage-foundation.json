@@ -1,0 +1,1281 @@
+[
+ {
+  "level": "CA Foundation",
+  "paper": "Paper 1 - Accounting",
+  "chapters_total": 11,
+  "attempts": [
+   "2026-09",
+   "2026-05",
+   "2026-01",
+   "2025-09",
+   "2025-05",
+   "2025-01",
+   "2024-09",
+   "2024-06",
+   "2023-12",
+   "2023-06"
+  ],
+  "periods": [
+   {
+    "n": 1,
+    "attempt": "2026-09",
+    "label": "September 2026",
+    "source": "question paper",
+    "chapters_in_attempt": 10,
+    "cumulative_seen": 10,
+    "cumulative_practised": 2,
+    "new_chapters": [
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "7",
+     "8",
+     "9",
+     "10",
+     "11"
+    ]
+   },
+   {
+    "n": 2,
+    "attempt": "2026-05",
+    "label": "May 2026",
+    "source": "suggested answers",
+    "chapters_in_attempt": 10,
+    "cumulative_seen": 10,
+    "cumulative_practised": 6,
+    "new_chapters": []
+   },
+   {
+    "n": 3,
+    "attempt": "2026-01",
+    "label": "January 2026",
+    "source": "suggested answers",
+    "chapters_in_attempt": 10,
+    "cumulative_seen": 11,
+    "cumulative_practised": 10,
+    "new_chapters": [
+     "6"
+    ]
+   },
+   {
+    "n": 4,
+    "attempt": "2025-09",
+    "label": "September 2025",
+    "source": "suggested answers",
+    "chapters_in_attempt": 11,
+    "cumulative_seen": 11,
+    "cumulative_practised": 10,
+    "new_chapters": []
+   },
+   {
+    "n": 5,
+    "attempt": "2025-05",
+    "label": "May 2025",
+    "source": "suggested answers",
+    "chapters_in_attempt": 10,
+    "cumulative_seen": 11,
+    "cumulative_practised": 11,
+    "new_chapters": []
+   },
+   {
+    "n": 6,
+    "attempt": "2025-01",
+    "label": "January 2025",
+    "source": "suggested answers",
+    "chapters_in_attempt": 11,
+    "cumulative_seen": 11,
+    "cumulative_practised": 11,
+    "new_chapters": []
+   },
+   {
+    "n": 7,
+    "attempt": "2024-09",
+    "label": "September 2024",
+    "source": "suggested answers",
+    "chapters_in_attempt": 11,
+    "cumulative_seen": 11,
+    "cumulative_practised": 11,
+    "new_chapters": []
+   },
+   {
+    "n": 8,
+    "attempt": "2024-06",
+    "label": "June 2024",
+    "source": "suggested answers",
+    "chapters_in_attempt": 11,
+    "cumulative_seen": 11,
+    "cumulative_practised": 11,
+    "new_chapters": []
+   },
+   {
+    "n": 9,
+    "attempt": "2023-12",
+    "label": "December 2023",
+    "source": "suggested answers",
+    "chapters_in_attempt": 10,
+    "cumulative_seen": 11,
+    "cumulative_practised": 11,
+    "new_chapters": []
+   },
+   {
+    "n": 10,
+    "attempt": "2023-06",
+    "label": "June 2023",
+    "source": "suggested answers",
+    "chapters_in_attempt": 10,
+    "cumulative_seen": 11,
+    "cumulative_practised": 11,
+    "new_chapters": []
+   }
+  ],
+  "cumulative_covered": [
+   10,
+   10,
+   11,
+   11,
+   11,
+   11,
+   11,
+   11,
+   11,
+   11
+  ],
+  "cumulative_with_depth": [
+   2,
+   6,
+   10,
+   10,
+   11,
+   11,
+   11,
+   11,
+   11,
+   11
+  ],
+  "depth": 3,
+  "per_attempt_covered": [
+   10,
+   10,
+   10,
+   11,
+   10,
+   11,
+   11,
+   11,
+   10,
+   10
+  ],
+  "attempts_for_full": 3,
+  "attempts_for_depth": 5,
+  "recommended_attempts": 3,
+  "chapters": [
+   {
+    "key": "1",
+    "name": "Theoretical Framework",
+    "asked_in": 10,
+    "questions": 33,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2023-12",
+     "2023-06"
+    ]
+   },
+   {
+    "key": "2",
+    "name": "Accounting Process",
+    "asked_in": 10,
+    "questions": 33,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2023-12",
+     "2023-06"
+    ]
+   },
+   {
+    "key": "3",
+    "name": "Bank Reconciliation Statement",
+    "asked_in": 10,
+    "questions": 10,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2023-12",
+     "2023-06"
+    ]
+   },
+   {
+    "key": "4",
+    "name": "Inventories",
+    "asked_in": 9,
+    "questions": 13,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2023-12",
+     "2023-06"
+    ]
+   },
+   {
+    "key": "5",
+    "name": "Depreciation and Amortisation",
+    "asked_in": 10,
+    "questions": 14,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2023-12",
+     "2023-06"
+    ]
+   },
+   {
+    "key": "6",
+    "name": "Bills of Exchange and Promissory Notes",
+    "asked_in": 8,
+    "questions": 9,
+    "first_attempt_needed": 3,
+    "attempts": [
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2023-12",
+     "2023-06"
+    ]
+   },
+   {
+    "key": "7",
+    "name": "Preparation of Final Accounts of Sole Proprietors",
+    "asked_in": 9,
+    "questions": 10,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2023-12",
+     "2023-06"
+    ]
+   },
+   {
+    "key": "8",
+    "name": "Financial Statements of Not-for-Profit Organisations",
+    "asked_in": 10,
+    "questions": 16,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2023-12",
+     "2023-06"
+    ]
+   },
+   {
+    "key": "9",
+    "name": "Accounts from Incomplete Records",
+    "asked_in": 8,
+    "questions": 9,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06"
+    ]
+   },
+   {
+    "key": "10",
+    "name": "Partnership and LLP Accounts",
+    "asked_in": 10,
+    "questions": 28,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2023-12",
+     "2023-06"
+    ]
+   },
+   {
+    "key": "11",
+    "name": "Company Accounts",
+    "asked_in": 10,
+    "questions": 26,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2023-12",
+     "2023-06"
+    ]
+   }
+  ]
+ },
+ {
+  "level": "CA Foundation",
+  "paper": "Paper 2 - Business Laws",
+  "chapters_total": 7,
+  "attempts": [
+   "2026-09",
+   "2026-05",
+   "2026-01",
+   "2025-09",
+   "2025-05",
+   "2025-01",
+   "2024-09",
+   "2024-06",
+   "2023-12",
+   "2023-06"
+  ],
+  "periods": [
+   {
+    "n": 1,
+    "attempt": "2026-09",
+    "label": "September 2026",
+    "source": "question paper",
+    "chapters_in_attempt": 7,
+    "cumulative_seen": 7,
+    "cumulative_practised": 4,
+    "new_chapters": [
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7"
+    ]
+   },
+   {
+    "n": 2,
+    "attempt": "2026-05",
+    "label": "May 2026",
+    "source": "suggested answers",
+    "chapters_in_attempt": 7,
+    "cumulative_seen": 7,
+    "cumulative_practised": 5,
+    "new_chapters": []
+   },
+   {
+    "n": 3,
+    "attempt": "2026-01",
+    "label": "January 2026",
+    "source": "suggested answers",
+    "chapters_in_attempt": 7,
+    "cumulative_seen": 7,
+    "cumulative_practised": 7,
+    "new_chapters": []
+   },
+   {
+    "n": 4,
+    "attempt": "2025-09",
+    "label": "September 2025",
+    "source": "suggested answers",
+    "chapters_in_attempt": 7,
+    "cumulative_seen": 7,
+    "cumulative_practised": 7,
+    "new_chapters": []
+   },
+   {
+    "n": 5,
+    "attempt": "2025-05",
+    "label": "May 2025",
+    "source": "suggested answers",
+    "chapters_in_attempt": 7,
+    "cumulative_seen": 7,
+    "cumulative_practised": 7,
+    "new_chapters": []
+   },
+   {
+    "n": 6,
+    "attempt": "2025-01",
+    "label": "January 2025",
+    "source": "suggested answers",
+    "chapters_in_attempt": 7,
+    "cumulative_seen": 7,
+    "cumulative_practised": 7,
+    "new_chapters": []
+   },
+   {
+    "n": 7,
+    "attempt": "2024-09",
+    "label": "September 2024",
+    "source": "suggested answers",
+    "chapters_in_attempt": 7,
+    "cumulative_seen": 7,
+    "cumulative_practised": 7,
+    "new_chapters": []
+   },
+   {
+    "n": 8,
+    "attempt": "2024-06",
+    "label": "June 2024",
+    "source": "suggested answers",
+    "chapters_in_attempt": 7,
+    "cumulative_seen": 7,
+    "cumulative_practised": 7,
+    "new_chapters": []
+   },
+   {
+    "n": 9,
+    "attempt": "2023-12",
+    "label": "December 2023",
+    "source": "suggested answers",
+    "chapters_in_attempt": 5,
+    "cumulative_seen": 7,
+    "cumulative_practised": 7,
+    "new_chapters": []
+   },
+   {
+    "n": 10,
+    "attempt": "2023-06",
+    "label": "June 2023",
+    "source": "suggested answers",
+    "chapters_in_attempt": 5,
+    "cumulative_seen": 7,
+    "cumulative_practised": 7,
+    "new_chapters": []
+   }
+  ],
+  "cumulative_covered": [
+   7,
+   7,
+   7,
+   7,
+   7,
+   7,
+   7,
+   7,
+   7,
+   7
+  ],
+  "cumulative_with_depth": [
+   4,
+   5,
+   7,
+   7,
+   7,
+   7,
+   7,
+   7,
+   7,
+   7
+  ],
+  "depth": 3,
+  "per_attempt_covered": [
+   7,
+   7,
+   7,
+   7,
+   7,
+   7,
+   7,
+   7,
+   5,
+   5
+  ],
+  "attempts_for_full": 1,
+  "attempts_for_depth": 3,
+  "recommended_attempts": 3,
+  "chapters": [
+   {
+    "key": "1",
+    "name": "Indian Regulatory Framework",
+    "asked_in": 8,
+    "questions": 8,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06"
+    ]
+   },
+   {
+    "key": "2",
+    "name": "The Indian Contract Act, 1872",
+    "asked_in": 10,
+    "questions": 52,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2023-12",
+     "2023-06"
+    ]
+   },
+   {
+    "key": "3",
+    "name": "The Sale of Goods Act, 1930",
+    "asked_in": 10,
+    "questions": 32,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2023-12",
+     "2023-06"
+    ]
+   },
+   {
+    "key": "4",
+    "name": "The Indian Partnership Act, 1932",
+    "asked_in": 10,
+    "questions": 30,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2023-12",
+     "2023-06"
+    ]
+   },
+   {
+    "key": "5",
+    "name": "The Limited Liability Partnership Act, 2008",
+    "asked_in": 10,
+    "questions": 10,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2023-12",
+     "2023-06"
+    ]
+   },
+   {
+    "key": "6",
+    "name": "The Companies Act, 2013",
+    "asked_in": 10,
+    "questions": 30,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06",
+     "2023-12",
+     "2023-06"
+    ]
+   },
+   {
+    "key": "7",
+    "name": "The Negotiable Instruments Act, 1881",
+    "asked_in": 8,
+    "questions": 15,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05",
+     "2025-01",
+     "2024-09",
+     "2024-06"
+    ]
+   }
+  ]
+ },
+ {
+  "level": "CA Foundation",
+  "paper": "Paper 3 - Quantitative Aptitude",
+  "chapters_total": 18,
+  "attempts": [
+   "2026-09",
+   "2026-05",
+   "2026-01",
+   "2025-09",
+   "2025-05"
+  ],
+  "periods": [
+   {
+    "n": 1,
+    "attempt": "2026-09",
+    "label": "September 2026",
+    "source": "question paper",
+    "chapters_in_attempt": 18,
+    "cumulative_seen": 18,
+    "cumulative_practised": 17,
+    "new_chapters": [
+     "A-1",
+     "A-2",
+     "A-3",
+     "A-4",
+     "A-5",
+     "A-6",
+     "A-7",
+     "A-8",
+     "B-9",
+     "B-10",
+     "B-11",
+     "B-12",
+     "C-13",
+     "C-14",
+     "C-15",
+     "C-16",
+     "C-17",
+     "C-18"
+    ]
+   },
+   {
+    "n": 2,
+    "attempt": "2026-05",
+    "label": "May 2026",
+    "source": "suggested answers",
+    "chapters_in_attempt": 18,
+    "cumulative_seen": 18,
+    "cumulative_practised": 18,
+    "new_chapters": []
+   },
+   {
+    "n": 3,
+    "attempt": "2026-01",
+    "label": "January 2026",
+    "source": "suggested answers",
+    "chapters_in_attempt": 18,
+    "cumulative_seen": 18,
+    "cumulative_practised": 18,
+    "new_chapters": []
+   },
+   {
+    "n": 4,
+    "attempt": "2025-09",
+    "label": "September 2025",
+    "source": "suggested answers",
+    "chapters_in_attempt": 18,
+    "cumulative_seen": 18,
+    "cumulative_practised": 18,
+    "new_chapters": []
+   },
+   {
+    "n": 5,
+    "attempt": "2025-05",
+    "label": "May 2025",
+    "source": "suggested answers",
+    "chapters_in_attempt": 18,
+    "cumulative_seen": 18,
+    "cumulative_practised": 18,
+    "new_chapters": []
+   }
+  ],
+  "cumulative_covered": [
+   18,
+   18,
+   18,
+   18,
+   18
+  ],
+  "cumulative_with_depth": [
+   17,
+   18,
+   18,
+   18,
+   18
+  ],
+  "depth": 3,
+  "per_attempt_covered": [
+   18,
+   18,
+   18,
+   18,
+   18
+  ],
+  "attempts_for_full": 1,
+  "attempts_for_depth": 2,
+  "recommended_attempts": 1,
+  "chapters": [
+   {
+    "key": "A-1",
+    "name": "Ratio and Proportion, Indices, Logarithms",
+    "asked_in": 5,
+    "questions": 21,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "A-2",
+    "name": "Equations",
+    "asked_in": 5,
+    "questions": 16,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "A-3",
+    "name": "Linear Inequalities",
+    "asked_in": 5,
+    "questions": 12,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "A-4",
+    "name": "Mathematics of Finance",
+    "asked_in": 5,
+    "questions": 70,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "A-5",
+    "name": "Basic Concepts of Permutations and Combinations",
+    "asked_in": 5,
+    "questions": 20,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "A-6",
+    "name": "Sequence and Series - Arithmetic and Geometric Progressions",
+    "asked_in": 5,
+    "questions": 20,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "A-7",
+    "name": "Sets, Relations and Functions, Basics of Limits and Continuity Functions",
+    "asked_in": 5,
+    "questions": 20,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "A-8",
+    "name": "Basic Applications of Differential and Integral Calculus in Business and Economics",
+    "asked_in": 5,
+    "questions": 21,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "B-9",
+    "name": "Number Series, Coding and Decoding and Odd Man Out",
+    "asked_in": 5,
+    "questions": 25,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "B-10",
+    "name": "Direction Sense Tests",
+    "asked_in": 5,
+    "questions": 25,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "B-11",
+    "name": "Seating Arrangements",
+    "asked_in": 5,
+    "questions": 25,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "B-12",
+    "name": "Blood Relations",
+    "asked_in": 5,
+    "questions": 25,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "C-13",
+    "name": "Statistical Description of Data and Sampling",
+    "asked_in": 5,
+    "questions": 45,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "C-14",
+    "name": "Measures of Central Tendency and Dispersion",
+    "asked_in": 5,
+    "questions": 51,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "C-15",
+    "name": "Probability",
+    "asked_in": 5,
+    "questions": 33,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "C-16",
+    "name": "Theoretical Distributions",
+    "asked_in": 5,
+    "questions": 21,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "C-17",
+    "name": "Correlation and Regression",
+    "asked_in": 5,
+    "questions": 25,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "C-18",
+    "name": "Index Numbers",
+    "asked_in": 5,
+    "questions": 25,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   }
+  ]
+ },
+ {
+  "level": "CA Foundation",
+  "paper": "Paper 4 - Business Economics",
+  "chapters_total": 10,
+  "attempts": [
+   "2026-09",
+   "2026-05",
+   "2026-01",
+   "2025-09",
+   "2025-05"
+  ],
+  "periods": [
+   {
+    "n": 1,
+    "attempt": "2026-09",
+    "label": "September 2026",
+    "source": "question paper",
+    "chapters_in_attempt": 10,
+    "cumulative_seen": 10,
+    "cumulative_practised": 10,
+    "new_chapters": [
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9",
+     "10"
+    ]
+   },
+   {
+    "n": 2,
+    "attempt": "2026-05",
+    "label": "May 2026",
+    "source": "suggested answers",
+    "chapters_in_attempt": 10,
+    "cumulative_seen": 10,
+    "cumulative_practised": 10,
+    "new_chapters": []
+   },
+   {
+    "n": 3,
+    "attempt": "2026-01",
+    "label": "January 2026",
+    "source": "suggested answers",
+    "chapters_in_attempt": 10,
+    "cumulative_seen": 10,
+    "cumulative_practised": 10,
+    "new_chapters": []
+   },
+   {
+    "n": 4,
+    "attempt": "2025-09",
+    "label": "September 2025",
+    "source": "suggested answers",
+    "chapters_in_attempt": 10,
+    "cumulative_seen": 10,
+    "cumulative_practised": 10,
+    "new_chapters": []
+   },
+   {
+    "n": 5,
+    "attempt": "2025-05",
+    "label": "May 2025",
+    "source": "suggested answers",
+    "chapters_in_attempt": 10,
+    "cumulative_seen": 10,
+    "cumulative_practised": 10,
+    "new_chapters": []
+   }
+  ],
+  "cumulative_covered": [
+   10,
+   10,
+   10,
+   10,
+   10
+  ],
+  "cumulative_with_depth": [
+   10,
+   10,
+   10,
+   10,
+   10
+  ],
+  "depth": 3,
+  "per_attempt_covered": [
+   10,
+   10,
+   10,
+   10,
+   10
+  ],
+  "attempts_for_full": 1,
+  "attempts_for_depth": 1,
+  "recommended_attempts": 1,
+  "chapters": [
+   {
+    "key": "1",
+    "name": "Nature & Scope of Business Economics",
+    "asked_in": 5,
+    "questions": 25,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "2",
+    "name": "Theory of Demand and Supply",
+    "asked_in": 5,
+    "questions": 54,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "3",
+    "name": "Theory of Production and Cost",
+    "asked_in": 5,
+    "questions": 54,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "4",
+    "name": "Price Determination in Different Markets",
+    "asked_in": 5,
+    "questions": 68,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "5",
+    "name": "Business Cycles",
+    "asked_in": 5,
+    "questions": 24,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "6",
+    "name": "Determination of National Income",
+    "asked_in": 5,
+    "questions": 75,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "7",
+    "name": "Public Finance",
+    "asked_in": 5,
+    "questions": 51,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "8",
+    "name": "Money Market",
+    "asked_in": 5,
+    "questions": 50,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "9",
+    "name": "International Trade",
+    "asked_in": 5,
+    "questions": 49,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   },
+   {
+    "key": "10",
+    "name": "Indian Economy",
+    "asked_in": 5,
+    "questions": 50,
+    "first_attempt_needed": 1,
+    "attempts": [
+     "2026-09",
+     "2026-05",
+     "2026-01",
+     "2025-09",
+     "2025-05"
+    ]
+   }
+  ]
+ }
+]
