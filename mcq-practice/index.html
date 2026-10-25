@@ -310,19 +310,26 @@ python scripts/build_mcq_practice.py</pre>
 <script>
 /* ---------- data loading (works from file:// too: data files are plain scripts) ---------- */
 const MCQ = {
-  papers: null, cache: {}, waiting: {},
+  papers: null, cache: {}, waiting: {}, imgs: {},
   index(papers) { this.papers = papers; },
-  loaded(data) { this.cache[data.key] = data; (this.waiting[data.key] || []).forEach(f => f(data)); },
-  load(key) {
+  loaded(data) { this.cache[data.key] = data; this.done(data.key, data); },
+  // each question set's images come in one script, data/img/<paper>/<set>.js
+  images(d) { Object.assign(this.imgs, d.images); this.cache["img:" + d.paper + "/" + d.set] = true; this.done("img:" + d.paper + "/" + d.set, true); },
+  done(key, value) { (this.waiting[key] || []).forEach(f => f(value)); delete this.waiting[key]; },
+  script(key, src) {
     if (this.cache[key]) return Promise.resolve(this.cache[key]);
     return new Promise((resolve, reject) => {
+      const first = !this.waiting[key];
       (this.waiting[key] = this.waiting[key] || []).push(resolve);
+      if (!first) return;
       const s = document.createElement("script");
-      s.src = "data/" + key + ".js";
-      s.onerror = () => reject(new Error("Could not load data/" + key + ".js"));
+      s.src = src;
+      s.onerror = () => { delete this.waiting[key]; reject(new Error("Could not load " + src)); };
       document.head.appendChild(s);
     });
-  }
+  },
+  load(key) { return this.script(key, "data/" + key + ".js"); },
+  loadSet(paper, set) { return this.script("img:" + paper + "/" + set, "data/img/" + paper + "/" + set + ".js"); }
 };
 
 const store = {
@@ -331,7 +338,7 @@ const store = {
 };
 const $ = id => document.getElementById(id);
 const LEVELS = [["CA Foundation", "Foundation"], ["CA Intermediate", "Intermediate"], ["CA Final", "Final"]];
-const TYPES = [["PYQ", "Past papers (PYQ)"], ["RTP", "RTP"], ["MTP", "MTP"]];
+const TYPES = [["PYQ", "Past papers (PYQ)"], ["RTP", "RTP"], ["MTP", "MTP"], ["Model", "Model Test Papers"]];
 
 /* ---------- theme and font size ---------- */
 const root = document.documentElement;
@@ -516,10 +523,17 @@ function show(i) {
     // open the case when it changes; on the next MCQ of the same case keep it as the student left it
     if ($("q-ctx").dataset.for !== q.ctx) $("q-ctx").open = true;
     $("q-ctx").dataset.for = q.ctx;
-    $("q-ctx-img").src = "data/" + ctx;
+    $("q-ctx-img").removeAttribute("src");
   }
-  $("q-img").src = "data/" + q.img;
+  $("q-img").removeAttribute("src");
   $("q-img").alt = `MCQ ${q.no} from ${q.set.type} ${q.set.name}`;
+  MCQ.loadSet(sel.paper, q.set.id).then(() => {
+    if (qs[at] !== q) return;  // the student has moved on
+    $("q-img").src = MCQ.imgs[q.img];
+    if (ctx) $("q-ctx-img").src = MCQ.imgs[ctx];
+    const next = qs[i + 1];
+    if (next && next.set !== q.set) MCQ.loadSet(sel.paper, next.set.id).catch(() => {});
+  }).catch(err => { $("q-img").alt = err.message; });
   paint(q);
   $("prev").disabled = i === 0;
   $("next").textContent = i === qs.length - 1 ? "Finish" : "Next →";
@@ -528,11 +542,16 @@ function show(i) {
 
 function isRight(q, pick) { return !q.ans.length || q.ans.includes(pick); }
 
+// some papers number the options (i)-(iv); answers are stored as A-D either way
+const ROMAN = { A: "i", B: "ii", C: "iii", D: "iv" };
+const optLabel = (q, o) => q.opts === "roman" ? ROMAN[o] : o;
+
 function paint(q) {
   const a = answers[q.id];  // "A".."D" or "?" (revealed without answering)
   const done = !!a;
   document.querySelectorAll(".bubble").forEach(b => {
     const o = b.dataset.opt;
+    b.textContent = optLabel(q, o);
     b.disabled = done;
     b.classList.toggle("is-right", done && q.ans.includes(o));
     b.classList.toggle("pick-wrong", done && o === a && !isRight(q, o));
@@ -542,12 +561,12 @@ function paint(q) {
   const v = $("verdict");
   v.hidden = !done;
   if (!done) return;
-  const key = q.ans.length ? `ICAI answer: (${q.ans.join(") or (")})` : "ICAI: none of the options is correct";
+  const key = q.ans.length ? `ICAI answer: (${q.ans.map(o => optLabel(q, o)).join(") or (")})` : "ICAI: none of the options is correct";
   let cls, head;
   if (a === "?") { cls = "info"; head = key; }
   else if (!q.ans.length) { cls = "info"; head = key + ". Counted as correct."; }
   else if (isRight(q, a)) { cls = "ok"; head = "Correct. " + key; }
-  else { cls = "no"; head = `You chose (${a}). ` + key; }
+  else { cls = "no"; head = `You chose (${optLabel(q, a)}). ` + key; }
   v.className = "verdict " + cls;
   v.replaceChildren(document.createTextNode(head));
   if (q.note) v.appendChild(Object.assign(document.createElement("small"), { textContent: q.note }));

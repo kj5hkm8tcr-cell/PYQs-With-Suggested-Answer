@@ -400,5 +400,120 @@
       ]
     }
   ],
-  "_note": "Map: question part -> chapter key of ICAI study material (May 2026 edition). 'CS' = MCQ of an integrated case scenario whose MCQs span several chapters. 'X' = topic not in the current syllabus (tax audit u/s 44AB, management audit, audit of insurance companies, SEBI LODR corporate governance certificate, export credit insurance)."
+  "_note": "Map: question part -> chapter key of ICAI study material (May 2026 edition). 'CS' = MCQ of an integrated case scenario whose MCQs span several chapters. 'X' = topic not in the current syllabus (tax audit u/s 44AB, management audit, audit of insurance companies, SEBI LODR corporate governance certificate, export credit insurance).",
+  "practice": [
+    {
+      "type": "RTP",
+      "name": "November 2026",
+      "url": "https://resource.cdn.icai.org/93965bos-aps6169-rtp-nov2026-ch3.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "May 2026",
+      "url": "https://resource.cdn.icai.org/91039bos-aps4369-final-may2026-p3.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "January 2026",
+      "url": "https://resource.cdn.icai.org/88981bos-aps2822-p3.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "September 2025",
+      "url": "https://resource.cdn.icai.org/86599bos-aps1177-g1-p3.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "May 2025",
+      "url": "https://resource.cdn.icai.org/84617bos68187-p3.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "November 2024",
+      "url": "https://resource.cdn.icai.org/81749bos65928-p3.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "May 2024",
+      "url": "https://resource.cdn.icai.org/78898bos63053a.pdf"
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 6",
+      "url": "https://resource.cdn.icai.org/84556bos68130-final-gp1.pdf",
+      "pages": [
+        311,
+        331
+      ],
+      "answer_pages": [
+        683,
+        701
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 5",
+      "url": "https://resource.cdn.icai.org/84556bos68130-final-gp1.pdf",
+      "pages": [
+        293,
+        310
+      ],
+      "answer_pages": [
+        666,
+        682
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 4",
+      "url": "https://resource.cdn.icai.org/84556bos68130-final-gp1.pdf",
+      "pages": [
+        275,
+        292
+      ],
+      "answer_pages": [
+        649,
+        665
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 3",
+      "url": "https://resource.cdn.icai.org/84556bos68130-final-gp1.pdf",
+      "pages": [
+        258,
+        274
+      ],
+      "answer_pages": [
+        631,
+        648
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 2",
+      "url": "https://resource.cdn.icai.org/84556bos68130-final-gp1.pdf",
+      "pages": [
+        239,
+        257
+      ],
+      "answer_pages": [
+        610,
+        630
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 1",
+      "url": "https://resource.cdn.icai.org/84556bos68130-final-gp1.pdf",
+      "pages": [
+        218,
+        238
+      ],
+      "answer_pages": [
+        592,
+        609
+      ]
+    }
+  ]
 }

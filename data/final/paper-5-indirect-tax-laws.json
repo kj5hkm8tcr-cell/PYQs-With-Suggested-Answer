@@ -579,5 +579,125 @@
       ]
     }
   ],
-  "_note": "Map: question part -> chapter key (A-n = GST chapter n, B-n = Customs & FTP chapter n, per ICAI study material for May 2026/Sep 2026/Jan 2027). 'CS' = case scenario whose MCQs span several chapters. 'X' = topic not in current syllabus (e.g. duty drawback)."
+  "_note": "Map: question part -> chapter key (A-n = GST chapter n, B-n = Customs & FTP chapter n, per ICAI study material for May 2026/Sep 2026/Jan 2027). 'CS' = case scenario whose MCQs span several chapters. 'X' = topic not in current syllabus (e.g. duty drawback).",
+  "practice": [
+    {
+      "type": "RTP",
+      "name": "November 2026",
+      "url": "https://resource.cdn.icai.org/93967bos-aps6169-rtp-nov2026-ch5.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "May 2026",
+      "url": "https://resource.cdn.icai.org/91040bos-aps4369-final-may2026-p5.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "January 2026",
+      "url": "https://resource.cdn.icai.org/88983bos-aps2822-p5.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "September 2025",
+      "url": "https://resource.cdn.icai.org/86601bos-aps1177-g2-p5.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "May 2025",
+      "url": "https://resource.cdn.icai.org/84618bos68187-p5.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "November 2024",
+      "url": "https://resource.cdn.icai.org/82282bos66359.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "November 2024",
+      "url": "https://resource.cdn.icai.org/81752bos65928-p5.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "May 2024",
+      "url": "https://resource.cdn.icai.org/78739bos63028-p5.pdf"
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 6",
+      "url": "https://resource.cdn.icai.org/84557bos68130-final-gp2.pdf",
+      "pages": [
+        198,
+        216
+      ],
+      "answer_pages": [
+        423,
+        438
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 5",
+      "url": "https://resource.cdn.icai.org/84557bos68130-final-gp2.pdf",
+      "pages": [
+        177,
+        197
+      ],
+      "answer_pages": [
+        407,
+        422
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 4",
+      "url": "https://resource.cdn.icai.org/84557bos68130-final-gp2.pdf",
+      "pages": [
+        161,
+        176
+      ],
+      "answer_pages": [
+        392,
+        406
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 3",
+      "url": "https://resource.cdn.icai.org/84557bos68130-final-gp2.pdf",
+      "pages": [
+        145,
+        160
+      ],
+      "answer_pages": [
+        377,
+        391
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 2",
+      "url": "https://resource.cdn.icai.org/84557bos68130-final-gp2.pdf",
+      "pages": [
+        127,
+        144
+      ],
+      "answer_pages": [
+        361,
+        376
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 1",
+      "url": "https://resource.cdn.icai.org/84557bos68130-final-gp2.pdf",
+      "pages": [
+        110,
+        126
+      ],
+      "answer_pages": [
+        345,
+        360
+      ]
+    }
+  ]
 }

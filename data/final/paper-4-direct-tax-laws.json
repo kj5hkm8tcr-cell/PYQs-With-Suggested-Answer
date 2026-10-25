@@ -459,5 +459,107 @@
       ]
     }
   ],
-  "_note": "Chapters per ICAI Study Material (May/Nov 2026 exams), https://www.icai.org/post/sm-final-p4-may-nov2026. Map: question part -> chapter key (or list). 'X' = topic no longer in current syllabus. 'CS' = case scenario whose MCQs span several chapters."
+  "_note": "Chapters per ICAI Study Material (May/Nov 2026 exams), https://www.icai.org/post/sm-final-p4-may-nov2026. Map: question part -> chapter key (or list). 'X' = topic no longer in current syllabus. 'CS' = case scenario whose MCQs span several chapters.",
+  "practice": [
+    {
+      "type": "RTP",
+      "name": "November 2026",
+      "url": "https://resource.cdn.icai.org/93966bos-aps6169-rtp-nov2026-ch4.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "May 2026",
+      "url": "https://resource.cdn.icai.org/91033bos-aps4369-final-may2026-p4.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "January 2026",
+      "url": "https://resource.cdn.icai.org/88982bos-aps2822-p4.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "September 2025",
+      "url": "https://resource.cdn.icai.org/86600bos-aps1177-g2-p4.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "May 2025",
+      "url": "https://resource.cdn.icai.org/84621bos68187-p4.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "November 2024",
+      "url": "https://resource.cdn.icai.org/81750bos65928-p4.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "May 2024",
+      "url": "https://resource.cdn.icai.org/78738bos63028-p4.pdf"
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 6",
+      "url": "https://resource.cdn.icai.org/84557bos68130-final-gp2.pdf",
+      "pages": [
+        91,
+        109
+      ],
+      "answer_pages": [
+        327,
+        344
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 5",
+      "url": "https://resource.cdn.icai.org/84557bos68130-final-gp2.pdf",
+      "pages": [
+        73,
+        90
+      ],
+      "answer_pages": [
+        310,
+        326
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 3",
+      "url": "https://resource.cdn.icai.org/84557bos68130-final-gp2.pdf",
+      "pages": [
+        39,
+        56
+      ],
+      "answer_pages": [
+        266,
+        288
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 2",
+      "url": "https://resource.cdn.icai.org/84557bos68130-final-gp2.pdf",
+      "pages": [
+        22,
+        38
+      ],
+      "answer_pages": [
+        243,
+        265
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 1",
+      "url": "https://resource.cdn.icai.org/84557bos68130-final-gp2.pdf",
+      "pages": [
+        4,
+        21
+      ],
+      "answer_pages": [
+        217,
+        242
+      ]
+    }
+  ]
 }

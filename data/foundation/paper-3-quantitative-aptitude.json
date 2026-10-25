@@ -517,5 +517,213 @@
       ]
     }
   ],
-  "_note": "Chapters per ICAI new-scheme study material (https://www.icai.org/post/19139); ICAI numbers chapters 1-18 continuously across the paper, keys are '<Part>-<ICAI chapter no.>'."
+  "_note": "Chapters per ICAI new-scheme study material (https://www.icai.org/post/19139); ICAI numbers chapters 1-18 continuously across the paper, keys are '<Part>-<ICAI chapter no.>'.",
+  "practice": [
+    {
+      "type": "RTP",
+      "name": "January 2027",
+      "url": "https://resource.cdn.icai.org/94702bos-aps6578-p3.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "September 2026",
+      "url": "https://resource.cdn.icai.org/92775bos-rtp-fnd-sep2026-p3.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "May 2026",
+      "url": "https://resource.cdn.icai.org/91004bos-aps4251-fnd-p3.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "January 2026",
+      "url": "https://resource.cdn.icai.org/88843bos-aps2791-p3.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "September 2025",
+      "url": "https://resource.cdn.icai.org/86493bos-aps1065-rtp-fnd-sep2025-quantative-apti.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "May 2025",
+      "url": "https://resource.cdn.icai.org/84645bos270225-p3.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "January 2025",
+      "url": "https://resource.cdn.icai.org/82847bos66922-p3.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "September 2024",
+      "url": "https://resource.cdn.icai.org/81105bos65316-p3.pdf"
+    },
+    {
+      "type": "MTP",
+      "name": "Series I - August 2025",
+      "url": "https://boslive.icai.org/mock_test_paper/MTP_50_56_QUESTIONS_1754998469.pdf",
+      "answers_url": "https://boslive.icai.org/mock_test_paper/MTP_50_56_ANSWERS_1755081324.pdf"
+    },
+    {
+      "type": "MTP",
+      "name": "Series II - August 2025",
+      "url": "https://boslive.icai.org/mock_test_paper/MTP_49_56_QUESTIONS_1756285854.pdf",
+      "answers_url": "https://boslive.icai.org/mock_test_paper/MTP_49_56_ANSWERS_1756382540.pdf"
+    },
+    {
+      "type": "MTP",
+      "name": "Series II - May 2025",
+      "url": "https://boslive.icai.org/mock_test_paper/MTP_48_56_QUESTIONS_1746524935.pdf",
+      "answers_url": "https://boslive.icai.org/mock_test_paper/MTP_48_56_ANSWERS_1746626480.pdf"
+    },
+    {
+      "type": "MTP",
+      "name": "Series I - April 2025",
+      "url": "https://boslive.icai.org/mock_test_paper/MTP_47_56_QUESTIONS_1745403432.pdf",
+      "answers_url": "https://boslive.icai.org/mock_test_paper/MTP_47_56_ANSWERS_1745679470.pdf"
+    },
+    {
+      "type": "MTP",
+      "name": "Series II - January 2025",
+      "url": "https://boslive.icai.org/mock_test_paper/MTP_42_56_QUESTIONS_1735810372.pdf",
+      "answers_url": "https://boslive.icai.org/mock_test_paper/MTP_42_56_ANSWERS_1735906078.pdf"
+    },
+    {
+      "type": "MTP",
+      "name": "Series I - December 2024",
+      "url": "https://boslive.icai.org/mock_test_paper/MTP_41_56_QUESTIONS_1734862078.pdf",
+      "answers_url": "https://boslive.icai.org/mock_test_paper/MTP_41_56_ANSWERS_1735023955.pdf"
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 10",
+      "url": "https://resource.cdn.icai.org/84774bos68243.pdf",
+      "pages": [
+        303,
+        321
+      ],
+      "answer_pages": [
+        795,
+        796
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 9",
+      "url": "https://resource.cdn.icai.org/84774bos68243.pdf",
+      "pages": [
+        283,
+        302
+      ],
+      "answer_pages": [
+        794,
+        794
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 8",
+      "url": "https://resource.cdn.icai.org/84774bos68243.pdf",
+      "pages": [
+        265,
+        282
+      ],
+      "answer_pages": [
+        793,
+        793
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 7",
+      "url": "https://resource.cdn.icai.org/84774bos68243.pdf",
+      "pages": [
+        246,
+        264
+      ],
+      "answer_pages": [
+        792,
+        792
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 6",
+      "url": "https://resource.cdn.icai.org/84774bos68243.pdf",
+      "pages": [
+        227,
+        245
+      ],
+      "answer_pages": [
+        791,
+        791
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 5",
+      "url": "https://resource.cdn.icai.org/84774bos68243.pdf",
+      "pages": [
+        209,
+        226
+      ],
+      "answer_pages": [
+        790,
+        790
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 4",
+      "url": "https://resource.cdn.icai.org/84774bos68243.pdf",
+      "pages": [
+        191,
+        208
+      ],
+      "answer_pages": [
+        789,
+        789
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 3",
+      "url": "https://resource.cdn.icai.org/84774bos68243.pdf",
+      "pages": [
+        172,
+        190
+      ],
+      "answer_pages": [
+        788,
+        788
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 2",
+      "url": "https://resource.cdn.icai.org/84774bos68243.pdf",
+      "pages": [
+        153,
+        171
+      ],
+      "answer_pages": [
+        787,
+        787
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 1",
+      "url": "https://resource.cdn.icai.org/84774bos68243.pdf",
+      "pages": [
+        135,
+        152
+      ],
+      "answer_pages": [
+        786,
+        786
+      ]
+    }
+  ]
 }

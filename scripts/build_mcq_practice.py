@@ -7,19 +7,14 @@ its case scenario and the correct option from ICAI's answer key:
 
     mcq-practice/data/index.js          <- list of papers, chapters and question sets
     mcq-practice/data/<paper>.js        <- that paper's MCQs, loaded when it is opened
-    mcq-practice/data/img/<paper>/...   <- question and case scenario images
+    mcq-practice/data/img/<paper>/<set>.js  <- that set's question and case scenario images
 
 Sets come from the PYQ attempts already in data/<level>/<paper>.json (chapter-wise via
-their "map") and from an optional "practice" list in the same file for RTPs and MTPs:
+their "map") and from the "practice" list in the same file: RTPs, MTPs and Model Test
+Papers, found by scripts/find_rtp_mtp.py (see there for the format).
 
-    "practice": [
-      {"type": "RTP", "name": "September 2026", "url": "https://.../rtp.pdf"},
-      {"type": "MTP", "name": "September 2026 - Series I", "url": "https://.../mtp-q.pdf",
-       "answers_url": "https://.../mtp-a.pdf"}
-    ]
-
-RTP/MTP sets are paper-wise only; add a "map" (same format as attempts) to file them
-under chapters too. "answers_url" is for MTPs whose answer key is a separate PDF.
+RTP/MTP/Model sets are paper-wise only; add a "map" (same format as attempts, keys as the
+set's question ids) to file them under chapters too.
 
 The output contains ICAI's copyrighted text and is git-ignored (see README).
 
@@ -28,18 +23,21 @@ Usage:
     python scripts/build_mcq_practice.py data/foundation/paper-3-quantitative-aptitude.json
 """
 
+import base64
 import json
 import re
 import sys
 from pathlib import Path
 
 import pdfplumber
+import pypdf
 import pypdfium2
 from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).parent))
 from build_pyq import CACHE, ROOT, attempt_name, fetch, sources  # noqa: E402
-from segment import _lines, segment_mcq  # noqa: E402
+from segment import segment_mcq  # noqa: E402
+from segment_practice import segment_practice  # noqa: E402
 
 OUT = ROOT / "mcq-practice" / "data"
 SCALE = 2.0  # render at 144 dpi: sharp on phones, small enough as 16-grey PNGs
@@ -109,30 +107,43 @@ class Renderer:
         return dest
 
 
-def answer_key_only(path):
-    """Answers from a separate MTP answer PDF: lines like "1. (B)" or a key table."""
-    answers = {}
-    with pdfplumber.open(path) as pdf:
-        lines, _ = _lines(pdf)
-    text = "\n".join(l["text"] for _, l in lines)
-    for n, a in re.findall(r"(?m)(?:^|\s)(\d{1,3})\s*\.?\s*\(\s*([A-Da-d])\s*\)", text):
-        answers.setdefault(int(n), f"({a.upper()})")
-    return answers
+def page_range(src, pages, tag):
+    """Pages [first, last] (0-based) of a booklet as their own PDF, so they can be cut like a paper."""
+    dest = src.with_name(f"{src.stem}-{tag}-{pages[0]}-{pages[1]}.pdf")
+    if not dest.exists():
+        reader = pypdf.PdfReader(str(src))
+        writer = pypdf.PdfWriter()
+        for i in range(pages[0], pages[1] + 1):
+            writer.add_page(reader.pages[i])
+        with open(dest, "wb") as f:
+            writer.write(f)
+    return dest
 
 
-def build_set(spec_dir, set_id, src_path, mapping, answers_path=None):
-    """One attempt / RTP / MTP -> (questions, contexts) with images written to disk."""
-    parts = segment_mcq(str(src_path))
-    if answers_path:
-        extra = answer_key_only(str(answers_path))
-        for pid, p in parts.items():
-            if not p["mcq_answer"] and int(pid[1:]) in extra:
-                p["mcq_answer"] = extra[int(pid[1:])]
+def mcqs_of(kind, src, answers):
+    """[(id, label, part)] in paper order; part has question/context spans and "mcq_answer"."""
+    if kind == "PYQ":
+        parts = segment_mcq(str(src))
+        return [(pid, pid[1:], parts[pid]) for pid in sorted(parts, key=lambda k: int(k[1:]))]
+    out = []
+    for q in segment_practice(str(src), str(answers) if answers else None, rtp=kind == "RTP"):
+        q["mcq_answer"] = q["answer"]
+        if q["context_id"]:
+            q["context_id"] = f"b{q['block']}{q['context_id']}"
+        pid = f"b{q['block']}-{q['key'].replace('.', '-')}"
+        out.append((pid, q["label"], q))
+    # numbering restarts per section (e.g. Income-tax / GST): show which section in the label
+    if len({q["block"] for _, _, q in out}) > 1:
+        out = [(pid, f"{lbl} (part {q['block']})", q) for pid, lbl, q in out]
+    return out
+
+
+def build_set(spec_dir, set_id, kind, src_path, mapping, answers_path=None):
+    """One attempt / RTP / MTP / model test -> (questions, contexts) with images written to disk."""
     render = Renderer(str(src_path))
     img_dir = OUT / "img" / spec_dir
     questions, contexts, problems = [], {}, []
-    for pid in sorted(parts, key=lambda k: int(k[1:])):
-        p = parts[pid]
+    for pid, label, p in mcqs_of(kind, src_path, answers_path):
         ch = mapping.get(pid) if mapping else None
         if ch == "X" or re.match(r"Out of syllabus", p["mcq_answer"], re.I):
             continue  # out of the current syllabus
@@ -140,7 +151,7 @@ def build_set(spec_dir, set_id, src_path, mapping, answers_path=None):
             problems.append(f"{pid} has no chapter in the map")
         letters, note = parse_answer(p["mcq_answer"])
         if not letters and not note:
-            problems.append(f"{pid} has no answer in ICAI's key ({p['mcq_answer']!r})")
+            problems.append(f"MCQ {label} has no answer in ICAI's key ({p['mcq_answer']!r})")
             continue
         ctx = None
         if p.get("context"):
@@ -151,14 +162,34 @@ def build_set(spec_dir, set_id, src_path, mapping, answers_path=None):
         render.save(p["question"], img_dir / f"{set_id}-{pid}.png")
         questions.append({
             "id": f"{set_id}-{pid}",
-            "no": int(pid[1:]),
+            "no": label,
             "img": f"img/{spec_dir}/{set_id}-{pid}.png",
             "ctx": ctx,
             "ans": letters,
             "note": note,
             "ch": [] if ch is None else [str(c) for c in (ch if isinstance(ch, list) else [ch])],
         })
+        if p.get("options") == "roman":
+            questions[-1]["opts"] = "roman"  # buttons read (i)-(iv) instead of A-D
     return questions, contexts, problems
+
+
+def pack_images(paper_data):
+    """Bundle each set's images into one script, data/img/<paper>/<set>.js, so the site is a
+    few hundred files (hosting limits) and works from disk; the page loads a set when opened."""
+    key = paper_data["key"]
+    for st in paper_data["sets"]:
+        paths = [q["img"] for q in st["questions"]] + \
+            sorted({paper_data["contexts"][q["ctx"]] for q in st["questions"] if q["ctx"]})
+        imgs = {}
+        for path in paths:
+            f = OUT / path
+            if f.exists():
+                imgs[path] = "data:image/png;base64," + base64.b64encode(f.read_bytes()).decode()
+                f.unlink()
+        if imgs:
+            (OUT / "img" / key / f"{st['id']}.js").write_text(
+                f"MCQ.images({json.dumps({'paper': key, 'set': st['id'], 'images': imgs}, separators=(',', ':'))});\n")
 
 
 def build(data_file):
@@ -177,15 +208,25 @@ def build(data_file):
             # e.g. Inter Taxation May 2025 was two PDFs (Income-tax / GST): one set each
             part = f" - {s['note'].split(':')[0]}" if s.get("note") and len(srcs) > 1 else ""
             jobs.append(("PYQ", f"{attempt_name(a['attempt'])}{part}", f"pyq-{a['attempt']}-{si}",
-                         s["url"], s.get("map", {}), None))
-    for k, s in enumerate(spec.get("practice", [])):
-        jobs.append((s["type"].upper(), s["name"], f"{s['type'].lower()}-{k}", s["url"], s.get("map"),
-                     s.get("answers_url")))
+                         s, s.get("map", {})))
+    for s in spec.get("practice", []):
+        # e.g. an RTP with a supplement PDF: "May 2024", "May 2024 (2)"
+        same = sum(1 for j in jobs if j[0] == s["type"] and j[3].get("name") == s["name"])
+        name = f"{s['name']} ({same + 1})" if same else s["name"]
+        jobs.append((s["type"], name, slug(f"{s['type']} {name}"), s, s.get("map")))
 
-    for kind, name, set_id, url, mapping, answers_url in jobs:
-        src = fetch(url, CACHE / level / paper / Path(url).name)
-        ans = fetch(answers_url, CACHE / level / paper / Path(answers_url).name) if answers_url else None
-        qs, cs, problems = build_set(key, set_id, src, mapping, ans)
+    for kind, name, set_id, s, mapping in jobs:
+        try:
+            src = fetch(s["url"], CACHE / level / paper / Path(s["url"]).name)
+            ans = fetch(s["answers_url"], CACHE / level / paper / Path(s["answers_url"]).name) \
+                if s.get("answers_url") else None
+            if s.get("pages"):  # one test inside a Model Test Papers booklet
+                ans = page_range(src, s["answer_pages"], "a")
+                src = page_range(src, s["pages"], "q")
+            qs, cs, problems = build_set(key, set_id, kind, src, mapping, ans)
+        except Exception as e:  # one unreadable PDF should not stop the paper
+            print(f"  ! {paper} {kind} {name}: {e}")
+            continue
         for msg in problems:
             print(f"  ! {paper} {kind} {name}: {msg}")
         if not qs:
@@ -210,6 +251,7 @@ def build(data_file):
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / f"{key}.js").write_text(
         f"MCQ.loaded({json.dumps(paper_data, ensure_ascii=False, separators=(',', ':'))});\n")
+    pack_images(paper_data)
     return {
         "key": key, "level": level, "paper": paper, "chapters": chapters,
         "hasCaseScenario": "CS" in used,

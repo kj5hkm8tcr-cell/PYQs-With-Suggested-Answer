@@ -61,8 +61,18 @@ Build the data, then open the page in a browser (works straight from disk, or ho
 python scripts/build_mcq_practice.py      # writes mcq-practice/data/ (git-ignored, ICAI copyright)
 ```
 
-RTPs and MTPs: add them to the paper's JSON as a `"practice"` list (format in the script's docstring).
-They show up under paper-wise; until then those buttons read "not added yet".
+RTPs, MTPs and Model Test Papers come from ICAI's BoS Knowledge Portal (boslive.icai.org).
+`scripts/find_rtp_mtp.py` finds them and lists them in each paper's JSON under `"practice"`;
+run it before each attempt to add the new ones, then rebuild:
+
+```bash
+python scripts/find_rtp_mtp.py            # RTPs, MTPs, Model Test Papers -> data/*.json "practice"
+python scripts/build_mcq_practice.py
+```
+
+ICAI lists MTPs only behind the student login, so their links are read from VSI Jaipur's public
+pages; the PDFs themselves are ICAI's (boslive.icai.org/mock_test_paper/...) and each is identified
+from its own first page. A question is kept only when ICAI's answer for it is found.
 
 ## Copyright
 

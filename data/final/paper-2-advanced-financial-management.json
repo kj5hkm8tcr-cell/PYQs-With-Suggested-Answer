@@ -384,5 +384,42 @@
         }
       ]
     }
+  ],
+  "practice": [
+    {
+      "type": "RTP",
+      "name": "November 2026",
+      "url": "https://resource.cdn.icai.org/93964bos-aps6169-rtp-nov2026-ch2.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "May 2026",
+      "url": "https://resource.cdn.icai.org/91030bos-aps4369-final-may2026-p2.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "January 2026",
+      "url": "https://resource.cdn.icai.org/88980bos-aps2822-p2.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "September 2025",
+      "url": "https://resource.cdn.icai.org/86598bos-aps1177-g1-p2.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "May 2025",
+      "url": "https://resource.cdn.icai.org/84616bos68187-p2.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "November 2024",
+      "url": "https://resource.cdn.icai.org/81748bos65928-p2.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "May 2024",
+      "url": "https://resource.cdn.icai.org/78737bos63028-p2.pdf"
+    }
   ]
 }

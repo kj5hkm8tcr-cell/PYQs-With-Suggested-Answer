@@ -581,5 +581,170 @@
       ]
     }
   ],
-  "_note": "Map: question part -> chapter key (A-n = Paper 6A FM chapter n, B-n = Paper 6B SM chapter n; list if spanning). 'X' = not in current syllabus (old-scheme Economics for Finance and EIS; dropped old SM/FM topics). 'CS' = case-scenario MCQs spanning several chapters."
+  "_note": "Map: question part -> chapter key (A-n = Paper 6A FM chapter n, B-n = Paper 6B SM chapter n; list if spanning). 'X' = not in current syllabus (old-scheme Economics for Finance and EIS; dropped old SM/FM topics). 'CS' = case-scenario MCQs spanning several chapters.",
+  "practice": [
+    {
+      "type": "RTP",
+      "name": "September 2026",
+      "url": "https://resource.cdn.icai.org/93044rtp-int-sep2026-6.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "May 2026",
+      "url": "https://resource.cdn.icai.org/91022bos-aps4256-int-may2026-p6.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "January 2026",
+      "url": "https://resource.cdn.icai.org/88958bos-aps2810-p6.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "September 2025",
+      "url": "https://resource.cdn.icai.org/86542rtp-int-g2-sep2025-6.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "May 2025",
+      "url": "https://resource.cdn.icai.org/84742bos68254ch6.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "September 2024",
+      "url": "https://resource.cdn.icai.org/81161bos65352-p6.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "May 2024",
+      "url": "https://resource.cdn.icai.org/78735bos63031-p6.pdf"
+    },
+    {
+      "type": "MTP",
+      "name": "Series II - August 2025 - Paper 6A",
+      "url": "https://boslive.icai.org/mock_test_paper/MTP_52_53_QUESTIONS_1754655010.pdf",
+      "answers_url": "https://boslive.icai.org/mock_test_paper/MTP_52_53_ANSWERS_1755072899.pdf"
+    },
+    {
+      "type": "MTP",
+      "name": "Series I - July 2025 - Paper 6A",
+      "url": "https://boslive.icai.org/mock_test_paper/MTP_51_53_QUESTIONS_1753437086.pdf",
+      "answers_url": "https://boslive.icai.org/mock_test_paper/MTP_51_53_ANSWERS_1753613329.pdf"
+    },
+    {
+      "type": "MTP",
+      "name": "Series II - April 2025 - Paper 6A",
+      "url": "https://boslive.icai.org/mock_test_paper/MTP_43_53_QUESTIONS_1743769367.pdf",
+      "answers_url": "https://boslive.icai.org/mock_test_paper/MTP_43_53_ANSWERS_1744108798.pdf"
+    },
+    {
+      "type": "MTP",
+      "name": "Series I - March 2025 - Paper 6A",
+      "url": "https://boslive.icai.org/mock_test_paper/MTP_44_53_QUESTIONS_1742303781.pdf",
+      "answers_url": "https://boslive.icai.org/mock_test_paper/MTP_44_53_ANSWERS_1742466099.pdf"
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 8",
+      "url": "https://resource.cdn.icai.org/84776bos68244-gp2.pdf",
+      "pages": [
+        272,
+        277
+      ],
+      "answer_pages": [
+        631,
+        637
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 7",
+      "url": "https://resource.cdn.icai.org/84776bos68244-gp2.pdf",
+      "pages": [
+        267,
+        271
+      ],
+      "answer_pages": [
+        626,
+        630
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 6",
+      "url": "https://resource.cdn.icai.org/84776bos68244-gp2.pdf",
+      "pages": [
+        262,
+        266
+      ],
+      "answer_pages": [
+        620,
+        625
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 5",
+      "url": "https://resource.cdn.icai.org/84776bos68244-gp2.pdf",
+      "pages": [
+        258,
+        261
+      ],
+      "answer_pages": [
+        614,
+        619
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 4",
+      "url": "https://resource.cdn.icai.org/84776bos68244-gp2.pdf",
+      "pages": [
+        253,
+        257
+      ],
+      "answer_pages": [
+        608,
+        613
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 3",
+      "url": "https://resource.cdn.icai.org/84776bos68244-gp2.pdf",
+      "pages": [
+        249,
+        252
+      ],
+      "answer_pages": [
+        603,
+        607
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 2",
+      "url": "https://resource.cdn.icai.org/84776bos68244-gp2.pdf",
+      "pages": [
+        244,
+        248
+      ],
+      "answer_pages": [
+        596,
+        602
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 1",
+      "url": "https://resource.cdn.icai.org/84776bos68244-gp2.pdf",
+      "pages": [
+        240,
+        243
+      ],
+      "answer_pages": [
+        588,
+        595
+      ]
+    }
+  ]
 }

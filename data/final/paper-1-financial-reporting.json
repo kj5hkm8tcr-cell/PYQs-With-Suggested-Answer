@@ -366,5 +366,120 @@
         }
       ]
     }
+  ],
+  "practice": [
+    {
+      "type": "RTP",
+      "name": "November 2026",
+      "url": "https://resource.cdn.icai.org/93963bos-aps6169-rtp-nov2026-ch1.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "May 2026",
+      "url": "https://resource.cdn.icai.org/91035bos-aps4369-final-may2026-p1.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "January 2026",
+      "url": "https://resource.cdn.icai.org/88979bos-aps2822-p1.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "September 2025",
+      "url": "https://resource.cdn.icai.org/86597bos-aps1177-g1-p1.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "May 2025",
+      "url": "https://resource.cdn.icai.org/84615bos68187-p1.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "November 2024",
+      "url": "https://resource.cdn.icai.org/81747bos65928-p1.pdf"
+    },
+    {
+      "type": "RTP",
+      "name": "May 2024",
+      "url": "https://resource.cdn.icai.org/78736bos63028-p1.pdf"
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 6",
+      "url": "https://resource.cdn.icai.org/84556bos68130-final-gp1.pdf",
+      "pages": [
+        86,
+        103
+      ],
+      "answer_pages": [
+        429,
+        454
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 5",
+      "url": "https://resource.cdn.icai.org/84556bos68130-final-gp1.pdf",
+      "pages": [
+        71,
+        85
+      ],
+      "answer_pages": [
+        408,
+        428
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 4",
+      "url": "https://resource.cdn.icai.org/84556bos68130-final-gp1.pdf",
+      "pages": [
+        54,
+        70
+      ],
+      "answer_pages": [
+        390,
+        407
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 3",
+      "url": "https://resource.cdn.icai.org/84556bos68130-final-gp1.pdf",
+      "pages": [
+        38,
+        53
+      ],
+      "answer_pages": [
+        373,
+        389
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 2",
+      "url": "https://resource.cdn.icai.org/84556bos68130-final-gp1.pdf",
+      "pages": [
+        22,
+        37
+      ],
+      "answer_pages": [
+        355,
+        372
+      ]
+    },
+    {
+      "type": "Model",
+      "name": "Model Test Paper 1",
+      "url": "https://resource.cdn.icai.org/84556bos68130-final-gp1.pdf",
+      "pages": [
+        4,
+        21
+      ],
+      "answer_pages": [
+        332,
+        354
+      ]
+    }
   ]
 }
