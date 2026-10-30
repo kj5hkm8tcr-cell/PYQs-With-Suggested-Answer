@@ -1,0 +1,595 @@
+{
+ "1a": {
+  "marks": 5,
+  "topic": "Packaging cost allocation using yield and box sizes",
+  "chapter": "4 Overheads - Absorption Costing Method",
+  "category": "NEW",
+  "similarity": "new",
+  "percent": 0,
+  "sources": [],
+  "note": "No pre-exam source found; identical problem only appears later as SM May 2027 ed. Ch 2 Test Your Knowledge Q11 (post-exam, not counted)."
+ },
+ "1b": {
+  "marks": 5,
+  "topic": "Joint cost apportionment (sales value at split-off, by-product NRV credit) and further-processing decision",
+  "chapter": "11 Joint Products and By Products",
+  "category": "RTP",
+  "similarity": "modified",
+  "percent": 70,
+  "sources": [
+   {
+    "type": "rtp",
+    "ref": "RTP Jan 2025 Q14",
+    "percent": 70
+   }
+  ],
+  "note": "Same structure as RTP Jan 2025 Q14 (JPBP Ltd: two joint products + by-product sold only after further processing, NRV deducted from joint cost, further processing/marketing costs, profit without processing, incremental decision); new figures and apportionment on sales value at split-off instead of physical units."
+ },
+ "1c": {
+  "marks": 4,
+  "topic": "Halsey and Rowan premium plan earnings",
+  "chapter": "3 Employee Cost and Direct Expenses",
+  "category": "PYQ",
+  "similarity": "modified",
+  "percent": 60,
+  "sources": [
+   {
+    "type": "pyq",
+    "ref": "PYQ May 2019 Q1(b)",
+    "percent": 60
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 3 Illustrations 6 and 7 (Halsey / Rowan earnings)",
+    "percent": 40
+   }
+  ],
+  "note": "PYQ May 2019 Q1(b) uses the same 40 hrs standard / 30 hrs actual for Halsey and Rowan; exam changes rate (150 vs 75), drops other plans and makes students derive standard time (1,800/45) and time taken from job start/finish times."
+ },
+ "2a": {
+  "marks": 9,
+  "topic": "Cost sheet worked backwards from cost of production (FIFO finished stock)",
+  "chapter": "6 Cost Sheet",
+  "category": "PYQ",
+  "similarity": "adapted",
+  "percent": 40,
+  "sources": [
+   {
+    "type": "pyq",
+    "ref": "PYQ Nov 2018 Q2(a)",
+    "percent": 40
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ May 2022 Q3(b)",
+    "percent": 35
+   }
+  ],
+  "note": "Backward derivation of raw material consumed as in PYQ Nov 2018 Q2(a) (ZIA Pvt Ltd); cost items (quality control, pollution control & maintenance, lease rent, primary packing) and the six-stage cost sheet follow PYQ May 2022 Q3(b); hire charges per labour hour, FIFO finished stock and new data are new."
+ },
+ "2b": {
+  "marks": 5,
+  "topic": "Process account with normal/abnormal loss, container recovery and income statement",
+  "chapter": "10 Process & Operation Costing",
+  "category": "NEW",
+  "similarity": "new",
+  "percent": 20,
+  "sources": [],
+  "note": "No pre-exam source with this oil/container problem; identical problem only appears later as SM May 2027 ed. Ch 10 Test Your Knowledge Q8 (post-exam, not counted)."
+ },
+ "3a": {
+  "marks": 8,
+  "topic": "Service costing - bank loan application processing cost",
+  "chapter": "12 Service Costing",
+  "category": "PYQ",
+  "similarity": "modified",
+  "percent": 65,
+  "sources": [
+   {
+    "type": "pyq",
+    "ref": "PYQ Nov 2022 Q1(b)",
+    "percent": 65
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 12 Illustration 13 (home loan application processing)",
+    "percent": 40
+   }
+  ],
+  "note": "Same bank-branch set-up as PYQ Nov 2022 Q1(b) (ABC Bank: Vehicle/Education loans, branch manager, legal, printing, advertising, other expenses, equal processing cost); exam reverses the requirement (find direct professionals' salary), adds quarterly expenses and building depreciation, uses 20%/15% shares and new figures."
+ },
+ "3b": {
+  "marks": 6,
+  "topic": "Service costing - training institute cost per batch, fee and break-even occupancy",
+  "chapter": "12 Service Costing",
+  "category": "PYQ",
+  "similarity": "modified",
+  "percent": 70,
+  "sources": [
+   {
+    "type": "pyq",
+    "ref": "PYQ Sep 2024 Q1(a)",
+    "percent": 70
+   }
+  ],
+  "note": "Same structure as PYQ Sep 2024 Q1(a) (Language Achievers: weekly hall rent, honorarium per lecture, travel per day, refreshments per week, admin expenses, cost per batch, minimum fee); exam changes data, adds weekend lectures and asks minimum % batch occupancy at a given fee instead of fee at 80% occupancy."
+ },
+ "4a": {
+  "marks": 7,
+  "topic": "Material, labour and variable overhead variances from budget vs actual data",
+  "chapter": "13 Standard Costing",
+  "category": "SM",
+  "similarity": "adapted",
+  "percent": 45,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 15 Test Your Knowledge Practical Problem Q6 (TQM Ltd.)",
+    "percent": 45
+   }
+  ],
+  "note": "Like SM Ch 15 TYK Q6, master budget vs actual units, sales, material, wages and VO with standard rates, from which material, labour and VO variances are worked; exam gives actual prices/rates (not actual quantities/hours) so quantities must be derived, all data new."
+ },
+ "4b": {
+  "marks": 7,
+  "topic": "Cost sheet with absorption on normal capacity and cost-financial profit reconciliation",
+  "chapter": "7 Cost Accounting Systems",
+  "category": "SM",
+  "similarity": "modified",
+  "percent": 75,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 7 Test Your Knowledge Practical Problem Q4",
+    "percent": 75
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ Jul 2021 Q3(a)",
+    "percent": 40
+   }
+  ],
+  "note": "Same problem as SM Ch 7 TYK Q4 (normal capacity, no stock, DM/DW, factory expenses part fixed, fixed admin, S&D part fixed, interest & dividend income, cost sheet + reconciliation); figures and fixed % changed, admin expenses are unpaid production-related, financial P&L part dropped."
+ },
+ "5a": {
+  "marks": 6,
+  "topic": "Comprehensive machine hour rate - working back to annual insurance premium",
+  "chapter": "4 Overheads - Absorption Costing Method",
+  "category": "SM",
+  "similarity": "modified",
+  "percent": 65,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 4 Test Your Knowledge Practical Problem Q5",
+    "percent": 65
+   }
+  ],
+  "note": "Same machine-shop problem as SM Ch 4 TYK Q5 (identical drilling machines, operators, absenteeism, leave, idle time, bonus, power, supervision, lighting, annual repairs/depreciation/sundry/general expenses); figures changed and requirement reversed: MHR of Rs 125 given, find annual insurance."
+ },
+ "5b": {
+  "marks": 5,
+  "topic": "Capacity / activity ratios - working back actual and standard hours",
+  "chapter": "15 Budgets and Budgetary Control",
+  "category": "PYQ",
+  "similarity": "modified",
+  "percent": 70,
+  "sources": [
+   {
+    "type": "pyq",
+    "ref": "PYQ May 2024 Q1(c)",
+    "percent": 70
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 15 Illustration 7",
+    "percent": 40
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ May 2019 Q1(a)",
+    "percent": 40
+   }
+  ],
+  "note": "Same format as PYQ May 2024 Q1(c) (XYZ Ltd.: std hours/day, days/week, 4 weeks, max and actual employees, two ratios given, find actual hours, standard hours and other ratios); exam gives Actual Capacity Usage and Activity ratios instead of Actual Usage of Budgeted Capacity and Efficiency, new figures."
+ },
+ "5c": {
+  "marks": 3,
+  "topic": "Opportunity cost of alternative products",
+  "chapter": "14 Marginal Costing",
+  "category": "SM",
+  "similarity": "modified",
+  "percent": 80,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 14 Illustration 10",
+    "percent": 80
+   }
+  ],
+  "note": "Same wording and layout as SM Ch 14 Illustration 10 (make any one of the products, option at beginning of year, SP, VC, demand, capacity, fixed cost, compute opportunity cost); two products M and S instead of three, new figures."
+ },
+ "6a": {
+  "marks": 5,
+  "topic": "Classification of expenses by function and variability",
+  "chapter": "1 Introduction to Cost and Management Accounting",
+  "category": "SM",
+  "similarity": "adapted",
+  "percent": 50,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 1 Classification of Costs: 13.2 By Function and 13.3 By Variability or Behaviour",
+    "percent": 50
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 4 Classification of overheads by function (table: delivery van expenses, warehouse expenses, salesmen commission)",
+    "percent": 40
+   },
+   {
+    "type": "rtp",
+    "ref": "RTP Nov 2022 Q15(a)",
+    "percent": 30
+   }
+  ],
+  "note": "Application of the SM Ch 1 functional and variability classifications (and SM Ch 4 functional overhead table) to five items; no earlier paper asks this exact item list, RTP Nov 2022 Q15(a) is a similar classify-into-table format (direct/indirect, fixed/variable)."
+ },
+ "6b": {
+  "marks": 5,
+  "topic": "Suitable incentive scheme (Rowan) for stated management requirements",
+  "chapter": "3 Employee Cost and Direct Expenses",
+  "category": "SM",
+  "similarity": "same",
+  "percent": 95,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 3 Illustration 11",
+    "percent": 95
+   }
+  ],
+  "note": "Word-for-word the three conditions of SM Ch 3 Illustration 11 (answer: Rowan scheme); only the numerical demonstration requirement is dropped."
+ },
+ "6c": {
+  "marks": 4,
+  "topic": "Usefulness/suitability of Activity Based Costing",
+  "chapter": "5 Activity Based Costing",
+  "category": "SM",
+  "similarity": "same",
+  "percent": 100,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 5 para 1.2 Usefulness/Suitability of ABC",
+    "percent": 100
+   },
+   {
+    "type": "mtp",
+    "ref": "Model Test Paper 5 Q2(b)",
+    "percent": 100
+   },
+   {
+    "type": "mtp",
+    "ref": "Model Test Paper 6 Q5(b)",
+    "percent": 100
+   }
+  ],
+  "note": "Directly from SM Ch 5 heading 1.2 'Usefulness/Suitability of ABC'; asked verbatim in Model Test Papers 5 Q2(b) and 6 Q5(b) (4 marks each)."
+ },
+ "6c-or": {
+  "marks": 4,
+  "topic": "Components of Budgetary Control System",
+  "chapter": "15 Budgets and Budgetary Control",
+  "category": "SM",
+  "similarity": "same",
+  "percent": 100,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 15 para 5.8 Components of Budgetary Control System (also TYK Theoretical Q2)",
+    "percent": 100
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ Dec 2021 Q6(d)",
+    "percent": 90
+   }
+  ],
+  "note": "Directly from SM Ch 15 heading 5.8 (physical, cost, profit, financial budgets) and TYK Theoretical Q2; earlier asked in PYQ Dec 2021 Q6(d) together with the definition."
+ },
+ "m1": {
+  "marks": 2,
+  "topic": "Multi-product CVP: combined C/S ratio at existing mix",
+  "chapter": "14 Marginal Costing",
+  "category": "RTP",
+  "similarity": "modified",
+  "percent": 70,
+  "sources": [
+   {
+    "type": "rtp",
+    "ref": "RTP May 2022 Q12",
+    "percent": 70
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 14 Test Your Knowledge Practical Problem Q20 (Prisha Ltd.)",
+    "percent": 65
+   }
+  ],
+  "note": "Case Scenario I follows RTP May 2022 Q12 / SM Ch 14 TYK Q20 (three products, discontinue one and replace with a new product, existing vs proposed C/S, profit, BES); exam gives existing sales by product value instead of a mix %, new figures."
+ },
+ "m2": {
+  "marks": 2,
+  "topic": "Multi-product CVP: profit at existing sales",
+  "chapter": "14 Marginal Costing",
+  "category": "RTP",
+  "similarity": "modified",
+  "percent": 70,
+  "sources": [
+   {
+    "type": "rtp",
+    "ref": "RTP May 2022 Q12(i)",
+    "percent": 70
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 14 Test Your Knowledge Practical Problem Q20 (Prisha Ltd.)",
+    "percent": 55
+   }
+  ],
+  "note": "Profit for existing mix as asked in RTP May 2022 Q12(i); SM TYK Q20 asks only C/S and BES. New figures."
+ },
+ "m3": {
+  "marks": 2,
+  "topic": "Multi-product CVP: C/S ratio at proposed mix with new product",
+  "chapter": "14 Marginal Costing",
+  "category": "RTP",
+  "similarity": "modified",
+  "percent": 70,
+  "sources": [
+   {
+    "type": "rtp",
+    "ref": "RTP May 2022 Q12(ii)",
+    "percent": 70
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 14 Test Your Knowledge Practical Problem Q20(ii)",
+    "percent": 70
+   }
+  ],
+  "note": "Proposed-mix C/S ratio after replacing a product, as in RTP May 2022 Q12(ii) and SM TYK Q20(ii); new figures."
+ },
+ "m4": {
+  "marks": 2,
+  "topic": "Multi-product CVP: break-even sales at proposed mix",
+  "chapter": "14 Marginal Costing",
+  "category": "RTP",
+  "similarity": "modified",
+  "percent": 70,
+  "sources": [
+   {
+    "type": "rtp",
+    "ref": "RTP May 2022 Q12(ii)",
+    "percent": 70
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 14 Test Your Knowledge Practical Problem Q20(ii)",
+    "percent": 70
+   }
+  ],
+  "note": "Break-even sales for proposed mix as in RTP May 2022 Q12(ii)/SM TYK Q20(ii); exam also raises fixed cost in proposal (18.8 lakh vs 18 lakh)."
+ },
+ "m5": {
+  "marks": 2,
+  "topic": "Multi-product CVP: profit at proposed mix",
+  "chapter": "14 Marginal Costing",
+  "category": "RTP",
+  "similarity": "modified",
+  "percent": 70,
+  "sources": [
+   {
+    "type": "rtp",
+    "ref": "RTP May 2022 Q12(ii)",
+    "percent": 70
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 14 Test Your Knowledge Practical Problem Q20 (Prisha Ltd.)",
+    "percent": 55
+   }
+  ],
+  "note": "Profit for proposed mix as in RTP May 2022 Q12(ii); new figures."
+ },
+ "m6": {
+  "marks": 2,
+  "topic": "Annual raw material requirement from market demand and market share",
+  "chapter": "2 Material Cost",
+  "category": "MTP",
+  "similarity": "adapted",
+  "percent": 40,
+  "sources": [
+   {
+    "type": "mtp",
+    "ref": "MTP Nov 2018 Series II Q4(b)",
+    "percent": 40
+   },
+   {
+    "type": "rtp",
+    "ref": "RTP Nov 2020 Q7",
+    "percent": 40
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ Jan 2021 Q1(d)",
+    "percent": 40
+   },
+   {
+    "type": "rtp",
+    "ref": "RTP May 2022 Q7",
+    "percent": 40
+   }
+  ],
+  "note": "Case Scenario II opening ('manufactures X used by ...; total market demand; expected market share %') follows the EBQ problems of MTP Nov 2018 S-II Q4(b), RTP Nov 2020 Q7, PYQ Jan 2021 Q1(d); exam uses quarterly demand and converts to kg of two raw materials."
+ },
+ "m7": {
+  "marks": 2,
+  "topic": "EOQ with carrying cost built from storage and interest rates",
+  "chapter": "2 Material Cost",
+  "category": "SM",
+  "similarity": "adapted",
+  "percent": 50,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 2 Illustration 4",
+    "percent": 50
+   }
+  ],
+  "note": "Carrying cost built up from storage and interest components as in SM Ch 2 Illustration 4; exam states them per kg per month and per quarter so they must be annualised; new data."
+ },
+ "m8": {
+  "marks": 2,
+  "topic": "EOQ and number of orders (storage + interest + obsolescence rates)",
+  "chapter": "2 Material Cost",
+  "category": "SM",
+  "similarity": "modified",
+  "percent": 60,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 2 Illustration 4",
+    "percent": 60
+   }
+  ],
+  "note": "Same carrying-cost structure as SM Ch 2 Illustration 4 (storage, interest, obsolescence % per annum of price) plus number of orders (Illustration 3); new figures."
+ },
+ "m9": {
+  "marks": 2,
+  "topic": "Total annual inventory cost at EOQ",
+  "chapter": "2 Material Cost",
+  "category": "SM",
+  "similarity": "modified",
+  "percent": 60,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 2 Illustration 4(i)",
+    "percent": 60
+   }
+  ],
+  "note": "Total cost = purchase + ordering + carrying at EOQ exactly as in SM Ch 2 Illustration 4(i); new figures."
+ },
+ "m10": {
+  "marks": 2,
+  "topic": "Total annual inventory cost at a non-EOQ order size",
+  "chapter": "2 Material Cost",
+  "category": "SM",
+  "similarity": "adapted",
+  "percent": 45,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 2 Illustration 4",
+    "percent": 45
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ Jan 2021 Q1(d)(iii)",
+    "percent": 35
+   }
+  ],
+  "note": "Total cost computation of SM Ch 2 Illustration 4 applied to a policy order size of 200 kg (cf. cost at a policy run size in PYQ Jan 2021 Q1(d)(iii)); new data."
+ },
+ "m11": {
+  "marks": 2,
+  "topic": "Labour rate variance - actual wage rate per unit",
+  "chapter": "13 Standard Costing",
+  "category": "MTP",
+  "similarity": "same",
+  "percent": 100,
+  "sources": [
+   {
+    "type": "mtp",
+    "ref": "Model Test Paper 1 Q3 (Part I MCQ)",
+    "percent": 100
+   }
+  ],
+  "note": "Identical to Model Test Paper 1 MCQ 3 (30 minutes/unit, Rs 50/hr, 30,000 units, LRV 7,500 A, LEV nil, same four options); only 'repair time' reworded to 'production time'."
+ },
+ "m12": {
+  "marks": 2,
+  "topic": "Reverse calculation of factory overhead recovery rate on a job",
+  "chapter": "9 Job Costing",
+  "category": "PYQ",
+  "similarity": "adapted",
+  "percent": 55,
+  "sources": [
+   {
+    "type": "pyq",
+    "ref": "PYQ May 2022 Q2(a)",
+    "percent": 55
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 4 Illustration 9 (Reverse calculation of factory and administrative overheads)",
+    "percent": 55
+   }
+  ],
+  "note": "Same reverse working as PYQ May 2022 Q2(a) / SM Ch 4 Illustration 9 (factory OH % of direct wages, admin OH % of factory cost, profit % on total cost); exam gives one job with admin rate known (25%) so only the factory OH rate is solved; new figures."
+ },
+ "m13": {
+  "marks": 2,
+  "topic": "Labour hours and number of operators required for a production target",
+  "chapter": "3 Employee Cost and Direct Expenses",
+  "category": "NEW",
+  "similarity": "new",
+  "percent": 20,
+  "sources": [],
+  "note": "Simple hours/operators computation (480 dozen x 15 min = 1,440 hrs; 36 operators); no comparable question found in pre-exam SM/RTP/MTP/PYQ."
+ },
+ "m14": {
+  "marks": 2,
+  "topic": "Value of material consumed under LIFO",
+  "chapter": "2 Material Cost",
+  "category": "SM",
+  "similarity": "adapted",
+  "percent": 40,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 2 Illustration 13 (Material Exe, FIFO and LIFO)",
+    "percent": 40
+   }
+  ],
+  "note": "Same layout as SM Ch 2 Illustration 13 (opening stock, dated purchases and issues, value consumed under LIFO); exam has one issue and new figures."
+ },
+ "m15": {
+  "marks": 2,
+  "topic": "Revised spare parts cost for machine hour rate (price and consumption increase)",
+  "chapter": "4 Overheads - Absorption Costing Method",
+  "category": "RTP",
+  "similarity": "modified",
+  "percent": 60,
+  "sources": [
+   {
+    "type": "rtp",
+    "ref": "RTP Nov 2020 Q3",
+    "percent": 60
+   },
+   {
+    "type": "mtp",
+    "ref": "MTP Nov 2018 Series II Q3(b)",
+    "percent": 50
+   },
+   {
+    "type": "mtp",
+    "ref": "Model Test Paper 2 Q2(a)",
+    "percent": 50
+   }
+  ],
+  "note": "Spare-parts adjustment of the machine-hour-rate problem in RTP Nov 2020 Q3 (spare parts Rs 1,00,000 = 40,000 + 40,000 + 20,000; +15% price; +25% consumption for B & C); exam merges the 60,000 into machine B and asks only this element."
+ }
+}

@@ -1,0 +1,655 @@
+{
+ "1a": {
+  "marks": 5,
+  "topic": "Selling price from cost of two output levels (semi-variable overhead split) with price changes",
+  "chapter": "8 Unit & Batch Costing",
+  "category": "SM",
+  "similarity": "modified",
+  "percent": 70,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM (May/Sep 2025 edn) Ch 8 Unit & Batch Costing, Illustration 2 (Atharva Pharmacare)",
+    "percent": 70
+   }
+  ],
+  "note": "Same structure as SM Illustration 2 (output/cost data of consecutive periods, split factory OH into fixed/variable, price at % profit on selling price); here 2 months instead of 3 weeks, new figures, plus 10%/15% input price rise and 20% fixed OH cut."
+ },
+ "1b": {
+  "marks": 5,
+  "topic": "Halsey vs Rowan: find normal wage rate and material cost from equal factory cost",
+  "chapter": "3 Employee Cost and Direct Expenses",
+  "category": "MTP",
+  "similarity": "modified",
+  "percent": 85,
+  "sources": [
+   {
+    "type": "mtp",
+    "ref": "Model Test Paper 4 Q1(c)",
+    "percent": 85
+   },
+   {
+    "type": "sm",
+    "ref": "SM (May/Sep 2025 edn) Ch 3, Illustration 8",
+    "percent": 65
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ Nov 2019 (old P3) Q4(a)",
+    "percent": 40
+   }
+  ],
+  "note": "Model Test Paper 4 Q1(c) has identical times (40 std, 32 hrs Halsey 50%, 30 hrs Rowan) and equal factory cost; only OH rate (7.50 -> 360/hr) and factory cost (2,200 -> 1,24,800) changed; SM Illus. 8 is the original method."
+ },
+ "1c": {
+  "marks": 4,
+  "topic": "Reverse overhead variances: actual hours, actual VOH rate, VOH and FOH cost variance",
+  "chapter": "13 Standard Costing",
+  "category": "PYQ",
+  "similarity": "adapted",
+  "percent": 35,
+  "sources": [
+   {
+    "type": "pyq",
+    "ref": "PYQ Nov 2023 (old P3) Q5(a) (PQR Alloys)",
+    "percent": 35
+   }
+  ],
+  "note": "Same idea of working back actual hours from a given VOH efficiency variance (PYQ Nov 2023 Q5(a)); otherwise new data and a short 4-part requirement; no matching problem found in SM/RTP/MTP."
+ },
+ "2a": {
+  "marks": 10,
+  "topic": "Toll plaza costing: monthly O&M cost and toll rate per vehicle type",
+  "chapter": "12 Service Costing",
+  "category": "SM",
+  "similarity": "modified",
+  "percent": 65,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM (May/Sep 2025 edn) Ch 12, Illustration 10 (BHG Toll Plaza)",
+    "percent": 65
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ May 2023 (old P3) Q1(d) (RST Toll Plaza)",
+    "percent": 35
+   },
+   {
+    "type": "rtp",
+    "ref": "RTP Sep 2024 Q16 (BK Infra; also SM Ch 12 TYK)",
+    "percent": 30
+   }
+  ],
+  "note": "Same layout as SM Illus. 10 (shift-wise collection/supervisor/security/manager salaries, electricity, telephone, maintenance, depreciation, vehicles over toll tenure); adds bus/HCV rate multiples (as in PYQ May 2023 Q1(d)), interest and insurance, profit 20% on takings; new figures."
+ },
+ "2b": {
+  "marks": 4,
+  "topic": "Secondary distribution: reciprocal services by simultaneous equation method",
+  "chapter": "4 Overheads - Absorption Costing Method",
+  "category": "SM",
+  "similarity": "modified",
+  "percent": 65,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM (May/Sep 2025 edn) Ch 4, Illustration 3 (Boiler house / Pump room, simultaneous equation method)",
+    "percent": 65
+   }
+  ],
+  "note": "Same format as SM Illus. 3 (only service-department totals and % apportionment given, solve by simultaneous equations); three production departments instead of two and new figures."
+ },
+ "3a": {
+  "marks": 8,
+  "topic": "ABC for a consultancy service firm: cost per project and sector profitability",
+  "chapter": "5 Activity Based Costing",
+  "category": "NEW",
+  "similarity": "new",
+  "percent": 25,
+  "sources": [],
+  "note": "Standard ABC allocation (4 cost pools, drivers, profit % on fees) in a new consulting/software-project setting; no SM, RTP, MTP or PYQ problem with this data or setting found."
+ },
+ "3b": {
+  "marks": 6,
+  "topic": "Optimum product mix with raw material as limiting factor",
+  "chapter": "14 Marginal Costing",
+  "category": "NEW",
+  "similarity": "new",
+  "percent": 25,
+  "sources": [],
+  "note": "Standard key-factor (contribution per kg) ranking with capacity limits; no matching problem in SM, RTP, MTP or PYQ; SM Ch 14 para on limiting factor/Illus. 12 cover the concept only."
+ },
+ "4a": {
+  "marks": 9,
+  "topic": "Production budget, raw material consumption budget and machine hours incl. maintenance",
+  "chapter": "15 Budgets and Budgetary Control",
+  "category": "SM",
+  "similarity": "modified",
+  "percent": 75,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM (May/Sep 2025 edn) Ch 15, Illustration 4",
+    "percent": 75
+   }
+  ],
+  "note": "Same wording and pattern as SM Illus. 4 (80%/20% production pattern, 2 kg per unit) with all quantities scaled x2.4 (30,000->72,000 etc.); purchase budget and FIFO stores ledger parts replaced by a machine-hour/maintenance requirement."
+ },
+ "4b": {
+  "marks": 5,
+  "topic": "Journal entries in cost books under non-integrated accounting",
+  "chapter": "7 Cost Accounting Systems",
+  "category": "PYQ",
+  "similarity": "adapted",
+  "percent": 50,
+  "sources": [
+   {
+    "type": "pyq",
+    "ref": "PYQ May 2022 (old P3) Q4(c)",
+    "percent": 50
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ Nov 2019 (old P3) Q6(b)",
+    "percent": 40
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ Jan 2025 Q5(b)",
+    "percent": 35
+   },
+   {
+    "type": "sm",
+    "ref": "SM (May/Sep 2025 edn) Ch 7, para 2.2 Scheme of Accounting Entries",
+    "percent": 40
+   }
+  ],
+  "note": "PYQ May 2022 Q4(c) has the same items (direct material issued, FOH over-absorbed, admin OH under-absorbed) but under integrated accounts; this asks non-integrated entries (Cost Ledger Control A/c) as in PYQ Nov 2019 Q6(b) and SM para 2.2; new figures."
+ },
+ "5a": {
+  "marks": 8,
+  "topic": "ABC analysis: rank materials and plan ABC selective control",
+  "chapter": "2 Material Cost",
+  "category": "SM",
+  "similarity": "modified",
+  "percent": 65,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM (May/Sep 2025 edn) Ch 2, Illustration 8 (ABC selective control)",
+    "percent": 65
+   }
+  ],
+  "note": "Same requirement and identical value bands (50,000 & above A; 15,000-50,000 B; below 15,000 C) as SM Illus. 8; 8 materials with total cost given instead of 12 items with unit cost, plus a store-keeper narrative."
+ },
+ "5b": {
+  "marks": 3,
+  "topic": "EOQ and number of orders per year",
+  "chapter": "2 Material Cost",
+  "category": "SM",
+  "similarity": "modified",
+  "percent": 60,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM (May/Sep 2025 edn) Ch 2, Illustration 3",
+    "percent": 60
+   }
+  ],
+  "note": "Same two requirements as SM Illus. 3 (EOQ and number of orders); new data with carrying cost given per unit instead of % of price."
+ },
+ "5c": {
+  "marks": 3,
+  "topic": "Accounting for under/over-absorbed overheads via supplementary rate (complete table)",
+  "chapter": "4 Overheads - Absorption Costing Method",
+  "category": "SM",
+  "similarity": "same",
+  "percent": 95,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM (May/Sep 2025 edn) Ch 4, para 'Treatment of under/over absorption of overheads in cost accounting' (supplementary rate tables)",
+    "percent": 95
+   }
+  ],
+  "note": "The table to be completed is the SM table itself (accounts, Dr/Cr and amount = units x supplementary rate for under- and over-absorption); only rows shuffled."
+ },
+ "6a": {
+  "marks": 5,
+  "topic": "Responsibility centre: definition and types",
+  "chapter": "1 Introduction to Cost and Management Accounting",
+  "category": "SM",
+  "similarity": "same",
+  "percent": 100,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM (May/Sep 2025 edn) Ch 1, para 11 Responsibility Centres (Types of Responsibility Centres)",
+    "percent": 100
+   },
+   {
+    "type": "mtp",
+    "ref": "MTP Sep 2025 Series I Q6(a)",
+    "percent": 100
+   },
+   {
+    "type": "mtp",
+    "ref": "Model Test Paper 4 Q6(a)",
+    "percent": 90
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ Nov 2018 (old P3) Q6(a)",
+    "percent": 90
+   }
+  ],
+  "note": "Asked points (meaning + cost/revenue/profit/investment centres) are SM Ch 1 para 11; MTP Sep 2025 Series I Q6(a) asked the identical question."
+ },
+ "6b": {
+  "marks": 5,
+  "topic": "Advantages of job costing",
+  "chapter": "9 Job Costing",
+  "category": "SM",
+  "similarity": "same",
+  "percent": 100,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM (May/Sep 2025 edn) Ch 9, para 4.2 Advantages and Disadvantages of Job Costing",
+    "percent": 100
+   }
+  ],
+  "note": "Answer is the advantages column of SM Ch 9 para 4.2; not asked in earlier RTP/MTP/PYQ found."
+ },
+ "6c": {
+  "marks": 4,
+  "topic": "Factors for controlling employee costs",
+  "chapter": "3 Employee Cost and Direct Expenses",
+  "category": "SM",
+  "similarity": "same",
+  "percent": 100,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM (May/Sep 2025 edn) Ch 3, para 3.1 Important Factors for the Control of Employee Cost",
+    "percent": 100
+   }
+  ],
+  "note": "Wording taken from SM Ch 3 para 3.1 (8 factors: manpower assessment, time-keeping, time & motion study, idle time/overtime, turnover, wage/incentive, job evaluation, productivity)."
+ },
+ "6c-or": {
+  "marks": 4,
+  "topic": "Uses of Bill of Material in departments",
+  "chapter": "2 Material Cost",
+  "category": "SM",
+  "similarity": "same",
+  "percent": 100,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM (May/Sep 2025 edn) Ch 2, para 3.1 Bill of Materials (Uses of Bill of Material)",
+    "percent": 100
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ Dec 2021 (old P3) Q4(c)",
+    "percent": 95
+   }
+  ],
+  "note": "Same four departments as the SM 'Uses of Bill of Material' table; PYQ Dec 2021 Q4(c) asked the same question plus the definition."
+ },
+ "m1": {
+  "marks": 2,
+  "topic": "Cost sheet: direct employee cost",
+  "chapter": "6 Cost Sheet",
+  "category": "MTP",
+  "similarity": "adapted",
+  "percent": 40,
+  "sources": [
+   {
+    "type": "mtp",
+    "ref": "Model Test Paper 3 Part I Q2 (P Ltd. case scenario MCQs (i)-(v))",
+    "percent": 40
+   },
+   {
+    "type": "rtp",
+    "ref": "RTP May 2024 Q5 (P Ltd., same data as Model Test Paper 3)",
+    "percent": 40
+   },
+   {
+    "type": "sm",
+    "ref": "SM (May/Sep 2025 edn) Ch 6, Illustration 3 (Arnav Ispat Udyog)",
+    "percent": 40
+   },
+   {
+    "type": "mtp",
+    "ref": "MTP May 2023 Series II (old P3) Q2(b) (K Ltd.)",
+    "percent": 40
+   }
+  ],
+  "note": "Case I is a cut-down version of the Arnav Ispat / P Ltd. cost-sheet item list (royalty, power & fuel, repairs P&M vs sales office, insurance, R&D for production process, packing for re-distribution, GM and sales salaries, scrap) with new figures and new twists (RM 15,000 kg @300 + 4% freight, wages 30% of RM consumed, FG stocks from difference/average); asks wages = 30% of RM consumed."
+ },
+ "m2": {
+  "marks": 2,
+  "topic": "Cost sheet: prime cost",
+  "chapter": "6 Cost Sheet",
+  "category": "MTP",
+  "similarity": "adapted",
+  "percent": 40,
+  "sources": [
+   {
+    "type": "mtp",
+    "ref": "Model Test Paper 3 Part I Q2 (P Ltd. case scenario MCQs (i)-(v))",
+    "percent": 40
+   },
+   {
+    "type": "rtp",
+    "ref": "RTP May 2024 Q5 (P Ltd., same data as Model Test Paper 3)",
+    "percent": 40
+   },
+   {
+    "type": "sm",
+    "ref": "SM (May/Sep 2025 edn) Ch 6, Illustration 3 (Arnav Ispat Udyog)",
+    "percent": 40
+   },
+   {
+    "type": "mtp",
+    "ref": "MTP May 2023 Series II (old P3) Q2(b) (K Ltd.)",
+    "percent": 40
+   }
+  ],
+  "note": "Case I is a cut-down version of the Arnav Ispat / P Ltd. cost-sheet item list (royalty, power & fuel, repairs P&M vs sales office, insurance, R&D for production process, packing for re-distribution, GM and sales salaries, scrap) with new figures and new twists (RM 15,000 kg @300 + 4% freight, wages 30% of RM consumed, FG stocks from difference/average); asks prime cost (also asked in Model Test Paper 3 Q2(i))."
+ },
+ "m3": {
+  "marks": 2,
+  "topic": "Cost sheet: factory cost",
+  "chapter": "6 Cost Sheet",
+  "category": "MTP",
+  "similarity": "adapted",
+  "percent": 40,
+  "sources": [
+   {
+    "type": "mtp",
+    "ref": "Model Test Paper 3 Part I Q2 (P Ltd. case scenario MCQs (i)-(v))",
+    "percent": 40
+   },
+   {
+    "type": "rtp",
+    "ref": "RTP May 2024 Q5 (P Ltd., same data as Model Test Paper 3)",
+    "percent": 40
+   },
+   {
+    "type": "sm",
+    "ref": "SM (May/Sep 2025 edn) Ch 6, Illustration 3 (Arnav Ispat Udyog)",
+    "percent": 40
+   },
+   {
+    "type": "mtp",
+    "ref": "MTP May 2023 Series II (old P3) Q2(b) (K Ltd.)",
+    "percent": 40
+   }
+  ],
+  "note": "Case I is a cut-down version of the Arnav Ispat / P Ltd. cost-sheet item list (royalty, power & fuel, repairs P&M vs sales office, insurance, R&D for production process, packing for re-distribution, GM and sales salaries, scrap) with new figures and new twists (RM 15,000 kg @300 + 4% freight, wages 30% of RM consumed, FG stocks from difference/average); asks factory cost (also asked in Model Test Paper 3 Q2(iv))."
+ },
+ "m4": {
+  "marks": 2,
+  "topic": "Cost sheet: cost of goods sold",
+  "chapter": "6 Cost Sheet",
+  "category": "MTP",
+  "similarity": "adapted",
+  "percent": 40,
+  "sources": [
+   {
+    "type": "mtp",
+    "ref": "Model Test Paper 3 Part I Q2 (P Ltd. case scenario MCQs (i)-(v))",
+    "percent": 40
+   },
+   {
+    "type": "rtp",
+    "ref": "RTP May 2024 Q5 (P Ltd., same data as Model Test Paper 3)",
+    "percent": 40
+   },
+   {
+    "type": "sm",
+    "ref": "SM (May/Sep 2025 edn) Ch 6, Illustration 3 (Arnav Ispat Udyog)",
+    "percent": 40
+   },
+   {
+    "type": "mtp",
+    "ref": "MTP May 2023 Series II (old P3) Q2(b) (K Ltd.)",
+    "percent": 40
+   }
+  ],
+  "note": "Case I is a cut-down version of the Arnav Ispat / P Ltd. cost-sheet item list (royalty, power & fuel, repairs P&M vs sales office, insurance, R&D for production process, packing for re-distribution, GM and sales salaries, scrap) with new figures and new twists (RM 15,000 kg @300 + 4% freight, wages 30% of RM consumed, FG stocks from difference/average); asks COGS with FG stocks derived from average and difference."
+ },
+ "m5": {
+  "marks": 2,
+  "topic": "Cost sheet: profit",
+  "chapter": "6 Cost Sheet",
+  "category": "MTP",
+  "similarity": "adapted",
+  "percent": 40,
+  "sources": [
+   {
+    "type": "mtp",
+    "ref": "Model Test Paper 3 Part I Q2 (P Ltd. case scenario MCQs (i)-(v))",
+    "percent": 40
+   },
+   {
+    "type": "rtp",
+    "ref": "RTP May 2024 Q5 (P Ltd., same data as Model Test Paper 3)",
+    "percent": 40
+   },
+   {
+    "type": "sm",
+    "ref": "SM (May/Sep 2025 edn) Ch 6, Illustration 3 (Arnav Ispat Udyog)",
+    "percent": 40
+   },
+   {
+    "type": "mtp",
+    "ref": "MTP May 2023 Series II (old P3) Q2(b) (K Ltd.)",
+    "percent": 40
+   }
+  ],
+  "note": "Case I is a cut-down version of the Arnav Ispat / P Ltd. cost-sheet item list (royalty, power & fuel, repairs P&M vs sales office, insurance, R&D for production process, packing for re-distribution, GM and sales salaries, scrap) with new figures and new twists (RM 15,000 kg @300 + 4% freight, wages 30% of RM consumed, FG stocks from difference/average); asks profit on sales of 1,10,00,000."
+ },
+ "m6": {
+  "marks": 2,
+  "topic": "Absorption costing: cost of production and total cost",
+  "chapter": "14 Marginal Costing",
+  "category": "SM",
+  "similarity": "adapted",
+  "percent": 40,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM (May/Sep 2025 edn) Ch 14, Test Your Knowledge Practical Problem 16 (soft drink co. - mineral water subsidiary)",
+    "percent": 40
+   },
+   {
+    "type": "mtp",
+    "ref": "Model Test Paper 7 Q5(a) (Korean beverage co. - fruit juice)",
+    "percent": 35
+   }
+  ],
+  "note": "Case II is built on the SM TYK Q16 idea (soft drink co. launching mineral water, costs split fixed/variable, break-even) with new data and different asks; asks absorption-costing COP and total cost."
+ },
+ "m7": {
+  "marks": 2,
+  "topic": "Marginal costing: total variable cost",
+  "chapter": "14 Marginal Costing",
+  "category": "SM",
+  "similarity": "adapted",
+  "percent": 40,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM (May/Sep 2025 edn) Ch 14, Test Your Knowledge Practical Problem 16 (soft drink co. - mineral water subsidiary)",
+    "percent": 40
+   },
+   {
+    "type": "mtp",
+    "ref": "Model Test Paper 7 Q5(a) (Korean beverage co. - fruit juice)",
+    "percent": 35
+   }
+  ],
+  "note": "Case II is built on the SM TYK Q16 idea (soft drink co. launching mineral water, costs split fixed/variable, break-even) with new data and different asks; asks total variable cost."
+ },
+ "m8": {
+  "marks": 2,
+  "topic": "Marginal costing: contribution per unit",
+  "chapter": "14 Marginal Costing",
+  "category": "SM",
+  "similarity": "adapted",
+  "percent": 40,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM (May/Sep 2025 edn) Ch 14, Test Your Knowledge Practical Problem 16 (soft drink co. - mineral water subsidiary)",
+    "percent": 40
+   },
+   {
+    "type": "mtp",
+    "ref": "Model Test Paper 7 Q5(a) (Korean beverage co. - fruit juice)",
+    "percent": 35
+   }
+  ],
+  "note": "Case II is built on the SM TYK Q16 idea (soft drink co. launching mineral water, costs split fixed/variable, break-even) with new data and different asks; asks contribution per unit."
+ },
+ "m9": {
+  "marks": 2,
+  "topic": "Marginal costing: break-even sales",
+  "chapter": "14 Marginal Costing",
+  "category": "SM",
+  "similarity": "adapted",
+  "percent": 40,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM (May/Sep 2025 edn) Ch 14, Test Your Knowledge Practical Problem 16 (soft drink co. - mineral water subsidiary)",
+    "percent": 40
+   },
+   {
+    "type": "mtp",
+    "ref": "Model Test Paper 7 Q5(a) (Korean beverage co. - fruit juice)",
+    "percent": 35
+   }
+  ],
+  "note": "Case II is built on the SM TYK Q16 idea (soft drink co. launching mineral water, costs split fixed/variable, break-even) with new data and different asks; asks BES in rupees (SM TYK Q16(ii) also asks BEP in rupees)."
+ },
+ "m10": {
+  "marks": 2,
+  "topic": "Marginal costing: profit if sales fall 10%",
+  "chapter": "14 Marginal Costing",
+  "category": "SM",
+  "similarity": "adapted",
+  "percent": 40,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM (May/Sep 2025 edn) Ch 14, Test Your Knowledge Practical Problem 16 (soft drink co. - mineral water subsidiary)",
+    "percent": 40
+   },
+   {
+    "type": "mtp",
+    "ref": "Model Test Paper 7 Q5(a) (Korean beverage co. - fruit juice)",
+    "percent": 35
+   }
+  ],
+  "note": "Case II is built on the SM TYK Q16 idea (soft drink co. launching mineral water, costs split fixed/variable, break-even) with new data and different asks; asks profit at 90% of estimated sales."
+ },
+ "m11": {
+  "marks": 2,
+  "topic": "Working back MPV and mix variance from MCV, MUV and yield variance",
+  "chapter": "13 Standard Costing",
+  "category": "NEW",
+  "similarity": "new",
+  "percent": 20,
+  "sources": [],
+  "note": "Uses only the variance relationships (MCV = MPV + MUV; MUV = MMV + MYV); no SM/RTP/MTP/PYQ question with this data or format found."
+ },
+ "m12": {
+  "marks": 2,
+  "topic": "Joint products: fixed OH ratio under contribution margin method",
+  "chapter": "11 Joint Products and By Products",
+  "category": "PYQ",
+  "similarity": "adapted",
+  "percent": 55,
+  "sources": [
+   {
+    "type": "pyq",
+    "ref": "PYQ May 2024 Q1(b)",
+    "percent": 55
+   },
+   {
+    "type": "sm",
+    "ref": "SM (May/Sep 2025 edn) Ch 11, Illustration 3",
+    "percent": 50
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ Nov 2019 (old P3) Q1(c)",
+    "percent": 45
+   }
+  ],
+  "note": "Same set-up as PYQ May 2024 Q1(b) (material, labour, fixed OH, two products produced in 1:2 ratio, contribution margin method); new figures, no variable OH or further-processing part, asks only the fixed OH ratio."
+ },
+ "m13": {
+  "marks": 2,
+  "topic": "Number of days average inventory is held",
+  "chapter": "2 Material Cost",
+  "category": "PYQ",
+  "similarity": "modified",
+  "percent": 60,
+  "sources": [
+   {
+    "type": "pyq",
+    "ref": "PYQ Dec 2021 (old P3) Q1(a)",
+    "percent": 60
+   },
+   {
+    "type": "sm",
+    "ref": "SM (May/Sep 2025 edn) Ch 2, Illustration 10",
+    "percent": 60
+   }
+  ],
+  "note": "Same requirement (days for which average inventory is held, 360-day year as in PYQ Dec 2021 Q1(a)); consumption given directly instead of purchases; new figures."
+ },
+ "m14": {
+  "marks": 2,
+  "topic": "Process account: value transferred with normal loss (scrap value) and abnormal loss",
+  "chapter": "10 Process & Operation Costing",
+  "category": "SM",
+  "similarity": "modified",
+  "percent": 80,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM (May/Sep 2025 edn) Ch 10, para 3.1(ii) Abnormal Process Loss, Example-3 (Abnormal loss with realisable value)",
+    "percent": 80
+   }
+  ],
+  "note": "Wording copied from SM Example-3 (product passes Process-I and II, normal loss % of input, no opening stock, scrap value per unit); figures changed (10,000 units, 6%, 9,200 output, scrap 10) and only the value transferred is asked."
+ },
+ "m15": {
+  "marks": 2,
+  "topic": "Under-absorbed overheads (excluding obsolete stores and strike wages) charged to cost of sales",
+  "chapter": "4 Overheads - Absorption Costing Method",
+  "category": "SM",
+  "similarity": "modified",
+  "percent": 75,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM (May/Sep 2025 edn) Ch 4, Test Your Knowledge Practical Problem 11 (ABC Ltd.)",
+    "percent": 75
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ May 2024 Q4(b)",
+    "percent": 55
+   }
+  ],
+  "note": "Same as SM TYK Q11 (pre-determined machine-hour rate; actual OH includes written-off obsolete stores and strike-period wages under an award; 20,000 produced, 18,000 sold); new figures, no WIP, asks only the share charged to cost of sales."
+ }
+}

@@ -1,0 +1,697 @@
+{
+ "1a": {
+  "marks": 5,
+  "topic": "Batch costing - total cost and selling price per unit",
+  "chapter": "8 Unit & Batch Costing",
+  "category": "RTP",
+  "similarity": "adapted",
+  "percent": 45,
+  "sources": [
+   {
+    "type": "rtp",
+    "ref": "RTP Nov 2022 (old P3) Q7 (PS Ltd., Batch No. PS143)",
+    "percent": 45
+   },
+   {
+    "type": "mtp",
+    "ref": "Model Test Paper 8 Q1(a) (Interio Ltd., furniture jobs, 25% profit on selling price)",
+    "percent": 40
+   }
+  ],
+  "note": "Same build-up (direct material + dept-wise labour hours x rate + dept-wise hourly overheads, admin OH, profit on selling price) with new data; admin OH here 20% of works cost, profit 25% on SP"
+ },
+ "1b": {
+  "marks": 5,
+  "topic": "Material and labour variances (actual price from given MPV)",
+  "chapter": "13 Standard Costing",
+  "category": "SM",
+  "similarity": "adapted",
+  "percent": 55,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 13 Standard Costing, Test Your Knowledge (Practical Problems) Q6 (Novell & Co.)",
+    "percent": 55
+   },
+   {
+    "type": "mtp",
+    "ref": "MTP Nov 2022 Series II (old P3) Q2(a)",
+    "percent": 45
+   },
+   {
+    "type": "mtp",
+    "ref": "MTP Nov 2022 Series I (old P3) Q2(a)",
+    "percent": 35
+   }
+  ],
+  "note": "Same layout (std price, std qty per unit, std labour rate, 2.5 hours per unit, actual wages paid for X hours); new figures and actual price must be back-worked from the given MPV"
+ },
+ "1c": {
+  "marks": 4,
+  "topic": "Reconciliation of cost and financial results (loss base)",
+  "chapter": "7 Cost Accounting Systems",
+  "category": "PYQ",
+  "similarity": "adapted",
+  "percent": 50,
+  "sources": [
+   {
+    "type": "pyq",
+    "ref": "PYQ Dec 2021 (old P3) Q4(b) (R Ltd.)",
+    "percent": 50
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ Sep 2024 Q1(b) (XYZ Ltd.)",
+    "percent": 40
+   },
+   {
+    "type": "rtp",
+    "ref": "RTP Sep 2024 Q12",
+    "percent": 35
+   }
+  ],
+  "note": "Same 7-item reconciliation to find the other result (over/under-absorption, stock overvaluation, bad debts, FA-only items); new figures and starts from a costing net loss"
+ },
+ "2a": {
+  "marks": 7,
+  "topic": "Cost sheet - cotton yarn (prime cost to profit)",
+  "chapter": "6 Cost Sheet",
+  "category": "NEW",
+  "similarity": "new",
+  "percent": 25,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 6 Cost Sheet, Illustration 1 (cost sheet with sales and profit) - format only",
+    "percent": 25
+   }
+  ],
+  "note": "Standard cost sheet format (scrap credit, admin OH related to production, S&D, sales); no earlier problem with this data (skilled/unskilled men per day, hire charges, 160% works OH) found"
+ },
+ "2b": {
+  "marks": 7,
+  "topic": "BEP, cash BEP, capacity and margin of safety for target profit",
+  "chapter": "14 Marginal Costing",
+  "category": "NEW",
+  "similarity": "new",
+  "percent": 25,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 14 Marginal Costing, para 8.2 Cash Break-even Point, Illustration 1 (concept only)",
+    "percent": 20
+   }
+  ],
+  "note": "Combines semi-variable split, BEP, cash BEP (excluding depreciation) and step-fixed cost beyond 80% capacity; no earlier problem with this structure or data found"
+ },
+ "3a": {
+  "marks": 8,
+  "topic": "Joint products - sales value at split-off and sell-or-process-further decision",
+  "chapter": "11 Joint Products and By Products",
+  "category": "PYQ",
+  "similarity": "adapted",
+  "percent": 35,
+  "sources": [
+   {
+    "type": "pyq",
+    "ref": "PYQ Jul 2021 (old P3) Q2(b) (OPR Ltd.)",
+    "percent": 35
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 11 Joint Products and By Products, Test Your Knowledge (Practical Problems) Q6 (OPR Ltd.)",
+    "percent": 35
+   },
+   {
+    "type": "sm",
+    "ref": "Case Scenario Booklet, Case 30 (Sterling Industries, joint products 6:4 with input loss) / RTP May 2025 Q6",
+    "percent": 25
+   }
+  ],
+  "note": "Same requirement pair (joint cost on sales value at split-off, then incremental revenue vs further-processing cost); new data adds input-output yields, two departments and selling-expense savings"
+ },
+ "3b": {
+  "marks": 6,
+  "topic": "Fixed overhead variances incl. calendar variance",
+  "chapter": "13 Standard Costing",
+  "category": "SM",
+  "similarity": "modified",
+  "percent": 80,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 13 Standard Costing, Test Your Knowledge (Practical Problems) Q12",
+    "percent": 80
+   }
+  ],
+  "note": "Identical data layout (25 budgeted days, man-hours per day, 1 unit per man-hour, 0.9 actual output per hour); figures changed (12,000/12,500 hrs, 28 days, Rs 6,00,000/6,24,000) and fewer variances asked"
+ },
+ "4a": {
+  "marks": 9,
+  "topic": "Sales budget with price changes, % growth and campaign sales",
+  "chapter": "15 Budgets and Budgetary Control",
+  "category": "RTP",
+  "similarity": "modified",
+  "percent": 70,
+  "sources": [
+   {
+    "type": "rtp",
+    "ref": "RTP Nov 2023 (old P3) Q13 (XY Co. Ltd., products X & Y, East/West divisions)",
+    "percent": 70
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 15 Budgets and Budgetary Control, Test Your Knowledge (Practical Problems) Q1 (B Ltd.)",
+    "percent": 70
+   }
+  ],
+  "note": "Same problem frame (2 products x 2 divisions/channels, budgeted vs actual, price change, % increase over budget, extra units from campaign; prepare sales budget and show budget vs actual); figures changed, price change partly a % cut"
+ },
+ "4b": {
+  "marks": 5,
+  "topic": "Employee turnover - back-working average workers, joined and left",
+  "chapter": "3 Employee Cost and Direct Expenses",
+  "category": "MTP",
+  "similarity": "modified",
+  "percent": 85,
+  "sources": [
+   {
+    "type": "mtp",
+    "ref": "MTP Nov 2018 Series II (old P3) Q1(c) (RST Company Ltd.)",
+    "percent": 85
+   },
+   {
+    "type": "mtp",
+    "ref": "MTP Nov 2022 Series II (old P3) Q1(c) (R Ltd.)",
+    "percent": 85
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ May 2022 (old P3) Q1(b) (PQR Limited)",
+    "percent": 80
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 3 Employee Cost and Direct Expenses, Illustration 14 (Y Ltd.)",
+    "percent": 80
+   },
+   {
+    "type": "rtp",
+    "ref": "RTP Sep 2024 Q8",
+    "percent": 75
+   }
+  ],
+  "note": "Same three requirements (average on roll, recruited and joined, left and discharged) from given flux/replacement/separation rates and replacements; only rates (12/6/4%) and 54 replacements changed"
+ },
+ "5a": {
+  "marks": 10,
+  "topic": "Traditional absorption vs activity-based costing - sales and profit per product",
+  "chapter": "5 Activity Based Costing",
+  "category": "SM",
+  "similarity": "adapted",
+  "percent": 40,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 5 Activity Based Costing, Illustration 3 (ABC Ltd., equipment Y and Z)",
+    "percent": 40
+   },
+   {
+    "type": "sm",
+    "ref": "Case Scenario Booklet, Case 18 (SunBright Appliances) / MTP Sep 2025 Series II case",
+    "percent": 30
+   }
+  ],
+  "note": "Same traditional-vs-ABC comparison for two products using cost-driver rates; new data, overheads absorbed per unit produced and requirement extended to sales, closing stock and profit"
+ },
+ "5b": {
+  "marks": 4,
+  "topic": "CVP from margin of safety - profit, P/V ratio, BEP sales, fixed cost",
+  "chapter": "14 Marginal Costing",
+  "category": "SM",
+  "similarity": "modified",
+  "percent": 85,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 14 Marginal Costing, Test Your Knowledge (Practical Problems) Q11 (Star Ltd.)",
+    "percent": 85
+   }
+  ],
+  "note": "Identical data items (MoS in Rs and units, BE sales units, total cost) and the same four requirements; only figures changed"
+ },
+ "6a": {
+  "marks": 5,
+  "topic": "JIT - demand pull / pull through system and its two principles",
+  "chapter": "2 Material Cost",
+  "category": "PYQ",
+  "similarity": "same",
+  "percent": 100,
+  "sources": [
+   {
+    "type": "pyq",
+    "ref": "PYQ Nov 2022 (old P3) Q6(a)",
+    "percent": 100
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 2 Material Cost, para 6.3 Just In Time (JIT) Inventory Management",
+    "percent": 95
+   }
+  ],
+  "note": "Word-for-word repeat of the Nov 2022 question; answer is the SM JIT paragraph"
+ },
+ "6b": {
+  "marks": 5,
+  "topic": "Cost control vs cost reduction",
+  "chapter": "1 Introduction to Cost and Management Accounting",
+  "category": "PYQ",
+  "similarity": "same",
+  "percent": 100,
+  "sources": [
+   {
+    "type": "pyq",
+    "ref": "PYQ May 2024 Q6(a)",
+    "percent": 100
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ May 2019 (old P3) Q6(a)",
+    "percent": 100
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ Dec 2021 (old P3) Q6(e)",
+    "percent": 100
+   },
+   {
+    "type": "mtp",
+    "ref": "MTP Nov 2018 Series I (old P3) Q6(a)",
+    "percent": 100
+   },
+   {
+    "type": "rtp",
+    "ref": "RTP Nov 2022 (old P3) Q15(b)",
+    "percent": 100
+   },
+   {
+    "type": "rtp",
+    "ref": "RTP May 2023 (old P3) Q15(d)",
+    "percent": 100
+   },
+   {
+    "type": "mtp",
+    "ref": "MTP May 2025 Series I Q(d) OR / RTP Jan 2026 Q19(d)",
+    "percent": 90
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 1, para 2.1 Difference between Cost Control and Cost Reduction",
+    "percent": 100
+   }
+  ],
+  "note": "Identical wording to PYQ May 2024 Q6(a); repeatedly asked; answer is the SM 2.1 table"
+ },
+ "6c": {
+  "marks": 4,
+  "topic": "Bio-metric attendance system - features",
+  "chapter": "3 Employee Cost and Direct Expenses",
+  "category": "SM",
+  "similarity": "same",
+  "percent": 90,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 3, Methods of Time-keeping - 2. Mechanical/Automated Methods (b) Bio-Metric Attendance system",
+    "percent": 90
+   }
+  ],
+  "note": "Answer is the SM paragraph on bio-metric attendance; only a short factory context (3,000 workers, proxy attendance) is added; not asked before in RTP/MTP/PYQ"
+ },
+ "6c-or": {
+  "marks": 4,
+  "topic": "Spoiled and defective work - meaning and treatment",
+  "chapter": "9 Job Costing",
+  "category": "PYQ",
+  "similarity": "same",
+  "percent": 100,
+  "sources": [
+   {
+    "type": "pyq",
+    "ref": "PYQ Jan 2025 Q5(c)",
+    "percent": 100
+   },
+   {
+    "type": "mtp",
+    "ref": "MTP Sep 2025 Series II Q6(c)",
+    "percent": 100
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 9 Job Costing, para 3.4 Treatment of spoiled and defective work",
+    "percent": 100
+   }
+  ],
+  "note": "Same three circumstances and same 1+3 mark split as Jan 2025 Q5(c); only 'define' changed to 'explain'"
+ },
+ "m1": {
+  "marks": 2,
+  "topic": "Profit of Core Manufacturing Process (inter-process profit)",
+  "chapter": "10 Process and Operation Costing",
+  "category": "PYQ",
+  "similarity": "modified",
+  "percent": 65,
+  "sources": [
+   {
+    "type": "pyq",
+    "ref": "PYQ May 2019 (old P3) Q2(b) (KT Ltd., product EMM)",
+    "percent": 65
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 10 Process and Operation Costing, Illustration 6 (A Ltd., product AXE - inter-process profits)",
+    "percent": 65
+   },
+   {
+    "type": "sm",
+    "ref": "Case Scenario Booklet (frozen foods, 3 processes with inter-process profit) / RTP Jan 2025 case",
+    "percent": 40
+   }
+  ],
+  "note": "Case Scenario I: same frame as SM Ill. 6 / May 2019 Q2(b) (two processes + finished stock, transfer at % profit on transfer price, stock at prime cost, inter-process profit in opening stocks, sales); new figures, 30%/10% margins, direct expenses added, MCQ format; asks Process I profit"
+ },
+ "m2": {
+  "marks": 2,
+  "topic": "Prime cost of second process incl. inter-process profit",
+  "chapter": "10 Process and Operation Costing",
+  "category": "PYQ",
+  "similarity": "modified",
+  "percent": 65,
+  "sources": [
+   {
+    "type": "pyq",
+    "ref": "PYQ May 2019 (old P3) Q2(b) (KT Ltd., product EMM)",
+    "percent": 65
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 10 Process and Operation Costing, Illustration 6 (A Ltd., product AXE - inter-process profits)",
+    "percent": 65
+   },
+   {
+    "type": "sm",
+    "ref": "Case Scenario Booklet (frozen foods, 3 processes with inter-process profit) / RTP Jan 2025 case",
+    "percent": 40
+   }
+  ],
+  "note": "Case Scenario I: same frame as SM Ill. 6 / May 2019 Q2(b) (two processes + finished stock, transfer at % profit on transfer price, stock at prime cost, inter-process profit in opening stocks, sales); new figures, 30%/10% margins, direct expenses added, MCQ format; asks Process II prime cost"
+ },
+ "m3": {
+  "marks": 2,
+  "topic": "Unrealised profit in closing stock of second process",
+  "chapter": "10 Process and Operation Costing",
+  "category": "PYQ",
+  "similarity": "modified",
+  "percent": 65,
+  "sources": [
+   {
+    "type": "pyq",
+    "ref": "PYQ May 2019 (old P3) Q2(b) (KT Ltd., product EMM)",
+    "percent": 65
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 10 Process and Operation Costing, Illustration 6 (A Ltd., product AXE - inter-process profits)",
+    "percent": 65
+   },
+   {
+    "type": "sm",
+    "ref": "Case Scenario Booklet (frozen foods, 3 processes with inter-process profit) / RTP Jan 2025 case",
+    "percent": 40
+   }
+  ],
+  "note": "Case Scenario I: same frame as SM Ill. 6 / May 2019 Q2(b) (two processes + finished stock, transfer at % profit on transfer price, stock at prime cost, inter-process profit in opening stocks, sales); new figures, 30%/10% margins, direct expenses added, MCQ format; asks profit element in closing WIP"
+ },
+ "m4": {
+  "marks": 2,
+  "topic": "Transfer price to finished stock from second process",
+  "chapter": "10 Process and Operation Costing",
+  "category": "PYQ",
+  "similarity": "modified",
+  "percent": 65,
+  "sources": [
+   {
+    "type": "pyq",
+    "ref": "PYQ May 2019 (old P3) Q2(b) (KT Ltd., product EMM)",
+    "percent": 65
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 10 Process and Operation Costing, Illustration 6 (A Ltd., product AXE - inter-process profits)",
+    "percent": 65
+   },
+   {
+    "type": "sm",
+    "ref": "Case Scenario Booklet (frozen foods, 3 processes with inter-process profit) / RTP Jan 2025 case",
+    "percent": 40
+   }
+  ],
+  "note": "Case Scenario I: same frame as SM Ill. 6 / May 2019 Q2(b) (two processes + finished stock, transfer at % profit on transfer price, stock at prime cost, inter-process profit in opening stocks, sales); new figures, 30%/10% margins, direct expenses added, MCQ format; asks Process II transfer price"
+ },
+ "m5": {
+  "marks": 2,
+  "topic": "Total realised profit transferred to Costing P&L",
+  "chapter": "10 Process and Operation Costing",
+  "category": "PYQ",
+  "similarity": "modified",
+  "percent": 65,
+  "sources": [
+   {
+    "type": "pyq",
+    "ref": "PYQ May 2019 (old P3) Q2(b) (KT Ltd., product EMM)",
+    "percent": 65
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 10 Process and Operation Costing, Illustration 6 (A Ltd., product AXE - inter-process profits)",
+    "percent": 65
+   },
+   {
+    "type": "sm",
+    "ref": "Case Scenario Booklet (frozen foods, 3 processes with inter-process profit) / RTP Jan 2025 case",
+    "percent": 40
+   }
+  ],
+  "note": "Case Scenario I: same frame as SM Ill. 6 / May 2019 Q2(b) (two processes + finished stock, transfer at % profit on transfer price, stock at prime cost, inter-process profit in opening stocks, sales); new figures, 30%/10% margins, direct expenses added, MCQ format; asks total realised profit"
+ },
+ "m6": {
+  "marks": 2,
+  "topic": "Machine overheads per month without AI",
+  "chapter": "4 Overheads - Absorption Costing Method",
+  "category": "SM",
+  "similarity": "modified",
+  "percent": 80,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 4 Overheads - Absorption Costing Method, Test Your Knowledge (Practical Problems) Q4 (Gemini Enterprises)",
+    "percent": 80
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ Nov 2022 (old P3) Q2(a) (USP Ltd., motorcycle tyres, robot)",
+    "percent": 75
+   }
+  ],
+  "note": "Case Scenario II: machine hour rate with and without a hired aid (computer/robot -> AI system) for three jobs; job hours 600/900/- without aid kept as SM Q4, with-aid hours 450/550/1000; tyre-maker framing as Nov 2022 Q2(a); cost figures changed; asks monthly overheads without aid"
+ },
+ "m7": {
+  "marks": 2,
+  "topic": "Machine overheads per month with AI",
+  "chapter": "4 Overheads - Absorption Costing Method",
+  "category": "SM",
+  "similarity": "modified",
+  "percent": 80,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 4 Overheads - Absorption Costing Method, Test Your Knowledge (Practical Problems) Q4 (Gemini Enterprises)",
+    "percent": 80
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ Nov 2022 (old P3) Q2(a) (USP Ltd., motorcycle tyres, robot)",
+    "percent": 75
+   }
+  ],
+  "note": "Case Scenario II: machine hour rate with and without a hired aid (computer/robot -> AI system) for three jobs; job hours 600/900/- without aid kept as SM Q4, with-aid hours 450/550/1000; tyre-maker framing as Nov 2022 Q2(a); cost figures changed; asks monthly overheads with aid"
+ },
+ "m8": {
+  "marks": 2,
+  "topic": "Machine hour rate (whole) when AI used",
+  "chapter": "4 Overheads - Absorption Costing Method",
+  "category": "SM",
+  "similarity": "modified",
+  "percent": 80,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 4 Overheads - Absorption Costing Method, Test Your Knowledge (Practical Problems) Q4 (Gemini Enterprises)",
+    "percent": 80
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ Nov 2022 (old P3) Q2(a) (USP Ltd., motorcycle tyres, robot)",
+    "percent": 75
+   }
+  ],
+  "note": "Case Scenario II: machine hour rate with and without a hired aid (computer/robot -> AI system) for three jobs; job hours 600/900/- without aid kept as SM Q4, with-aid hours 450/550/1000; tyre-maker framing as Nov 2022 Q2(a); cost figures changed; asks MHR with aid"
+ },
+ "m9": {
+  "marks": 2,
+  "topic": "Machine hour rate (whole) when AI not used",
+  "chapter": "4 Overheads - Absorption Costing Method",
+  "category": "SM",
+  "similarity": "modified",
+  "percent": 80,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 4 Overheads - Absorption Costing Method, Test Your Knowledge (Practical Problems) Q4 (Gemini Enterprises)",
+    "percent": 80
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ Nov 2022 (old P3) Q2(a) (USP Ltd., motorcycle tyres, robot)",
+    "percent": 75
+   }
+  ],
+  "note": "Case Scenario II: machine hour rate with and without a hired aid (computer/robot -> AI system) for three jobs; job hours 600/900/- without aid kept as SM Q4, with-aid hours 450/550/1000; tyre-maker framing as Nov 2022 Q2(a); cost figures changed; asks MHR without aid"
+ },
+ "m10": {
+  "marks": 2,
+  "topic": "Machine hour rate for individual jobs",
+  "chapter": "4 Overheads - Absorption Costing Method",
+  "category": "SM",
+  "similarity": "modified",
+  "percent": 80,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 4 Overheads - Absorption Costing Method, Test Your Knowledge (Practical Problems) Q4 (Gemini Enterprises)",
+    "percent": 80
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ Nov 2022 (old P3) Q2(a) (USP Ltd., motorcycle tyres, robot)",
+    "percent": 75
+   }
+  ],
+  "note": "Case Scenario II: machine hour rate with and without a hired aid (computer/robot -> AI system) for three jobs; job hours 600/900/- without aid kept as SM Q4, with-aid hours 450/550/1000; tyre-maker framing as Nov 2022 Q2(a); cost figures changed; asks job-wise MHR"
+ },
+ "m11": {
+  "marks": 2,
+  "topic": "Re-order quantity back-worked from maximum stock level",
+  "chapter": "2 Material Cost",
+  "category": "RTP",
+  "similarity": "adapted",
+  "percent": 35,
+  "sources": [
+   {
+    "type": "rtp",
+    "ref": "RTP Nov 2023 (old P3) Q1 (back-working from given ROL/ROQ/max/min levels)",
+    "percent": 35
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ Jan 2025 Q1(c)",
+    "percent": 35
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 2 Material Cost, Maximum Stock Level formula (para on stock levels)",
+    "percent": 30
+   }
+  ],
+  "note": "Same idea of back-solving the maximum stock level formula; earlier sources solve for consumption/lead time, here ROQ is solved; new figures"
+ },
+ "m12": {
+  "marks": 2,
+  "topic": "Wage rate per hour including holiday pay",
+  "chapter": "3 Employee Cost and Direct Expenses",
+  "category": "SM",
+  "similarity": "modified",
+  "percent": 85,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 3 Employee Cost and Direct Expenses, Illustration 13 (para 9.3 Holiday and Leave Wages)",
+    "percent": 85
+   }
+  ],
+  "note": "Same data items (basic pay, DA, other allowances/fringe benefits p.m., working days, days availed as holidays on full pay, 8-hour day); figures changed (325 days, 25 holidays) and MCQ format"
+ },
+ "m13": {
+  "marks": 2,
+  "topic": "Job cost - selling price with overhead recovery rates",
+  "chapter": "9 Job Costing",
+  "category": "PYQ",
+  "similarity": "adapted",
+  "percent": 50,
+  "sources": [
+   {
+    "type": "pyq",
+    "ref": "PYQ Jan 2026 MCQ 12 (T Ltd., Job 201)",
+    "percent": 50
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 4 Overheads, Illustration 9 part (iii) (selling price of Job 103)",
+    "percent": 45
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ May 2022 (old P3) Q2(a) (reverse calculation of recovery rates, Job 3)",
+    "percent": 35
+   }
+  ],
+  "note": "Same cost build-up (FOH % of wages, admin 25% of factory cost, profit 25% on total cost) as Jan 2026 MCQ 12 but solved forward for selling price instead of backward for FOH %"
+ },
+ "m14": {
+  "marks": 2,
+  "topic": "Transport costing - cost per passenger-km",
+  "chapter": "12 Service Costing",
+  "category": "SM",
+  "similarity": "modified",
+  "percent": 80,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 12 Service Costing, Illustration 2 (AXA Passenger Transport Company)",
+    "percent": 80
+   }
+  ],
+  "note": "Same scenario (n buses between two towns, seating capacity, % occupancy, one round trip per day, 30 days, cost per passenger-km); figures changed and total cost given as one amount"
+ },
+ "m15": {
+  "marks": 2,
+  "topic": "BEP sales from two years' sales and profit",
+  "chapter": "14 Marginal Costing",
+  "category": "PYQ",
+  "similarity": "modified",
+  "percent": 75,
+  "sources": [
+   {
+    "type": "pyq",
+    "ref": "PYQ May 2024 Q5(b) (PQR Ltd.)",
+    "percent": 75
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 14 Marginal Costing, Test Your Knowledge (Practical Problems) Q7",
+    "percent": 45
+   }
+  ],
+  "note": "Same sales figures (Rs 1,80,00,000 and 2,40,00,000) and BEP requirement as May 2024 Q5(b); profits changed (24 L / 42 L) and reduced to one MCQ"
+ }
+}

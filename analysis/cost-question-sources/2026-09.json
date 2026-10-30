@@ -1,0 +1,747 @@
+{
+ "1a": {
+  "marks": 7,
+  "topic": "Product mix with product-specific fixed costs and combined capacity limit",
+  "chapter": "14 Marginal Costing",
+  "category": "NEW",
+  "similarity": "new",
+  "percent": 25,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 14 Marginal Costing, Illustration 10 (choice among products X, Y, Z with demand and capacity limits)",
+    "percent": 25
+   }
+  ],
+  "note": "No matching problem in SM/RTP/MTP/PYQ; combines demand caps, an overall 770-unit capacity and fixed costs avoidable per product - only the general limiting-factor/product-choice idea of SM Illustration 10 is shared"
+ },
+ "1b": {
+  "marks": 4,
+  "topic": "EOQ and annual ordering cost from market share of demand",
+  "chapter": "2 Material Cost",
+  "category": "PYQ",
+  "similarity": "modified",
+  "percent": 60,
+  "sources": [
+   {
+    "type": "pyq",
+    "ref": "PYQ Jan 2026 Case Scenario II (Spice Guard Ltd., MCQs 6-10)",
+    "percent": 60
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 2 Material Cost, Illustration 4 (EOQ with storage, interest and obsolescence rates)",
+    "percent": 50
+   }
+  ],
+  "note": "Same set-up as Jan 2026 Case II (annual demand = market demand x market share; carrying cost = storage + interest + obsolescence %); single material, new figures, asks EOQ and ordering cost"
+ },
+ "1c": {
+  "marks": 3,
+  "topic": "Reciprocal service apportionment - simultaneous equation method",
+  "chapter": "4 Overheads - Absorption Costing Method",
+  "category": "SM",
+  "similarity": "modified",
+  "percent": 65,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 4 Overheads, Illustration 3 (Boiler house / Pump room, simultaneous equation method)",
+    "percent": 65
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ Sep 2025 Q2(b) (S1, S2 simultaneous equation method)",
+    "percent": 50
+   }
+  ],
+  "note": "Same structure as Illustration 3 (two service depts serving each other and two production depts, % usage table); new figures, only total FC cost asked"
+ },
+ "2a": {
+  "marks": 7,
+  "topic": "Wages budget with productivity, down-time and overtime",
+  "chapter": "15 Budgets and Budgetary Control",
+  "category": "MTP",
+  "similarity": "modified",
+  "percent": 70,
+  "sources": [
+   {
+    "type": "mtp",
+    "ref": "MTP Nov 2018 Series II Q5(a) (C Ltd.)",
+    "percent": 70
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 15 Budgets, Test Your Knowledge Q8 (Concorde Ltd.)",
+    "percent": 70
+   },
+   {
+    "type": "mtp",
+    "ref": "Model Test Paper 4 Q5(a) (Bicon Ltd.)",
+    "percent": 70
+   },
+   {
+    "type": "mtp",
+    "ref": "Model Test Paper 7 Q5(b) (C Ltd.)",
+    "percent": 70
+   }
+  ],
+  "note": "Same problem structure (productivity ratio, down-time %, overtime premium beyond weekly hours, four 5-day weeks, closing stock in days of sales); materials part dropped, figures changed (110 workers, 75%, 15%, 60% premium over 45 hrs)"
+ },
+ "2b": {
+  "marks": 7,
+  "topic": "Job cost sheet for special order using previous-year overhead rates",
+  "chapter": "9 Job Costing",
+  "category": "RTP",
+  "similarity": "modified",
+  "percent": 70,
+  "sources": [
+   {
+    "type": "rtp",
+    "ref": "RTP May 2022 Q8 (KJ Motors Ltd.)",
+    "percent": 70
+   },
+   {
+    "type": "rtp",
+    "ref": "RTP Nov 2023 Q7 (SM Motors Ltd.)",
+    "percent": 70
+   }
+  ],
+  "note": "Same structure (stock/purchase/labour/FOH/AOH data, FOH as % of labour and AOH as % of factory cost, delivery cost); new figures, material as 25% of last year consumption, extra 10% safety margin, total cost instead of quoted price"
+ },
+ "3a": {
+  "marks": 7,
+  "topic": "Reconciliation of cost and financial profit (list of differences)",
+  "chapter": "7 Cost Accounting Systems",
+  "category": "PYQ",
+  "similarity": "modified",
+  "percent": 60,
+  "sources": [
+   {
+    "type": "pyq",
+    "ref": "PYQ May 2024 Q3(b) (S.K. Manufacturing Co. Ltd.)",
+    "percent": 60
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ Sep 2024 Q1(b) (XYZ Ltd.)",
+    "percent": 45
+   }
+  ],
+  "note": "Same format as May 2024 Q3(b): profit as per cost accounts plus list of items (FOH under-absorbed, admin over-absorbed, interest, notional rent, donations, depreciation difference, income tax); new figures, some items changed (profit on sale of investments, bank deposit interest)"
+ },
+ "3b": {
+  "marks": 7,
+  "topic": "Bus operating cost and one-way fare per passenger",
+  "chapter": "12 Service Costing",
+  "category": "MTP",
+  "similarity": "modified",
+  "percent": 70,
+  "sources": [
+   {
+    "type": "mtp",
+    "ref": "MTP Nov 2022 Series II Q5(a) (Royal Transport Company)",
+    "percent": 70
+   }
+  ],
+  "note": "Same cost list (garage rent, repairs per bus, salaries, road tax per quarter, office expenses, diesel per litre at 6 km/l, depreciation+insurance % of cost, oils) and 1/3 profit on takings; new figures, 2 buses idle one month, fare per passenger (one way) instead of per passenger-km, plus km/passengers/diesel sub-parts"
+ },
+ "4a": {
+  "marks": 9,
+  "topic": "Labour mix, efficiency (sub-efficiency), yield and rate variances with idle time",
+  "chapter": "13 Standard Costing",
+  "category": "SM",
+  "similarity": "modified",
+  "percent": 70,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 13 Standard Costing, Illustration 7 (NPX Ltd.)",
+    "percent": 70
+   }
+  ],
+  "note": "Same structure as Illustration 7 (skilled/semi-skilled/unskilled standard hours 2/3/5 at budgeted rates, actual hours paid with abnormal idle hours); standard for 2 units, rates and actual figures changed, asks category-wise mix/efficiency/yield/rate"
+ },
+ "4b": {
+  "marks": 5,
+  "topic": "FIFO process costing - input quantity, normal/abnormal loss, equivalent units",
+  "chapter": "10 Process & Operation Costing",
+  "category": "SM",
+  "similarity": "modified",
+  "percent": 70,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 10 Process & Operation Costing, Case Scenario 1 (Arnav Ltd.)",
+    "percent": 70
+   },
+   {
+    "type": "mtp",
+    "ref": "Model Test Paper 1, Part I Case Scenario (Arnav Ltd., MCQs i-v)",
+    "percent": 70
+   },
+   {
+    "type": "sm",
+    "ref": "Case Scenario Booklet, Case 36 (Arnav Ltd.)",
+    "percent": 70
+   }
+  ],
+  "note": "Same scenario as the Arnav Ltd. fire-loss case (opening/closing WIP with labour/OH completion, normal loss 10% of input, total losses, output transferred, FIFO); fire changed to flood, all quantities/percentages changed, MCQs turned into descriptive parts (input, NL/AL, EU)"
+ },
+ "5a": {
+  "marks": 5,
+  "topic": "Cost sheet figures - prime cost, cost of production, COGS (FIFO), cost of sales, sales",
+  "chapter": "6 Cost Sheet",
+  "category": "SM",
+  "similarity": "modified",
+  "percent": 75,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 6 Cost Sheet, Test Your Knowledge Practical Problem Q2 (Aditya Industries)",
+    "percent": 75
+   }
+  ],
+  "note": "Same data layout and items as Aditya Industries (opening/closing RM, WIP, FG units; RM purchase, wages, utilities, office expenses, travelling allowance, selling expenses, machine hours x rate, units sold/produced, profit % on sales); figures changed, GST item dropped, only key cost-sheet figures asked"
+ },
+ "5b": {
+  "marks": 7,
+  "topic": "Blanket vs departmental overhead rates for job pricing; under/over recovery",
+  "chapter": "4 Overheads - Absorption Costing Method",
+  "category": "SM",
+  "similarity": "modified",
+  "percent": 60,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 4 Overheads, Test Your Knowledge Practical Problem Q9 (Job No. CW 7083)",
+    "percent": 60
+   },
+   {
+    "type": "mtp",
+    "ref": "Model Test Paper 5 Q4 (Allurgy Ltd., Job No. 157)",
+    "percent": 55
+   }
+  ],
+  "note": "Same structure (three production departments, budget vs actual FOH/labour/machine hours, single blanket rate policy, representative job, 30% margin, recommend departmental rates, under/over recovery); blanket rate on labour hours instead of % of wages, new figures, only Finishing department under/over recovery"
+ },
+ "6a": {
+  "marks": 5,
+  "topic": "Classification of cost items by function",
+  "chapter": "1 Introduction to Cost and Management Accounting",
+  "category": "SM",
+  "similarity": "adapted",
+  "percent": 50,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 3 Employee Cost and Direct Expenses, Illustration 16 (Aditya Ltd.)",
+    "percent": 50
+   }
+  ],
+  "note": "Items (i)-(v) (office attendants salary, product blueprint cost, machinery hire charges, marketing manager salary, one-time software licence for computerised graphics) taken from Illustration 16; requirement changed from computing direct expenses per job to functional classification, and wages, overtime, special packing, advertisement, royalty added"
+ },
+ "6b": {
+  "marks": 5,
+  "topic": "Treatment of by-product realisation; NRV method for joint products and by-products",
+  "chapter": "11 Joint Products and By Products",
+  "category": "SM",
+  "similarity": "same",
+  "percent": 90,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 11 Joint Products and By Products, Methods of apportionment of joint cost to by-products - (i) Net Realisable Value method (molasses example) and joint-cost NRV method",
+    "percent": 90
+   },
+   {
+    "type": "mtp",
+    "ref": "MTP Nov 2018 Series I Q6(d)",
+    "percent": 75
+   },
+   {
+    "type": "rtp",
+    "ref": "RTP Sep 2024 Q19(a)",
+    "percent": 75
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ Sep 2024 Q6(c)",
+    "percent": 60
+   }
+  ],
+  "note": "All three parts answered directly from the SM text: molasses realisation reduces cost of sugar, NRV = sales value less further processing cost; framed as short case-style questions"
+ },
+ "6c": {
+  "marks": 4,
+  "topic": "Treatment of abnormal (lockdown) wages, subsidy, interest and GST with ITC in cost sheet",
+  "chapter": "6 Cost Sheet",
+  "category": "SM",
+  "similarity": "same",
+  "percent": 85,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 6 Cost Sheet, para 4.2 Treatment of various items of Cost in Cost Sheet/Statement (abnormal costs incl. sudden lockdown, subsidy/grant, interest and finance costs); SM Ch 2 Material Cost, treatment of items associated with purchase of materials (GST with input credit)",
+    "percent": 85
+   },
+   {
+    "type": "mtp",
+    "ref": "MTP May 2025 Series II Q3(b)",
+    "percent": 75
+   }
+  ],
+  "note": "Items (i)-(iii) match SM Ch 6 para 4.2 (also asked in MTP May 2025 Series II Q3(b)); GST with ITC from the SM Ch 2 table; items put as short examples. Marks not printed in extracted text - 4 marks assumed from the OR alternative"
+ },
+ "6c-or": {
+  "marks": 4,
+  "topic": "Bill of Materials vs Material Requisition Note",
+  "chapter": "2 Material Cost",
+  "category": "SM",
+  "similarity": "same",
+  "percent": 100,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 2 Material Cost, Difference between Bill of Materials and Material Requisition Note (under 3.1 Bill of Materials)",
+    "percent": 100
+   },
+   {
+    "type": "mtp",
+    "ref": "MTP May 2025 Series II Q6(b)",
+    "percent": 100
+   }
+  ],
+  "note": "Same theory question; answer is the SM comparison table, also asked verbatim in MTP May 2025 Series II Q6(b)"
+ },
+ "m1": {
+  "marks": 2,
+  "chapter": "5 Activity Based Costing",
+  "category": "SM",
+  "similarity": "adapted",
+  "percent": 55,
+  "topic": "Customer profitability (ABC) - customer visit cost for a customer category",
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 5 Activity Based Costing, Case Scenario 1 (A Limited, customer profitability MCQs i-v)",
+    "percent": 55
+   },
+   {
+    "type": "sm",
+    "ref": "Case Scenario Booklet, Case 60 (A Limited, customer profitability)",
+    "percent": 55
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 5 Activity Based Costing, Test Your Knowledge Practical Problem Q4 (Alpha Limited, five customers)",
+    "percent": 50
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ Nov 2019 Q2(a) (PQR Ltd., five customers)",
+    "percent": 50
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 5 Activity Based Costing, Test Your Knowledge Practical Problem Q2 (RST Limited, distribution channels; activity rates from cost pools)",
+    "percent": 40
+   }
+  ],
+  "note": "Same MCQ as SM Case Scenario 1(i) (customer-visit cost of one customer); here the visit rate must first be derived from the pooled cost (19,20,000/300 visits) and customers are categories (distributors/supermarkets/online)"
+ },
+ "m2": {
+  "marks": 2,
+  "chapter": "5 Activity Based Costing",
+  "category": "SM",
+  "similarity": "adapted",
+  "percent": 55,
+  "topic": "Customer profitability (ABC) - transport cost per kilometre for a category",
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 5 Activity Based Costing, Case Scenario 1 (A Limited, customer profitability MCQs i-v)",
+    "percent": 55
+   },
+   {
+    "type": "sm",
+    "ref": "Case Scenario Booklet, Case 60 (A Limited, customer profitability)",
+    "percent": 55
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 5 Activity Based Costing, Test Your Knowledge Practical Problem Q4 (Alpha Limited, five customers)",
+    "percent": 50
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ Nov 2019 Q2(a) (PQR Ltd., five customers)",
+    "percent": 50
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 5 Activity Based Costing, Test Your Knowledge Practical Problem Q2 (RST Limited, distribution channels; activity rates from cost pools)",
+    "percent": 40
+   }
+  ],
+  "note": "Delivery-km cost as in SM Case Scenario 1 / TYK Q4, but rate derived from pooled transport cost / total km; new data"
+ },
+ "m3": {
+  "marks": 2,
+  "chapter": "5 Activity Based Costing",
+  "category": "SM",
+  "similarity": "adapted",
+  "percent": 55,
+  "topic": "Customer profitability (ABC) - activity cost as % of net revenue",
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 5 Activity Based Costing, Case Scenario 1 (A Limited, customer profitability MCQs i-v)",
+    "percent": 55
+   },
+   {
+    "type": "sm",
+    "ref": "Case Scenario Booklet, Case 60 (A Limited, customer profitability)",
+    "percent": 55
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 5 Activity Based Costing, Test Your Knowledge Practical Problem Q4 (Alpha Limited, five customers)",
+    "percent": 50
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ Nov 2019 Q2(a) (PQR Ltd., five customers)",
+    "percent": 50
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 5 Activity Based Costing, Test Your Knowledge Practical Problem Q2 (RST Limited, distribution channels; activity rates from cost pools)",
+    "percent": 40
+   }
+  ],
+  "note": "Ratio of operating (activity) cost to revenue as in SM TYK Q2 (RST Ltd.) combined with listed price less discount from Case Scenario 1; new data"
+ },
+ "m4": {
+  "marks": 2,
+  "chapter": "5 Activity Based Costing",
+  "category": "SM",
+  "similarity": "adapted",
+  "percent": 55,
+  "topic": "Customer profitability (ABC) - total customer-level operating cost",
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 5 Activity Based Costing, Case Scenario 1 (A Limited, customer profitability MCQs i-v)",
+    "percent": 55
+   },
+   {
+    "type": "sm",
+    "ref": "Case Scenario Booklet, Case 60 (A Limited, customer profitability)",
+    "percent": 55
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 5 Activity Based Costing, Test Your Knowledge Practical Problem Q4 (Alpha Limited, five customers)",
+    "percent": 50
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ Nov 2019 Q2(a) (PQR Ltd., five customers)",
+    "percent": 50
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 5 Activity Based Costing, Test Your Knowledge Practical Problem Q2 (RST Limited, distribution channels; activity rates from cost pools)",
+    "percent": 40
+   }
+  ],
+  "note": "Total customer-level operating activity cost as in SM Case Scenario 1 working note; rates from pooled costs, new data"
+ },
+ "m5": {
+  "marks": 2,
+  "chapter": "5 Activity Based Costing",
+  "category": "SM",
+  "similarity": "adapted",
+  "percent": 55,
+  "topic": "Customer profitability (ABC) - customer-level operating income",
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 5 Activity Based Costing, Case Scenario 1 (A Limited, customer profitability MCQs i-v)",
+    "percent": 55
+   },
+   {
+    "type": "sm",
+    "ref": "Case Scenario Booklet, Case 60 (A Limited, customer profitability)",
+    "percent": 55
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 5 Activity Based Costing, Test Your Knowledge Practical Problem Q4 (Alpha Limited, five customers)",
+    "percent": 50
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ Nov 2019 Q2(a) (PQR Ltd., five customers)",
+    "percent": 50
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 5 Activity Based Costing, Test Your Knowledge Practical Problem Q2 (RST Limited, distribution channels; activity rates from cost pools)",
+    "percent": 40
+   }
+  ],
+  "note": "Customer-level operating income (revenue at list price less discount, COGS and activity costs) as in SM Case Scenario 1(iv)/TYK Q4; new data"
+ },
+ "m6": {
+  "marks": 2,
+  "chapter": "15 Budgets and Budgetary Control",
+  "category": "MTP",
+  "similarity": "adapted",
+  "percent": 50,
+  "topic": "Production budget (units) for a quarter",
+  "sources": [
+   {
+    "type": "mtp",
+    "ref": "MTP Sep 2025 Series I Case Scenario 2 (Valley Ltd., MCQs 6-10)",
+    "percent": 50
+   },
+   {
+    "type": "sm",
+    "ref": "Case Scenario Booklet, Case 14 (Valley Ltd.)",
+    "percent": 50
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 15 Budgets, Test Your Knowledge Practical Problem Q3 (K Ltd., production and raw material purchase budget)",
+    "percent": 45
+   },
+   {
+    "type": "mtp",
+    "ref": "MTP May 2023 Series II Q2(a) (JD Ltd.)",
+    "percent": 45
+   }
+  ],
+  "note": "Required production = sales + closing - opening stock, as MCQ 1 of Valley Ltd. case; here two products in containers with new figures"
+ },
+ "m7": {
+  "marks": 2,
+  "chapter": "15 Budgets and Budgetary Control",
+  "category": "MTP",
+  "similarity": "adapted",
+  "percent": 50,
+  "topic": "Raw material consumption budget (% composition)",
+  "sources": [
+   {
+    "type": "mtp",
+    "ref": "MTP Sep 2025 Series I Case Scenario 2 (Valley Ltd., MCQs 6-10)",
+    "percent": 50
+   },
+   {
+    "type": "sm",
+    "ref": "Case Scenario Booklet, Case 14 (Valley Ltd.)",
+    "percent": 50
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 15 Budgets, Test Your Knowledge Practical Problem Q3 (K Ltd., production and raw material purchase budget)",
+    "percent": 45
+   },
+   {
+    "type": "mtp",
+    "ref": "MTP May 2023 Series II Q2(a) (JD Ltd.)",
+    "percent": 45
+   }
+  ],
+  "note": "Material requirement per unit of output as in Valley Ltd./K Ltd.; here input given as % mix of a 1-kg container (M = 25% of WM)"
+ },
+ "m8": {
+  "marks": 2,
+  "chapter": "15 Budgets and Budgetary Control",
+  "category": "MTP",
+  "similarity": "adapted",
+  "percent": 50,
+  "topic": "Raw material purchase budget (quantity)",
+  "sources": [
+   {
+    "type": "mtp",
+    "ref": "MTP Sep 2025 Series I Case Scenario 2 (Valley Ltd., MCQs 6-10)",
+    "percent": 50
+   },
+   {
+    "type": "sm",
+    "ref": "Case Scenario Booklet, Case 14 (Valley Ltd.)",
+    "percent": 50
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 15 Budgets, Test Your Knowledge Practical Problem Q3 (K Ltd., production and raw material purchase budget)",
+    "percent": 45
+   },
+   {
+    "type": "mtp",
+    "ref": "MTP May 2023 Series II Q2(a) (JD Ltd.)",
+    "percent": 45
+   }
+  ],
+  "note": "Purchase qty = consumption + closing - opening stock, as MCQ 2 of Valley Ltd. case; new materials and figures"
+ },
+ "m9": {
+  "marks": 2,
+  "chapter": "15 Budgets and Budgetary Control",
+  "category": "MTP",
+  "similarity": "adapted",
+  "percent": 50,
+  "topic": "Raw material purchase budget (value) for a product",
+  "sources": [
+   {
+    "type": "mtp",
+    "ref": "MTP Sep 2025 Series I Case Scenario 2 (Valley Ltd., MCQs 6-10)",
+    "percent": 50
+   },
+   {
+    "type": "sm",
+    "ref": "Case Scenario Booklet, Case 14 (Valley Ltd.)",
+    "percent": 50
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 15 Budgets, Test Your Knowledge Practical Problem Q3 (K Ltd., production and raw material purchase budget)",
+    "percent": 45
+   },
+   {
+    "type": "mtp",
+    "ref": "MTP May 2023 Series II Q2(a) (JD Ltd.)",
+    "percent": 45
+   }
+  ],
+  "note": "Value of purchases at cost per kg, as MCQ 3 of Valley Ltd. case; summed for W and M of product WM"
+ },
+ "m10": {
+  "marks": 2,
+  "chapter": "15 Budgets and Budgetary Control",
+  "category": "MTP",
+  "similarity": "adapted",
+  "percent": 50,
+  "topic": "Production budget (kg) for a product",
+  "sources": [
+   {
+    "type": "mtp",
+    "ref": "MTP Sep 2025 Series I Case Scenario 2 (Valley Ltd., MCQs 6-10)",
+    "percent": 50
+   },
+   {
+    "type": "sm",
+    "ref": "Case Scenario Booklet, Case 14 (Valley Ltd.)",
+    "percent": 50
+   },
+   {
+    "type": "sm",
+    "ref": "SM Ch 15 Budgets, Test Your Knowledge Practical Problem Q3 (K Ltd., production and raw material purchase budget)",
+    "percent": 45
+   },
+   {
+    "type": "mtp",
+    "ref": "MTP May 2023 Series II Q2(a) (JD Ltd.)",
+    "percent": 45
+   }
+  ],
+  "note": "Required production of WM = demand + closing - opening, as MCQ 1 of Valley Ltd. case; new figures"
+ },
+ "m11": {
+  "marks": 2,
+  "topic": "FIFO equivalent units for conversion cost",
+  "chapter": "10 Process & Operation Costing",
+  "category": "SM",
+  "similarity": "modified",
+  "percent": 80,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 10 Process & Operation Costing, Test Your Knowledge Practical Problem Q2 (Hill Manufacturing Ltd.)",
+    "percent": 80
+   }
+  ],
+  "note": "Same problem with all units halved (16,000/1,00,000/92,000/24,000 -> 8,000/50,000/46,000/12,000), same 60%/20% opening and 40% closing conversion; closing material 80% instead of 90%; asks FIFO EU for conversion instead of material"
+ },
+ "m12": {
+  "marks": 2,
+  "topic": "Halsey premium plan - time taken from effective hourly rate",
+  "chapter": "3 Employee Cost and Direct Expenses",
+  "category": "PYQ",
+  "similarity": "modified",
+  "percent": 60,
+  "sources": [
+   {
+    "type": "pyq",
+    "ref": "PYQ Dec 2021 Q1(c)(ii)",
+    "percent": 60
+   },
+   {
+    "type": "rtp",
+    "ref": "RTP Nov 2023 Q2(ii)",
+    "percent": 60
+   }
+  ],
+  "note": "Same reverse calculation (time in which worker must finish under Halsey 50% to earn a given effective hourly rate); effective rate given directly instead of derived from Rowan; new figures (72 hrs std, Rs 60, Rs 75 -> 48 hrs)"
+ },
+ "m13": {
+  "marks": 2,
+  "topic": "FIFO valuation of material issues",
+  "chapter": "2 Material Cost",
+  "category": "NEW",
+  "similarity": "new",
+  "percent": 25,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 2 Material Cost, FIFO method of pricing issues (Material Received and Issued illustration)",
+    "percent": 25
+   }
+  ],
+  "note": "Standard FIFO stores-ledger computation with new day-wise data; no matching problem found in SM/RTP/MTP/PYQ"
+ },
+ "m14": {
+  "marks": 2,
+  "topic": "Treatment of overtime premium (urgent order vs fault of another department)",
+  "chapter": "3 Employee Cost and Direct Expenses",
+  "category": "SM",
+  "similarity": "modified",
+  "percent": 70,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 3 Employee Cost, Causes of Overtime and Treatment of Overtime premium in cost accounting",
+    "percent": 70
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ May 2022 Q6(c) (treatment of overtime premium in different situations)",
+    "percent": 60
+   }
+  ],
+  "note": "Applies SM rules (customer-driven urgency -> charge to job; overtime due to fault of another department -> charge to that department) to a numerical split of Rs 60,000 premium"
+ },
+ "m15": {
+  "marks": 2,
+  "topic": "Installed, practical and normal capacity; normal idle capacity",
+  "chapter": "4 Overheads - Absorption Costing Method",
+  "category": "SM",
+  "similarity": "modified",
+  "percent": 70,
+  "sources": [
+   {
+    "type": "sm",
+    "ref": "SM Ch 4 Overheads, para 10 Concepts related to Capacity (installed, practical, normal, idle capacity)",
+    "percent": 70
+   },
+   {
+    "type": "pyq",
+    "ref": "PYQ May 2023 Q6(b) (meaning of practical and normal capacity)",
+    "percent": 50
+   }
+  ],
+  "note": "Definitions from SM para 10 applied to numbers (60,000 installed, 50,000 practical, 40,000 normal; normal idle = installed - normal = 20,000)"
+ }
+}
