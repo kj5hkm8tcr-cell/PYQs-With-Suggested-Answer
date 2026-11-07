@@ -158,6 +158,17 @@
   .node h4 { font-size: 24px; font-weight: 800; margin: 8px 0; line-height: 1.2; }
   .node p { font-size: 17.5px; color: var(--muted); line-height: 1.4; }
   .closing { margin-top: 40px; font-size: 40px; font-weight: 800; line-height: 1.25; }
+  .ph { font-size: 27px; font-weight: 800; margin-bottom: 14px; }
+  .ph span { font-size: 19px; color: var(--muted); font-weight: 600; }
+  .ex { display: grid; grid-template-columns: 1fr 1fr 1.3fr; gap: 12px; margin-top: 16px; }
+  .ex div { background: var(--panel2); border-radius: 14px; padding: 14px 16px; display: flex; flex-direction: column; }
+  .ex span { font-size: 15px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+  .ex b { font-size: 30px; font-weight: 800; margin: 2px 0; }
+  .ex i { font-style: normal; font-size: 16px; color: var(--muted); }
+  .ex .tot { background: #10241f; border: 2px solid var(--green); }
+  .ex .tot b, .ex .tot i { color: var(--green); }
+  .phase:has(h4:only-child) { display: grid; place-items: center; padding: 30px 20px; }
+  .phase h4:only-child { margin: 0; font-size: 26px; text-align: center; }
 </style>
 </head>
 <body>
@@ -176,7 +187,6 @@
   </div>
   <div class="foot"><span>CA Intermediate &middot; Sep 2027 Roadmap</span><span>01</span></div>
 </section>
-
 <!-- 2. KEY DATES -->
 <section class="slide">
   <div class="kicker">Step 1 &middot; Don't miss these dates</div>
@@ -211,7 +221,6 @@
   <p class="note">Dates follow ICAI's usual cycle. Check the exact notifications on <b>icai.org</b> / BoS announcements before acting.</p>
   <div class="foot"><span>CA Intermediate &middot; Sep 2027 Roadmap</span><span>02</span></div>
 </section>
-
 <!-- 3. PAPERS -->
 <section class="slide">
   <div class="kicker">Step 2 &middot; Know the exam</div>
@@ -230,53 +239,55 @@
       <div class="paper"><div class="no">6</div><div class="nm">FM &amp; SM<small>Financial Mgmt 50 + Strategic Mgmt 50</small></div><div class="mk">100</div></div>
     </div>
   </div>
-  <div class="rules">
-    <div class="rule"><div class="big">40%</div><p>Minimum in <b>each</b> paper</p></div>
-    <div class="rule"><div class="big">50%</div><p>Aggregate in the group (150 / 300)</p></div>
-    <div class="rule"><div class="big">60+</div><p>Score 60+ in a paper of a failed group and you get an exemption in it</p></div>
-    <div class="rule"><div class="big">3 hrs</div><p>Per paper. Includes an MCQ part plus descriptive questions</p></div>
-  </div>
   <div class="foot"><span>CA Intermediate &middot; Sep 2027 Roadmap</span><span>03</span></div>
 </section>
-
-<!-- 4. GROUP CHOICE -->
+<!-- 4. PASSING RULES -->
 <section class="slide">
-  <div class="kicker">Step 3 &middot; The big decision</div>
-  <h2>Both groups together, or <span class="hl">one group</span> first?</h2>
-  <div class="vs3">
-    <div class="panel" style="border-color:var(--accent)">
-      <span class="tag y">Recommended for most</span>
-      <h3>Both groups (Sep 2027)</h3>
-      <ul class="clean green sm">
-        <li>Finish Inter in one go. Articleship and Final start sooner.</li>
-        <li>About 10 months is enough if you stay consistent.</li>
-        <li>Concepts link up: Accounts &harr; Audit, Costing &harr; FM.</li>
-        <li>Aggregate is per group, so one strong paper can carry a weaker paper in the same group.</li>
+  <div class="kicker">Step 3 &middot; Passing rules &amp; benefits</div>
+  <h2>How you pass, the <span class="hl">set-off benefit</span> &amp; exemptions</h2>
+  <div class="groups">
+    <div class="panel">
+      <h3 class="ph">Basic passing rule <span>(per group)</span></h3>
+      <ul class="clean sm">
+        <li>At least <b>40 marks</b> in <b>every</b> paper.</li>
+        <li>At least <b>50% aggregate</b> in the group, i.e. <b>150 / 300</b>.</li>
+        <li>Both conditions must be met to pass that group.</li>
       </ul>
-      <ul class="clean red sm" style="margin-top:6px">
-        <li>Needs about 8&ndash;10 focused hours a day, 6 papers to revise twice.</li>
+      <h3 class="ph" style="margin-top:22px">Exemption <span>(60+ rule)</span></h3>
+      <ul class="clean sm">
+        <li>If you fail a group but score <b>60 or more</b> in a paper, you get an <b>exemption</b> in that paper.</li>
+        <li>Next time you write only the remaining papers of that group.</li>
       </ul>
     </div>
-    <div class="panel" style="border-color:var(--blue)">
-      <span class="tag b">Situational</span>
-      <h3>One group first</h3>
-      <ul class="clean blue sm">
-        <li>Good if you're in college, working, or started late.</li>
-        <li>Lighter load, so you can aim for higher marks and exemptions.</li>
-        <li>Common route: Group I in Sep 2027, Group II in Jan 2028.</li>
+    <div class="panel" style="border-color:var(--accent)">
+      <h3 class="ph">Set-off benefit <span>(both groups together)</span></h3>
+      <ul class="clean green sm">
+        <li>Applies when you write <b>both groups in the same attempt</b>.</li>
+        <li>You have <b>40+ in all 6 papers</b>, but one group's aggregate is below 150.</li>
+        <li>If the other group has <b>extra marks above 150</b>, the extra covers the shortfall.</li>
+        <li>Simply put: <b>300 / 600 total</b> + 40 in every paper = <b>both groups passed</b>.</li>
       </ul>
-      <ul class="clean red sm" style="margin-top:6px">
-        <li>Inter takes one more attempt cycle and Final gets pushed back.</li>
-      </ul>
+      <div class="ex">
+        <div><span>Group I</span><b>160</b><i>+10 extra</i></div>
+        <div><span>Group II</span><b>140</b><i>&minus;10 short</i></div>
+        <div class="tot"><span>Total</span><b>300 / 600</b><i>Both groups pass</i></div>
+      </div>
     </div>
   </div>
-  <div class="verdict"><b>Simple rule:</b> If you can give 8+ honest hours a day from now, <b>go for both groups</b>. If not, pick one group and do it really well. Don't take both groups and then half-prepare them.</div>
+  <p class="note" style="margin-top:22px">Confirm the latest pass, set-off and exemption rules on <b>icai.org</b> before you rely on them.</p>
   <div class="foot"><span>CA Intermediate &middot; Sep 2027 Roadmap</span><span>04</span></div>
 </section>
 
-<!-- 5. TIMELINE -->
+<!-- 5. GROUP CHOICE -->
 <section class="slide">
-  <div class="kicker">Step 4 &middot; The ideal journey</div>
+  <div class="kicker">Step 4 &middot; The big decision</div>
+  <h2>Both groups together, or <span class="hl">one group</span> first?</h2>
+  <div class="foot"><span>CA Intermediate &middot; Sep 2027 Roadmap</span><span>05</span></div>
+</section>
+
+<!-- 6. TIMELINE -->
+<section class="slide">
+  <div class="kicker">Step 5 &middot; The ideal journey</div>
   <h2>Nov 2026 &rarr; Sep 2027: about <span class="hl">10&ndash;11 months</span></h2>
   <div class="tl">
     <div class="months">
@@ -289,41 +300,15 @@
     </div>
   </div>
   <div class="phases">
-    <div class="phase c">
-      <h4>Phase 1: Complete classes</h4>
-      <div class="split">
-        <ul>
-          <li>Rotate subjects: run 2&ndash;3 subjects at a time.</li>
-          <li>Practise questions the same day the topic is taught.</li>
-          <li>Highlight important questions as you go.</li>
-        </ul>
-        <ul>
-          <li>Do a small weekly revision of what you finished.</li>
-          <li>Register by 1 Jan and plan revision dates early.</li>
-          <li>Hard deadline: all classes done by end of May.</li>
-        </ul>
-      </div>
-    </div>
-    <div class="phase r">
-      <h4>Phase 2: Revisions</h4>
-      <ul>
-        <li>Revision 1: full depth.</li>
-        <li>Revision 2: highlighted questions only.</li>
-        <li>Mock papers under exam conditions.</li>
-        <li>Fill the exam form in July.</li>
-      </ul>
-    </div>
-    <div class="phase e">
-      <h4>Exam</h4>
-      <p>Last quick look and formulas. Nothing new.</p>
-    </div>
+    <div class="phase c"><h4>Phase 1: Complete classes</h4></div>
+    <div class="phase r"><h4>Phase 2: Revisions</h4></div>
+    <div class="phase e"><h4>Exam</h4></div>
   </div>
-  <div class="foot"><span>CA Intermediate &middot; Sep 2027 Roadmap</span><span>05</span></div>
+  <div class="foot"><span>CA Intermediate &middot; Sep 2027 Roadmap</span><span>06</span></div>
 </section>
-
-<!-- 6. STRATEGY TIPS -->
+<!-- 7. STRATEGY TIPS -->
 <section class="slide">
-  <div class="kicker">Step 5 &middot; Strategy that works</div>
+  <div class="kicker">Step 6 &middot; Strategy that works</div>
   <h2>Important <span class="hl">strategy tips</span></h2>
   <div class="tips">
     <div class="tip star">
@@ -357,113 +342,9 @@
       <p>After classes end you need enough time for 2 revisions. That's why classes must be done by May.</p>
     </div>
   </div>
-  <div class="foot"><span>CA Intermediate &middot; Sep 2027 Roadmap</span><span>06</span></div>
-</section>
-
-<!-- 7. REVISION PLAN -->
-<section class="slide">
-  <div class="kicker">Step 6 &middot; Revision blueprint</div>
-  <h2>How to plan <span class="hl">Revision 1</span> and <span class="hl">Revision 2</span></h2>
-  <div class="revs">
-    <div class="rev r1">
-      <div class="lbl">Revision 1 &middot; Depth</div>
-      <h3>Cover 100%</h3>
-      <div class="dur">About 6&ndash;7 weeks &middot; June to mid-July</div>
-      <ul class="clean blue sm">
-        <li>100% concepts and the whole syllabus. Leave nothing out.</li>
-        <li>ICAI study material questions + illustrations.</li>
-        <li>PYQs, RTPs and MTPs, chapter-wise.</li>
-        <li>Make short notes: formulas, sections, SA keywords, mistakes.</li>
-      </ul>
-    </div>
-    <div class="rev r2">
-      <div class="lbl">Revision 2 &middot; Speed</div>
-      <h3>Only what matters</h3>
-      <div class="dur">About 4&ndash;5 weeks &middot; mid-July to August</div>
-      <ul class="clean sm">
-        <li>Highlighted / important questions only.</li>
-        <li>Your mistake list and short notes.</li>
-        <li>At least 1&ndash;2 full papers per subject, timed for 3 hours.</li>
-        <li>Theory: practise writing in exam language.</li>
-      </ul>
-    </div>
-    <div class="rev r3">
-      <div class="lbl">Revision 3 &middot; Optional</div>
-      <h3>Final touch</h3>
-      <div class="dur">Exam gaps / last week</div>
-      <ul class="clean sm" style="--x:0">
-        <li>Formulas, charts, notes.</li>
-        <li>Amendments in Tax &amp; Law.</li>
-        <li>No new material.</li>
-      </ul>
-    </div>
-  </div>
-  <p class="note" style="margin-top:28px"><b>Rule of thumb:</b> you need <b>at least 2.5&ndash;3 months</b> after classes to complete 2 proper revisions of 6 papers.</p>
   <div class="foot"><span>CA Intermediate &middot; Sep 2027 Roadmap</span><span>07</span></div>
 </section>
-
-<!-- 8. REVISION TRACKER -->
-<section class="slide">
-  <div class="kicker">Step 7 &middot; Make it concrete</div>
-  <h2>Plan each chapter's revision: <span class="hl">sample tracker</span></h2>
-  <div class="panel" style="padding:20px 26px">
-    <table class="trk">
-      <thead><tr><th>Subject / Chapter</th><th>Classes done</th><th>Imp. Qs marked</th><th>R1 date</th><th>R1 covers</th><th>R2 date</th><th>R2 covers</th></tr></thead>
-      <tbody>
-        <tr><td>Adv. Accounts &middot; AS 2 / AS 10</td><td class="ok">Dec wk 2</td><td>18 / 45</td><td class="pl">3 Jun</td><td>All Qs + PYQ/RTP</td><td class="pl">20 Jul</td><td>18 marked + mistakes</td></tr>
-        <tr><td>Tax &middot; PGBP</td><td class="ok">Feb wk 1</td><td>22 / 60</td><td class="pl">10 Jun</td><td>Concepts + MTPs</td><td class="pl">25 Jul</td><td>Marked + amendments</td></tr>
-        <tr><td>Costing &middot; Standard Costing</td><td class="ok">Jan wk 3</td><td>15 / 40</td><td class="pl">14 Jun</td><td>Formulas + all Qs</td><td class="pl">29 Jul</td><td>Marked + 1 timed set</td></tr>
-        <tr><td>Audit &middot; SA 200 series</td><td class="ok">Mar wk 2</td><td>&mdash;</td><td class="pl">20 Jun</td><td>Full reading + keywords</td><td class="pl">3 Aug</td><td>Notes + case studies</td></tr>
-        <tr><td>Law &middot; Companies Act chapters</td><td class="ok">Apr wk 1</td><td>&mdash;</td><td class="pl">26 Jun</td><td>Sections + PYQs</td><td class="pl">8 Aug</td><td>Notes + MCQs</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p class="note" style="margin-top:24px">Make this sheet in <b>January</b>, not in June. When you already know the date and scope for every chapter, you don't lose days deciding what to study next. The dates above are only an example.</p>
-  <div class="foot"><span>CA Intermediate &middot; Sep 2027 Roadmap</span><span>08</span></div>
-</section>
-
-<!-- 9. SUBJECT TIPS -->
-<section class="slide">
-  <div class="kicker">Bonus &middot; Paper-wise pointers</div>
-  <h2>Quick tips for <span class="hl">each paper</span></h2>
-  <div class="subs">
-    <div class="sub g1"><h4><i>P1</i>Advanced Accounting</h4><p>Practice-heavy. Do questions every day. Learn AS concepts with their logic, and present working notes neatly.</p></div>
-    <div class="sub g1"><h4><i>P2</i>Corporate &amp; Other Laws</h4><p>Use ICAI language. Write in a provision, facts, conclusion format. Revise sections often because theory fades fast.</p></div>
-    <div class="sub g1"><h4><i>P3</i>Taxation</h4><p>Study as per the Finance Act applicable to Sep 2027 (check ICAI's notice). Keep up with amendments. Practise IT and GST equally.</p></div>
-    <div class="sub g2"><h4><i>P4</i>Cost &amp; Mgmt Accounting</h4><p>Concepts first, then practice. Keep a formula sheet. Revisit standard costing and marginal costing often.</p></div>
-    <div class="sub g2"><h4><i>P5</i>Auditing &amp; Ethics</h4><p>Read the ICAI module line by line. Learn SA keywords. Practise case-study answers by writing them.</p></div>
-    <div class="sub g2"><h4><i>P6</i>FM &amp; SM</h4><p>FM: formulas plus practice. SM: case-study based, so apply concepts to the case and don't just copy theory.</p></div>
-  </div>
-  <p class="note" style="margin-top:24px"><b>Every paper has an MCQ part.</b> Practise MCQs from ICAI's MTPs / RTPs. These are easy marks and also show you weak areas.</p>
-  <div class="foot"><span>CA Intermediate &middot; Sep 2027 Roadmap</span><span>09</span></div>
-</section>
-
-<!-- 10. MORE IMPORTANT POINTS -->
-<section class="slide">
-  <div class="kicker">Bonus &middot; Things nobody tells you</div>
-  <h2>More points for fresh <span class="hl">Foundation passouts</span></h2>
-  <div class="groups">
-    <div class="panel">
-      <ul class="clean sm">
-        <li><b>Inter is a big jump from Foundation.</b> More depth, more theory and subjective answers. Don't carry Foundation-level effort into it.</li>
-        <li><b>ICAI material + RTP + MTP + PYQ</b> are the base. Faculty notes add to them and don't replace them.</li>
-        <li><b>One faculty per subject.</b> Switching teachers halfway wastes weeks.</li>
-        <li><b>Track backlog weekly.</b> A 1-week backlog is easy to fix. A 1-month backlog breaks the plan.</li>
-      </ul>
-    </div>
-    <div class="panel">
-      <ul class="clean sm">
-        <li><b>Write, don't just read.</b> Presentation, working notes and time management are scored too.</li>
-        <li><b>Consistency beats intensity.</b> 8 hours every day beats 14 hours on some days and zero on others.</li>
-        <li><b>Protect sleep and health</b>, and cut down social media. Burnout in July ruins revision.</li>
-        <li><b>Do ICITSS (ITT + OT) after the exam</b>, in the gap before results, so articleship can start right away.</li>
-      </ul>
-    </div>
-  </div>
-  <div class="foot"><span>CA Intermediate &middot; Sep 2027 Roadmap</span><span>10</span></div>
-</section>
-
-<!-- 11. WHAT'S NEXT -->
+<!-- 8. WHAT'S NEXT -->
 <section class="slide">
   <div class="kicker">The bigger picture</div>
   <h2>Where CA Inter <span class="hl">takes you</span></h2>
@@ -476,7 +357,7 @@
   </div>
   <p class="closing">Start <span class="hl">today</span>. Finish classes by <span class="hl">May</span>.<br>Revise <span class="hl">twice</span>. Pass in <span class="hl">September 2027</span>.</p>
   <p class="note">Eligibility rules, dates and the applicable Finance Act come from ICAI and can change. Always confirm on <b>icai.org</b> and BoS announcements.</p>
-  <div class="foot"><span>CA Intermediate &middot; Sep 2027 Roadmap</span><span>11</span></div>
+  <div class="foot"><span>CA Intermediate &middot; Sep 2027 Roadmap</span><span>08</span></div>
 </section>
 
 </body>
