@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CA Inter Sep 2027 Roadmap</title>
+<style>
+  @page { size: 1600px 900px; margin: 0; }
+  :root {
+    --bg: #0d1117; --panel: #161b22; --panel2: #1c232d; --line: #30363d;
+    --text: #f0f3f6; --muted: #9aa4b2;
+    --accent: #ffb703; --red: #e63946; --green: #2ec4b6; --blue: #4ea8de; --violet: #b392f0;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--bg); color: var(--text);
+    font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .slide { width: 1600px; height: 900px; padding: 64px 96px 70px; position: relative;
+    display: flex; flex-direction: column; overflow: hidden; page-break-after: always;
+    background: var(--bg); }
+  .slide:last-child { page-break-after: auto; }
+  .foot { position: absolute; left: 96px; right: 96px; bottom: 30px; display: flex;
+    justify-content: space-between; font-size: 16px; color: #5d6773; letter-spacing: .04em; }
+  .kicker { color: var(--accent); font-weight: 700; letter-spacing: .18em;
+    text-transform: uppercase; font-size: 20px; margin-bottom: 12px; }
+  h1 { font-size: 88px; line-height: 1.04; font-weight: 800; letter-spacing: -.02em; }
+  h2 { font-size: 54px; line-height: 1.1; font-weight: 800; margin-bottom: 34px; letter-spacing: -.01em; }
+  .hl { color: var(--accent); }
+  .muted { color: var(--muted); }
+  .panel { background: var(--panel); border: 2px solid var(--line); border-radius: 22px; padding: 30px 34px; }
+  .note { font-size: 19px; color: var(--muted); margin-top: auto; line-height: 1.45; }
+  .note b { color: var(--text); }
+  ul.clean { list-style: none; }
+  ul.clean li { position: relative; padding-left: 30px; margin-bottom: 14px; font-size: 25px; line-height: 1.38; }
+  ul.clean li::before { content: ""; position: absolute; left: 4px; top: 13px; width: 10px; height: 10px;
+    border-radius: 50%; background: var(--accent); }
+  ul.clean.green li::before { background: var(--green); }
+  ul.clean.red li::before { background: var(--red); }
+  ul.clean.blue li::before { background: var(--blue); }
+  ul.clean.sm li { font-size: 21px; margin-bottom: 10px; }
+  ul.clean.sm li::before { top: 11px; }
+
+  /* cover */
+  .cover { justify-content: center; }
+  .cover .lede { font-size: 32px; color: var(--muted); margin-top: 28px; line-height: 1.4; max-width: 1150px; }
+  .chips { display: flex; gap: 16px; margin-top: 46px; flex-wrap: wrap; }
+  .chip { border: 2px solid var(--line); border-radius: 999px; padding: 12px 24px; font-size: 22px; font-weight: 600; }
+  .chip b { color: var(--accent); }
+  .cover .bar { position: absolute; left: 0; top: 0; bottom: 0; width: 18px;
+    background: linear-gradient(var(--accent), var(--red)); }
+
+  /* dates */
+  .dates { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+  .date { background: var(--panel); border: 2px solid var(--line); border-radius: 22px; padding: 28px 26px;
+    display: flex; flex-direction: column; }
+  .date .step { font-size: 17px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+  .date .when { font-size: 40px; font-weight: 800; margin: 14px 0 6px; line-height: 1.1; }
+  .date .what { font-size: 23px; font-weight: 700; margin-bottom: 14px; }
+  .date p { font-size: 19px; color: var(--muted); line-height: 1.45; }
+  .date.key { border-color: var(--accent); background: #211c0e; }
+  .date.key .when { color: var(--accent); }
+  .alert { margin-top: 26px; border-left: 6px solid var(--red); background: #241418; border-radius: 14px;
+    padding: 20px 26px; font-size: 22px; line-height: 1.45; }
+  .alert b { color: #ff8a93; }
+
+  /* papers */
+  .groups { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  .group h3 { font-size: 28px; font-weight: 800; margin-bottom: 18px; display: flex; justify-content: space-between; align-items: baseline; }
+  .group h3 span { font-size: 20px; color: var(--muted); font-weight: 600; }
+  .group.g1 { border-color: var(--blue); }
+  .group.g2 { border-color: var(--green); }
+  .paper { display: grid; grid-template-columns: 54px 1fr auto; align-items: center; gap: 16px;
+    padding: 16px 0; border-top: 1px solid var(--line); }
+  .paper:first-of-type { border-top: none; }
+  .paper .no { width: 46px; height: 46px; border-radius: 12px; display: grid; place-items: center;
+    font-weight: 800; font-size: 22px; background: var(--panel2); }
+  .g1 .no { color: var(--blue); } .g2 .no { color: var(--green); }
+  .paper .nm { font-size: 24px; font-weight: 600; line-height: 1.25; }
+  .paper .nm small { display: block; font-size: 18px; color: var(--muted); font-weight: 500; margin-top: 4px; }
+  .paper .mk { font-size: 24px; font-weight: 800; }
+  .rules { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 24px; }
+  .rule { background: var(--panel); border: 2px solid var(--line); border-radius: 18px; padding: 18px 20px; }
+  .rule .big { font-size: 34px; font-weight: 800; color: var(--accent); }
+  .rule p { font-size: 18px; color: var(--muted); line-height: 1.4; margin-top: 4px; }
+
+  /* both vs single */
+  .vs3 { display: grid; grid-template-columns: 1.15fr 1fr; gap: 28px; }
+  .vs3 .panel h3 { font-size: 30px; font-weight: 800; margin-bottom: 18px; }
+  .tag { display: inline-block; font-size: 16px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase;
+    padding: 6px 14px; border-radius: 999px; margin-bottom: 14px; }
+  .tag.y { background: #3a2e0a; color: var(--accent); }
+  .tag.b { background: #0e2a3b; color: var(--blue); }
+  .verdict { margin-top: 24px; background: #10241f; border: 2px solid var(--green); border-radius: 18px;
+    padding: 20px 26px; font-size: 23px; line-height: 1.45; }
+  .verdict b { color: var(--green); }
+
+  /* timeline */
+  .tl { position: relative; margin-top: 16px; }
+  .months { display: grid; grid-template-columns: repeat(11, 1fr); text-align: center; font-size: 19px;
+    font-weight: 700; color: var(--muted); margin-bottom: 12px; }
+  .bars { display: grid; grid-template-columns: repeat(11, 1fr); gap: 6px; height: 104px; }
+  .seg { border-radius: 16px; display: flex; flex-direction: column; justify-content: center; padding: 0 24px;
+    font-weight: 800; font-size: 26px; color: #0d1117; }
+  .seg small { font-size: 18px; font-weight: 600; opacity: .8; }
+  .seg.cls { grid-column: 1 / span 7; background: var(--blue); }
+  .seg.rev { grid-column: 8 / span 3; background: var(--accent); }
+  .seg.ex { grid-column: 11 / span 1; background: var(--red); color: #fff; padding: 0; align-items: center; font-size: 22px; }
+  .phases { display: grid; grid-template-columns: 7fr 3fr 1fr; gap: 6px; margin-top: 26px; }
+  .phase { background: var(--panel); border: 2px solid var(--line); border-radius: 18px; padding: 22px 24px; }
+  .phase h4 { font-size: 22px; font-weight: 800; margin-bottom: 12px; }
+  .phase.c { border-color: var(--blue); } .phase.c h4 { color: var(--blue); }
+  .phase.r { border-color: var(--accent); } .phase.r h4 { color: var(--accent); }
+  .phase.e { border-color: var(--red); } .phase.e h4 { color: #ff8a93; }
+  .phase p, .phase li { font-size: 19px; line-height: 1.45; color: #d2d8df; }
+  .phase ul { padding-left: 20px; }
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+
+  /* tips grid */
+  .tips { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .tip { background: var(--panel); border: 2px solid var(--line); border-radius: 20px; padding: 26px 26px; }
+  .tip .n { font-size: 18px; font-weight: 800; color: var(--accent); letter-spacing: .1em; }
+  .tip h4 { font-size: 25px; font-weight: 800; margin: 8px 0 10px; line-height: 1.2; }
+  .tip p { font-size: 19px; color: var(--muted); line-height: 1.45; }
+  .tip.star { border-color: var(--accent); background: #211c0e; }
+
+  /* revision */
+  .revs { display: grid; grid-template-columns: 1.2fr 1fr .8fr; gap: 24px; }
+  .rev { border-radius: 22px; padding: 28px 28px; border: 2px solid var(--line); background: var(--panel); }
+  .rev .lbl { font-size: 17px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+  .rev h3 { font-size: 34px; font-weight: 800; margin: 6px 0 4px; }
+  .rev .dur { font-size: 20px; color: var(--muted); margin-bottom: 18px; font-weight: 600; }
+  .rev.r1 { border-color: var(--blue); } .rev.r1 .lbl { color: var(--blue); }
+  .rev.r2 { border-color: var(--accent); } .rev.r2 .lbl { color: var(--accent); }
+  .rev.r3 { border-color: var(--violet); border-style: dashed; } .rev.r3 .lbl { color: var(--violet); }
+
+  /* tracker table */
+  table.trk { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 20px; margin-top: 4px; }
+  table.trk th { text-align: left; font-size: 16px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted);
+    padding: 12px 16px; border-bottom: 2px solid var(--line); }
+  table.trk td { padding: 14px 16px; border-bottom: 1px solid var(--line); }
+  table.trk td.ok { color: var(--green); font-weight: 700; }
+  table.trk td.pl { color: var(--accent); font-weight: 700; }
+
+  /* subjects */
+  .subs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .sub { background: var(--panel); border: 2px solid var(--line); border-radius: 20px; padding: 22px 24px; }
+  .sub h4 { font-size: 23px; font-weight: 800; margin-bottom: 10px; }
+  .sub h4 i { font-style: normal; color: var(--muted); font-weight: 600; font-size: 17px; margin-right: 6px; }
+  .sub p { font-size: 18.5px; color: #c9d1d9; line-height: 1.45; }
+  .sub.g1 { border-top: 6px solid var(--blue); } .sub.g2 { border-top: 6px solid var(--green); }
+
+  /* path */
+  .path { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; align-items: stretch; margin-top: 10px; }
+  .node { background: var(--panel); border: 2px solid var(--line); border-radius: 20px; padding: 22px 20px; margin-right: 34px; position: relative; }
+  .node:not(:last-child)::after { content: "\2192"; position: absolute; right: -32px; top: 50%; transform: translateY(-50%);
+    color: var(--accent); font-size: 30px; font-weight: 800; }
+  .node:last-child { margin-right: 0; border-color: var(--accent); }
+  .node .t { font-size: 16px; font-weight: 800; color: var(--muted); letter-spacing: .1em; text-transform: uppercase; }
+  .node h4 { font-size: 24px; font-weight: 800; margin: 8px 0; line-height: 1.2; }
+  .node p { font-size: 17.5px; color: var(--muted); line-height: 1.4; }
+  .closing { margin-top: 40px; font-size: 40px; font-weight: 800; line-height: 1.25; }
+</style>
+</head>
+<body>
+
+<!-- 1. COVER -->
+<section class="slide cover">
+  <div class="bar"></div>
+  <div class="kicker">Cleared CA Foundation? Congratulations!</div>
+  <h1>CA Intermediate<br><span class="hl">September 2027</span> Roadmap</h1>
+  <p class="lede">Everything in one place: registration deadline, exam form, papers &amp; marks, which group to take, the ideal 10-month journey and a revision strategy that actually works.</p>
+  <div class="chips">
+    <span class="chip">Register by <b>1 Jan 2027</b></span>
+    <span class="chip"><b>6</b> papers &middot; <b>2</b> groups</span>
+    <span class="chip"><b>6&ndash;7</b> months classes</span>
+    <span class="chip"><b>2.5&ndash;3</b> months revision</span>
+  </div>
+  <div class="foot"><span>CA Intermediate &middot; Sep 2027 Roadmap</span><span>01</span></div>
+</section>
+
+<!-- 2. KEY DATES -->
+<section class="slide">
+  <div class="kicker">Step 1 &middot; Don't miss these dates</div>
+  <h2>Key dates for the <span class="hl">September 2027</span> attempt</h2>
+  <div class="dates">
+    <div class="date key">
+      <div class="step">Deadline</div>
+      <div class="when">1 Jan 2027</div>
+      <div class="what">Register for CA Intermediate</div>
+      <p>ICAI needs an 8-month study period before your first Inter attempt. Register on or before 1 January 2027 to be eligible for September 2027.</p>
+    </div>
+    <div class="date">
+      <div class="step">Now &rarr; May 2027</div>
+      <div class="when">Nov 2026</div>
+      <div class="what">Start classes</div>
+      <p>Foundation result is out. Start now and finish all classes by about May 2027.</p>
+    </div>
+    <div class="date">
+      <div class="step">Roughly</div>
+      <div class="when">July 2027</div>
+      <div class="what">Exam form window</div>
+      <p>For September exams, ICAI usually opens the form in early July. A late-fee window follows. Fill it on time.</p>
+    </div>
+    <div class="date">
+      <div class="step">Exam</div>
+      <div class="when">Sep 2027</div>
+      <div class="what">CA Inter exams</div>
+      <p>Usually held in the first half of September. Group I papers come first, then Group II.</p>
+    </div>
+  </div>
+  <div class="alert"><b>Registered after 1 Jan 2027?</b> Then your first attempt moves to <b>January 2028</b> (register by 1 May 2027 for that). Registration stays valid for 5 years, so register early. There is no downside.</div>
+  <p class="note">Dates follow ICAI's usual cycle. Check the exact notifications on <b>icai.org</b> / BoS announcements before acting.</p>
+  <div class="foot"><span>CA Intermediate &middot; Sep 2027 Roadmap</span><span>02</span></div>
+</section>
+
+<!-- 3. PAPERS -->
+<section class="slide">
+  <div class="kicker">Step 2 &middot; Know the exam</div>
+  <h2>6 papers, 2 groups, <span class="hl">100 marks each</span></h2>
+  <div class="groups">
+    <div class="panel group g1">
+      <h3>Group I <span>300 marks</span></h3>
+      <div class="paper"><div class="no">1</div><div class="nm">Advanced Accounting</div><div class="mk">100</div></div>
+      <div class="paper"><div class="no">2</div><div class="nm">Corporate &amp; Other Laws</div><div class="mk">100</div></div>
+      <div class="paper"><div class="no">3</div><div class="nm">Taxation<small>Income Tax 50 + GST 50</small></div><div class="mk">100</div></div>
+    </div>
+    <div class="panel group g2">
+      <h3>Group II <span>300 marks</span></h3>
+      <div class="paper"><div class="no">4</div><div class="nm">Cost &amp; Management Accounting</div><div class="mk">100</div></div>
+      <div class="paper"><div class="no">5</div><div class="nm">Auditing &amp; Ethics</div><div class="mk">100</div></div>
+      <div class="paper"><div class="no">6</div><div class="nm">FM &amp; SM<small>Financial Mgmt 50 + Strategic Mgmt 50</small></div><div class="mk">100</div></div>
+    </div>
+  </div>
+  <div class="rules">
+    <div class="rule"><div class="big">40%</div><p>Minimum in <b>each</b> paper</p></div>
+    <div class="rule"><div class="big">50%</div><p>Aggregate in the group (150 / 300)</p></div>
+    <div class="rule"><div class="big">60+</div><p>Score 60+ in a paper of a failed group and you get an exemption in it</p></div>
+    <div class="rule"><div class="big">3 hrs</div><p>Per paper. Includes an MCQ part plus descriptive questions</p></div>
+  </div>
+  <div class="foot"><span>CA Intermediate &middot; Sep 2027 Roadmap</span><span>03</span></div>
+</section>
+
+<!-- 4. GROUP CHOICE -->
+<section class="slide">
+  <div class="kicker">Step 3 &middot; The big decision</div>
+  <h2>Both groups together, or <span class="hl">one group</span> first?</h2>
+  <div class="vs3">
+    <div class="panel" style="border-color:var(--accent)">
+      <span class="tag y">Recommended for most</span>
+      <h3>Both groups (Sep 2027)</h3>
+      <ul class="clean green sm">
+        <li>Finish Inter in one go. Articleship and Final start sooner.</li>
+        <li>About 10 months is enough if you stay consistent.</li>
+        <li>Concepts link up: Accounts &harr; Audit, Costing &harr; FM.</li>
+        <li>Aggregate is per group, so one strong paper can carry a weaker paper in the same group.</li>
+      </ul>
+      <ul class="clean red sm" style="margin-top:6px">
+        <li>Needs about 8&ndash;10 focused hours a day, 6 papers to revise twice.</li>
+      </ul>
+    </div>
+    <div class="panel" style="border-color:var(--blue)">
+      <span class="tag b">Situational</span>
+      <h3>One group first</h3>
+      <ul class="clean blue sm">
+        <li>Good if you're in college, working, or started late.</li>
+        <li>Lighter load, so you can aim for higher marks and exemptions.</li>
+        <li>Common route: Group I in Sep 2027, Group II in Jan 2028.</li>
+      </ul>
+      <ul class="clean red sm" style="margin-top:6px">
+        <li>Inter takes one more attempt cycle and Final gets pushed back.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="verdict"><b>Simple rule:</b> If you can give 8+ honest hours a day from now, <b>go for both groups</b>. If not, pick one group and do it really well. Don't take both groups and then half-prepare them.</div>
+  <div class="foot"><span>CA Intermediate &middot; Sep 2027 Roadmap</span><span>04</span></div>
+</section>
+
+<!-- 5. TIMELINE -->
+<section class="slide">
+  <div class="kicker">Step 4 &middot; The ideal journey</div>
+  <h2>Nov 2026 &rarr; Sep 2027: about <span class="hl">10&ndash;11 months</span></h2>
+  <div class="tl">
+    <div class="months">
+      <span>Nov</span><span>Dec</span><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span>
+    </div>
+    <div class="bars">
+      <div class="seg cls">Classes &middot; 6&ndash;7 months<small>Nov 2026 &ndash; May 2027</small></div>
+      <div class="seg rev">Revision &middot; 2.5&ndash;3 months<small>Jun &ndash; Aug 2027</small></div>
+      <div class="seg ex">EXAM</div>
+    </div>
+  </div>
+  <div class="phases">
+    <div class="phase c">
+      <h4>Phase 1: Complete classes</h4>
+      <div class="split">
+        <ul>
+          <li>Rotate subjects: run 2&ndash;3 subjects at a time.</li>
+          <li>Practise questions the same day the topic is taught.</li>
+          <li>Highlight important questions as you go.</li>
+        </ul>
+        <ul>
+          <li>Do a small weekly revision of what you finished.</li>
+          <li>Register by 1 Jan and plan revision dates early.</li>
+          <li>Hard deadline: all classes done by end of May.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="phase r">
+      <h4>Phase 2: Revisions</h4>
+      <ul>
+        <li>Revision 1: full depth.</li>
+        <li>Revision 2: highlighted questions only.</li>
+        <li>Mock papers under exam conditions.</li>
+        <li>Fill the exam form in July.</li>
+      </ul>
+    </div>
+    <div class="phase e">
+      <h4>Exam</h4>
+      <p>Last quick look and formulas. Nothing new.</p>
+    </div>
+  </div>
+  <div class="foot"><span>CA Intermediate &middot; Sep 2027 Roadmap</span><span>05</span></div>
+</section>
+
+<!-- 6. STRATEGY TIPS -->
+<section class="slide">
+  <div class="kicker">Step 5 &middot; Strategy that works</div>
+  <h2>Important <span class="hl">strategy tips</span></h2>
+  <div class="tips">
+    <div class="tip star">
+      <div class="n">01</div>
+      <h4>Finish classes in 6&ndash;7 months</h4>
+      <p>Classes are not preparation. They come before preparation. If classes run into July, there's no time left to revise.</p>
+    </div>
+    <div class="tip">
+      <div class="n">02</div>
+      <h4>Highlight important questions during classes</h4>
+      <p>Mark PYQ / RTP / MTP-type and tricky questions right away. Those marks become your revision list later.</p>
+    </div>
+    <div class="tip">
+      <div class="n">03</div>
+      <h4>Cut down redundant questions</h4>
+      <p>If 5 questions test the same concept, keep the best 1&ndash;2. Revising 300 smart questions beats 900 repeated ones.</p>
+    </div>
+    <div class="tip">
+      <div class="n">04</div>
+      <h4>Plan every revision in advance</h4>
+      <p>For each chapter decide when you'll revise it and how: what you cover in R1 and what you cover in R2. Write it down.</p>
+    </div>
+    <div class="tip star">
+      <div class="n">05</div>
+      <h4>Plan for at least 2 revisions</h4>
+      <p>One revision is not enough for 6 papers. Two revisions is the minimum target. A third quick round is a bonus.</p>
+    </div>
+    <div class="tip star">
+      <div class="n">06</div>
+      <h4>Keep 2.5&ndash;3 months for revision</h4>
+      <p>After classes end you need enough time for 2 revisions. That's why classes must be done by May.</p>
+    </div>
+  </div>
+  <div class="foot"><span>CA Intermediate &middot; Sep 2027 Roadmap</span><span>06</span></div>
+</section>
+
+<!-- 7. REVISION PLAN -->
+<section class="slide">
+  <div class="kicker">Step 6 &middot; Revision blueprint</div>
+  <h2>How to plan <span class="hl">Revision 1</span> and <span class="hl">Revision 2</span></h2>
+  <div class="revs">
+    <div class="rev r1">
+      <div class="lbl">Revision 1 &middot; Depth</div>
+      <h3>Cover 100%</h3>
+      <div class="dur">About 6&ndash;7 weeks &middot; June to mid-July</div>
+      <ul class="clean blue sm">
+        <li>100% concepts and the whole syllabus. Leave nothing out.</li>
+        <li>ICAI study material questions + illustrations.</li>
+        <li>PYQs, RTPs and MTPs, chapter-wise.</li>
+        <li>Make short notes: formulas, sections, SA keywords, mistakes.</li>
+      </ul>
+    </div>
+    <div class="rev r2">
+      <div class="lbl">Revision 2 &middot; Speed</div>
+      <h3>Only what matters</h3>
+      <div class="dur">About 4&ndash;5 weeks &middot; mid-July to August</div>
+      <ul class="clean sm">
+        <li>Highlighted / important questions only.</li>
+        <li>Your mistake list and short notes.</li>
+        <li>At least 1&ndash;2 full papers per subject, timed for 3 hours.</li>
+        <li>Theory: practise writing in exam language.</li>
+      </ul>
+    </div>
+    <div class="rev r3">
+      <div class="lbl">Revision 3 &middot; Optional</div>
+      <h3>Final touch</h3>
+      <div class="dur">Exam gaps / last week</div>
+      <ul class="clean sm" style="--x:0">
+        <li>Formulas, charts, notes.</li>
+        <li>Amendments in Tax &amp; Law.</li>
+        <li>No new material.</li>
+      </ul>
+    </div>
+  </div>
+  <p class="note" style="margin-top:28px"><b>Rule of thumb:</b> you need <b>at least 2.5&ndash;3 months</b> after classes to complete 2 proper revisions of 6 papers.</p>
+  <div class="foot"><span>CA Intermediate &middot; Sep 2027 Roadmap</span><span>07</span></div>
+</section>
+
+<!-- 8. REVISION TRACKER -->
+<section class="slide">
+  <div class="kicker">Step 7 &middot; Make it concrete</div>
+  <h2>Plan each chapter's revision: <span class="hl">sample tracker</span></h2>
+  <div class="panel" style="padding:20px 26px">
+    <table class="trk">
+      <thead><tr><th>Subject / Chapter</th><th>Classes done</th><th>Imp. Qs marked</th><th>R1 date</th><th>R1 covers</th><th>R2 date</th><th>R2 covers</th></tr></thead>
+      <tbody>
+        <tr><td>Adv. Accounts &middot; AS 2 / AS 10</td><td class="ok">Dec wk 2</td><td>18 / 45</td><td class="pl">3 Jun</td><td>All Qs + PYQ/RTP</td><td class="pl">20 Jul</td><td>18 marked + mistakes</td></tr>
+        <tr><td>Tax &middot; PGBP</td><td class="ok">Feb wk 1</td><td>22 / 60</td><td class="pl">10 Jun</td><td>Concepts + MTPs</td><td class="pl">25 Jul</td><td>Marked + amendments</td></tr>
+        <tr><td>Costing &middot; Standard Costing</td><td class="ok">Jan wk 3</td><td>15 / 40</td><td class="pl">14 Jun</td><td>Formulas + all Qs</td><td class="pl">29 Jul</td><td>Marked + 1 timed set</td></tr>
+        <tr><td>Audit &middot; SA 200 series</td><td class="ok">Mar wk 2</td><td>&mdash;</td><td class="pl">20 Jun</td><td>Full reading + keywords</td><td class="pl">3 Aug</td><td>Notes + case studies</td></tr>
+        <tr><td>Law &middot; Companies Act chapters</td><td class="ok">Apr wk 1</td><td>&mdash;</td><td class="pl">26 Jun</td><td>Sections + PYQs</td><td class="pl">8 Aug</td><td>Notes + MCQs</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note" style="margin-top:24px">Make this sheet in <b>January</b>, not in June. When you already know the date and scope for every chapter, you don't lose days deciding what to study next. The dates above are only an example.</p>
+  <div class="foot"><span>CA Intermediate &middot; Sep 2027 Roadmap</span><span>08</span></div>
+</section>
+
+<!-- 9. SUBJECT TIPS -->
+<section class="slide">
+  <div class="kicker">Bonus &middot; Paper-wise pointers</div>
+  <h2>Quick tips for <span class="hl">each paper</span></h2>
+  <div class="subs">
+    <div class="sub g1"><h4><i>P1</i>Advanced Accounting</h4><p>Practice-heavy. Do questions every day. Learn AS concepts with their logic, and present working notes neatly.</p></div>
+    <div class="sub g1"><h4><i>P2</i>Corporate &amp; Other Laws</h4><p>Use ICAI language. Write in a provision, facts, conclusion format. Revise sections often because theory fades fast.</p></div>
+    <div class="sub g1"><h4><i>P3</i>Taxation</h4><p>Study as per the Finance Act applicable to Sep 2027 (check ICAI's notice). Keep up with amendments. Practise IT and GST equally.</p></div>
+    <div class="sub g2"><h4><i>P4</i>Cost &amp; Mgmt Accounting</h4><p>Concepts first, then practice. Keep a formula sheet. Revisit standard costing and marginal costing often.</p></div>
+    <div class="sub g2"><h4><i>P5</i>Auditing &amp; Ethics</h4><p>Read the ICAI module line by line. Learn SA keywords. Practise case-study answers by writing them.</p></div>
+    <div class="sub g2"><h4><i>P6</i>FM &amp; SM</h4><p>FM: formulas plus practice. SM: case-study based, so apply concepts to the case and don't just copy theory.</p></div>
+  </div>
+  <p class="note" style="margin-top:24px"><b>Every paper has an MCQ part.</b> Practise MCQs from ICAI's MTPs / RTPs. These are easy marks and also show you weak areas.</p>
+  <div class="foot"><span>CA Intermediate &middot; Sep 2027 Roadmap</span><span>09</span></div>
+</section>
+
+<!-- 10. MORE IMPORTANT POINTS -->
+<section class="slide">
+  <div class="kicker">Bonus &middot; Things nobody tells you</div>
+  <h2>More points for fresh <span class="hl">Foundation passouts</span></h2>
+  <div class="groups">
+    <div class="panel">
+      <ul class="clean sm">
+        <li><b>Inter is a big jump from Foundation.</b> More depth, more theory and subjective answers. Don't carry Foundation-level effort into it.</li>
+        <li><b>ICAI material + RTP + MTP + PYQ</b> are the base. Faculty notes add to them and don't replace them.</li>
+        <li><b>One faculty per subject.</b> Switching teachers halfway wastes weeks.</li>
+        <li><b>Track backlog weekly.</b> A 1-week backlog is easy to fix. A 1-month backlog breaks the plan.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <ul class="clean sm">
+        <li><b>Write, don't just read.</b> Presentation, working notes and time management are scored too.</li>
+        <li><b>Consistency beats intensity.</b> 8 hours every day beats 14 hours on some days and zero on others.</li>
+        <li><b>Protect sleep and health</b>, and cut down social media. Burnout in July ruins revision.</li>
+        <li><b>Do ICITSS (ITT + OT) after the exam</b>, in the gap before results, so articleship can start right away.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><span>CA Intermediate &middot; Sep 2027 Roadmap</span><span>10</span></div>
+</section>
+
+<!-- 11. WHAT'S NEXT -->
+<section class="slide">
+  <div class="kicker">The bigger picture</div>
+  <h2>Where CA Inter <span class="hl">takes you</span></h2>
+  <div class="path">
+    <div class="node"><div class="t">Nov 2026</div><h4>Register &amp; start classes</h4><p>Register by 1 Jan 2027</p></div>
+    <div class="node"><div class="t">Sep 2027</div><h4>CA Inter exams</h4><p>Both groups, or one group first</p></div>
+    <div class="node"><div class="t">After exam</div><h4>ICITSS</h4><p>ITT + Orientation course</p></div>
+    <div class="node"><div class="t">After passing</div><h4>Articleship</h4><p>2 years of practical training</p></div>
+    <div class="node"><div class="t">Goal</div><h4>CA Final</h4><p>Then you become a Chartered Accountant</p></div>
+  </div>
+  <p class="closing">Start <span class="hl">today</span>. Finish classes by <span class="hl">May</span>.<br>Revise <span class="hl">twice</span>. Pass in <span class="hl">September 2027</span>.</p>
+  <p class="note">Eligibility rules, dates and the applicable Finance Act come from ICAI and can change. Always confirm on <b>icai.org</b> and BoS announcements.</p>
+  <div class="foot"><span>CA Intermediate &middot; Sep 2027 Roadmap</span><span>11</span></div>
+</section>
+
+</body>
+</html>
